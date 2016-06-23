@@ -1,0 +1,38 @@
+{
+  "name": "hive/benchmark",
+  "description": "Hive Decoupled Benchmarking Library",
+  "keywords": [
+    "benchmark", "benchmark library", "benchmarking", "hive", "wax", "library", "helper"
+  ],
+  "homepage": "https://hive.github.io/benchmark/",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Jamie Peake",
+      "email": "jamie.peake@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/hive/benchmark/issues",
+    "wiki": "https://github.com/hive/benchmark/wiki",
+    "source": "https://github.com/hive/benchmark"
+  },
+  "type": "Library",
+  "require": {
+    "php": ">=5.3.0 <=5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hive\\Benchmark\\": "source"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "suggest": {
+    "hive/profiler": "Allow profiling of the site with benchmark output"
+  }
+}
