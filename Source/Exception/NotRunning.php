@@ -1,9 +1,9 @@
 <?php namespace Hive\Benchmark\Exception;
 
     /**
-     * Finished Running Exception
+     * Finished Running Exception.
      *
-     * Called when the library attempts to stop a benchmark which was not started
+     * Called when the library attempts to stop a benchmark which was not started.
      *
      * @author Jamie Peake <jamie.peake@gmail.com>
      * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
@@ -26,7 +26,7 @@
         {
 
             $code = self::CODE;
-            $message = strstr('A benchmark nameed :name was not started.', [':name' => $name]);
+            $message = strstr('A benchmark named :name was not started.', [':name' => $name]);
             parent::__construct($message,$code);
 
         }

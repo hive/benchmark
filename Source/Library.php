@@ -1,16 +1,17 @@
 <?php namespace Hive\Benchmark;
 
     /**
-     * Benchmark Library
+     * Benchmark Library.
      *
-     * The actual benchmark library, which does the core operations
+     * The actual benchmark library, which does the core operations.
      *
      * @author Jamie Peake <jamie.peake@gmail.com>
      * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
-     * @copyright (c) 2016 Jamie Peake
      *
      * @package Hive
      * @subpackage Benchmark
+     *
+     * @copyright (c) 2016 Jamie Peake
      */
     class Library implements Contract\Library
     {

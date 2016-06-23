@@ -1,7 +1,7 @@
 <?php namespace Hive\Benchmark\Exception;
 
     /**
-     * Already Running Exception
+     * Already Running Exception.
      *
      * Called when the library attempts to start a benchmark
      * the same benchmark is already running.
@@ -27,7 +27,7 @@
         {
 
             $code = self::CODE;
-            $message = strstr('A benchmark named :name is already running, either stop the benchmake named :name or create a benchmark with a new name', [':name' => $name]);
+            $message = strstr('A benchmark named :name is already running, either stop the benchmark named :name or create a benchmark with a new name', [':name' => $name]);
             parent::__construct($message,$code);
 
         }

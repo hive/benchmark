@@ -1,9 +1,9 @@
 <?php namespace Hive\Benchmark\Exception;
 
     /**
-     * Finished Running Exception
+     * Finished Running Exception.
      *
-     * Called when the library attempts to stop a benchmark which has already been stopped
+     * Called when the library attempts to stop a benchmark which has already been stopped.
      *
      * @author Jamie Peake <jamie.peake@gmail.com>
      * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)

@@ -1,10 +1,10 @@
 <?php namespace Hive\Benchmark\Contract;
-    
+
 
     /**
-     * Library Interface
+     * Library Interface.
      *
-     * Interface for the library
+     * Interface for the library.
      *
      * @author Jamie Peake <jamie.peake@gmail.com>
      * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)

@@ -1,9 +1,9 @@
 <?php namespace Hive\Benchmark\Exception;
 
     /**
-     * Requires Memory Get Usage Exception
+     * Requires Memory Get Usage Exception.
      *
-     * Called when the library has memory benchmarks enabled but no way to get the memory data
+     * Called when the library has memory benchmarks enabled but no way to get the memory data.
      *
      * @author Jamie Peake <jamie.peake@gmail.com>
      * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
