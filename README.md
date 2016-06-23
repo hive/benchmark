@@ -1,2 +1,2 @@
-# benchmark
-Simple decoupled benchmark lIbrary
+# Benchmark
+Simple decoupled benchmark library
