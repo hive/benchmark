@@ -1,5 +1,5 @@
 <?php namespace Hive\Benchmark\Exception;
-    
+
     /**
      * Finished Running Exception
      *
@@ -12,7 +12,8 @@
      * @package Hive
      * @subpackage Benchmark
      */
-    class  NotRunning extends \Hive\Benchmark\Exception {
+    class  NotRunning extends \Hive\Benchmark\Exception
+    {
 
         const CODE = 3;
 
@@ -21,7 +22,8 @@
          *
          * @param string $name name of the benchmark which wasnt started
          */
-        public function __construct($name) {
+        public function __construct($name)
+        {
 
             $code = self::CODE;
             $message = strstr('A benchmark nameed :name was not started.', [':name' => $name]);

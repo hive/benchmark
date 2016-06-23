@@ -1,5 +1,5 @@
 <?php namespace Hive\Benchmark\Exception;
-    
+
     /**
      * Requires Memory Get Usage Exception
      *
@@ -12,11 +12,13 @@
      * @package Hive
      * @subpackage Benchmark
      */
-    class RequiresMemoryGetUsage extends \Hive\Benchmark\Exception {
+    class RequiresMemoryGetUsage extends \Hive\Benchmark\Exception
+    {
 
         const CODE = 4;
 
-        public function __construct() {
+        public function __construct()
+        {
 
             $message = 'Unable to access the php function memory_get_usage(), if not accessible run benchmark again with memory benchmarking turned off';
 

@@ -6,7 +6,8 @@
     class Instance extends Object
     {
 
-        public static function start ($name = false) {
+        public static function start ($name = false)
+        {
 
            $name = ($name) ? $name : self::trace(3);
 
@@ -14,7 +15,8 @@
 
         }
 
-        public static function stop ($name = false) {
+        public static function stop ($name = false)
+        {
 
             $name = ($name) ? $name : self::trace(3);
             
@@ -27,7 +29,8 @@
          * 
          * @param int $stack
          */
-        public static function trace($stack = 2) {
+        public static function trace($stack = 2)
+        {
             $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,$history)[$history - 1];
             $name = $caller['class'] . '\\' .$caller['function'];
         }

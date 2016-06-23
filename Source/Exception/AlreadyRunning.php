@@ -1,5 +1,5 @@
 <?php namespace Hive\Benchmark\Exception;
-    
+
     /**
      * Already Running Exception
      *
@@ -13,7 +13,8 @@
      * @package Hive
      * @subpackage Benchmark
      */
-    class AlreadyRunning extends \Hive\Benchmark\Exception {
+    class AlreadyRunning extends \Hive\Benchmark\Exception
+    {
 
         const CODE = 1;
 
@@ -22,7 +23,8 @@
          *
          * @param string $name name of the benchmark already running
          */
-        public function __construct($name) {
+        public function __construct($name)
+        {
 
             $code = self::CODE;
             $message = strstr('A benchmark named :name is already running, either stop the benchmake named :name or create a benchmark with a new name', [':name' => $name]);

@@ -25,7 +25,8 @@
          */
         const PACKAGE = 1;
 
-        public function __construct($message = null, $code = null) {
+        public function __construct($message = null, $code = null)
+        {
 
             // Call the parent with the message and our now unique error code
             parent::__construct($message, self::VENDOR . self::PACKAGE . $code);

@@ -1,5 +1,5 @@
 <?php namespace Hive\Benchmark\Exception;
-    
+
     /**
      * Finished Running Exception
      *
@@ -12,7 +12,8 @@
      * @package Hive
      * @subpackage Benchmark
      */
-    class FinishedRunning extends \Hive\Benchmark\Exception {
+    class FinishedRunning extends \Hive\Benchmark\Exception
+    {
 
         const CODE = 2;
 
@@ -21,7 +22,8 @@
          *
          * @param string $name of the benchmark which has already finished
          */
-        public function __construct($name) {
+        public function __construct($name)
+        {
 
             $code = self::CODE;
             $message = strstr('A benchmark named :name has already been stopped.', [':name' => $name]);
