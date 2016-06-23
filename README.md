@@ -2,8 +2,8 @@
 Simple decoupled benchmark library
 
 ## Status
-[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark)
 [![StyleCI](https://styleci.io/repos/61770165/shield)](https://styleci.io/repos/61770165) 
+[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark)
 ---
 
 
