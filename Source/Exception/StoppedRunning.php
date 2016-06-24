@@ -13,7 +13,7 @@
      *             
      * @copyright (c) 2016 Jamie Peake
      */
-    class FinishedRunning extends \Hive\Benchmark\Exception
+    class StoppedRunning extends \Hive\Benchmark\Exception
     {
         /**
          * Exception code, sequential exception numbers.

@@ -28,8 +28,7 @@
          * @var array ['decimals'] : integer : The number of decimals to benchmark against
          */
         private $config = [
-
-            'enabled'  => true,
+            'timer'   => true,
             'memory'   => true,
             'decimals' => 9
         ];
@@ -39,7 +38,7 @@
          *
          * @var array
          */
-        public $marks = [];
+        protected $marks = [];
 
 
         /**
@@ -52,17 +51,18 @@
         public function __construct(array $config = [])
         {
 
-            // Merge the config with the defaults
+            /**
+             * Merge the received config with the defaults
+             */
             $this->config = array_merge($config, $this->config);
 
             // sanity check upon memory
-            if ($this->config['memory']) {
-
+            if ($this->config['memory'])
+            {
                 // if enabled ensure we can get it
-                if (!function_exists('memory_get_usage')) {
-
+                if (!function_exists('memory_get_usage'))
+                {
                     throw new Exception\RequiresMemoryGetUsage();
-
                 }
             }
 
@@ -77,31 +77,17 @@
          */
         public function start($name)
         {
-            /*
-             * Only run if the library is enabled, this allows us to disable
-             * the benchmark by config for production servers.
-             */
-            if ($this->config['enabled']) {
-
-
-                // create the parent holder
-                if (!isset($this->marks[$name])) {
-                    $this->marks[$name] = [];
-                }
-
-                // set the timer benchmark
-                $mark['timer'] = ['start' => microtime(true), 'stop' => false];
-
-                // If the memory benchmark is enabled
-                if ($this->config['memory']) {
-
-                    $mark['memory'] = ['start' => memory_get_usage(), 'stop' => false];
-                }
-
-                // Add the item to the top of its array
-                array_unshift($this->marks[$name], $mark);
+            // create the parent holder
+            if (!isset($this->marks[$name]))
+            {
+                $this->marks[$name] = [];
             }
 
+            $this->timer($mark['timer']['start']);
+            $this->memory($mark['memory']['start']);
+
+            // Add the item to the top of its array
+            array_unshift($this->marks[$name], $mark);
         }
 
         /**
@@ -109,42 +95,53 @@
          *
          * @param $name string benchmark name
          *
-         * @throws \Hive\Benchmark\Exception\FinishedRunning
+         * @throws \Hive\Benchmark\Exception\StoppedRunning
          * @throws \Hive\Benchmark\Exception\NotRunning
          *
          * @return void
          */
         public function stop($name)
         {
-            // Config Check : Are Benchmarks enabled
-            if ($this->config['enabled']) {
+            // GIGO : The benchmark we are attempting to stop has been started
+            if (isset($this->marks[$name]))
+            {
+                // Just an alias
+                $mark = &$this->marks[$name][0];
 
-                // ensure that the benchmark we are attempting to stop has been started
-                if (isset($this->marks[$name])) {
-
-                    // ensure that it hasnt already been stopped
-                    if ($this->marks[$name][0]['timer']['stop'] === false) {
-
-                        $this->marks[$name][0]['timer']['stop'] = microtime(true);
-
-                        // If the memory benchmark is enabled
-                        if ($this->config['memory']) {
-
-                            $this->marks[$name][0]['memory']['stop'] = memory_get_usage();
-
-                        }
-
-                    } else {
-
-                        throw new Exception\FinishedRunning($name);
-                    }
-
-
-                } else {
-
-                    throw new Exception\NotRunning($name);
-
+                // GIGO : It hasn't already been stopped
+                if (isset($mark['timer']['stop']))
+                {
+                    // Assign the stop values
+                    $this->timer($mark['timer']['stop']);
+                    $this->memory($mark['memory']['stop']);
                 }
+                else
+                {
+                    throw new Exception\StoppedRunning($name);
+                }
+
+            }
+            else
+            {
+                throw new Exception\NotRunning($name);
+            }
+        }
+
+        private function timer (&$variable)
+        {
+            // If the timer benchmark is enabled
+            if ($this->config['timer'])
+            {
+                $variable = microtime(true);
+            }
+        }
+
+        private function memory (&$variable) {
+
+            // If the memory benchmark is enabled
+            if ($this->config['memory'])
+            {
+                $variable = memory_get_usage();
 
             }
         }
@@ -153,56 +150,34 @@
         /**
          * Get a benchmark.
          *
-         * @param $name string|boolean the name of the benchmark to get or get all (true)
+         * @param $name string the name of the benchmark to get or get all (true)
          *
          * @throws \Hive\Benchmark\Exception
-         * @throws \Hive\Benchmark\Exception\FinishedRunning
+         * @throws \Hive\Benchmark\Exception\StoppedRunning
          * @throws \Hive\Benchmark\Exception\NotRunning
          *
          * @return array|bool Either an array of requested marks or false on fail
          */
-        public function get($name = false)
+        public function get($name)
         {
             $result = false;
 
-            // Config Check : Are Benchmarks enabled
-            if ($this->config['enabled']) {
-
-                if ($name) {
-
-                    if (isset($this->marks[$name])) {
-
-                        // Auto stop any running benchmarks in-case of error
-                        if ($this->marks[$name][0]['timer']['stop'] === false) {
-
-                            $this->stop($name);
-                        }
-
-                    } else {
-
-                        throw new Exception\NotRunning($name);
-
-                    }
-
-                    $result = $this->retrieve($name);
-
-                } else {
-
-                    // No name entered, they want all results
-
-                    $result = [];
-
-                    $names = array_keys($this->marks);
-
-                    // Loop through all the benchmarks we have
-                    foreach ($names as $name) {
-
-                        $result[$name] = $this->retrieve($name);
-
-                    }
-
+            if (isset($this->marks[$name]))
+            {
+                // Auto stop any running benchmarks in-case of error
+                if (!isset($this->marks[$name][0]['timer']['stop']))
+                {
+                    $this->stop($name);
                 }
+
             }
+            else
+            {
+                throw new Exception\NotRunning($name);
+            }
+
+            $result = $this->retrieve($name);
+
 
             return $result;
 
@@ -211,7 +186,7 @@
         /**
          * Retrieve an item from the internal marks storage array.
          *
-         * Internal process, no gigo/sanity/exceptions
+         * Internal process, no gigo/sanity
          *
          * @param $name
          *
@@ -221,22 +196,28 @@
          */
         private function retrieve($name)
         {
-
-            try {
-
-                // Return the time between the start and stop points
-                // Properly reading a float requires using number_format or sprintf
+            try
+            {
+                // Initialise the variables
                 $time = $memory = 0;
-                for ($i = 0; $i < count($this->marks[$name]); $i++) {
 
-                    $time += $this->marks[$name][$i]['timer']['stop'] - $this->marks[$name][$i]['timer']['start'];
+                /**
+                 * Return the time between the start and stop points for each
+                 * of the benchmarks with the requested name. Then update them
+                 * as a whole.
+                 */
+                for ($i = 0; $i < count($this->marks[$name]); $i++)
+                {
+                    // Just an alias
+                    $mark = &$this->marks[$name[$i]];
 
-                    // Config Check : Are memory benchmarks enabled
-                    if ($this->config['memory']) {
+                    $time += $mark['timer']['stop'] - $mark['timer']['start'];
 
-                        $memory += $this->marks[$name][$i]['memory']['stop'] - $this->marks[$name][$i]['memory']['start'];
-
+                    if (isset($mark['memory']))
+                    {
+                        $memory += $mark['memory']['stop'] - $mark['memory']['start'];
                     }
+
                 }
 
                 $result = [
@@ -245,18 +226,18 @@
                 ];
 
                 // If memory has been assigned
-                if ($memory) {
+                if ($memory)
+                {
                     $result['memory'] = $memory;
                 }
 
-            } catch (\Exception $e) {
-
+            }
+            catch (\Exception $e)
+            {
                 throw new Exception($e->getMessage(), $e->getCode());
-
             }
 
             return $result;
-
         }
 
 
