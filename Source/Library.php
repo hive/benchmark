@@ -17,7 +17,7 @@
     {
 
         /**
-         * Default configuration settings
+         * Default configuration settings.
          *
          * config['enabled'] array Defines the feilds to be shown by scaffolding.
          * config['memory'] array Defines the feilds to be shown by scaffolding.
@@ -26,7 +26,6 @@
          * @var array ['enabled'] : boolean : Whether or not the benchmark is enabled, set to false if you wish to disabled on production
          * @var array ['memory'] : boolean : Whether or not to benchmark memory useage, uses memory_get_usage()
          * @var array ['decimals'] : integer : The number of decimals to benchmark against
-         *
          */
         private $config = [
 
@@ -36,7 +35,7 @@
         ];
 
         /**
-         * Internal storage for benchmarks
+         * Internal storage for benchmarks.
          *
          * @var array
          */
@@ -70,7 +69,7 @@
         }
 
         /**
-         * Start a benchmark
+         * Start a benchmark.
          *
          * @param $name string benchmark name
          *
@@ -106,7 +105,7 @@
         }
 
         /**
-         * Stop a benchmark
+         * Stop a benchmark.
          *
          * @param $name string benchmark name
          *
@@ -152,15 +151,15 @@
 
 
         /**
-         * Get a benchmark
+         * Get a benchmark.
          *
          * @param $name string|boolean the name of the benchmark to get or get all (true)
-         *
-         * @return array|bool Either an array of requested marks or false on fail
          *
          * @throws \Hive\Benchmark\Exception
          * @throws \Hive\Benchmark\Exception\FinishedRunning
          * @throws \Hive\Benchmark\Exception\NotRunning
+         *
+         * @return array|bool Either an array of requested marks or false on fail
          */
         public function get($name = false)
         {
@@ -210,7 +209,7 @@
         }
 
         /**
-         * Retrieve an item from the internal marks storage array
+         * Retrieve an item from the internal marks storage array.
          *
          * Internal process, no gigo/sanity/exceptions
          *
@@ -220,7 +219,7 @@
          *
          * @return array
          */
-        private function retrieve ($name)
+        private function retrieve($name)
         {
 
             try {

@@ -7,18 +7,24 @@
      *
      * @author Jamie Peake <jamie.peake@gmail.com>
      * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
-     * @copyright (c) 2016 Jamie Peake
      *
      * @package Hive
      * @subpackage Benchmark
+     *             
+     * @copyright (c) 2016 Jamie Peake
      */
     class FinishedRunning extends \Hive\Benchmark\Exception
     {
-
+        /**
+         * Exception code, sequential exception numbers.
+         */
         const CODE = 2;
 
+        const MESSAGE = 'A benchmark named :name has already been stopped.';
         /**
-         * FinishedRunning constructor.
+         * Finished Running Constructor, assigns exception code and places the message.
+         *
+         * Will also place the name of the benchmark into the exception message if we have it
          *
          * @param string $name of the benchmark which has already finished
          */
@@ -26,7 +32,8 @@
         {
 
             $code = self::CODE;
-            $message = strstr('A benchmark named :name has already been stopped.', [':name' => $name]);
+            $message = strtr(self::MESSAGE, [':name' => $name]);
+
             parent::__construct($message,$code);
 
         }
