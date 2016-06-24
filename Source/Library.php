@@ -83,6 +83,10 @@
                 $this->marks[$name] = [];
             }
 
+            // initialise the variable
+            $mark = [];
+
+            // get the benchmarks
             $this->timer($mark['timer']['start']);
             $this->memory($mark['memory']['start']);
 
