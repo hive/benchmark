@@ -28,8 +28,6 @@
             'decimals' => 9
         ];
 
-        private $methods = [];
-
         /**
          * Object constructor.
          *
@@ -63,6 +61,13 @@
             }
         }
 
+        /**
+         * Stop a benchmark.
+         *
+         * @param $name string benchmark name
+         *
+         * @return void
+         */
         public function stop ($name)
         {
             // Config Check : Are Benchmarks enabled
@@ -72,6 +77,13 @@
 
         }
 
+        /**
+         * Get details of a benchmark.
+         *
+         * @param $name string benchmark name
+         *
+         * @return void
+         */
         public function get($name)
         {
             // Config Check : Are Benchmarks enabled
@@ -81,9 +93,11 @@
         }
 
         /**
-         * Retrieve an item from the internal marks storage array.
+         * Retrieve an summary of benchmark.
          *
-         * Internal process, no gigo/sanity
+         * Rather then retreive all of the benchmark data, this instead
+         * will gather all benchmarks with the same name and return an array
+         * including, total, count, min, max, mean and median values of the benchmar
          *
          * @param $name
          *
@@ -163,13 +177,6 @@
         //    return $results;
         //
         //}
-
-
-        private function trace($stack = 2)
-        {
-            $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,$stack)[$stack - 1];
-            return $caller['class'] . '\\' .$caller['function'];
-        }
 
     }
 

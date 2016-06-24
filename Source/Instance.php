@@ -27,6 +27,10 @@
 
         }
 
+        /**
+         * Static Alias to the Benchmark/Object/Start
+         * @param string $name name of the benchmark to start
+         */
         public static function start ($name)
         {
             self::init();
@@ -34,6 +38,10 @@
             self::$object->start($name);
         }
 
+        /**
+         * Static Alias to the Benchmark/Object/Stop
+         * @param string $name name of the benchmark to stop
+         */
         public static function stop ($name)
         {
             self::init();
@@ -41,7 +49,10 @@
             self::$object->stop($name);
         }
 
-
+        /**
+         * Static Alias to the Benchmark/Object/Get
+         * @param string $name name of the benchmark to get
+         */
         public static function get($name)
         {
             self::init();
@@ -49,6 +60,10 @@
             return self::$object->get($name);
         }
 
+        /**
+         * Static Alias to the Benchmark/Object/Summary
+         * @param string $name name of the benchmark to get a summary of
+         */
         public static function summary ($name)
         {
             self::init();
