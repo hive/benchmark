@@ -16,13 +16,15 @@
     interface Instance
     {
 
-        public static function start();
+        public static function start($name);
 
-        public static function stop ();
+        public static function stop($name);
 
-        public static function get();
+        public static function get($name);
 
         public static function method();
+
+        public static function summary($name);
 
 
     }

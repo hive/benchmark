@@ -15,4 +15,12 @@
      */
     interface Object
     {
+        public function start($name);
+
+        public function stop($name);
+
+        public function get($name);
+
+        public function summary($name);
+
     }

@@ -13,35 +13,101 @@
      *
      * @copyright (c) 2016 Jamie Peake
      */
-    class Instance extends Object
+    class Instance implements Contract\Instance
     {
 
-        public static function start ($name = false)
-        {
+        private static $object;
+        private static $methods = [];
 
-           $name = ($name) ? $name : self::trace(3);
+        private static function init() {
 
-           parent::start($name);
+            if (is_null(self::$object)) {
+                self::$object = new Object();
+            }
 
         }
 
-        public static function stop ($name = false)
+        public static function start ($name)
         {
+            self::init();
 
-            $name = ($name) ? $name : self::trace(3);
-            
-            parent::stop($name);
+            self::$object->start($name);
+        }
 
+        public static function stop ($name)
+        {
+            self::init();
+
+            self::$object->stop($name);
+        }
+
+
+        public static function get($name)
+        {
+            self::init();
+
+            return self::$object->get($name);
+        }
+
+        public static function summary ($name)
+        {
+            self::init();
+
+            return self::$object->summary($name);
         }
 
         /**
-         * Todo move to debug package?
-         * 
-         * @param int $stack
+         * Auto Method for setting benchmarks on a method, with out requiring its name
+         * or even setting whether to start/stop.
+         *
+         * @param string $action (auto|start|stop) auto wil determine whether to start or stop
          */
-        public static function trace($stack = 2)
+        public static function method($action = 'auto', $stack = 3)
         {
-            $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,$history)[$history - 1];
-            $name = $caller['class'] . '\\' .$caller['function'];
+            // Get the name of the caller method
+            $name = self::trace($stack);
+
+            /**
+             * If its an auto, find out what method to run
+             */
+            if ($action == 'auto')
+            {
+                /**
+                 * We dont have an active benchmark for this method
+                 * so it much be a start action.
+                 */
+                if (!isset(self::$methods[$name]))
+                {
+                    // Set the benchmark to start()
+                    $action = 'start';
+
+                    // Add the benchmark to our list of running methods
+                    self::$methods[$name] = true;
+                }
+                else
+                {
+                    // Set the benchmark to stop()
+                    $action = 'stop';
+
+                    // Remove the benchmark from our list of running methods
+                    unset(self::$methods[$name]);
+                }
+            }
+
+            // run the action
+            self::$action($name);
+        }
+
+
+        /**
+         * Simple debug_backtrace to get the name of the method which called
+         *
+         * @param int $stack
+         * @return string $name Name of the caller class/method
+         */
+        private static function trace($stack = 2)
+        {
+            $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,$stack)[$stack - 1];
+            return $caller['class'] . '\\' .$caller['function'];
         }
     }

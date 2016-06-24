@@ -19,9 +19,7 @@
         /**
          * Default configuration settings.
          *
-         * config['enabled'] array Defines the feilds to be shown by scaffolding.
-         * config['memory'] array Defines the feilds to be shown by scaffolding.
-         * config['enabled'] array Defines the feilds to be shown by scaffolding.
+         * config['memory'] array Whether or not to benchmark memory useage, uses memory_get_usage()
          *
          * @var array ['enabled'] : boolean : Whether or not the benchmark is enabled, set to false if you wish to disabled on production
          * @var array ['memory'] : boolean : Whether or not to benchmark memory useage, uses memory_get_usage()
@@ -113,7 +111,7 @@
                 $mark = &$this->marks[$name][0];
 
                 // GIGO : It hasn't already been stopped
-                if (isset($mark['timer']['stop']))
+                if (!isset($mark['timer']['stop']))
                 {
                     // Assign the stop values
                     $this->timer($mark['timer']['stop']);
@@ -131,6 +129,10 @@
             }
         }
 
+        /**
+         * Sets the current time into supplied variable
+         * @param $variable
+         */
         private function timer (&$variable)
         {
             // If the timer benchmark is enabled
@@ -140,13 +142,16 @@
             }
         }
 
+        /**
+         * Sets the current memory usage into supplied variable
+         * @param $variable
+         */
         private function memory (&$variable) {
 
             // If the memory benchmark is enabled
             if ($this->config['memory'])
             {
                 $variable = memory_get_usage();
-
             }
         }
 
@@ -154,7 +159,7 @@
         /**
          * Get a benchmark.
          *
-         * @param $name string the name of the benchmark to get or get all (true)
+         * @param $name string the name of the benchmark to get
          *
          * @throws \Hive\Benchmark\Exception
          * @throws \Hive\Benchmark\Exception\StoppedRunning
@@ -168,6 +173,7 @@
 
             if (isset($this->marks[$name]))
             {
+
                 // Auto stop any running benchmarks in-case of error
                 if (!isset($this->marks[$name][0]['timer']['stop']))
                 {
@@ -188,7 +194,8 @@
         }
 
         /**
-         * Retrieve an item from the internal marks storage array.
+         * Retrieve an all benchmarks of a perticular name
+         * from the internal marks storage array.
          *
          * Internal process, no gigo/sanity
          *
@@ -198,12 +205,13 @@
          *
          * @return array
          */
-        private function retrieve($name)
+        protected function retrieve($name)
         {
             try
             {
                 // Initialise the variables
                 $time = $memory = 0;
+                $results = [];
 
                 /**
                  * Return the time between the start and stop points for each
@@ -213,7 +221,7 @@
                 for ($i = 0; $i < count($this->marks[$name]); $i++)
                 {
                     // Just an alias
-                    $mark = &$this->marks[$name[$i]];
+                    $mark = &$this->marks[$name][$i];
 
                     $time += $mark['timer']['stop'] - $mark['timer']['start'];
 
@@ -222,28 +230,27 @@
                         $memory += $mark['memory']['stop'] - $mark['memory']['start'];
                     }
 
+                    $result = [
+                        'time'   => number_format($time, $this->config['decimals']),
+                        'count'  => count($this->marks[$name])
+                    ];
+
+                    // If memory has been assigned
+                    if ($memory)
+                    {
+                        $result['memory'] = $memory;
+                    }
+
+                    $results[] = $result;
                 }
-
-                $result = [
-                    'time'   => number_format($time, $this->config['decimals']),
-                    'count'  => count($this->marks[$name])
-                ];
-
-                // If memory has been assigned
-                if ($memory)
-                {
-                    $result['memory'] = $memory;
-                }
-
             }
             catch (\Exception $e)
             {
                 throw new Exception($e->getMessage(), $e->getCode());
             }
 
-            return $result;
+            return $results;
         }
-
 
     }
 

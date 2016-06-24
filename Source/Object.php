@@ -14,7 +14,7 @@
      *
      * @copyright (c) 2016 Jamie Peake
      */
-    class Object extends Library implements Ccontract\Object
+    class Object extends Library implements Contract\Object
     {
         /**
          * Default configuration settings.
@@ -24,8 +24,11 @@
          * @var array config default object configuration for the library
          */
         private $config = [
-            'enabled' => true
+            'enabled' => true,
+            'decimals' => 9
         ];
+
+        private $methods = [];
 
         /**
          * Object constructor.
@@ -34,7 +37,7 @@
          *
          * @throws Exception\RequiresMemoryGetUsage
          */
-        public function __construct($config) {
+        public function __construct($config = []) {
 
             /**
              *  Merge the received config with the defaults
@@ -56,7 +59,7 @@
         {
             // Config Check : Are Benchmarks enabled
             if ($this->config['enabled']) {
-                $this->start($name);
+                parent::start($name);
             }
         }
 
@@ -64,7 +67,7 @@
         {
             // Config Check : Are Benchmarks enabled
             if ($this->config['enabled']) {
-                return $this->stop($name);
+                parent::stop($name);
             }
 
         }
@@ -73,28 +76,99 @@
         {
             // Config Check : Are Benchmarks enabled
             if ($this->config['enabled']) {
-                return $this->get($name);
+                return parent::get($name);
             }
         }
 
-        public function summary () {
-
-            /**
-             *They want a summary of all results
-             */
-            $results = [];
-
-            $names = array_keys($this->marks);
-
-            // Loop through all the benchmarks we have
-            foreach ($names as $name)
+        /**
+         * Retrieve an item from the internal marks storage array.
+         *
+         * Internal process, no gigo/sanity
+         *
+         * @param $name
+         *
+         * @throws \Hive\Benchmark\Exception
+         *
+         * @return array
+         */
+        public function summary($name = false)
+        {
+            try
             {
-                $results[$name] = $this->get($name);
+                // Initialise the variables
+                $time = $memory = [];
+
+                $marks = $this->retrieve($name);
+
+                // Gather the totals
+                foreach ($marks as $mark) {
+                    $time[] = $mark['time'];
+                    $memory[] = $mark['memory'];
+                }
+
+                $result = [
+                    'count' => count($time),
+                    'time' => $this->calculate($time, $this->config['decimals']),
+                    'memory' => $result['memory'] = $this->calculate($memory)
+                ];
 
             }
+            catch (\Exception $e)
+            {
+                throw new Exception($e->getMessage(), $e->getCode());
+            }
 
-            return $results;
+            return $result;
+        }
 
+        /**
+         * Quick function for summary calculations
+         *
+         * Does a bunch of calculations upon an array of values, returns
+         * the result
+         *
+         * @param $values
+         * @param int $decimals
+         *
+         * @return array
+         */
+        private function calculate ($values, $decimals = 0)
+        {
+            return [
+                'total' =>  number_format(array_sum($values), $decimals),
+                'min' =>  number_format(min($values), $decimals),
+                'max' =>  number_format(max($values), $decimals),
+                'mean' =>  number_format(array_sum($values) / count($values), $decimals),
+                'median' =>  number_format($values[round(count($values) / 2) - 1], $decimals),
+            ];
+        }
+
+        // @todo : enable
+        //public function summary () {
+        //
+        //    /**
+        //     *They want a summary of all results
+        //     */
+        //    $results = [];
+        //
+        //    $names = array_keys($this->marks);
+        //
+        //    // Loop through all the benchmarks we have
+        //    foreach ($names as $name)
+        //    {
+        //        $results[$name] = $this->get($name);
+        //
+        //    }
+        //
+        //    return $results;
+        //
+        //}
+
+
+        private function trace($stack = 2)
+        {
+            $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,$stack)[$stack - 1];
+            return $caller['class'] . '\\' .$caller['function'];
         }
 
     }
