@@ -25,7 +25,7 @@
          */
         private $config = [
             'enabled' => true,
-            'decimals' => 9
+            'decimals' => 8
         ];
 
         /**
@@ -97,7 +97,7 @@
          *
          * Rather then retreive all of the benchmark data, this instead
          * will gather all benchmarks with the same name and return an array
-         * including, total, count, min, max, mean and median values of the benchmar
+         * including, total, count, min, max, mean and median values of the benchmark
          *
          * @param $name
          *

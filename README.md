@@ -1,9 +1,227 @@
 # Hive Benchmark
 [![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark) [![StyleCI](https://styleci.io/repos/61770165/shield?style=flat)](https://styleci.io/repos/61770165)
 
-Simple decoupled benchmark library
-
+Simple decoupled benchmark, 
 
 ## Installation
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis rhoncus lectus. Nullam pellentesque a lorem non suscipit. In elit neque, volutpat non commodo ut, dignissim a orci. Curabitur hendrerit ipsum ac mollis dictum. In hac habitasse platea dictumst. Nullam blandit arcu sit amet pharetra malesuada. In hac habitasse platea dictumst. Sed placerat nisl in enim euismod fermentum. Sed tempus rutrum enim, eget iaculis sapien facilisis gravida.
+Via Composer
+
+```bash
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
+```
+
+```bash
+# Install the latest version
+composer require hive/benchmark
+```
+
+```php
+<?php
+// With in your php file, include composers autoloader
+require 'vendor/autoload.php';
+```
+
+Via Git
+
+```bash
+# Clone the repo
+cd helloworld.dev
+git clone https://github.com/hive/benchmark.git . 
+```
+
+```php
+<?php
+// With in your php file, include composers autoloader
+require 'hive/benchmark/include.php';
+```
+
+
+Code Only
+
+1. [Download the Repo](https://github.com/hive/benchmark/archive/master.zip) 
+2. Copy the files to your project
+2. Require the include file
+```php
+    require 'hive/benchmark/include.php';
+```
+
+## Overview
+
+The code is split up into the following classes : 
+
+1. Library.php : The actual benchmarking library, useful for extending functionality.
+2. Object.php : Class for accessing the benchmark object.
+3. Instance.php : Instance of the object class.
+
+## Useage
+
+ ```php
+    use hive\benchmark;
+ ```
+ 
+ ### Instance
+ 
+ Simple
+ ```php
+ 
+    // Start the benchmark
+    benchmark/instance::start('NameOfBenchmark);
+    
+    sleep(1);
+    
+    // Stop the benchmark 
+    benchmark/instance::stop('NameOfBenchmark);
+ 
+ ```
+ 
+ Multiple Benchmarks
+ ```php
+      
+    // Start the benchmark
+    benchmark/instance::start('NameOfBenchmark);
+     
+    // start another benchmark
+    benchmark/instance::start('AnotherBenchmark);
+       
+    sleep(1);
+       
+    // Stop the other benchmark 
+    benchmark/instance::stop('AnotherBenchmark);
+    
+    sleep(1);
+      
+    // Stop the benchmark 
+    benchmark/instance::stop('NameOfBenchmark);
+      
+    // get a summary of the results 
+    printr(benchmark/instance::summary('NameofBenchmark'));
+    printr(benchmark/instance::summary('AnotherBenchmark'));
+    
+    // get the complete details of one benchmark name
+    printr(benchmark/instance::get('AnotherBenchmark'));
+    
+    // get a summary of all benchmarks
+    printr(benchmark/instance::all());
+       
+    ```
+ 
+ 
+ Multiple Instances with the same name
+ ```php
+     
+     // Start the benchmark
+    benchmark/instance::start('NameOfBenchmark);
+    
+    for ($i=rand(1,100); $i<0; $i--) {
+    
+      // start another benchmark
+      benchmark/instance::start('AnotherBenchmark);
+      
+      // Do Some Actions
+      
+      // Stop the other benchmark 
+      benchmark/instance::stop('AnotherBenchmark);
+    }
+    
+    sleep(1);
+     
+    // Stop the benchmark 
+    benchmark/instance::stop('NameOfBenchmark);
+     
+    // get a summary of the ALL results 
+    printr(benchmark/instance::all());
+    
+    // get a summary of just one benchmark name
+    printr(benchmark/instance::summary('NameofBenchmark'));
+      
+    // Get ALL of the results for ONE benchmark name
+    print_r(benchmark/instance::get('AnotherBenchMark');   
+    ```
+   
+Using the Method
+    ```php
+    
+        public class foo {
+   
+        public method bar() {
+            // Will create a benchmark named after the method
+            /hive/benchmark/instance::method(); 
+            
+            // so some actions
+            sleep(1)
+            
+            // Will stop this methods benchmark
+            /hive/benchmark/instance::method(); 
+        }
+        
+   }
+   
+   $object = new foo(); 
+   $object->bar();
+   
+   printr(benchmark/instance::all());
+   
+```   
+   
+All of which (other the instance::method()) can be called directly from the object 
+
+```php
+
+    $bm = new /hive/benchmark/object(); 
+    
+    $bm->start('MyNewBenchmark'); 
+    
+    $bm->stop('MyNewBenchmark');
+    
+    print_r($bm->all()); 
+
+```
+
+
+Using the config
+
+```php
+
+    $config = [
+        'enabled'   => true,    // whether or not the benchmark is enabled. 
+        'timer'     => true,    // whether or not to benchmark time.
+        'memory'    => true,    // whether or not to benchmark memory.
+        'decimaals' => 8        // number of decimal points to report on
+    ];
+    
+    // disabling benchmarking on production servers is easy
+    $config['enabled'] = (IN_DEVELOPMENT || IN_STAGING); 
+
+    $bench = new /hive/benchmark/object($config); 
+
+```
+
+## File Map
+
+The code is split up into the following classes : 
+
+1. /Tests : folder for any unit testing
+2. /Examples : folder for any examples
+3. /Documents : folder for any documentation  
+4. /Source : folder for source code
+  1. Library.php : The actual benchmarking library, useful for extending functionality.
+    * __construct( array $config )
+    * start         (string $nameOfBenchmark) 
+    * stop          (string $nameOfBenchmark) 
+    * get           (string $nameOfBenchmark) 
+  2. Source/Object.php : Class for accessing the benchmark object.
+    * __construct( array $config )
+    * start         (string $nameOfBenchmark)
+    * stop          (string $nameOfBenchmark)
+    * get           (string $nameOfBenchMark)
+    * summary       (string $nameOfBenchMark)
+  3. Source/Instance.php : Instance of the object class.
+    * static start  (string $nameOfBenchmark)
+    * static stop   (string $nameOfBenchmark)
+    * static get    (string $nameOfBenchMark)
+    * static summary(string $nameOfBenchMark)
+    * static method (string $action, integer $stack)
+  4. Source/Exception : Folder for any exceptions the object will throw
+  5. Source/Contact : folder for any interfaces or abstract classes they implement
