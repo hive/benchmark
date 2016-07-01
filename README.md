@@ -18,7 +18,7 @@ Version 1.0 Outstanding Items
 
 ## Installation
 -------
-The recommended way to install Linio Common is [through composer](http://getcomposer.org).
+Recommended installation [through composer](http://getcomposer.org).
 
 ```JSON
 {
