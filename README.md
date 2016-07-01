@@ -6,6 +6,8 @@
 
 Simple decoupled benchmark, Version 1.0 currently being developed
 
+## Notes
+-------
 Version 1.0 Outstanding Items 
  * Unit Tests
  * Method names to change to
@@ -15,21 +17,29 @@ Version 1.0 Outstanding Items
     * add array outputs to documentation
 
 ## Installation
+-------
+The recommended way to install Linio Common is [through composer](http://getcomposer.org).
 
-Via Composer
+```JSON
+{
+    "require": {
+        "hive/benchmark": "dev-master"
+    }
+}
+```
+
+Via Composer Command line
 
 ```bash
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
-```
 
-```bash
 # Install the latest version
 composer require hive/benchmark
+
 ```
 
 ```php
-<?php
 // With in your php file, include composers autoloader
 require 'vendor/autoload.php';
 ```
@@ -43,19 +53,8 @@ git clone https://github.com/hive/benchmark.git .
 ```
 
 ```php
-<?php
 // With in your php file, include composers autoloader
 require 'hive/benchmark/include.php';
-```
-
-
-Code Only
-
-1. [Download the Repo](https://github.com/hive/benchmark/archive/master.zip) 
-2. Copy the files to your project
-2. Require the include file
-```php
-    require 'hive/benchmark/include.php';
 ```
 
 ## Overview
@@ -67,7 +66,7 @@ The code is split up into the following classes :
 3. Instance.php : Instance of the object class.
 
 ## Useage
-
+-------
  ```php
     use hive\benchmark;
  ```
@@ -122,7 +121,7 @@ The code is split up into the following classes :
 ```php
      
      // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark);
+    benchmark/instance::start('NameOfBenchmark');
     
     for ($i=rand(1,100); $i<0; $i--) {
     
