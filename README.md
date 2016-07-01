@@ -1,7 +1,17 @@
 # Hive Benchmark
-[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark) [![StyleCI](https://styleci.io/repos/61770165/shield?style=flat)](https://styleci.io/repos/61770165)
+[![Latest Stable Version](https://poser.pugx.org/hive/benchmark/v/stable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![Latest Unstable Version](https://poser.pugx.org/hive/benchmark/v/unstable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![License](https://poser.pugx.org/hive/benchmark/license?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock)](https://packagist.org/packages/hive/benchmark)
 
-Simple decoupled benchmark, 
+Simple decoupled benchmark, Version 1.0 currently being developed
+
+Version 1.0 Outstanding Items 
+ * Unit Tests
+ * Method names to change to
+    * get  -> detail : returns the full details
+    * summary -> get : returns useful information
+    * new method summary : returns all benchmarks useful infomormarion
 
 ## Installation
 
@@ -101,8 +111,8 @@ The code is split up into the following classes :
     // get the complete details of one benchmark name
     print_r(benchmark/instance::get('AnotherBenchmark'));
     
-    // get a summary of all benchmarks
-    print_r(benchmark/instance::all());
+    // @todo get a summary of all benchmarks
+    // print_r(benchmark/instance::all());
        
  ```
  
@@ -129,8 +139,8 @@ The code is split up into the following classes :
     // Stop the benchmark 
     benchmark/instance::stop('NameOfBenchmark);
      
-    // get a summary of the ALL results 
-    print_r(benchmark/instance::all());
+    // @todo get a summary of all benchmarks
+    // print_r(benchmark/instance::all());
     
     // get a summary of just one benchmark name
     print_r(benchmark/instance::summary('NameofBenchmark'));
@@ -160,7 +170,8 @@ Using the Method
    $object = new foo(); 
    $object->bar();
    
-   print_r(benchmark/instance::all());
+    // @todo get a summary of all benchmarks
+    // print_r(benchmark/instance::all());
    
  ```   
    
@@ -224,3 +235,10 @@ The code is split up into the following classes :
     * static method (string $action, integer $stack)
   4. Source/Exception : Folder for any exceptions the object will throw
   5. Source/Contact : folder for any interfaces or abstract classes they implement
+ 
+  
+
+[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark) [![StyleCI](https://styleci.io/repos/61770165/shield?style=flat)](https://styleci.io/repos/61770165)
+[![Total Downloads](https://poser.pugx.org/hive/benchmark/downloads?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![Daily Downloads](https://poser.pugx.org/hive/benchmark/d/daily?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+
