@@ -8,6 +8,7 @@ Simple decoupled benchmark, Version 1.0 currently being developed
 
 ## Notes
 
+
 Version 1.0 Outstanding Items 
  * Unit Tests
  * Method names to change to
@@ -18,7 +19,7 @@ Version 1.0 Outstanding Items
 
 ## Installation
 
-The recommended way to install Linio Common is [through composer](http://getcomposer.org).
+Recommended installation [through composer](http://getcomposer.org).
 
 ```JSON
 {
@@ -66,7 +67,7 @@ The code is split up into the following classes :
 3. Instance.php : Instance of the object class.
 
 ## Useage
-
+-------
  ```php
     use hive\benchmark;
  ```
