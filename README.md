@@ -1,24 +1,45 @@
 # Hive Benchmark
-[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark) [![StyleCI](https://styleci.io/repos/61770165/shield?style=flat)](https://styleci.io/repos/61770165)
+[![Latest Stable Version](https://poser.pugx.org/hive/benchmark/v/stable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![Latest Unstable Version](https://poser.pugx.org/hive/benchmark/v/unstable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![License](https://poser.pugx.org/hive/benchmark/license?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock)](https://packagist.org/packages/hive/benchmark)
 
-Simple decoupled benchmark, 
+Simple decoupled benchmark, Version 1.0 currently being developed
+
+## Notes
+
+Version 1.0 Outstanding Items 
+ * Unit Tests
+ * Method names to change to
+    * get  -> detail : returns the full details
+    * summary -> get : returns useful information
+    * new method summary : returns all benchmarks useful infomormarion
+    * add array outputs to documentation
 
 ## Installation
 
-Via Composer
+The recommended way to install Linio Common is [through composer](http://getcomposer.org).
+
+```JSON
+{
+    "require": {
+        "hive/benchmark": "dev-master"
+    }
+}
+```
+
+Via Composer Command line
 
 ```bash
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
-```
 
-```bash
 # Install the latest version
 composer require hive/benchmark
+
 ```
 
 ```php
-<?php
 // With in your php file, include composers autoloader
 require 'vendor/autoload.php';
 ```
@@ -32,19 +53,8 @@ git clone https://github.com/hive/benchmark.git .
 ```
 
 ```php
-<?php
 // With in your php file, include composers autoloader
 require 'hive/benchmark/include.php';
-```
-
-
-Code Only
-
-1. [Download the Repo](https://github.com/hive/benchmark/archive/master.zip) 
-2. Copy the files to your project
-2. Require the include file
-```php
-    require 'hive/benchmark/include.php';
 ```
 
 ## Overview
@@ -61,113 +71,113 @@ The code is split up into the following classes :
     use hive\benchmark;
  ```
  
- ### Instance
  
- Simple
+ Simple Instance
  ```php
  
     // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark);
+    benchmark/instance::start('NameOfBenchmark');
     
     sleep(1);
     
     // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark);
+    benchmark/instance::stop('NameOfBenchmark');
  
  ```
  
- Multiple Benchmarks
+ Multiple Instance
  ```php
       
     // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark);
+    benchmark/instance::start('FirstBenchmark');
      
-    // start another benchmark
-    benchmark/instance::start('AnotherBenchmark);
+    // start a second benchmark
+    benchmark/instance::start('SecondBenchmark');
        
     sleep(1);
        
-    // Stop the other benchmark 
-    benchmark/instance::stop('AnotherBenchmark);
+    // Stop the second benchmark 
+    benchmark/instance::stop('SecondBenchmark');
     
     sleep(1);
       
     // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark);
+    benchmark/instance::stop('FirstBenchmark');
       
     // get a summary of the results 
-    printr(benchmark/instance::summary('NameofBenchmark'));
-    printr(benchmark/instance::summary('AnotherBenchmark'));
+    print_r(benchmark/instance::summary('NameofBenchmark'));
+    print_r(benchmark/instance::summary('SecondBenchmark'));
     
     // get the complete details of one benchmark name
-    printr(benchmark/instance::get('AnotherBenchmark'));
+    print_r(benchmark/instance::get('SecondBenchmark'));
     
-    // get a summary of all benchmarks
-    printr(benchmark/instance::all());
+    // @todo get a summary of all benchmarks
+    // print_r(benchmark/instance::all());
        
-    ```
+ ```
  
  
  Multiple Instances with the same name
- ```php
+```php
      
      // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark);
+    benchmark/instance::start('NameOfBenchmark');
     
     for ($i=rand(1,100); $i<0; $i--) {
     
       // start another benchmark
-      benchmark/instance::start('AnotherBenchmark);
+      benchmark/instance::start('SubBenchmark');
       
       // Do Some Actions
       
       // Stop the other benchmark 
-      benchmark/instance::stop('AnotherBenchmark);
+      benchmark/instance::stop('SubBenchmark');
     }
     
     sleep(1);
      
     // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark);
+    benchmark/instance::stop('NameOfBenchmark');
      
-    // get a summary of the ALL results 
-    printr(benchmark/instance::all());
+    // @todo get a summary of all benchmarks
+    // print_r(benchmark/instance::all());
     
     // get a summary of just one benchmark name
-    printr(benchmark/instance::summary('NameofBenchmark'));
+    print_r(benchmark/instance::summary('NameofBenchmark'));
       
     // Get ALL of the results for ONE benchmark name
-    print_r(benchmark/instance::get('AnotherBenchMark');   
-    ```
+    print_r(benchmark/instance::get('SubBenchmark');   
+```
    
 Using the Method
-    ```php
+ ```php
     
-        public class foo {
+  public class foo {
    
-        public method bar() {
-            // Will create a benchmark named after the method
-            /hive/benchmark/instance::method(); 
+      public method bar() {
+          // Will create a benchmark named after the method
+          /hive/benchmark/instance::method(); 
             
-            // so some actions
-            sleep(1)
+          // so some actions
+          sleep(1)
             
-            // Will stop this methods benchmark
-            /hive/benchmark/instance::method(); 
-        }
+          // Will stop this methods benchmark
+          /hive/benchmark/instance::method(); 
+      }
         
-   }
+  }
    
    $object = new foo(); 
    $object->bar();
    
-   printr(benchmark/instance::all());
+    // @todo get a summary of all benchmarks
+    // print_r(benchmark/instance::all());
    
-```   
+ ```   
    
 All of which (other the instance::method()) can be called directly from the object 
 
-```php
+ ```php
 
     $bm = new /hive/benchmark/object(); 
     
@@ -177,12 +187,12 @@ All of which (other the instance::method()) can be called directly from the obje
     
     print_r($bm->all()); 
 
-```
+ ```
 
 
 Using the config
 
-```php
+ ```php
 
     $config = [
         'enabled'   => true,    // whether or not the benchmark is enabled. 
@@ -196,7 +206,7 @@ Using the config
 
     $bench = new /hive/benchmark/object($config); 
 
-```
+ ```
 
 ## File Map
 
@@ -225,3 +235,10 @@ The code is split up into the following classes :
     * static method (string $action, integer $stack)
   4. Source/Exception : Folder for any exceptions the object will throw
   5. Source/Contact : folder for any interfaces or abstract classes they implement
+ 
+  
+
+[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark) [![StyleCI](https://styleci.io/repos/61770165/shield?style=flat)](https://styleci.io/repos/61770165)
+[![Total Downloads](https://poser.pugx.org/hive/benchmark/downloads?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![Daily Downloads](https://poser.pugx.org/hive/benchmark/d/daily?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+
