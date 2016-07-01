@@ -12,6 +12,7 @@ Version 1.0 Outstanding Items
     * get  -> detail : returns the full details
     * summary -> get : returns useful information
     * new method summary : returns all benchmarks useful infomormarion
+    * add array outputs to documentation
 
 ## Installation
 
@@ -76,12 +77,12 @@ The code is split up into the following classes :
  ```php
  
     // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark);
+    benchmark/instance::start('NameOfBenchmark');
     
     sleep(1);
     
     // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark);
+    benchmark/instance::stop('NameOfBenchmark');
  
  ```
  
@@ -89,27 +90,27 @@ The code is split up into the following classes :
  ```php
       
     // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark);
+    benchmark/instance::start('FirstBenchmark');
      
-    // start another benchmark
-    benchmark/instance::start('AnotherBenchmark);
+    // start a second benchmark
+    benchmark/instance::start('SecondBenchmark');
        
     sleep(1);
        
-    // Stop the other benchmark 
-    benchmark/instance::stop('AnotherBenchmark);
+    // Stop the second benchmark 
+    benchmark/instance::stop('SecondBenchmark');
     
     sleep(1);
       
     // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark);
+    benchmark/instance::stop('FirstBenchmark');
       
     // get a summary of the results 
     print_r(benchmark/instance::summary('NameofBenchmark'));
-    print_r(benchmark/instance::summary('AnotherBenchmark'));
+    print_r(benchmark/instance::summary('SecondBenchmark'));
     
     // get the complete details of one benchmark name
-    print_r(benchmark/instance::get('AnotherBenchmark'));
+    print_r(benchmark/instance::get('SecondBenchmark'));
     
     // @todo get a summary of all benchmarks
     // print_r(benchmark/instance::all());
@@ -126,18 +127,18 @@ The code is split up into the following classes :
     for ($i=rand(1,100); $i<0; $i--) {
     
       // start another benchmark
-      benchmark/instance::start('AnotherBenchmark);
+      benchmark/instance::start('SubBenchmark');
       
       // Do Some Actions
       
       // Stop the other benchmark 
-      benchmark/instance::stop('AnotherBenchmark);
+      benchmark/instance::stop('SubBenchmark');
     }
     
     sleep(1);
      
     // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark);
+    benchmark/instance::stop('NameOfBenchmark');
      
     // @todo get a summary of all benchmarks
     // print_r(benchmark/instance::all());
@@ -146,7 +147,7 @@ The code is split up into the following classes :
     print_r(benchmark/instance::summary('NameofBenchmark'));
       
     // Get ALL of the results for ONE benchmark name
-    print_r(benchmark/instance::get('AnotherBenchMark');   
+    print_r(benchmark/instance::get('SubBenchmark');   
 ```
    
 Using the Method
