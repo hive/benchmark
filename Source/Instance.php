@@ -53,22 +53,28 @@
          * Static Alias to the Benchmark/Object/Get
          * @param string $name name of the benchmark to get
          */
-        public static function get($name)
+        public static function details($name)
         {
             self::init();
 
-            return self::$object->get($name);
+            return self::$object->details($name);
         }
 
         /**
          * Static Alias to the Benchmark/Object/Summary
          * @param string $name name of the benchmark to get a summary of
          */
-        public static function summary ($name)
+        public static function get ($name)
         {
             self::init();
 
-            return self::$object->summary($name);
+            return self::$object->get($name);
+        }
+
+        public static function summary() {
+            self::init();
+
+            return self::$object->summary();
         }
 
         /**

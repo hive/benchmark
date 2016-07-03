@@ -84,11 +84,11 @@
          *
          * @return void
          */
-        public function get($name)
+        public function details($name)
         {
             // Config Check : Are Benchmarks enabled
             if ($this->config['enabled']) {
-                return parent::get($name);
+                return parent::detailed($name);
             }
         }
 
@@ -105,7 +105,7 @@
          *
          * @return array
          */
-        public function summary($name = false)
+        public function get($name = false)
         {
             try
             {
@@ -133,6 +133,18 @@
             }
 
             return $result;
+        }
+
+
+        public function summary() {
+
+            $results = [];
+
+            foreach ($this->marks as $mark) {
+                $results[] = $this->get($mark);
+            }
+
+            return $results;
         }
 
         /**

@@ -167,7 +167,7 @@
          *
          * @return array|bool Either an array of requested marks or false on fail
          */
-        public function get($name)
+        public function details($name)
         {
             $result = false;
 

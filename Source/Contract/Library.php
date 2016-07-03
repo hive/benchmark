@@ -20,6 +20,6 @@
 
         public function stop ($name);
 
-        public function get($name);
+        public function details($name);
 
     }

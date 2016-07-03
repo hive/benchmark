@@ -21,6 +21,8 @@
 
         public function get($name);
 
-        public function summary($name);
+        public function details($name);
+
+        public function summary();
 
     }

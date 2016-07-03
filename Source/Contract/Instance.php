@@ -22,9 +22,10 @@
 
         public static function get($name);
 
+        public static function details($name);
+
         public static function method();
 
-        public static function summary($name);
-
+        public static function summary();
 
     }
