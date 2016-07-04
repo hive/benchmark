@@ -2,9 +2,9 @@
 [![Latest Stable Version](https://poser.pugx.org/hive/benchmark/v/stable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![Latest Unstable Version](https://poser.pugx.org/hive/benchmark/v/unstable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![License](https://poser.pugx.org/hive/benchmark/license?format=flat-square)](https://packagist.org/packages/hive/benchmark)
-[![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock)](https://packagist.org/packages/hive/benchmark)
-[![StyleCI](https://styleci.io/repos/61770165/shield?style=flat)](https://styleci.io/repos/61770165)
-
+[![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock?format=flat-square)](https://packagist.org/packages/hive/benchmark)
+[![StyleCI](https://styleci.io/repos/61770165/shield?style=flat-square)](https://styleci.io/repos/61770165)
+[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master&format=flat-square)](https://travis-ci.org/hive/benchmark) 
 
 Simple decoupled benchmark, Version 1.0 currently being developed
 
@@ -394,7 +394,7 @@ The code is split up into the following classes :
  
   
 
-[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master)](https://travis-ci.org/hive/benchmark) 
+
 [![Total Downloads](https://poser.pugx.org/hive/benchmark/downloads?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![Daily Downloads](https://poser.pugx.org/hive/benchmark/d/daily?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 
