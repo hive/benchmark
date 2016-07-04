@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpdox xmlns="http://xml.phpdox.net/config">
+  <project name="Wax" source="${basedir}" workdir="${basedir}/xml">
+    <collector backend="parser">
+      <exclude mask="**vendors**”/>
+      <exclude mask="**features**"/>
+    </collector>
+    <generator output="${basedir}/phpdox">
+            <enrich base="${basedir}">
+                <source type="build" />
+                <source type="git">
+                    <history enabled="true" limit="15" />
+                </source>
+                <!--<source type="checkstyle" />-->
+                <!-- alternative checkstyler to support phpcs xml output -->
+                <source type="phpcs" />
+                <!--<source type="pmd" />-->
+		<source type="phploc">
+                    <file name="phploc.xml" />
+                </source>
+
+                <!--<source type="phpunit">-->
+                    <!--<coverage path="coverage/xml" />-->
+                <!--</source>-->
+            </enrich>
+      <build engine="html" output="html"/>
+    </generator>
+  </project>
+</phpdox>
