@@ -5,6 +5,7 @@ risky: true
 linting: true
 
 enabled:
+  - psr4
   - ordered_imports
   - short_array_syntax
   - ereg_to_preg
@@ -12,11 +13,9 @@ enabled:
   - align_equals
   - binary_operator_spaces
   - no_php4_constructor
-  - no_tab_indentation
   - phpdoc_align
   - phpdoc_order
   - phpdoc_scalar
   - phpdoc_summary
-  - psr4
   - standardize_not_equals
   - ternary_operator_spaces
