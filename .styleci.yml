@@ -5,7 +5,6 @@ risky: true
 linting: true
 
 enabled:
-  - binary_operator_spaces
   - ordered_imports
   - short_array_syntax
   - ereg_to_preg
