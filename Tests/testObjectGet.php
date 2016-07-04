@@ -1,5 +1,5 @@
 <?php
-class Test extends PHPUnit_Framework_TestCase
+class TestObjectGet extends PHPUnit_Framework_TestCase
 {
     public function testSanity() {
         $this->assertEquals(1+1,2);
@@ -403,9 +403,5 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['mean'])));
         $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['median'])));
 
-
-
     }
-
-
 }
