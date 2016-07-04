@@ -10,7 +10,7 @@
      *
      * @package Hive
      * @subpackage Benchmark
-     *             
+     *
      * @copyright (c) 2016 Jamie Peake
      */
     class RequiresMemoryGetUsage extends \Hive\Benchmark\Exception

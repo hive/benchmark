@@ -11,7 +11,7 @@
      *
      * @package Hive
      * @subpackage Benchmark
-     *             
+     *
      * @copyright (c) 2016 Jamie Peake
      */
     class AlreadyRunning extends \Hive\Benchmark\Exception

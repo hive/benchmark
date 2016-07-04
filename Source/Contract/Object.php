@@ -17,7 +17,7 @@
     interface Object extends Library
     {
         /**
-         * Get benchmark's results
+         * Get benchmark's results.
          *
          * @param string $name the benchmark to get.
          *

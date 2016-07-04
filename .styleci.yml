@@ -18,4 +18,10 @@ enabled:
   - phpdoc_summary
   - standardize_not_equals
   - ternary_operator_spaces
-  - blank_line_after_opening_tag
+  - blank_line_after_opening_tag\
+  - print_to_echo
+  - blank_line_before_return
+  - no_blank_lines_before_namespace
+
+disabled:
+ - no_spaces_after_function_name
