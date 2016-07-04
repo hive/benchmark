@@ -1,12 +1,13 @@
 <?php
 class Test extends PHPUnit_Framework_TestCase
 {
-    public function testSanity() {
-        $this->assertEquals(1+1,2);
+    public function testSanity()
+    {
+        $this->assertEquals(1+1, 2);
     }
 
-    public function testGetSingleStructure() {
-
+    public function testGetSingleStructure()
+    {
         $bm = new \Hive\Benchmark\Object();
 
         $bm->start('simple');
@@ -52,11 +53,10 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertEquals($result['memory']['total'], $result['memory']['max']);
         $this->assertEquals($result['memory']['total'], $result['memory']['mean']);
         $this->assertEquals($result['memory']['total'], $result['memory']['median']);
-
     }
 
-    public function testGetMultipleStructure() {
-
+    public function testGetMultipleStructure()
+    {
         $bm = new \Hive\Benchmark\Object();
 
         $bm->start('first');
@@ -64,7 +64,7 @@ class Test extends PHPUnit_Framework_TestCase
         $bm->stop('second');
         $bm->stop('first');
 
-        $first = $bm->get('first');
+        $first  = $bm->get('first');
         $second = $bm->get('second');
 
         // Make sure the array exists
@@ -93,12 +93,11 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('max', $second['memory']);
         $this->assertArrayHasKey('mean', $second['memory']);
         $this->assertArrayHasKey('median', $second['memory']);
-
     }
 
 
-    public function testGetNestedStructure() {
-
+    public function testGetNestedStructure()
+    {
         $bm = new \Hive\Benchmark\Object();
 
         $bm->start('first');
@@ -106,7 +105,7 @@ class Test extends PHPUnit_Framework_TestCase
         $bm->stop('second');
         $bm->stop('first');
 
-        $first = $bm->get('first');
+        $first  = $bm->get('first');
         $second = $bm->get('second');
 
         // Make sure the array exists
@@ -144,16 +143,15 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertGreaterThan($second['time']['median'], $first['time']['median']);
 
         // Its nested first always has to be greater then second
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['total'])), floatval(str_replace(",","",$first['memory']['total'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['min'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['max'])), floatval(str_replace(",","",$first['memory']['max'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['mean'])), floatval(str_replace(",","",$first['memory']['mean'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['median'])), floatval(str_replace(",","",$first['memory']['median'])));
-
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['total'])), floatval(str_replace(",", "", $first['memory']['total'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $first['memory']['min'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['max'])), floatval(str_replace(",", "", $first['memory']['max'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['mean'])), floatval(str_replace(",", "", $first['memory']['mean'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['median'])), floatval(str_replace(",", "", $first['memory']['median'])));
     }
 
-    public function testGetRepeatStructure() {
-
+    public function testGetRepeatStructure()
+    {
         $bm = new \Hive\Benchmark\Object();
 
         $bm->start('first');
@@ -199,12 +197,10 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('max', $first['memory']);
         $this->assertArrayHasKey('mean', $first['memory']);
         $this->assertArrayHasKey('median', $first['memory']);
-
-
     }
 
-    public function testGetRepeatNestedStructure() {
-
+    public function testGetRepeatNestedStructure()
+    {
         $bm = new \Hive\Benchmark\Object();
 
         $bm->start('first');
@@ -219,9 +215,9 @@ class Test extends PHPUnit_Framework_TestCase
         }
         $bm->stop('first');
 
-        $first = $bm->get('first');
+        $first  = $bm->get('first');
         $second = $bm->get('second');
-        $third = $bm->get('third');
+        $third  = $bm->get('third');
 
         // Make sure the array exists
         $this->assertEquals(3, count($first));
@@ -283,8 +279,8 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('mean', $first['memory']);
         $this->assertArrayHasKey('median', $first['memory']);
 
-        $this->assertEquals(floatval(str_replace(",","",$first['memory']['mean'])), floatval(str_replace(",","",$first['memory']['total'])));
-        $this->assertEquals(floatval(str_replace(",","",$first['memory']['min'])), floatval(str_replace(",","",$first['memory']['max'])));
+        $this->assertEquals(floatval(str_replace(",", "", $first['memory']['mean'])), floatval(str_replace(",", "", $first['memory']['total'])));
+        $this->assertEquals(floatval(str_replace(",", "", $first['memory']['min'])), floatval(str_replace(",", "", $first['memory']['max'])));
 
         $this->assertEquals(5, count($second['memory']));
         $this->assertArrayHasKey('total', $second['memory']);
@@ -293,8 +289,8 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('mean', $second['memory']);
         $this->assertArrayHasKey('median', $second['memory']);
 
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['mean'])), floatval(str_replace(",","",$second['memory']['total'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$second['memory']['max'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['mean'])), floatval(str_replace(",", "", $second['memory']['total'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $second['memory']['max'])));
 
         $this->assertEquals(5, count($third['memory']));
         $this->assertArrayHasKey('total', $third['memory']);
@@ -303,14 +299,12 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('mean', $third['memory']);
         $this->assertArrayHasKey('median', $third['memory']);
 
-        $this->assertGreaterThan(floatval(str_replace(",","",$third['memory']['mean'])), floatval(str_replace(",","",$third['memory']['total'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$third['memory']['min'])), floatval(str_replace(",","",$third['memory']['max'])));
-
-
+        $this->assertGreaterThan(floatval(str_replace(",", "", $third['memory']['mean'])), floatval(str_replace(",", "", $third['memory']['total'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $third['memory']['min'])), floatval(str_replace(",", "", $third['memory']['max'])));
     }
 
-    public function testGetRepeatNestedStructureLarge() {
-
+    public function testGetRepeatNestedStructureLarge()
+    {
         $bm = new \Hive\Benchmark\Object();
 
         $bm->start('first');
@@ -323,7 +317,7 @@ class Test extends PHPUnit_Framework_TestCase
         }
         $bm->stop('first');
 
-        $first = $bm->get('first');
+        $first  = $bm->get('first');
         $second = $bm->get('second');
 
         // Time
@@ -351,21 +345,19 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('mean', $second['memory']);
         $this->assertArrayHasKey('median', $second['memory']);
 
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['mean'])), floatval(str_replace(",","",$first['memory']['total'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['max'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['mean'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['median'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['mean'])), floatval(str_replace(",", "", $first['memory']['total'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $first['memory']['max'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $first['memory']['mean'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $first['memory']['median'])));
 
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['mean'])), floatval(str_replace(",","",$second['memory']['total'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$second['memory']['max'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$second['memory']['mean'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$second['memory']['median'])));
-
-
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['mean'])), floatval(str_replace(",", "", $second['memory']['total'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $second['memory']['max'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $second['memory']['mean'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $second['memory']['median'])));
     }
 
-    public function testGetRepeatNestedStructureMany() {
-
+    public function testGetRepeatNestedStructureMany()
+    {
         $bm = new \Hive\Benchmark\Object();
         $bm->start('first');
         for ($i=0; $i<10000; $i++) {
@@ -375,8 +367,8 @@ class Test extends PHPUnit_Framework_TestCase
         }
         $bm->stop('first');
 
-        $first = $bm->get('first');
-        $second = $bm->get('second_'. rand(1,10000));
+        $first  = $bm->get('first');
+        $second = $bm->get('second_'. rand(1, 10000));
 
         // Time
         $this->assertEquals(5, count($second['time']));
@@ -398,14 +390,9 @@ class Test extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('mean', $second['memory']);
         $this->assertArrayHasKey('median', $second['memory']);
 
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['mean'])), floatval(str_replace(",","",$first['memory']['total'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['max'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['mean'])));
-        $this->assertGreaterThan(floatval(str_replace(",","",$second['memory']['min'])), floatval(str_replace(",","",$first['memory']['median'])));
-
-
-
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['mean'])), floatval(str_replace(",", "", $first['memory']['total'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $first['memory']['max'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $first['memory']['mean'])));
+        $this->assertGreaterThan(floatval(str_replace(",", "", $second['memory']['min'])), floatval(str_replace(",", "", $first['memory']['median'])));
     }
-
-
 }
