@@ -31,10 +31,10 @@
          *
          * @return void
          */
-        public function stop ($name);
+        public function stop($name);
 
         /**
-         * Get benchmark's details
+         * Get benchmark's details.
          *
          * @param string $name the benchmark to get the details of.
          *

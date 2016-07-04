@@ -5,23 +5,18 @@ risky: true
 linting: true
 
 enabled:
-  - ordered_imports
-  - short_array_syntax
-  - ereg_to_preg
+  - no_php4_constructor
   - align_double_arrow
   - align_equals
-  - binary_operator_spaces
-  - no_php4_constructor
+  - short_array_syntax
+  - ereg_to_preg
+  - standardize_not_equals
+  - ternary_operator_spaces
+  - ordered_imports
+  - print_to_echo
+  - blank_line_before_return
+  - no_blank_lines_before_namespace
   - phpdoc_align
   - phpdoc_order
   - phpdoc_scalar
   - phpdoc_summary
-  - standardize_not_equals
-  - ternary_operator_spaces
-  - blank_line_after_opening_tag
-  - print_to_echo
-  - blank_line_before_return
-  - no_blank_lines_before_namespace
-
-disabled:
- - no_spaces_after_function_name
