@@ -112,14 +112,10 @@ class Library implements Contract\Library
                 // Assign the stop values
                 $this->timer($mark['timer']['stop']);
                 $this->memory($mark['memory']['stop']);
-
             } else {
-
                 throw new Exception\StoppedRunning($name);
             }
-
         } else {
-
             throw new Exception\NotRunning($name);
         }
     }
@@ -172,7 +168,6 @@ class Library implements Contract\Library
             if (!isset($this->marks[$name][0]['timer']['stop'])) {
                 $this->stop($name);
             }
-
         } else {
             /**
              * There is no exception with that name running.
@@ -232,9 +227,7 @@ class Library implements Contract\Library
 
                 $results[] = $result;
             }
-
         } catch (\Exception $e) {
-
             throw new Exception($e->getMessage(), $e->getCode());
         }
 
