@@ -31,5 +31,4 @@ interface Object extends Library
      * @return array
      */
     public function summary();
-
 }

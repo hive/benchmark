@@ -41,5 +41,4 @@ interface Library
      * @return array
      */
     public function details($name);
-
 }

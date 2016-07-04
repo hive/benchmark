@@ -74,5 +74,4 @@ interface Instance
      * @return void
      */
     public static function method();
-
 }
