@@ -6,9 +6,10 @@ linting: true
 
 finder:
   path:
-    - "examples"
-    - "src"
-    - "tests"
+    - "Documents"
+    - "Examples"
+    - "Tests"
+    - "Source"
 
 enabled:
   - binary_operator_spaces
