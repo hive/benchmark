@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library" abstract="false" final="false" start="16" end="25">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Library.php" size="524" time="2016-07-04T19:49:59+11:00" unixtime="1467622199" sha1="5235bfca597fe7e964a43f5a669df028edac101b" relative="Contract/Library.php"/>
+  <docblock>
+    <description compact="Library Interface.">Interface for the library.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Benchmark"/>
+    <copyright value="(c) 2016 Jamie Peake"/>
+  </docblock>
+  <method name="start" start="19" end="19" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="stop" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="details" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library"/>
+    <class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/>
+  </implementors>
+</interface>

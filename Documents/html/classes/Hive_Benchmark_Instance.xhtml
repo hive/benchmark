@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Hive\Benchmark\Instance</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Hive_Benchmark">Hive\Benchmark</a>
+          </li>
+          <li class="separator">Instance</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li>
+            <a href="../source/Instance.php.xhtml#line16">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Hive\Benchmark\</small>Instance</h1>
+        <h4>Benchmark Instance.</h4>
+        <p>Allws access to the benchmark object through a instance.</p>
+        <ul>
+          <li>Author: Jamie Peake &lt;jamie.peake@gmail.com&gt;</li>
+          <li>Copyright: (c) 2016 Jamie Peake</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Instance
+                implements
+                <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance.xhtml">Instance</a>
+            {<br/><ul class="none"><li>// members</li><li>private  <a href="#members">$object</a>;
+                    </li><li>private array <a href="#members">$methods</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>private static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/init.xhtml">init</a>()
+                    </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/start.xhtml">start</a>()
+                    </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/stop.xhtml">stop</a>()
+                    </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/details.xhtml">details</a>()
+                    </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/get.xhtml">get</a>()
+                    </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/summary.xhtml">summary</a>()
+                    </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/method.xhtml">method</a>()
+                    </li><li>private static string <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/trace.xhtml">trace</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance.xhtml">Hive\Benchmark\Contract\Instance</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="methods">
+              <strong>$methods</strong>
+            </li>
+            <li id="object">
+              <strong>$object</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="init">
+              <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/init.xhtml">init()</a>
+            </li>
+            <li id="trace"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/trace.xhtml">trace()</a>
+                — Simple debug_backtrace to get the name of the method which called</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="details"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/details.xhtml">details()</a>
+                — Static Alias to the Benchmark/Object/Get</li>
+            <li id="get"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/get.xhtml">get()</a>
+                — Static Alias to the Benchmark/Object/Summary</li>
+            <li id="method"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/method.xhtml">method()</a>
+                — Auto Method for setting benchmarks on a method, with out requiring its name or even setting whether to start/stop.</li>
+            <li id="start"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/start.xhtml">start()</a>
+                — Static Alias to the Benchmark/Object/Start</li>
+            <li id="stop"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/stop.xhtml">stop()</a>
+                — Static Alias to the Benchmark/Object/Stop</li>
+            <li id="summary">
+              <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/summary.xhtml">summary()</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="history">History</h2>
+        <ul class="styled history">
+          <li>
+            <h3>2016-07-04T16:20:13+11:00 (commit #<span title="3bf1257b9ef92aa18214ff48eab4743a1b0eb84b">3bf1257</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">finalise methods</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2016-07-04T10:24:17+11:00 (commit #<span title="2a3add779de644128a10ae2a7e31f6ffc6232c36">2a3add7</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">renamed methods as per release schedule</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2016-06-24T19:24:15+11:00 (commit #<span title="63413bdc7f4aa8efeb0b3df81379a59563411ec5">63413bd</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">tidy up comments</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2016-06-24T19:07:40+11:00 (commit #<span title="9ad4f2485b9ac8d986e04c0e19d6130ceee1a08c">9ad4f24</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">tested, next : clean up</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2016-06-24T01:29:47+11:00 (commit #<span title="e3593606177c3ecefab3c89b9885c431624cc2ec">e359360</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">grammar update to comments</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2016-06-24T01:23:44+11:00 (commit #<span title="35eb72e8ecf90ee1a5b077caecb03df0912844c7">35eb72e</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">update coding style</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2016-06-24T01:05:06+11:00 (commit #<span title="b99887a82952ecdf4859a204b2dc79036bbf1d37">b99887a</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">Added foundation library which the package will be built from</pre>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.8.1.1-26-g131d5d2 - Copyright (C) 2010 - 2016 by Arne Blankerts</span>
+    </footer>
+  </body>
+</html>

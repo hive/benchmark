@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpdox xmlns="http://xml.phpdox.net/config">
-  <project name="Wax" source="${basedir}" workdir="${basedir}/xml">
+  <project name="Hive/Benchmark" source="${basedir}/Source" workdir="${basedir}/Documents/xml">
     <collector backend="parser">
       <!--<exclude mask="**vendors**”/>-->
       <!--<exclude mask="**features**"/>-->
