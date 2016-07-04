@@ -20,7 +20,7 @@
         private static $methods = [];
 
         /**
-         * Initialise the instance
+         * Initialise the instance.
          *
          * Will create the object if it does not exist.
          */
@@ -33,10 +33,10 @@
         }
 
         /**
-         * Static Alias to the Benchmark/Object/Start
+         * Static Alias to the Benchmark/Object/Start.
          *
-         * @param string $name name of the benchmark to start
-         * @return void
+         * @param   string  $name   The benchmark to start.
+         * @return  void
          */
         public static function start ($name)
         {
@@ -46,10 +46,10 @@
         }
 
         /**
-         * Static Alias to the Benchmark/Object/Stop
+         * Static Alias to the Benchmark/Object/Stop.
          *
-         * @param string $name name of the benchmark to stop
-         * @return void
+         * @param   string  $name   The benchmark to stop,
+         * @return  void
          */
         public static function stop ($name)
         {
@@ -59,10 +59,10 @@
         }
 
         /**
-         * Static Alias to the Benchmark/Object/Details
+         * Static Alias to the Benchmark/Object/Details.
          *
-         * @param string $name name of the benchmark to get
-         * @return array
+         * @param   string  $name   The benchmark to get
+         * @return  array
          */
         public static function details($name)
         {
@@ -72,10 +72,10 @@
         }
 
         /**
-         * Static Alias to the Benchmark/Object/Get
+         * Static Alias to the Benchmark/Object/Get.
          *
-         * @param string $name name of the benchmark to get a summary of.
-         * @return array
+         * @param   string  $name   The benchmark to get a summary of.
+         * @return  array
          */
         public static function get ($name)
         {
@@ -85,9 +85,9 @@
         }
 
         /**
-         * Static Alias to the Benchmark/Object/Summary
+         * Static Alias to the Benchmark/Object/Summary.
          *
-         * @return mixed
+         * @return  mixed
          */
         public static function summary()
         {
@@ -98,11 +98,11 @@
 
 
         /**
-         * Auto Method for setting benchmarks on a method, with out requiring its name
+         * Auto Method for setting benchmarks on a method, with out requiring its name.
          * or even setting whether to start/stop.
          *
-         * @param string $action (auto|start|stop) auto will determine whether to start or stop
-         * @param integer $stack how far in the stacktrace to go back.
+         * @param   string  $action (auto|start|stop) auto will determine whether to start or stop.
+         * @param   integer $stack  how far in the stacktrace to go back.
         */
         public static function method($action = 'auto', $stack = 3)
         {
@@ -142,10 +142,10 @@
 
 
         /**
-         * Simple debug_backtrace to get the name of the method which called
+         * Simple debug_backtrace to get the name of the method which called.
          *
-         * @param integer $stack how far in the stacktrace to go back.
-         * @return string $name The caller class/method
+         * @param   integer $stack  How far in the stacktrace to go back.
+         * @return  string  $name   The caller class/method.
          */
         private static function trace($stack = 2)
         {

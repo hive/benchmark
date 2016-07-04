@@ -22,7 +22,7 @@
         const CODE = 1;
 
         /**
-         * Exception Message to be displayed
+         * Exception Message to be displayed.
          */
         const MESSAGE = 'A benchmark named :name is already running, either stop the benchmark named :name or create a benchmark with a new name';
 
@@ -35,8 +35,8 @@
          */
         public function __construct($name)
         {
-            $code = self::CODE;
-            $message = strtr(self::MESSAGE, [':name' => $name]);
+            $code       = self::CODE;
+            $message    = strtr(self::MESSAGE, [':name' => $name]);
 
             parent::__construct($message, $code);
         }

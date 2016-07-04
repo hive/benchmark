@@ -21,7 +21,7 @@
         const CODE = 4;
 
         /**
-         * Exception Message to be displayed
+         *  Exception Message to be displayed.
          */
         const MESSAGE = 'Unable to access the php function memory_get_usage(), if not accessible run benchmark again with memory benchmarking turned off';
 

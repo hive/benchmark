@@ -10,7 +10,7 @@
      *
      * @package Hive
      * @subpackage Benchmark
-     *             
+     *
      * @copyright (c) 2016 Jamie Peake
      */
     class StoppedRunning extends \Hive\Benchmark\Exception
@@ -30,8 +30,8 @@
          */
         public function __construct($name)
         {
-            $code = self::CODE;
-            $message = strtr(self::MESSAGE, [':name' => $name]);
+            $code       = self::CODE;
+            $message    = strtr(self::MESSAGE, [':name' => $name]);
 
             parent::__construct($message, $code);
         }

@@ -33,8 +33,8 @@
          * It will prepend the error code with the vendor code, package code and exception code,
          * so that we have a unique exception code.
          *
-         * @param null|string $message The exceptions message.
-         * @param null|int $code The exception code.
+         * @param null|string   $message    The exceptions message.
+         * @param null|int      $code       The exception code.
          */
         public function __construct($message = null, $code = null)
         {

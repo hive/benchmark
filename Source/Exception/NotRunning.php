@@ -21,7 +21,7 @@
         const CODE = 3;
 
         /**
-         * Exception Message to be displayed
+         *  Exception Message to be displayed.
          */
         const MESSAGE = 'A benchmark named :name was not started.';
 
@@ -34,8 +34,8 @@
          */
         public function __construct($name)
         {
-            $code = self::CODE;
-            $message = strtr(self::MESSAGE, [':name' => $name]);
+            $code       = self::CODE;
+            $message    = strtr(self::MESSAGE, [':name' => $name]);
 
             parent::__construct($message, $code);
         }

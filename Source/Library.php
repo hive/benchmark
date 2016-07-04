@@ -26,9 +26,9 @@
          * @var array ['decimals'] : integer : The number of decimals to benchmark against
          */
         private $config = [
-            'timer'   => true,
-            'memory'   => true,
-            'decimals' => 9
+            'timer'     => true,
+            'memory'    => true,
+            'decimals'  => 9
         ];
 
         /**
@@ -49,7 +49,7 @@
         public function __construct(array $config = [])
         {
             /**
-             * Merge the received config with the defaults
+             * Merge the received config with the defaults.
              */
             $this->config = array_merge($config, $this->config);
 
@@ -128,7 +128,7 @@
         }
 
         /**
-         * Sets the current time into supplied variable
+         * Sets the current time into supplied variable.
          * @param $variable
          */
         private function timer (&$variable)
@@ -141,7 +141,7 @@
         }
 
         /**
-         * Sets the current memory usage into supplied variable
+         * Sets the current memory usage into supplied variable.
          * @param $variable
          */
         private function memory (&$variable)
@@ -204,8 +204,9 @@
             try
             {
                 // Initialise the variables
-                $time = $memory = 0;
-                $results = [];
+                $time       = 0;
+                $memory     = 0;
+                $results    = [];
 
                 /**
                  * Return the time between the start and stop points for each

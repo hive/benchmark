@@ -24,8 +24,8 @@
          * @var array config default object configuration for the library
          */
         private $config = [
-            'enabled' => true,
-            'decimals' => 8
+            'enabled'   => true,
+            'decimals'  => 8
         ];
 
         /**
@@ -148,10 +148,10 @@
         }
 
         /**
-         * Quick function for summary calculations
+         * Quick function for summary calculations.
          *
          * Does a bunch of calculations upon an array of values, returns
-         * the result
+         * the result.
          *
          * @param $values
          * @param int $decimals
@@ -161,11 +161,11 @@
         private function calculate ($values, $decimals = 0)
         {
             return [
-                'total' =>  number_format(array_sum($values), $decimals),
-                'min' =>  number_format(min($values), $decimals),
-                'max' =>  number_format(max($values), $decimals),
-                'mean' =>  number_format(array_sum($values) / count($values), $decimals),
-                'median' =>  number_format($values[round(count($values) / 2) - 1], $decimals),
+                'total'     =>  number_format(array_sum($values), $decimals),
+                'min'       =>  number_format(min($values), $decimals),
+                'max'       =>  number_format(max($values), $decimals),
+                'mean'      =>  number_format(array_sum($values) / count($values), $decimals),
+                'median'    =>  number_format($values[round(count($values) / 2) - 1], $decimals),
             ];
         }
 
