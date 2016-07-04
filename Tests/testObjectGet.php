@@ -2,7 +2,7 @@
 
 include 'bootstrap.php';
 
-class TestObjectGet extends PHPUnit_Framework_TestCase
+class testObjectGet extends PHPUnit_Framework_TestCase
 {
     public function testSanity()
     {
