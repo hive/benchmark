@@ -89,8 +89,8 @@
          *
          * @return mixed
          */
-        public static function summary() {
-
+        public static function summary()
+        {
             self::init();
 
             return self::$object->summary();

@@ -38,7 +38,7 @@
             $code = self::CODE;
             $message = strtr(self::MESSAGE, [':name' => $name]);
 
-            parent::__construct($message,$code);
+            parent::__construct($message, $code);
         }
 
     }

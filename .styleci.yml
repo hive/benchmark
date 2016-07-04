@@ -8,3 +8,17 @@ enabled:
   - binary_operator_spaces
   - ordered_imports
   - short_array_syntax
+  - ereg_to_preg
+  - align_double_arrow
+  - align_equals
+  - binary_operator_spaces
+  - elseif
+  - no_php4_constructor
+  - no_tab_indentation
+  - phpdoc_align
+  - phpdoc_order
+  - phpdoc_scalar
+  - phpdoc_summary
+  - psr4
+  - standardize_not_equals
+  - ternary_operator_spaces
