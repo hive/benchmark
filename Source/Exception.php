@@ -41,5 +41,4 @@ class Exception extends \Exception
         // Call the parent with the message and our now unique error code
         parent::__construct($message, self::VENDOR.self::PACKAGE.$code);
     }
-
 }

@@ -58,7 +58,6 @@ class Library implements Contract\Library
 
             // if enabled ensure we can get it
             if (!function_exists('memory_get_usage')) {
-                
                 throw new Exception\RequiresMemoryGetUsage();
             }
         }
@@ -176,7 +175,7 @@ class Library implements Contract\Library
 
         } else {
             /**
-             * There is no exception with that name running
+             * There is no exception with that name running.
              */
             throw new Exception\NotRunning($name);
         }
@@ -200,8 +199,7 @@ class Library implements Contract\Library
      */
     protected function retrieve($name)
     {
-        try
-        {
+        try {
             // Initialise the variables
             $time       = 0;
             $memory     = 0;
@@ -242,5 +240,4 @@ class Library implements Contract\Library
 
         return $results;
     }
-
 }

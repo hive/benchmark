@@ -35,13 +35,12 @@ class Object extends Library implements Contract\Object
      *
      * @throws Exception\RequiresMemoryGetUsage
      */
-    public function __construct($config = []) {
-
+    public function __construct($config = [])
+    {
         // Merge the received config with the defaults
         $this->config = array_merge($config, $this->config);
 
         parent::__construct($config);
-
     }
 
     /**
@@ -66,7 +65,7 @@ class Object extends Library implements Contract\Object
      *
      * @return void
      */
-    public function stop ($name)
+    public function stop($name)
     {
         // Config Check : Are Benchmarks enabled
         if ($this->config['enabled']) {
@@ -106,8 +105,8 @@ class Object extends Library implements Contract\Object
     public function get($name = false)
     {
 
-        try
-        {
+        try {
+
             // Initialise the variables
             $time = $memory = [];
 
@@ -115,19 +114,17 @@ class Object extends Library implements Contract\Object
 
             // Gather the totals
             foreach ($marks as $mark) {
-                $time[] = $mark['time'];
-                $memory[] = $mark['memory'];
+                $time[]     = $mark['time'];
+                $memory[]   = $mark['memory'];
             }
 
             $result = [
-                'count' => count($time),
-                'time' => $this->calculate($time, $this->config['decimals']),
-                'memory' => $result['memory'] = $this->calculate($memory)
+                'count'     => count($time),
+                'time'      => $this->calculate($time, $this->config['decimals']),
+                'memory'    => $result['memory'] = $this->calculate($memory)
             ];
 
-        }
-        catch (\Exception $e)
-        {
+        } catch (\Exception $e) {
             throw new Exception($e->getMessage(), $e->getCode());
         }
 
@@ -135,12 +132,11 @@ class Object extends Library implements Contract\Object
     }
 
 
-    public function summary() {
-
+    public function summary()
+    {
         $results = [];
 
-        foreach ($this->marks as $mark => $values)
-        {
+        foreach ($this->marks as $mark => $values) {
             $results[$mark] = $this->get($mark);
         }
 
@@ -158,7 +154,7 @@ class Object extends Library implements Contract\Object
      *
      * @return array
      */
-    private function calculate ($values, $decimals = 0)
+    private function calculate($values, $decimals = 0)
     {
         return [
             'total'     => number_format(array_sum($values), $decimals),
@@ -168,5 +164,4 @@ class Object extends Library implements Contract\Object
             'median'    => number_format($values[round(count($values) / 2) - 1], $decimals),
         ];
     }
-
 }

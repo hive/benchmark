@@ -48,7 +48,7 @@ class Instance implements Contract\Instance
      * Static Alias to the Benchmark/Object/Stop.
      *
      * @param  string $name The benchmark to stop.
-     * @return  void
+     * @return void
      */
     public static function stop($name)
     {

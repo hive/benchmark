@@ -1,7 +1,7 @@
 <?php namespace Hive\Benchmark\Contract;
 
 /**
- * Instance Interface
+ * Instance Interface.
  *
  * Interface for use with the instances.
  *
