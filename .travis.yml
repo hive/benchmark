@@ -8,6 +8,7 @@ php:
   - 5.5
   - 5.6
   - 7.0
+  - hhvm
 
 # Commands to be run before your environment runs.
 before_script:
@@ -15,7 +16,7 @@ before_script:
   - composer install --prefer-source --no-interaction
 
 # Commands you want to run that will verify your build.
-script: phpunit Tests/testObjectGet.php
+script: phpunit --configuration phpunit.xml --coverage-text
 
 # allow_failures: Allow this build to fail under the specified environments.
 # fast_finish: If your build fails do not continue trying to build, just stop.
@@ -23,6 +24,8 @@ script: phpunit Tests/testObjectGet.php
 #      - php: 5.5
 matrix:
   fast_finish: true
+  allow_failures:
+    - php: hhvm
 
 # Customize when the notification emails are sent.
 notifications:

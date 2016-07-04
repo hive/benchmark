@@ -1,6 +1,5 @@
 <?php
 
-include 'bootstrap.php';
 
 class TestObjectGet extends PHPUnit_Framework_TestCase
 {
