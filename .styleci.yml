@@ -4,13 +4,6 @@ risky: true
 
 linting: true
 
-finder:
-  path:
-    - "Documents"
-    - "Examples"
-    - "Tests"
-    - "Source"
-
 enabled:
   - binary_operator_spaces
   - ordered_imports
