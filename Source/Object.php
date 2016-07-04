@@ -37,9 +37,7 @@
          */
         public function __construct($config = []) {
 
-            /**
-             *  Merge the received config with the defaults
-             */
+            // Merge the received config with the defaults
             $this->config = array_merge($config, $this->config);
 
             parent::__construct($config);
@@ -141,7 +139,8 @@
 
             $results = [];
 
-            foreach ($this->marks as $mark => $values) {
+            foreach ($this->marks as $mark => $values)
+            {
                 $results[$mark] = $this->get($mark);
             }
 
@@ -170,26 +169,4 @@
             ];
         }
 
-        // @todo : enable
-        //public function summary () {
-        //
-        //    /**
-        //     *They want a summary of all results
-        //     */
-        //    $results = [];
-        //
-        //    $names = array_keys($this->marks);
-        //
-        //    // Loop through all the benchmarks we have
-        //    foreach ($names as $name)
-        //    {
-        //        $results[$name] = $this->get($name);
-        //
-        //    }
-        //
-        //    return $results;
-        //
-        //}
-
     }
-

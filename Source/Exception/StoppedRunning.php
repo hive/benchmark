@@ -30,12 +30,10 @@
          */
         public function __construct($name)
         {
-
             $code = self::CODE;
             $message = strtr(self::MESSAGE, [':name' => $name]);
 
             parent::__construct($message,$code);
-
         }
 
     }

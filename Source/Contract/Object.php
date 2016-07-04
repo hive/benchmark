@@ -3,7 +3,7 @@
     /**
      * Object Interface.
      *
-     * Object for the library.
+     * Interface for the object class used as a contract.
      *
      * @author Jamie Peake <jamie.peake@gmail.com>
      * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
@@ -12,17 +12,24 @@
      * @subpackage Benchmark
      *
      * @copyright (c) 2016 Jamie Peake
+     *
      */
-    interface Object
+    interface Object extends Library
     {
-        public function start($name);
-
-        public function stop($name);
-
+        /**
+         * Get benchmark's results
+         *
+         * @param string $name the benchmark to get.
+         *
+         * @return array
+         */
         public function get($name);
 
-        public function details($name);
-
+        /**
+         * Get a summary of all benchmarks.
+         *
+         * @return array
+         */
         public function summary();
 
     }

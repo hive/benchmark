@@ -48,7 +48,6 @@
          */
         public function __construct(array $config = [])
         {
-
             /**
              * Merge the received config with the defaults
              */
@@ -63,7 +62,6 @@
                     throw new Exception\RequiresMemoryGetUsage();
                 }
             }
-
         }
 
         /**
@@ -146,8 +144,8 @@
          * Sets the current memory usage into supplied variable
          * @param $variable
          */
-        private function memory (&$variable) {
-
+        private function memory (&$variable)
+        {
             // If the memory benchmark is enabled
             if ($this->config['memory'])
             {
@@ -173,13 +171,11 @@
 
             if (isset($this->marks[$name]))
             {
-
                 // Auto stop any running benchmarks in-case of error
                 if (!isset($this->marks[$name][0]['timer']['stop']))
                 {
                     $this->stop($name);
                 }
-
             }
             else
             {
@@ -188,9 +184,7 @@
 
             $result = $this->retrieve($name);
 
-
             return $result;
-
         }
 
         /**
@@ -218,7 +212,6 @@
                  * of the benchmarks with the requested name. Then update them
                  * as a whole.
                  */
-
                 for ($i = 0; $i < count($this->marks[$name]); $i++)
                 {
                     // Just an alias
@@ -254,4 +247,3 @@
         }
 
     }
-

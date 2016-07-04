@@ -81,34 +81,41 @@ The code is split up into the following classes :
  
  ```
  
- Multiple Instance
- ```php
-      
+**Multiple Instance**
+ 
+ ```php    
     use hive\benchmark;
     
-        // Start the benchmark
-        benchmark\instance::start('FirstBenchmark');
-    
-        // start a second benchmark
-        benchmark\instance::start('SecondBenchmark');
-    
-        sleep(1);
-    
-        // Stop the second benchmark
-        benchmark\instance::stop('SecondBenchmark');
-    
-        sleep(1);
-    
-        // Stop the benchmark
-        benchmark\instance::stop('FirstBenchmark');
-        echo '<pre>';
-        // get the results of the benchmarks
-        print_r(benchmark\instance::get('FirstBenchmark'));
-        print_r(benchmark\instance::get('SecondBenchmark'));
-    
-    // Output
+    // Start the benchmark
+    benchmark\instance::start('FirstBenchmark');
+
+    // start a second benchmark
+    benchmark\instance::start('SecondBenchmark');
+
+    sleep(1);
+
+    // Stop the second benchmark
+    benchmark\instance::stop('SecondBenchmark');
+
+    sleep(1);
+
+    // Stop the benchmark
+    benchmark\instance::stop('FirstBenchmark');
+    echo '<pre>';
+    // get the results of the benchmarks
+    print_r(benchmark\instance::get('FirstBenchmark'));
+    print_r(benchmark\instance::get('SecondBenchmark'));
+ 
+```
+
+The above example will output 
+
+```php    
+    /**
+     * Output
+     */
     Array
-        (
+    (
         [count] => 1
         [time] => Array
         (
@@ -148,39 +155,44 @@ The code is split up into the following classes :
         )
     )
         
-       
  ```
  
- 
- Multiple Instances with the same name
+**Multiple Instances with the same name**
+
 ```php
      
      use hive\benchmark;
          
-         // Start the benchmark
-         benchmark\instance::start('FirstBenchmark');
-     
-         for ($i=rand(1,100); $i>0; $i--) {
-     
-             // start another benchmark
-             benchmark\instance::start('SubBenchmark');
-     
-             // Do Some Actions
-     
-             // Stop the other benchmark
-             benchmark\instance::stop('SubBenchmark');
-         }
-     
-         sleep(1);
-     
-         // Stop the benchmark
-         benchmark\instance::stop('FirstBenchmark');
-     
-         // Get a summary of all benchmarks
-         print_r(benchmark\instance::summary());
+     // Start the benchmark
+     benchmark\instance::start('FirstBenchmark');
+ 
+     for ($i=rand(1,100); $i>0; $i--) {
+ 
+         // start another benchmark
+         benchmark\instance::start('SubBenchmark');
+ 
+         // Do Some Actions
+ 
+         // Stop the other benchmark
+         benchmark\instance::stop('SubBenchmark');
+     }
+ 
+     sleep(1);
+ 
+     // Stop the benchmark
+     benchmark\instance::stop('FirstBenchmark');
+ 
+     // Get a summary of all benchmarks
+     print_r(benchmark\instance::summary());
          
+```
+
+The above example will output 
          
-         // Output
+```php
+         /**
+          * Output
+          */
          Array
          (
              [FirstBenchmark] => Array
@@ -229,29 +241,30 @@ The code is split up into the following classes :
 ```
    
 Using the Method
- ```php
+
+```php
     
   public class foo {
    
       use hive\benchmark;
       
-          class apple {
-      
-      
-      
-              public function foo () {
-                  Benchmark\Instance::method();
-                  $this->bar();
-                  Benchmark\Instance::method();
-              }
-      
-              public function bar () {
-      
-                  Benchmark\Instance::method();
-                  sleep(1);
-                  Benchmark\Instance::method();
-              }
+      class apple {
+  
+  
+  
+          public function foo () {
+              Benchmark\Instance::method();
+              $this->bar();
+              Benchmark\Instance::method();
           }
+  
+          public function bar () {
+  
+              Benchmark\Instance::method();
+              sleep(1);
+              Benchmark\Instance::method();
+          }
+      }
       
       
           $helloWorld = new apple();
@@ -259,8 +272,14 @@ Using the Method
       
           print_r(Benchmark\instance::summary());
           
+```
+  The above example will output 
+  
+```php
           
-          // Output
+          /**
+           * Output
+           */
           Array
           (
               [apple\foo] => Array
@@ -306,11 +325,11 @@ Using the Method
           )
           
    
- ```   
+```   
    
 All of which (other the instance::method()) can be called directly from the object 
 
- ```php
+```php
 
     $bm = new /hive/benchmark/object(); 
     
@@ -320,12 +339,12 @@ All of which (other the instance::method()) can be called directly from the obje
     
     print_r($bm->summary()); 
 
- ```
+```
 
 
 Using the config
 
- ```php
+```php
 
     $config = [
         'enabled'   => true,    // whether or not the benchmark is enabled. 
@@ -339,7 +358,7 @@ Using the config
 
     $bench = new /hive/benchmark/object($config); 
 
- ```
+```
 
 ## File Map
 

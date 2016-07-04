@@ -31,7 +31,6 @@
         public function __construct()
         {
             parent::__construct(self::MESSAGE, self::CODE);
-
         }
 
     }
