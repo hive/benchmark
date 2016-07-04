@@ -15,7 +15,6 @@
  */
 class Instance implements Contract\Instance
 {
-
     private static $object;
     private static $methods = [];
 
@@ -124,7 +123,6 @@ class Instance implements Contract\Instance
 
                 // Add the benchmark to our list of running methods
                 self::$methods[$name] = true;
-
             } else {
 
                 // Set the benchmark to stop()
@@ -132,7 +130,6 @@ class Instance implements Contract\Instance
 
                 // Remove the benchmark from our list of running methods
                 unset(self::$methods[$name]);
-
             }
         }
 
@@ -150,6 +147,7 @@ class Instance implements Contract\Instance
     private static function trace($stack = 2)
     {
         $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $stack)[$stack - 1];
+
         return $caller['class'] . '\\' .$caller['function'];
     }
 }

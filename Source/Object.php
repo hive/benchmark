@@ -120,7 +120,6 @@ class Object extends Library implements Contract\Object
                 'time'      => $this->calculate($time, $this->config['decimals']),
                 'memory'    => $result['memory'] = $this->calculate($memory)
             ];
-
         } catch (\Exception $e) {
             throw new Exception($e->getMessage(), $e->getCode());
         }
@@ -161,5 +160,4 @@ class Object extends Library implements Contract\Object
             'median'    => number_format($values[round(count($values) / 2) - 1], $decimals),
         ];
     }
-    
 }
