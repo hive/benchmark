@@ -8,3 +8,4 @@ php:
 env:
   global:
     - setup=basic
+script: phpunit Tests\test.php
