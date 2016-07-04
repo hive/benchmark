@@ -72,6 +72,7 @@
         }
 
         public static function summary() {
+
             self::init();
 
             return self::$object->summary();

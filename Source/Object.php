@@ -107,6 +107,7 @@
          */
         public function get($name = false)
         {
+
             try
             {
                 // Initialise the variables
@@ -140,8 +141,8 @@
 
             $results = [];
 
-            foreach ($this->marks as $mark) {
-                $results[] = $this->get($mark);
+            foreach ($this->marks as $mark => $values) {
+                $results[$mark] = $this->get($mark);
             }
 
             return $results;

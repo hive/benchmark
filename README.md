@@ -11,11 +11,6 @@ Simple decoupled benchmark, Version 1.0 currently being developed
 
 Version 1.0 Outstanding Items 
  * Unit Tests
- * Method names to change to
-    * get  -> detail : returns the full details
-    * summary -> get : returns useful information
-    * new method summary : returns all benchmarks useful infomormarion
-    * add array outputs to documentation
 
 ## Installation
 
@@ -89,31 +84,70 @@ The code is split up into the following classes :
  Multiple Instance
  ```php
       
-    // Start the benchmark
-    benchmark/instance::start('FirstBenchmark');
-     
-    // start a second benchmark
-    benchmark/instance::start('SecondBenchmark');
-       
-    sleep(1);
-       
-    // Stop the second benchmark 
-    benchmark/instance::stop('SecondBenchmark');
+    use hive\benchmark;
     
-    sleep(1);
-      
-    // Stop the benchmark 
-    benchmark/instance::stop('FirstBenchmark');
-      
-    // get a summary of the results 
-    print_r(benchmark/instance::summary('NameofBenchmark'));
-    print_r(benchmark/instance::summary('SecondBenchmark'));
+        // Start the benchmark
+        benchmark\instance::start('FirstBenchmark');
     
-    // get the complete details of one benchmark name
-    print_r(benchmark/instance::get('SecondBenchmark'));
+        // start a second benchmark
+        benchmark\instance::start('SecondBenchmark');
     
-    // @todo get a summary of all benchmarks
-    // print_r(benchmark/instance::all());
+        sleep(1);
+    
+        // Stop the second benchmark
+        benchmark\instance::stop('SecondBenchmark');
+    
+        sleep(1);
+    
+        // Stop the benchmark
+        benchmark\instance::stop('FirstBenchmark');
+        echo '<pre>';
+        // get the results of the benchmarks
+        print_r(benchmark\instance::get('FirstBenchmark'));
+        print_r(benchmark\instance::get('SecondBenchmark'));
+    
+    // Output
+    Array
+        (
+        [count] => 1
+        [time] => Array
+        (
+            [total] => 2.00218701
+            [min] => 2.00218701
+            [max] => 2.00218701
+            [mean] => 2.00218701
+            [median] => 2.00218701
+        )
+        [memory] => Array
+        (
+            [total] => 2,424
+            [min] => 2,424
+            [max] => 2,424
+            [mean] => 2,424
+            [median] => 2,424
+        )
+    )
+    Array
+    (
+        [count] => 1
+        [time] => Array
+        (
+            [total] => 1.00193310
+            [min] => 1.00193310
+            [max] => 1.00193310
+            [mean] => 1.00193310
+            [median] => 1.00193310
+        )
+        [memory] => Array
+        (
+            [total] => 648
+            [min] => 648
+            [max] => 648
+            [mean] => 648
+            [median] => 648
+        )
+    )
+        
        
  ```
  
@@ -121,33 +155,77 @@ The code is split up into the following classes :
  Multiple Instances with the same name
 ```php
      
-     // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark');
-    
-    for ($i=rand(1,100); $i<0; $i--) {
-    
-      // start another benchmark
-      benchmark/instance::start('SubBenchmark');
-      
-      // Do Some Actions
-      
-      // Stop the other benchmark 
-      benchmark/instance::stop('SubBenchmark');
-    }
-    
-    sleep(1);
+     use hive\benchmark;
+         
+         // Start the benchmark
+         benchmark\instance::start('FirstBenchmark');
      
-    // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark');
+         for ($i=rand(1,100); $i>0; $i--) {
      
-    // @todo get a summary of all benchmarks
-    // print_r(benchmark/instance::all());
-    
-    // get a summary of just one benchmark name
-    print_r(benchmark/instance::summary('NameofBenchmark'));
-      
-    // Get ALL of the results for ONE benchmark name
-    print_r(benchmark/instance::get('SubBenchmark');   
+             // start another benchmark
+             benchmark\instance::start('SubBenchmark');
+     
+             // Do Some Actions
+     
+             // Stop the other benchmark
+             benchmark\instance::stop('SubBenchmark');
+         }
+     
+         sleep(1);
+     
+         // Stop the benchmark
+         benchmark\instance::stop('FirstBenchmark');
+     
+         // Get a summary of all benchmarks
+         print_r(benchmark\instance::summary());
+         
+         
+         // Output
+         Array
+         (
+             [FirstBenchmark] => Array
+             (
+                 [count] => 1
+                 [time] => Array
+                 (
+                     [total] => 1.00409699
+                     [min] => 1.00409699
+                     [max] => 1.00409699
+                     [mean] => 1.00409699
+                     [median] => 1.00409699
+                 )
+                 [memory] => Array
+                 (
+                     [total] => 117,120
+                     [min] => 117,120
+                     [max] => 117,120
+                     [mean] => 117,120
+                     [median] => 117,120
+                 )
+             )
+         
+             [SubBenchmark] => Array
+             (
+                 [count] => 79
+                 [time] => Array
+                 (
+                     [total] => 0.08011698
+                     [min] => 0.00003004
+                     [max] => 0.00176811
+                     [mean] => 0.00101414
+                     [median] => 0.00101900
+                 )
+                 [memory] => Array
+                 (
+                     [total] => 1,183,976
+                     [min] => 360
+                     [max] => 29,712
+                     [mean] => 14,987
+                     [median] => 14,936
+                 )
+             )         
+         )
+         
 ```
    
 Using the Method
@@ -155,24 +233,78 @@ Using the Method
     
   public class foo {
    
-      public method bar() {
-          // Will create a benchmark named after the method
-          /hive/benchmark/instance::method(); 
-            
-          // so some actions
-          sleep(1)
-            
-          // Will stop this methods benchmark
-          /hive/benchmark/instance::method(); 
-      }
-        
-  }
-   
-   $object = new foo(); 
-   $object->bar();
-   
-    // @todo get a summary of all benchmarks
-    // print_r(benchmark/instance::all());
+      use hive\benchmark;
+      
+          class apple {
+      
+      
+      
+              public function foo () {
+                  Benchmark\Instance::method();
+                  $this->bar();
+                  Benchmark\Instance::method();
+              }
+      
+              public function bar () {
+      
+                  Benchmark\Instance::method();
+                  sleep(1);
+                  Benchmark\Instance::method();
+              }
+          }
+      
+      
+          $helloWorld = new apple();
+          $helloWorld->foo();
+      
+          print_r(Benchmark\instance::summary());
+          
+          
+          // Output
+          Array
+          (
+              [apple\foo] => Array
+              (
+                  [count] => 1
+                  [time] => Array
+                  (
+                      [total] => 1.00055385
+                      [min] => 1.00055385
+                      [max] => 1.00055385
+                      [mean] => 1.00055385
+                      [median] => 1.00055385
+                  )
+                  [memory] => Array
+                  (
+                      [total] => 2,328
+                      [min] => 2,328
+                      [max] => 2,328
+                      [mean] => 2,328
+                      [median] => 2,328
+                  )
+              )
+              [apple\bar] => Array
+              (
+                  [count] => 1
+                  [time] => Array
+                  (
+                      [total] => 1.00045204
+                      [min] => 1.00045204
+                      [max] => 1.00045204
+                      [mean] => 1.00045204
+                      [median] => 1.00045204
+                  )
+                  [memory] => Array
+                  (
+                      [total] => 496
+                      [min] => 496
+                      [max] => 496
+                      [mean] => 496
+                      [median] => 496
+                  ) 
+              )
+          )
+          
    
  ```   
    
@@ -186,7 +318,7 @@ All of which (other the instance::method()) can be called directly from the obje
     
     $bm->stop('MyNewBenchmark');
     
-    print_r($bm->all()); 
+    print_r($bm->summary()); 
 
  ```
 
@@ -221,18 +353,20 @@ The code is split up into the following classes :
     * __construct( array $config )
     * start         (string $nameOfBenchmark) 
     * stop          (string $nameOfBenchmark) 
-    * get           (string $nameOfBenchmark) 
+    * details       (string $nameOfBenchmark) 
   2. Source/Object.php : Class for accessing the benchmark object.
     * __construct( array $config )
     * start         (string $nameOfBenchmark)
     * stop          (string $nameOfBenchmark)
+    * details       (string $nameOfBenchMark)
     * get           (string $nameOfBenchMark)
-    * summary       (string $nameOfBenchMark)
+    * summary       ()
   3. Source/Instance.php : Instance of the object class.
     * static start  (string $nameOfBenchmark)
     * static stop   (string $nameOfBenchmark)
+    * static details(string $nameOfBenchMark)
     * static get    (string $nameOfBenchMark)
-    * static summary(string $nameOfBenchMark)
+    * static summary()
     * static method (string $action, integer $stack)
   4. Source/Exception : Folder for any exceptions the object will throw
   5. Source/Contact : folder for any interfaces or abstract classes they implement

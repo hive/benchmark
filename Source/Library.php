@@ -218,6 +218,7 @@
                  * of the benchmarks with the requested name. Then update them
                  * as a whole.
                  */
+
                 for ($i = 0; $i < count($this->marks[$name]); $i++)
                 {
                     // Just an alias
