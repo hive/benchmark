@@ -1,6 +1,5 @@
 <?php namespace Hive\Benchmark;
 
-
 /**
  * Object Library.
  *
@@ -71,7 +70,6 @@ class Object extends Library implements Contract\Object
         if ($this->config['enabled']) {
             parent::stop($name);
         }
-
     }
 
     /**
@@ -104,7 +102,6 @@ class Object extends Library implements Contract\Object
      */
     public function get($name = false)
     {
-
         try {
 
             // Initialise the variables
@@ -164,4 +161,5 @@ class Object extends Library implements Contract\Object
             'median'    => number_format($values[round(count($values) / 2) - 1], $decimals),
         ];
     }
+    
 }

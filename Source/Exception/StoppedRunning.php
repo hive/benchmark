@@ -35,4 +35,5 @@ class StoppedRunning extends \Hive\Benchmark\Exception
 
         parent::__construct($message, $code);
     }
+    
 }
