@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="RequiresMemoryGetUsage.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/RequiresMemoryGetUsage.php" size="1104" time="2016-07-04T19:49:59+11:00" unixtime="1467622199" sha1="a32a4a50c07c435cc431b7f82d6a829d1c98c4ac" relative="Exception/RequiresMemoryGetUsage.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="RequiresMemoryGetUsage.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/RequiresMemoryGetUsage.php" size="1103" time="2016-07-04T21:40:43+11:00" unixtime="1467628843" sha1="8c49d43dbaf73f59c32ba267f14778ca0feac779" relative="Exception/RequiresMemoryGetUsage.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -157,13 +157,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="34"/>
-  <line no="35">
+  <line no="34">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="36"/>
-  <line no="37">
+  <line no="35"/>
+  <line no="36">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>

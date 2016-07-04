@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance" abstract="false" final="false" start="16" end="31">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="685" time="2016-07-04T19:49:59+11:00" unixtime="1467622199" sha1="14c8091c5baed41ebe89c257b3d090234f9a5897" relative="Contract/Instance.php"/>
+<interface xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance" abstract="false" final="false" start="16" end="78">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="1922" time="2016-07-04T21:31:08+11:00" unixtime="1467628268" sha1="a3d9ac870627c40d4b933c7e413f08838af17a24" relative="Contract/Instance.php"/>
   <docblock>
     <description compact="Instance Interface">Interface for use with the instances.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -9,20 +9,56 @@
     <subpackage value="Benchmark"/>
     <copyright value="(c) 2016 Jamie Peake"/>
   </docblock>
-  <method name="start" start="19" end="19" abstract="false" final="false" static="true" visibility="public">
+  <method name="start" start="27" end="27" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Start a benchmark of given name.">An Alias for the object's start method.</description>
+      <param description="the benchmark to start." type="string" variable="$name"/>
+      <return type="object">
+        <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+      </return>
+    </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="stop" start="21" end="21" abstract="false" final="false" static="true" visibility="public">
+  <method name="stop" start="38" end="38" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Stops a benchmark of given name.">An Alias for the object's stop method.</description>
+      <param description="the benchmark to stop." type="string" variable="$name"/>
+      <return type="object">
+        <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+      </return>
+    </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="get" start="23" end="23" abstract="false" final="false" static="true" visibility="public">
+  <method name="get" start="49" end="49" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get a benchmark of given name.">An Alias for the object's get method.</description>
+      <param description="the benchmark to get." type="string" variable="$name"/>
+      <return type="array"/>
+    </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="details" start="25" end="25" abstract="false" final="false" static="true" visibility="public">
+  <method name="details" start="60" end="60" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the details of a benchmark of given name.">An Alias for the libraries' details method.</description>
+      <param description="the benchmark to get details for." type="string" variable="$name"/>
+      <return type="array"/>
+    </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="method" start="27" end="27" abstract="false" final="false" static="true" visibility="public"/>
-  <method name="summary" start="29" end="29" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="summary" start="69" end="69" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get a summary of all benchmarks.">An Alias for the object's summary method.</description>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="method" start="76" end="76" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Start/Stop a benchmark with the current 'methods' name"/>
+      <return type="object">
+        <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+      </return>
+    </docblock>
+  </method>
   <implementors>
     <class full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance"/>
   </implementors>

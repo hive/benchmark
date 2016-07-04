@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\RequiresMemoryGetUsage" namespace="Hive\Benchmark\Exception" name="RequiresMemoryGetUsage" abstract="false" final="false" start="16" end="37">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="RequiresMemoryGetUsage.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/RequiresMemoryGetUsage.php" size="1104" time="2016-07-04T19:49:59+11:00" unixtime="1467622199" sha1="a32a4a50c07c435cc431b7f82d6a829d1c98c4ac" relative="Exception/RequiresMemoryGetUsage.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\RequiresMemoryGetUsage" namespace="Hive\Benchmark\Exception" name="RequiresMemoryGetUsage" abstract="false" final="false" start="16" end="36">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="RequiresMemoryGetUsage.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/RequiresMemoryGetUsage.php" size="1103" time="2016-07-04T21:40:43+11:00" unixtime="1467628843" sha1="8c49d43dbaf73f59c32ba267f14778ca0feac779" relative="Exception/RequiresMemoryGetUsage.php"/>
   <docblock>
     <description compact="Requires Memory Get Usage Exception.">Called when the library has memory benchmarks enabled but no way to get the memory data.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -20,7 +20,7 @@
       <description compact="Exception Message to be displayed"/>
     </docblock>
   </constant>
-  <constructor name="__construct" start="31" end="35" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="31" end="34" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Requires Memory_Get_Usage constructor, assigns exception code the message."/>
     </docblock>
@@ -37,7 +37,7 @@
         <description compact="Package exception code, sequential package numbers."/>
       </docblock>
     </constant>
-    <constructor name="__construct" start="39" end="44" abstract="false" final="false" static="false" visibility="public">
+    <constructor name="__construct" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
       <docblock>
         <description compact="Exception constructor, assigns the message and code and calls the exception handler">It will prepend the error code with the vendor code, package code and exception code,
 so that we have a unique exception code.</description>

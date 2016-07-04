@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/StoppedRunning.php" size="1221" time="2016-07-04T19:49:59+11:00" unixtime="1467622199" sha1="70c77fbf8aa290e53d9124d736ceebf2790498a7" relative="Exception/StoppedRunning.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/StoppedRunning.php" size="1219" time="2016-07-04T21:40:59+11:00" unixtime="1467628859" sha1="7437818b9d2fcc422572560807a2a2668f50d115" relative="Exception/StoppedRunning.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -142,8 +142,7 @@
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="33"/>
-  <line no="34">
+  <line no="33">
     <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$code</token>
     <token name="T_WHITESPACE"> </token>
@@ -154,7 +153,7 @@
     <token name="T_STRING">CODE</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="35">
+  <line no="34">
     <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$message</token>
     <token name="T_WHITESPACE"> </token>
@@ -177,8 +176,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="36"/>
-  <line no="37">
+  <line no="35"/>
+  <line no="36">
     <token name="T_WHITESPACE">            </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -190,13 +189,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="38"/>
-  <line no="39">
+  <line no="37">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="40"/>
-  <line no="41">
+  <line no="38"/>
+  <line no="39">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>

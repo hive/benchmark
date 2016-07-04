@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Library.php" size="524" time="2016-07-04T19:49:59+11:00" unixtime="1467622199" sha1="5235bfca597fe7e964a43f5a669df028edac101b" relative="Contract/Library.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Library.php" size="1052" time="2016-07-04T21:25:22+11:00" unixtime="1467627922" sha1="89a675d5ed197aa7d9d0339570ae46791517d438" relative="Contract/Library.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -24,7 +24,7 @@
     <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT">     * Interface for the library.</token>
+    <token name="T_DOC_COMMENT">     * Interface for the library used as a contact.</token>
   </line>
   <line no="7">
     <token name="T_DOC_COMMENT">     *</token>
@@ -63,8 +63,29 @@
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="18"/>
+  <line no="18">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
   <line no="19">
+    <token name="T_DOC_COMMENT">         * Starts a benchmark of give name.</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">         *</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">         * @param string $name the benchmark to start.</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">         *</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT">         * @return void</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT">         */</token>
+  </line>
+  <line no="25">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -76,8 +97,30 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="20"/>
-  <line no="21">
+  <line no="26"/>
+  <line no="27">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">         * Stops a benchmark of given name.</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">         *</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">         * @param string $name the benchmark to stop.</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">         *</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">         * @return void</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">         */</token>
+  </line>
+  <line no="34">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -90,8 +133,30 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="22"/>
-  <line no="23">
+  <line no="35"/>
+  <line no="36">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT">         * Get benchmark's details</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT">         *</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">         * @param string $name the benchmark to get the details of.</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">         *</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">         * @return array</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT">         */</token>
+  </line>
+  <line no="43">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -103,8 +168,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="24"/>
-  <line no="25">
+  <line no="44"/>
+  <line no="45">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\NotRunning" namespace="Hive\Benchmark\Exception" name="NotRunning" abstract="false" final="false" start="16" end="46">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="NotRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/NotRunning.php" size="1250" time="2016-07-04T19:49:59+11:00" unixtime="1467622199" sha1="37b6c5e460baf2b427c2d3b784aed392cef9191b" relative="Exception/NotRunning.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\NotRunning" namespace="Hive\Benchmark\Exception" name="NotRunning" abstract="false" final="false" start="16" end="43">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="NotRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/NotRunning.php" size="1239" time="2016-07-04T21:40:29+11:00" unixtime="1467628829" sha1="80eb2a882d5af31e79e57c9c2a32c3ccb4adf7a6" relative="Exception/NotRunning.php"/>
   <docblock>
     <description compact="Finished Running Exception.">Called when the library attempts to stop a benchmark which was not started.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -20,7 +20,7 @@
       <description compact="Exception Message to be displayed"/>
     </docblock>
   </constant>
-  <constructor name="__construct" start="35" end="43" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="35" end="41" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Not Running Constructor, assigns exception code the message.">Will also place the name of the benchmark into the exception message if we have it.</description>
       <param description="name of the benchmark which was not started" type="string" variable="$name"/>
@@ -39,7 +39,7 @@
         <description compact="Package exception code, sequential package numbers."/>
       </docblock>
     </constant>
-    <constructor name="__construct" start="39" end="44" abstract="false" final="false" static="false" visibility="public">
+    <constructor name="__construct" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
       <docblock>
         <description compact="Exception constructor, assigns the message and code and calls the exception handler">It will prepend the error code with the vendor code, package code and exception code,
 so that we have a unique exception code.</description>

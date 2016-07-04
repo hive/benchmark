@@ -75,10 +75,10 @@
         <div class="synopsis">interface Instance
             {<br/><ul class="none"><li>// methods</li><li>public static void <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/start.xhtml">start</a>()
                     </li><li>public static void <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/stop.xhtml">stop</a>()
-                    </li><li>public static void <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/get.xhtml">get</a>()
-                    </li><li>public static void <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/details.xhtml">details</a>()
+                    </li><li>public static array <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/get.xhtml">get</a>()
+                    </li><li>public static array <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/details.xhtml">details</a>()
+                    </li><li>public static array <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/summary.xhtml">summary</a>()
                     </li><li>public static void <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/method.xhtml">method</a>()
-                    </li><li>public static void <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/summary.xhtml">summary</a>()
                     </li></ul>
 
             }<br/></div>
@@ -86,24 +86,18 @@
         <div class="styled">
           <h4>public</h4>
           <ul>
-            <li id="details">
-              <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/details.xhtml">details()</a>
-            </li>
-            <li id="get">
-              <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/get.xhtml">get()</a>
-            </li>
-            <li id="method">
-              <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/method.xhtml">method()</a>
-            </li>
-            <li id="start">
-              <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/start.xhtml">start()</a>
-            </li>
-            <li id="stop">
-              <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/stop.xhtml">stop()</a>
-            </li>
-            <li id="summary">
-              <a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/summary.xhtml">summary()</a>
-            </li>
+            <li id="details"><a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/details.xhtml">details()</a>
+                — Get the details of a benchmark of given name.</li>
+            <li id="get"><a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/get.xhtml">get()</a>
+                — Get a benchmark of given name.</li>
+            <li id="method"><a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/method.xhtml">method()</a>
+                — Start/Stop a benchmark with the current 'methods' name</li>
+            <li id="start"><a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/start.xhtml">start()</a>
+                — Start a benchmark of given name.</li>
+            <li id="stop"><a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/stop.xhtml">stop()</a>
+                — Stops a benchmark of given name.</li>
+            <li id="summary"><a title="Hive\Benchmark\Contract\Instance" href="../interfaces/Hive_Benchmark_Contract_Instance/summary.xhtml">summary()</a>
+                — Get a summary of all benchmarks.</li>
           </ul>
         </div>
       </section>
