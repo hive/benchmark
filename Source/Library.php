@@ -52,15 +52,7 @@ class Library implements Contract\Library
          * Merge the received config with the defaults.
          */
         $this->config = array_merge($config, $this->config);
-
-        // sanity check upon memory
-        if ($this->config['memory']) {
-
-            // if enabled ensure we can get it
-            if (!function_exists('memory_get_usage')) {
-                throw new Exception\RequiresMemoryGetUsage();
-            }
-        }
+        
     }
 
     /**

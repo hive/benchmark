@@ -12,7 +12,16 @@
             <directory>./</directory>
             <exclude>
                 <directory>./Tests</directory>
+                <directory>./vendor</directory>
             </exclude>
         </whitelist>
     </filter>
+
+    <logging>
+        <log type="coverage-html" target="./Documents/Coverage" charset="UTF-8"
+             yui="true" highlight="true"
+             lowUpperBound="50" highLowerBound="80"/>
+        <log type="testdox-html" target="./Documents/testdox.html" />
+    </logging>
+
 </phpunit>
