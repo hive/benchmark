@@ -19,4 +19,3 @@
     include 'Source/Exception/AlreadyRunning.php';
     include 'Source/Exception/NotRunning.php';
     include 'Source/Exception/StoppedRunning.php';
-    include 'Source/Exception/RequiresMemoryGetUsage.php';
