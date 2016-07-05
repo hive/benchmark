@@ -10,7 +10,7 @@ class testObjectGet extends PHPUnit_Framework_TestCase
 
     public function testGetSingleStructure()
     {
-        $bm = new \Hive\Benchmark\Object();
+        $bm = new \hive\benchmark\Object();
 
         $bm->start('simple');
         $bm->stop('simple');
@@ -59,7 +59,7 @@ class testObjectGet extends PHPUnit_Framework_TestCase
 
     public function testGetMultipleStructure()
     {
-        $bm = new \Hive\Benchmark\Object();
+        $bm = new \hive\benchmark\Object();
 
         $bm->start('first');
         $bm->start('second');
@@ -100,7 +100,7 @@ class testObjectGet extends PHPUnit_Framework_TestCase
 
     public function testGetNestedStructure()
     {
-        $bm = new \Hive\Benchmark\Object();
+        $bm = new \hive\benchmark\Object();
 
         $bm->start('first');
         $bm->start('second');
@@ -154,7 +154,7 @@ class testObjectGet extends PHPUnit_Framework_TestCase
 
     public function testGetRepeatStructure()
     {
-        $bm = new \Hive\Benchmark\Object();
+        $bm = new \hive\benchmark\Object();
 
         $bm->start('first');
         $bm->stop('first');
@@ -203,7 +203,7 @@ class testObjectGet extends PHPUnit_Framework_TestCase
 
     public function testGetRepeatNestedStructure()
     {
-        $bm = new \Hive\Benchmark\Object();
+        $bm = new \hive\benchmark\Object();
 
         $bm->start('first');
 
@@ -307,7 +307,7 @@ class testObjectGet extends PHPUnit_Framework_TestCase
 
     public function testGetRepeatNestedStructureLarge()
     {
-        $bm = new \Hive\Benchmark\Object();
+        $bm = new \hive\benchmark\Object();
 
         $bm->start('first');
 
@@ -360,7 +360,7 @@ class testObjectGet extends PHPUnit_Framework_TestCase
 
     public function testGetRepeatNestedStructureMany()
     {
-        $bm = new \Hive\Benchmark\Object();
+        $bm = new \hive\benchmark\Object();
         $bm->start('first');
         for ($i=0; $i<10000; $i++) {
             $bm->start('second_' . $i);
