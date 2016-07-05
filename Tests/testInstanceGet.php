@@ -10,9 +10,6 @@ class testInstanceGet extends PHPUnit_Framework_TestCase
     }
 
     public function test() {
-        \Hive\Benchmark\Instance::start('test');
-        \Hive\Benchmark\Instance::stop('test');
-        \Hive\Benchmark\Instance::get('test');
-        \Hive\Benchmark\Instance::summary();
+      
     }
 }
