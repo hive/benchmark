@@ -4,7 +4,7 @@
 [![License](https://poser.pugx.org/hive/benchmark/license?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![StyleCI](https://styleci.io/repos/61770165/shield?style=flat-square)](https://styleci.io/repos/61770165)
-[![Build Status](https://travis-ci.org/hive/benchmark.svg?branch=master&format=flat-square)](https://travis-ci.org/hive/benchmark) 
+
 
 Simple decoupled benchmark, Version 1.0 currently being developed
 
