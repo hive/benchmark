@@ -18,7 +18,7 @@
     <logging>
         <log
                 type="coverage-html"
-                target="../Documents/coverage"
+                target="../Documents/html/coverage"
                 charset="UTF-8"
                 yui="true"
                 highlight="true"
@@ -26,7 +26,7 @@
                 highLowerBound="80"
         />
         <log type="testdox-html" target="../Documents/testdox.html" />
-        <log type="coverage-clover" target="../Documents/coverage.xml"/>
+        <log type="coverage-clover" target="../Documents/xml/coverage.xml"/>
     </logging>
 
 </phpunit>

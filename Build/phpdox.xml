@@ -16,7 +16,7 @@
                 <source type="phpcs" />
                 <!--<source type="pmd" />-->
 		        <source type="phploc">
-                    <file name="phploc.xml" />
+                    <file name="${basedir}/../Documents/xml/phploc.xml" />
                 </source>
                 <!--<source type="phpunit">-->
                     <!--<coverage path="coverage/xml" />-->
