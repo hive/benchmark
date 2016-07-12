@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="../Tests/bootstrap.php" colors="true">
+<phpunit bootstrap="../Tests/PHPUnit/bootstrap.php" colors="true">
     <testsuites>
         <testsuite name="All">
-            <directory suffix='.php'>../Tests/</directory>
+            <directory suffix='.php'>../PHPUnit/Tests/</directory>
         </testsuite>
     </testsuites>
     <filter>
@@ -25,8 +25,9 @@
                 lowUpperBound="50"
                 highLowerBound="80"
         />
-        <log type="testdox-html" target="../Documents/testdox.html" />
+        <log type="testdox-html" target="../Documents/html/phpunit.html" />
         <log type="coverage-clover" target="../Documents/xml/coverage.xml"/>
+        <log type="junit" target="../Documents/xml/phpunit.xml" logIncompleteSkipped="false"/>
     </logging>
 
 </phpunit>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpdox xmlns="http://xml.phpdox.net/config">
-  <project name="Hive/Benchmark" source="${basedir}/../Source" workdir="${basedir}/../Documents/phpdox/xml">
+  <project name="Hive/Benchmark" source="${basedir}/../Source" workdir="${basedir}/../Documents/xml/phpdox">
     <collector backend="parser">
       <!--<exclude mask="**vendors**”/>-->
       <!--<exclude mask="**features**"/>-->
     </collector>
-    <generator output="${basedir}/../Documents/phpdox">
+    <generator output="${basedir}/../Documents">
             <enrich base="${basedir}">
                 <source type="build" />
                 <source type="git">
@@ -22,7 +22,7 @@
                     <!--<coverage path="coverage/xml" />-->
                 <!--</source>-->
             </enrich>
-      <build engine="html" output="html"/>
+      <build engine="html" output="html/phpdox"/>
     </generator>
   </project>
 </phpdox>
