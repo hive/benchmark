@@ -3,7 +3,6 @@
 [![Latest Unstable Version](https://poser.pugx.org/hive/benchmark/v/unstable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![License](https://poser.pugx.org/hive/benchmark/license?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock?format=flat-square)](https://packagist.org/packages/hive/benchmark)
-[![StyleCI](https://styleci.io/repos/61770165/shield?style=flat-square)](https://styleci.io/repos/61770165)
 
 
 Simple decoupled benchmark, Version 1.0 currently being developed
@@ -391,10 +390,3 @@ The code is split up into the following classes :
     * static method (string $action, integer $stack)
   4. Source/Exception : Folder for any exceptions the object will throw
   5. Source/Contact : folder for any interfaces or abstract classes they implement
- 
-  
-
-
-[![Total Downloads](https://poser.pugx.org/hive/benchmark/downloads?format=flat-square)](https://packagist.org/packages/hive/benchmark)
-[![Daily Downloads](https://poser.pugx.org/hive/benchmark/d/daily?format=flat-square)](https://packagist.org/packages/hive/benchmark)
-
