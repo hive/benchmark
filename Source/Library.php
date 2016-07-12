@@ -104,6 +104,7 @@ class Library implements Contract\Library
                 // Assign the stop values
                 $this->timer($mark['timer']['stop']);
                 $this->memory($mark['memory']['stop']);
+
             } else {
                 throw new Exception\StoppedRunning($name);
             }
@@ -126,6 +127,10 @@ class Library implements Contract\Library
 
     /**
      * Sets the current memory usage into supplied variable.
+     *
+     * It is worth noting that, with garbage collection, it is possible for the
+     * memory_get_usage to be LOWER then the first call.
+     *
      * @param $variable
      */
     private function memory(&$variable)
@@ -135,7 +140,6 @@ class Library implements Contract\Library
             $variable = memory_get_usage();
         }
     }
-
 
     /**
      * Get a benchmark.
@@ -188,8 +192,8 @@ class Library implements Contract\Library
     {
         try {
             // Initialise the variables
-            $time       = 0;
-            $memory     = 0;
+            $time       = false;
+            $memory     = false;
             $results    = [];
 
             /**
@@ -201,10 +205,16 @@ class Library implements Contract\Library
 
                 // Just an alias
                 $mark = &$this->marks[$name][$i];
-                $time += $mark['timer']['stop'] - $mark['timer']['start'];
+                $time = $mark['timer']['stop'] - $mark['timer']['start'];
 
                 if (isset($mark['memory'])) {
-                    $memory += $mark['memory']['stop'] - $mark['memory']['start'];
+                    $memory = $mark['memory']['stop'] - $mark['memory']['start'];
+
+                    /**
+                     * Sanity check against the memory in case it was a minor benchmark
+                     * and there was a garbage collection during the running.
+                     */
+                    $memory = ($memory > 1) ? $memory : 0;
                 }
 
                 $result = [
@@ -213,10 +223,10 @@ class Library implements Contract\Library
                 ];
 
                 // If memory has been assigned
-                if ($memory) {
+                if ($this->config['memory']) {
                     $result['memory'] = $memory;
                 }
-
+                
                 $results[] = $result;
             }
         } catch (\Exception $e) {

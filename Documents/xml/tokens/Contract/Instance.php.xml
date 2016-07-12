@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="1922" time="2016-07-04T21:31:08+11:00" unixtime="1467628268" sha1="a3d9ac870627c40d4b933c7e413f08838af17a24" relative="Contract/Instance.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="1644" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="77edac855f1a671d2de2d366d46a4a3b1c1970c6" relative="Contract/Instance.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -14,85 +14,82 @@
   </line>
   <line no="2"/>
   <line no="3">
-    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="4">
-    <token name="T_DOC_COMMENT">     * Instance Interface</token>
+    <token name="T_DOC_COMMENT"> * Instance Interface.</token>
   </line>
   <line no="5">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT">     * Interface for use with the instances.</token>
+    <token name="T_DOC_COMMENT"> * Interface for use with the instances.</token>
   </line>
   <line no="7">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="8">
-    <token name="T_DOC_COMMENT">     * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT"> * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="9">
-    <token name="T_DOC_COMMENT">     * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
+    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
   </line>
   <line no="10">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="11">
-    <token name="T_DOC_COMMENT">     * @package Hive</token>
+    <token name="T_DOC_COMMENT"> * @package Hive</token>
   </line>
   <line no="12">
-    <token name="T_DOC_COMMENT">     * @subpackage Benchmark</token>
+    <token name="T_DOC_COMMENT"> * @subpackage Benchmark</token>
   </line>
   <line no="13">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="14">
-    <token name="T_DOC_COMMENT">     * @copyright (c) 2016 Jamie Peake</token>
+    <token name="T_DOC_COMMENT"> * @copyright (c) 2016 Jamie Peake</token>
   </line>
   <line no="15">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT"> */</token>
   </line>
   <line no="16">
-    <token name="T_WHITESPACE">    </token>
     <token name="T_INTERFACE">interface</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">Instance</token>
   </line>
   <line no="17">
-    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
   <line no="18">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="19">
-    <token name="T_DOC_COMMENT">         * Start a benchmark of given name.</token>
+    <token name="T_DOC_COMMENT">     * Start a benchmark of given name.</token>
   </line>
   <line no="20">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="21">
-    <token name="T_DOC_COMMENT">         * An Alias for the object's start method.</token>
+    <token name="T_DOC_COMMENT">     * An Alias for the object's start method.</token>
   </line>
   <line no="22">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="23">
-    <token name="T_DOC_COMMENT">         * @param string $name the benchmark to start.</token>
+    <token name="T_DOC_COMMENT">     * @param string $name the benchmark to start.</token>
   </line>
   <line no="24">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="25">
-    <token name="T_DOC_COMMENT">         * @return void</token>
+    <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
   <line no="26">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="27">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STATIC">static</token>
@@ -107,35 +104,35 @@
   </line>
   <line no="28"/>
   <line no="29">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="30">
-    <token name="T_DOC_COMMENT">         * Stops a benchmark of given name.</token>
+    <token name="T_DOC_COMMENT">     * Stops a benchmark of given name.</token>
   </line>
   <line no="31">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="32">
-    <token name="T_DOC_COMMENT">         * An Alias for the object's stop method.</token>
+    <token name="T_DOC_COMMENT">     * An Alias for the object's stop method.</token>
   </line>
   <line no="33">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="34">
-    <token name="T_DOC_COMMENT">         * @param string $name the benchmark to stop.</token>
+    <token name="T_DOC_COMMENT">     * @param string $name the benchmark to stop.</token>
   </line>
   <line no="35">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="36">
-    <token name="T_DOC_COMMENT">         * @return void</token>
+    <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
   <line no="37">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="38">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STATIC">static</token>
@@ -150,35 +147,35 @@
   </line>
   <line no="39"/>
   <line no="40">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="41">
-    <token name="T_DOC_COMMENT">         * Get a benchmark of given name.</token>
+    <token name="T_DOC_COMMENT">     * Get a benchmark of given name.</token>
   </line>
   <line no="42">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="43">
-    <token name="T_DOC_COMMENT">         * An Alias for the object's get method.</token>
+    <token name="T_DOC_COMMENT">     * An Alias for the object's get method.</token>
   </line>
   <line no="44">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="45">
-    <token name="T_DOC_COMMENT">         * @param string $name the benchmark to get.</token>
+    <token name="T_DOC_COMMENT">     * @param string $name the benchmark to get.</token>
   </line>
   <line no="46">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="47">
-    <token name="T_DOC_COMMENT">         * @return array</token>
+    <token name="T_DOC_COMMENT">     * @return array</token>
   </line>
   <line no="48">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="49">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STATIC">static</token>
@@ -193,35 +190,35 @@
   </line>
   <line no="50"/>
   <line no="51">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="52">
-    <token name="T_DOC_COMMENT">         * Get the details of a benchmark of given name.</token>
+    <token name="T_DOC_COMMENT">     * Get the details of a benchmark of given name.</token>
   </line>
   <line no="53">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="54">
-    <token name="T_DOC_COMMENT">         * An Alias for the libraries' details method.</token>
+    <token name="T_DOC_COMMENT">     * An Alias for the libraries' details method.</token>
   </line>
   <line no="55">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="56">
-    <token name="T_DOC_COMMENT">         * @param string $name the benchmark to get details for.</token>
+    <token name="T_DOC_COMMENT">     * @param string $name the benchmark to get details for.</token>
   </line>
   <line no="57">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="58">
-    <token name="T_DOC_COMMENT">         * @return array</token>
+    <token name="T_DOC_COMMENT">     * @return array</token>
   </line>
   <line no="59">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="60">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STATIC">static</token>
@@ -236,29 +233,29 @@
   </line>
   <line no="61"/>
   <line no="62">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="63">
-    <token name="T_DOC_COMMENT">         * Get a summary of all benchmarks.</token>
+    <token name="T_DOC_COMMENT">     * Get a summary of all benchmarks.</token>
   </line>
   <line no="64">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="65">
-    <token name="T_DOC_COMMENT">         * An Alias for the object's summary method.</token>
+    <token name="T_DOC_COMMENT">     * An Alias for the object's summary method.</token>
   </line>
   <line no="66">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="67">
-    <token name="T_DOC_COMMENT">         * @return array</token>
+    <token name="T_DOC_COMMENT">     * @return array</token>
   </line>
   <line no="68">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="69">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STATIC">static</token>
@@ -272,23 +269,23 @@
   </line>
   <line no="70"/>
   <line no="71">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="72">
-    <token name="T_DOC_COMMENT">         * Start/Stop a benchmark with the current 'methods' name</token>
+    <token name="T_DOC_COMMENT">     * Start/Stop a benchmark with the current 'methods' name.</token>
   </line>
   <line no="73">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="74">
-    <token name="T_DOC_COMMENT">         * @return void</token>
+    <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
   <line no="75">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="76">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STATIC">static</token>
@@ -300,9 +297,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="77"/>
-  <line no="78">
-    <token name="T_WHITESPACE">    </token>
+  <line no="77">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
+  <line no="78"/>
 </source>

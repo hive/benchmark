@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\StoppedRunning" namespace="Hive\Benchmark\Exception" name="StoppedRunning" abstract="false" final="false" start="16" end="39">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/StoppedRunning.php" size="1219" time="2016-07-04T21:40:59+11:00" unixtime="1467628859" sha1="7437818b9d2fcc422572560807a2a2668f50d115" relative="Exception/StoppedRunning.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\StoppedRunning" namespace="Hive\Benchmark\Exception" name="StoppedRunning" abstract="false" final="false" start="16" end="38">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/StoppedRunning.php" size="1080" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="d8eb0ba34a9e57c8e24e0010658985e90af18097" relative="Exception/StoppedRunning.php"/>
   <docblock>
     <description compact="Finished Running Exception.">Called when the library attempts to stop a benchmark which has already been stopped.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -37,7 +37,7 @@
     </constant>
     <constructor name="__construct" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
       <docblock>
-        <description compact="Exception constructor, assigns the message and code and calls the exception handler">It will prepend the error code with the vendor code, package code and exception code,
+        <description compact="Exception constructor, assigns the message and code and calls the exception handler.">It will prepend the error code with the vendor code, package code and exception code,
 so that we have a unique exception code.</description>
         <param description="The exceptions message." type="object" variable="$message">
           <type full="Hive\Benchmark\null|string" namespace="Hive\Benchmark" name="null|string"/>

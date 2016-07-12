@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4644" time="2016-07-04T21:37:52+11:00" unixtime="1467628672" sha1="aba6281cdde327f62ba1087d4fe4a895d9dc5493" relative="Object.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4149" time="2016-07-07T04:05:29+11:00" unixtime="1467824729" sha1="f54beebdd2fe9e401b9e255738aeb62738a69d48" relative="Object.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -11,49 +11,46 @@
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="2"/>
-  <line no="3"/>
-  <line no="4">
-    <token name="T_WHITESPACE">    </token>
+  <line no="3">
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * Object Library.</token>
+  </line>
   <line no="5">
-    <token name="T_DOC_COMMENT">     * Object Library.</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> * Allows access to the library through an object.</token>
   </line>
   <line no="7">
-    <token name="T_DOC_COMMENT">     * Allows access to the library through an object.</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="8">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="9">
-    <token name="T_DOC_COMMENT">     * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
   </line>
   <line no="10">
-    <token name="T_DOC_COMMENT">     * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="11">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> * @package Hive</token>
   </line>
   <line no="12">
-    <token name="T_DOC_COMMENT">     * @package Hive</token>
+    <token name="T_DOC_COMMENT"> * @subpackage Benchmark</token>
   </line>
   <line no="13">
-    <token name="T_DOC_COMMENT">     * @subpackage Benchmark</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="14">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> * @copyright (c) 2016 Jamie Peake</token>
   </line>
   <line no="15">
-    <token name="T_DOC_COMMENT">     * @copyright (c) 2016 Jamie Peake</token>
+    <token name="T_DOC_COMMENT"> */</token>
   </line>
   <line no="16">
-    <token name="T_DOC_COMMENT">     */</token>
-  </line>
-  <line no="17">
-    <token name="T_WHITESPACE">    </token>
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">Object</token>
@@ -68,34 +65,33 @@
     <token name="T_NS_SEPARATOR">\</token>
     <token name="T_STRING">Object</token>
   </line>
-  <line no="18">
-    <token name="T_WHITESPACE">    </token>
+  <line no="17">
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="19">
-    <token name="T_WHITESPACE">        </token>
+  <line no="18">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT">     * Default configuration settings.</token>
+  </line>
   <line no="20">
-    <token name="T_DOC_COMMENT">         * Default configuration settings.</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="21">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * config['enabled'] boolean Whether or not the benchmark is enabled, set to false if you wish to disabled on production</token>
   </line>
   <line no="22">
-    <token name="T_DOC_COMMENT">         * config['enabled'] boolean Whether or not the benchmark is enabled, set to false if you wish to disabled on production</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="23">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * @var array config default object configuration for the library</token>
   </line>
   <line no="24">
-    <token name="T_DOC_COMMENT">         * @var array config default object configuration for the library</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="25">
-    <token name="T_DOC_COMMENT">         */</token>
-  </line>
-  <line no="26">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$config</token>
@@ -104,53 +100,53 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
   </line>
-  <line no="27">
-    <token name="T_WHITESPACE">            </token>
+  <line no="26">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'enabled'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">   </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">true</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="28">
-    <token name="T_WHITESPACE">            </token>
+  <line no="27">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'decimals'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">  </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_LNUMBER">8</token>
   </line>
-  <line no="29">
-    <token name="T_WHITESPACE">        </token>
+  <line no="28">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="30"/>
-  <line no="31">
-    <token name="T_WHITESPACE">        </token>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     * Object constructor.</token>
+  </line>
   <line no="32">
-    <token name="T_DOC_COMMENT">         * Object constructor.</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="33">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * @param array $config</token>
   </line>
   <line no="34">
-    <token name="T_DOC_COMMENT">         * @param array $config</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="35">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * @throws Exception\RequiresMemoryGetUsage</token>
   </line>
   <line no="36">
-    <token name="T_DOC_COMMENT">         * @throws Exception\RequiresMemoryGetUsage</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="37">
-    <token name="T_DOC_COMMENT">         */</token>
-  </line>
-  <line no="38">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
@@ -164,16 +160,17 @@
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="38">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="39"/>
-  <line no="40">
-    <token name="T_WHITESPACE">            </token>
+  <line no="39">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// Merge the received config with the defaults</token>
   </line>
-  <line no="41">
-    <token name="T_WHITESPACE">            </token>
+  <line no="40">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">config</token>
@@ -191,9 +188,9 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="42"/>
-  <line no="43">
-    <token name="T_WHITESPACE">            </token>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">__construct</token>
@@ -202,36 +199,35 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="44"/>
-  <line no="45">
-    <token name="T_WHITESPACE">        </token>
+  <line no="43">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="46"/>
-  <line no="47">
-    <token name="T_WHITESPACE">        </token>
+  <line no="44"/>
+  <line no="45">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT">     * Start a benchmark.</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
   <line no="48">
-    <token name="T_DOC_COMMENT">         * Start a benchmark.</token>
+    <token name="T_DOC_COMMENT">     * @param $name string benchmark name</token>
   </line>
   <line no="49">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="50">
-    <token name="T_DOC_COMMENT">         * @param $name string benchmark name</token>
+    <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
   <line no="51">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="52">
-    <token name="T_DOC_COMMENT">         * @return void</token>
-  </line>
-  <line no="53">
-    <token name="T_DOC_COMMENT">         */</token>
-  </line>
-  <line no="54">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
@@ -241,31 +237,31 @@
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
+  <line no="53">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="54">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Config Check : Are Benchmarks enabled</token>
+  </line>
   <line no="55">
     <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'enabled'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
   <line no="56">
     <token name="T_WHITESPACE">            </token>
-    <token name="T_COMMENT">// Config Check : Are Benchmarks enabled</token>
-  </line>
-  <line no="57">
-    <token name="T_WHITESPACE">            </token>
-    <token name="T_IF">if</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">config</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'enabled'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_OPEN_CURLY">{</token>
-  </line>
-  <line no="58">
-    <token name="T_WHITESPACE">                </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">start</token>
@@ -274,59 +270,58 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="59">
-    <token name="T_WHITESPACE">            </token>
+  <line no="57">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
+  <line no="58">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="59"/>
   <line no="60">
-    <token name="T_WHITESPACE">        </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="61"/>
-  <line no="62">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT">     * Stop a benchmark.</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
   <line no="63">
-    <token name="T_DOC_COMMENT">         * Stop a benchmark.</token>
+    <token name="T_DOC_COMMENT">     * @param $name string benchmark name</token>
   </line>
   <line no="64">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="65">
-    <token name="T_DOC_COMMENT">         * @param $name string benchmark name</token>
+    <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
   <line no="66">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="67">
-    <token name="T_DOC_COMMENT">         * @return void</token>
-  </line>
-  <line no="68">
-    <token name="T_DOC_COMMENT">         */</token>
-  </line>
-  <line no="69">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">stop</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="70">
-    <token name="T_WHITESPACE">        </token>
+  <line no="68">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="71">
-    <token name="T_WHITESPACE">            </token>
+  <line no="69">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// Config Check : Are Benchmarks enabled</token>
   </line>
-  <line no="72">
-    <token name="T_WHITESPACE">            </token>
+  <line no="70">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -340,8 +335,8 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="73">
-    <token name="T_WHITESPACE">                </token>
+  <line no="71">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">stop</token>
@@ -350,40 +345,39 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="74">
-    <token name="T_WHITESPACE">            </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="75"/>
-  <line no="76">
+  <line no="72">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="77"/>
-  <line no="78">
-    <token name="T_WHITESPACE">        </token>
+  <line no="73">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT">     * Get details of a benchmark.</token>
+  </line>
+  <line no="77">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="78">
+    <token name="T_DOC_COMMENT">     * @param $name string benchmark name</token>
+  </line>
   <line no="79">
-    <token name="T_DOC_COMMENT">         * Get details of a benchmark.</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="80">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
   <line no="81">
-    <token name="T_DOC_COMMENT">         * @param $name string benchmark name</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="82">
-    <token name="T_DOC_COMMENT">         *</token>
-  </line>
-  <line no="83">
-    <token name="T_DOC_COMMENT">         * @return void</token>
-  </line>
-  <line no="84">
-    <token name="T_DOC_COMMENT">         */</token>
-  </line>
-  <line no="85">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
@@ -393,16 +387,16 @@
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="86">
-    <token name="T_WHITESPACE">        </token>
+  <line no="83">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="87">
-    <token name="T_WHITESPACE">            </token>
+  <line no="84">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// Config Check : Are Benchmarks enabled</token>
   </line>
-  <line no="88">
-    <token name="T_WHITESPACE">            </token>
+  <line no="85">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -416,69 +410,69 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="89">
-    <token name="T_WHITESPACE">                </token>
+  <line no="86">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
-    <token name="T_STRING">detailed</token>
+    <token name="T_STRING">details</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
+  <line no="87">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="88">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="89"/>
   <line no="90">
-    <token name="T_WHITESPACE">            </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="91">
-    <token name="T_WHITESPACE">        </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="92"/>
-  <line no="93">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="91">
+    <token name="T_DOC_COMMENT">     * Retrieve an summary of benchmark.</token>
+  </line>
+  <line no="92">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="93">
+    <token name="T_DOC_COMMENT">     * Rather then retreive all of the benchmark data, this instead</token>
+  </line>
   <line no="94">
-    <token name="T_DOC_COMMENT">         * Retrieve an summary of benchmark.</token>
+    <token name="T_DOC_COMMENT">     * will gather all benchmarks with the same name and return an array</token>
   </line>
   <line no="95">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * including, total, count, min, max, mean and median values of the benchmark</token>
   </line>
   <line no="96">
-    <token name="T_DOC_COMMENT">         * Rather then retreive all of the benchmark data, this instead</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="97">
-    <token name="T_DOC_COMMENT">         * will gather all benchmarks with the same name and return an array</token>
+    <token name="T_DOC_COMMENT">     * @param $name</token>
   </line>
   <line no="98">
-    <token name="T_DOC_COMMENT">         * including, total, count, min, max, mean and median values of the benchmark</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="99">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * @throws \Hive\Benchmark\Exception</token>
   </line>
   <line no="100">
-    <token name="T_DOC_COMMENT">         * @param $name</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="101">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     * @return array</token>
   </line>
   <line no="102">
-    <token name="T_DOC_COMMENT">         * @throws \Hive\Benchmark\Exception</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="103">
-    <token name="T_DOC_COMMENT">         *</token>
-  </line>
-  <line no="104">
-    <token name="T_DOC_COMMENT">         * @return array</token>
-  </line>
-  <line no="105">
-    <token name="T_DOC_COMMENT">         */</token>
-  </line>
-  <line no="106">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
@@ -492,25 +486,23 @@
     <token name="T_STRING">false</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="107">
+  <line no="104">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="105">
     <token name="T_WHITESPACE">        </token>
-    <token name="T_PHPDOX_OPEN_CURLY">{</token>
-  </line>
-  <line no="108"/>
-  <line no="109">
-    <token name="T_WHITESPACE">            </token>
     <token name="T_TRY">try</token>
-  </line>
-  <line no="110">
-    <token name="T_WHITESPACE">            </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="111">
-    <token name="T_WHITESPACE">                </token>
+  <line no="106"/>
+  <line no="107">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_COMMENT">// Initialise the variables</token>
   </line>
-  <line no="112">
-    <token name="T_WHITESPACE">                </token>
+  <line no="108">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$time</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -523,9 +515,9 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="113"/>
-  <line no="114">
-    <token name="T_WHITESPACE">                </token>
+  <line no="109"/>
+  <line no="110">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$marks</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -538,13 +530,13 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="115"/>
-  <line no="116">
-    <token name="T_WHITESPACE">                </token>
+  <line no="111"/>
+  <line no="112">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_COMMENT">// Gather the totals</token>
   </line>
-  <line no="117">
-    <token name="T_WHITESPACE">                </token>
+  <line no="113">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_FOREACH">foreach</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -557,12 +549,12 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="118">
-    <token name="T_WHITESPACE">                    </token>
+  <line no="114">
+    <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$time</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">     </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$mark</token>
@@ -571,12 +563,12 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="119">
-    <token name="T_WHITESPACE">                    </token>
+  <line no="115">
+    <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$memory</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">   </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$mark</token>
@@ -585,23 +577,23 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="120">
-    <token name="T_WHITESPACE">                </token>
+  <line no="116">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="121"/>
-  <line no="122">
-    <token name="T_WHITESPACE">                </token>
+  <line no="117"/>
+  <line no="118">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
   </line>
-  <line no="123">
-    <token name="T_WHITESPACE">                    </token>
+  <line no="119">
+    <token name="T_WHITESPACE">                </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'count'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">     </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">count</token>
@@ -610,10 +602,10 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="124">
-    <token name="T_WHITESPACE">                    </token>
+  <line no="120">
+    <token name="T_WHITESPACE">                </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'time'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">      </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$this</token>
@@ -632,10 +624,10 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="125">
-    <token name="T_WHITESPACE">                    </token>
+  <line no="121">
+    <token name="T_WHITESPACE">                </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'memory'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$result</token>
@@ -652,18 +644,16 @@
     <token name="T_VARIABLE">$memory</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="126">
-    <token name="T_WHITESPACE">                </token>
+  <line no="122">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="127"/>
-  <line no="128">
-    <token name="T_WHITESPACE">            </token>
+  <line no="123"/>
+  <line no="124">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="129">
-    <token name="T_WHITESPACE">            </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_CATCH">catch</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -672,13 +662,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$e</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-  </line>
-  <line no="130">
-    <token name="T_WHITESPACE">            </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="131">
-    <token name="T_WHITESPACE">                </token>
+  <line no="125">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_THROW">throw</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_NEW">new</token>
@@ -700,26 +688,27 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="132">
-    <token name="T_WHITESPACE">            </token>
+  <line no="126">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="133"/>
-  <line no="134">
-    <token name="T_WHITESPACE">            </token>
+  <line no="127"/>
+  <line no="128">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="135">
-    <token name="T_WHITESPACE">        </token>
+  <line no="129">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="136"/>
-  <line no="137"/>
-  <line no="138">
-    <token name="T_WHITESPACE">        </token>
+  <line no="130"/>
+  <line no="131"/>
+  <line no="132"/>
+  <line no="133">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
@@ -727,12 +716,13 @@
     <token name="T_STRING">summary</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="134">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="139"/>
-  <line no="140">
-    <token name="T_WHITESPACE">            </token>
+  <line no="135">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$results</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -741,9 +731,9 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="141"/>
-  <line no="142">
-    <token name="T_WHITESPACE">            </token>
+  <line no="136"/>
+  <line no="137">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_FOREACH">foreach</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -759,13 +749,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$values</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-  </line>
-  <line no="143">
-    <token name="T_WHITESPACE">            </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="144">
-    <token name="T_WHITESPACE">                </token>
+  <line no="138">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$results</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_VARIABLE">$mark</token>
@@ -781,65 +769,64 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="145">
-    <token name="T_WHITESPACE">            </token>
+  <line no="139">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="146"/>
-  <line no="147">
-    <token name="T_WHITESPACE">            </token>
+  <line no="140"/>
+  <line no="141">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$results</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="148">
-    <token name="T_WHITESPACE">        </token>
+  <line no="142">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="149"/>
-  <line no="150">
-    <token name="T_WHITESPACE">        </token>
+  <line no="143"/>
+  <line no="144">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
+  <line no="145">
+    <token name="T_DOC_COMMENT">     * Quick function for summary calculations.</token>
+  </line>
+  <line no="146">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="147">
+    <token name="T_DOC_COMMENT">     * Does a bunch of calculations upon an array of values, returns</token>
+  </line>
+  <line no="148">
+    <token name="T_DOC_COMMENT">     * the result.</token>
+  </line>
+  <line no="149">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="150">
+    <token name="T_DOC_COMMENT">     * @param $values</token>
+  </line>
   <line no="151">
-    <token name="T_DOC_COMMENT">         * Quick function for summary calculations</token>
+    <token name="T_DOC_COMMENT">     * @param int $decimals</token>
   </line>
   <line no="152">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="153">
-    <token name="T_DOC_COMMENT">         * Does a bunch of calculations upon an array of values, returns</token>
+    <token name="T_DOC_COMMENT">     * @return array</token>
   </line>
   <line no="154">
-    <token name="T_DOC_COMMENT">         * the result</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="155">
-    <token name="T_DOC_COMMENT">         *</token>
-  </line>
-  <line no="156">
-    <token name="T_DOC_COMMENT">         * @param $values</token>
-  </line>
-  <line no="157">
-    <token name="T_DOC_COMMENT">         * @param int $decimals</token>
-  </line>
-  <line no="158">
-    <token name="T_DOC_COMMENT">         *</token>
-  </line>
-  <line no="159">
-    <token name="T_DOC_COMMENT">         * @return array</token>
-  </line>
-  <line no="160">
-    <token name="T_DOC_COMMENT">         */</token>
-  </line>
-  <line no="161">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">calculate</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$values</token>
     <token name="T_PHPDOX_COMMA">,</token>
@@ -851,22 +838,39 @@
     <token name="T_LNUMBER">0</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="162">
-    <token name="T_WHITESPACE">        </token>
+  <line no="156">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="163">
-    <token name="T_WHITESPACE">            </token>
+  <line no="157">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// remove any values which are 0</token>
+  </line>
+  <line no="158">
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_VARIABLE">$values</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">array_filter</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$values</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="159"/>
+  <line no="160">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
   </line>
-  <line no="164">
-    <token name="T_WHITESPACE">                </token>
+  <line no="161">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'total'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">     </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
-    <token name="T_WHITESPACE">  </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">number_format</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_STRING">array_sum</token>
@@ -879,12 +883,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="165">
-    <token name="T_WHITESPACE">                </token>
+  <line no="162">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'min'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">       </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
-    <token name="T_WHITESPACE">  </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">number_format</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_STRING">min</token>
@@ -897,12 +901,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="166">
-    <token name="T_WHITESPACE">                </token>
+  <line no="163">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'max'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">       </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
-    <token name="T_WHITESPACE">  </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">number_format</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_STRING">max</token>
@@ -915,12 +919,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="167">
-    <token name="T_WHITESPACE">                </token>
+  <line no="164">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'mean'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">      </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
-    <token name="T_WHITESPACE">  </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">number_format</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_STRING">array_sum</token>
@@ -940,12 +944,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="168">
-    <token name="T_WHITESPACE">                </token>
+  <line no="165">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'median'</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
-    <token name="T_WHITESPACE">  </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">number_format</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$values</token>
@@ -972,18 +976,17 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="169">
-    <token name="T_WHITESPACE">            </token>
+  <line no="166">
+    <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="170">
-    <token name="T_WHITESPACE">        </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="171"/>
-  <line no="172">
+  <line no="167">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
+  <line no="168">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="169"/>
 </source>

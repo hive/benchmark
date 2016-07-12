@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1366" time="2016-07-04T21:40:11+11:00" unixtime="1467628811" sha1="3a2e26ae4c87bcd334e8a647c250e4046f976e6a" relative="Exception/AlreadyRunning.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1212" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="21e6cf91e409e2fad50be561be7927c3de6c78f3" relative="Exception/AlreadyRunning.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -14,50 +14,48 @@
   </line>
   <line no="2"/>
   <line no="3">
-    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="4">
-    <token name="T_DOC_COMMENT">     * Already Running Exception.</token>
+    <token name="T_DOC_COMMENT"> * Already Running Exception.</token>
   </line>
   <line no="5">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT">     * Called when the library attempts to start a benchmark</token>
+    <token name="T_DOC_COMMENT"> * Called when the library attempts to start a benchmark</token>
   </line>
   <line no="7">
-    <token name="T_DOC_COMMENT">     * the same benchmark is already running.</token>
+    <token name="T_DOC_COMMENT"> * the same benchmark is already running.</token>
   </line>
   <line no="8">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="9">
-    <token name="T_DOC_COMMENT">     * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT"> * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="10">
-    <token name="T_DOC_COMMENT">     * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
+    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
   </line>
   <line no="11">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="12">
-    <token name="T_DOC_COMMENT">     * @package Hive</token>
+    <token name="T_DOC_COMMENT"> * @package Hive</token>
   </line>
   <line no="13">
-    <token name="T_DOC_COMMENT">     * @subpackage Benchmark</token>
+    <token name="T_DOC_COMMENT"> * @subpackage Benchmark</token>
   </line>
   <line no="14">
-    <token name="T_DOC_COMMENT">     *             </token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="15">
-    <token name="T_DOC_COMMENT">     * @copyright (c) 2016 Jamie Peake</token>
+    <token name="T_DOC_COMMENT"> * @copyright (c) 2016 Jamie Peake</token>
   </line>
   <line no="16">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT"> */</token>
   </line>
   <line no="17">
-    <token name="T_WHITESPACE">    </token>
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">AlreadyRunning</token>
@@ -72,21 +70,20 @@
     <token name="T_STRING">Exception</token>
   </line>
   <line no="18">
-    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
   <line no="19">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="20">
-    <token name="T_DOC_COMMENT">         * Exception code, sequential exception numbers.</token>
+    <token name="T_DOC_COMMENT">     * Exception code, sequential exception numbers.</token>
   </line>
   <line no="21">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="22">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_CONST">const</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">CODE</token>
@@ -98,17 +95,17 @@
   </line>
   <line no="23"/>
   <line no="24">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="25">
-    <token name="T_DOC_COMMENT">         * Exception Message to be displayed</token>
+    <token name="T_DOC_COMMENT">     * Exception Message to be displayed.</token>
   </line>
   <line no="26">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="27">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_CONST">const</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">MESSAGE</token>
@@ -120,29 +117,29 @@
   </line>
   <line no="28"/>
   <line no="29">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="30">
-    <token name="T_DOC_COMMENT">         * Already Running Constructor, assigns exception code and places the message.</token>
+    <token name="T_DOC_COMMENT">     * Already Running Constructor, assigns exception code and places the message.</token>
   </line>
   <line no="31">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="32">
-    <token name="T_DOC_COMMENT">         * Will also place the name of the benchmark into the exception message if we have it</token>
+    <token name="T_DOC_COMMENT">     * Will also place the name of the benchmark into the exception message if we have it</token>
   </line>
   <line no="33">
-    <token name="T_DOC_COMMENT">         *</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="34">
-    <token name="T_DOC_COMMENT">         * @param string $name name of the benchmark already running</token>
+    <token name="T_DOC_COMMENT">     * @param string $name name of the benchmark already running</token>
   </line>
   <line no="35">
-    <token name="T_DOC_COMMENT">         */</token>
+    <token name="T_DOC_COMMENT">     */</token>
   </line>
   <line no="36">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
@@ -153,13 +150,13 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
   <line no="37">
-    <token name="T_WHITESPACE">        </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
   <line no="38">
-    <token name="T_WHITESPACE">            </token>
+    <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$code</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">       </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">self</token>
@@ -168,9 +165,9 @@
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="39">
-    <token name="T_WHITESPACE">            </token>
+    <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$message</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">strtr</token>
@@ -192,24 +189,24 @@
   </line>
   <line no="40"/>
   <line no="41">
-    <token name="T_WHITESPACE">            </token>
+    <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">__construct</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$message</token>
     <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$code</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="42">
-    <token name="T_WHITESPACE">        </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="43"/>
-  <line no="44">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
+  <line no="43">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="44"/>
 </source>

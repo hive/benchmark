@@ -100,7 +100,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#39">__construct($message = null, $code = null)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#39"><abbr title="__construct($message = null, $code = null)">__construct</abbr></a></td>
       <td class="success big">       <div class="progress">
          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -166,8 +166,8 @@
      <tr><td><div align="right"><a name="39"></a><a href="#39">39</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">__construct</span><span class="keyword">(</span><span class="default">$message</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">null</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">$code</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">null</span><span class="keyword">)</span></td></tr>
      <tr><td><div align="right"><a name="40"></a><a href="#40">40</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
      <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;Call&nbsp;the&nbsp;parent&nbsp;with&nbsp;the&nbsp;message&nbsp;and&nbsp;our&nbsp;now&nbsp;unique&nbsp;error&nbsp;code</span></td></tr>
-     <tr class="success popin" data-title="2 tests cover line 42" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;testObjectGet::testNotRunningException&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;testObjectGet::testStoppedRunningException&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">parent</span><span class="default">::</span><span class="default">__construct</span><span class="keyword">(</span><span class="default">$message</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">self</span><span class="default">::</span><span class="default">VENDOR</span><span class="keyword">.</span><span class="default">self</span><span class="default">::</span><span class="default">PACKAGE</span><span class="keyword">.</span><span class="default">$code</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
-     <tr class="success popin" data-title="2 tests cover line 43" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;testObjectGet::testNotRunningException&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;testObjectGet::testStoppedRunningException&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
+     <tr class="covered-by-large-tests popin" data-title="4 tests cover line 42" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testInstanceGet::testNotRunningException&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testInstanceGet::testStoppedRunningException&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testObjectGet::testNotRunningException&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testObjectGet::testStoppedRunningException&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">parent</span><span class="default">::</span><span class="default">__construct</span><span class="keyword">(</span><span class="default">$message</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">self</span><span class="default">::</span><span class="default">VENDOR</span><span class="keyword">.</span><span class="default">self</span><span class="default">::</span><span class="default">PACKAGE</span><span class="keyword">.</span><span class="default">$code</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
+     <tr class="covered-by-large-tests popin" data-title="4 tests cover line 43" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testInstanceGet::testNotRunningException&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testInstanceGet::testStoppedRunningException&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testObjectGet::testNotRunningException&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;testObjectGet::testStoppedRunningException&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
      <tr><td><div align="right"><a name="44"></a><a href="#44">44</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
 
     </tbody>
@@ -181,14 +181,14 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.11</a> using <a href="http://php.net/" target="_top">PHP 5.5.13</a> and <a href="http://phpunit.de/">PHPUnit 4.3.3</a> at Tue Jul 5 15:09:44 MIST 2016.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.3</a> using <a href="http://php.net/" target="_top">PHP 5.5.13</a> and <a href="http://phpunit.de/">PHPUnit 4.8.9</a> at Tue Jul 12 15:39:23 MIST 2016.</small>
     </p>
     <a title="Back to the top" id="toplink" href="#"><span class="glyphicon glyphicon-arrow-up"></span></a>
    </footer>
   </div>
   <script src="../js/jquery.min.js" type="text/javascript"></script>
   <script src="../js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="../js/holder.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
   <script type="text/javascript">
   $(function() {
    var $window   = $(window)

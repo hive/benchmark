@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning" abstract="false" final="false" start="17" end="44">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1366" time="2016-07-04T21:40:11+11:00" unixtime="1467628811" sha1="3a2e26ae4c87bcd334e8a647c250e4046f976e6a" relative="Exception/AlreadyRunning.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning" abstract="false" final="false" start="17" end="43">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1212" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="21e6cf91e409e2fad50be561be7927c3de6c78f3" relative="Exception/AlreadyRunning.php"/>
   <docblock>
     <description compact="Already Running Exception.">Called when the library attempts to start a benchmark
 the same benchmark is already running.</description>
@@ -18,7 +18,7 @@ the same benchmark is already running.</description>
   </constant>
   <constant type="string" name="MESSAGE" value="'A benchmark named :name is already running, either stop the benchmark named :name or create a benchmark with a new name'">
     <docblock>
-      <description compact="Exception Message to be displayed"/>
+      <description compact="Exception Message to be displayed."/>
     </docblock>
   </constant>
   <constructor name="__construct" start="36" end="42" abstract="false" final="false" static="false" visibility="public">
@@ -42,7 +42,7 @@ the same benchmark is already running.</description>
     </constant>
     <constructor name="__construct" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
       <docblock>
-        <description compact="Exception constructor, assigns the message and code and calls the exception handler">It will prepend the error code with the vendor code, package code and exception code,
+        <description compact="Exception constructor, assigns the message and code and calls the exception handler.">It will prepend the error code with the vendor code, package code and exception code,
 so that we have a unique exception code.</description>
         <param description="The exceptions message." type="object" variable="$message">
           <type full="Hive\Benchmark\null|string" namespace="Hive\Benchmark" name="null|string"/>

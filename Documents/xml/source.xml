@@ -2,19 +2,18 @@
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source">
     <dir name="Contract">
-      <file name="Instance.php" size="1922" time="2016-07-04T21:31:08+11:00" unixtime="1467628268" sha1="a3d9ac870627c40d4b933c7e413f08838af17a24" xml="tokens/Contract/Instance.php.xml"/>
-      <file name="Library.php" size="1052" time="2016-07-04T21:25:22+11:00" unixtime="1467627922" sha1="89a675d5ed197aa7d9d0339570ae46791517d438" xml="tokens/Contract/Library.php.xml"/>
-      <file name="Object.php" size="785" time="2016-07-04T21:25:35+11:00" unixtime="1467627935" sha1="5797bed21b6d77db053de9337b26e603549e6d0e" xml="tokens/Contract/Object.php.xml"/>
+      <file name="Instance.php" size="1644" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="77edac855f1a671d2de2d366d46a4a3b1c1970c6" xml="tokens/Contract/Instance.php.xml"/>
+      <file name="Library.php" size="892" time="2016-07-12T15:10:44+11:00" unixtime="1468296644" sha1="742e59c9fe511e4b8fd448237248e9b8195156dc" xml="tokens/Contract/Library.php.xml"/>
+      <file name="Object.php" size="662" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="46392b0500e17c2441f4c745e5bab5ec2b267627" xml="tokens/Contract/Object.php.xml"/>
     </dir>
     <dir name="Exception">
-      <file name="AlreadyRunning.php" size="1366" time="2016-07-04T21:40:11+11:00" unixtime="1467628811" sha1="3a2e26ae4c87bcd334e8a647c250e4046f976e6a" xml="tokens/Exception/AlreadyRunning.php.xml"/>
-      <file name="NotRunning.php" size="1239" time="2016-07-04T21:40:29+11:00" unixtime="1467628829" sha1="80eb2a882d5af31e79e57c9c2a32c3ccb4adf7a6" xml="tokens/Exception/NotRunning.php.xml"/>
-      <file name="RequiresMemoryGetUsage.php" size="1103" time="2016-07-04T21:40:43+11:00" unixtime="1467628843" sha1="8c49d43dbaf73f59c32ba267f14778ca0feac779" xml="tokens/Exception/RequiresMemoryGetUsage.php.xml"/>
-      <file name="StoppedRunning.php" size="1219" time="2016-07-04T21:40:59+11:00" unixtime="1467628859" sha1="7437818b9d2fcc422572560807a2a2668f50d115" xml="tokens/Exception/StoppedRunning.php.xml"/>
+      <file name="AlreadyRunning.php" size="1212" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="21e6cf91e409e2fad50be561be7927c3de6c78f3" xml="tokens/Exception/AlreadyRunning.php.xml"/>
+      <file name="NotRunning.php" size="1103" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="b4543b534471027551c1cb8b2a6e54b7a1577507" xml="tokens/Exception/NotRunning.php.xml"/>
+      <file name="StoppedRunning.php" size="1080" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="d8eb0ba34a9e57c8e24e0010658985e90af18097" xml="tokens/Exception/StoppedRunning.php.xml"/>
     </dir>
-    <file name="Exception.php" size="1412" time="2016-07-04T21:48:02+11:00" unixtime="1467629282" sha1="a06f61957a7de01dceeb37aff014e48f2c1cf1c4" xml="tokens/Exception.php.xml"/>
-    <file name="Instance.php" size="4257" time="2016-07-04T21:47:06+11:00" unixtime="1467629226" sha1="18ac2e2b769d43c373a1545670ac8918e50f9207" xml="tokens/Instance.php.xml"/>
-    <file name="Library.php" size="7169" time="2016-07-04T21:36:04+11:00" unixtime="1467628564" sha1="3fa8285201bbfa9a65b8fe66363d7514879e043e" xml="tokens/Library.php.xml"/>
-    <file name="Object.php" size="4644" time="2016-07-04T21:37:52+11:00" unixtime="1467628672" sha1="aba6281cdde327f62ba1087d4fe4a895d9dc5493" xml="tokens/Object.php.xml"/>
+    <file name="Exception.php" size="1263" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="d6d5adca5dc4783390dfd7e14f9d4885cb52a95e" xml="tokens/Exception.php.xml"/>
+    <file name="Instance.php" size="3669" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="d05625a9fe2a78a5ac56fcd5bc2907fbbc731d7f" xml="tokens/Instance.php.xml"/>
+    <file name="Library.php" size="6523" time="2016-07-07T04:04:49+11:00" unixtime="1467824689" sha1="db1b3b3c2369006e26b1ab993f554c03b2dc9a0f" xml="tokens/Library.php.xml"/>
+    <file name="Object.php" size="4149" time="2016-07-07T04:05:29+11:00" unixtime="1467824729" sha1="f54beebdd2fe9e401b9e255738aeb62738a69d48" xml="tokens/Object.php.xml"/>
   </dir>
 </source>

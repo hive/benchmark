@@ -83,7 +83,7 @@ class Object extends Library implements Contract\Object
     {
         // Config Check : Are Benchmarks enabled
         if ($this->config['enabled']) {
-            return parent::detailed($name);
+            return parent::details($name);
         }
     }
 
@@ -120,12 +120,14 @@ class Object extends Library implements Contract\Object
                 'time'      => $this->calculate($time, $this->config['decimals']),
                 'memory'    => $result['memory'] = $this->calculate($memory)
             ];
+
         } catch (\Exception $e) {
             throw new Exception($e->getMessage(), $e->getCode());
         }
 
         return $result;
     }
+
 
 
     public function summary()
@@ -152,6 +154,9 @@ class Object extends Library implements Contract\Object
      */
     private function calculate($values, $decimals = 0)
     {
+        // remove any values which are 0
+       $values = array_filter($values);
+
         return [
             'total'     => number_format(array_sum($values), $decimals),
             'min'       => number_format(min($values), $decimals),

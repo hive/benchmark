@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance" abstract="false" final="false" start="16" end="78">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="1922" time="2016-07-04T21:31:08+11:00" unixtime="1467628268" sha1="a3d9ac870627c40d4b933c7e413f08838af17a24" relative="Contract/Instance.php"/>
+<interface xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance" abstract="false" final="false" start="16" end="77">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="1644" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="77edac855f1a671d2de2d366d46a4a3b1c1970c6" relative="Contract/Instance.php"/>
   <docblock>
-    <description compact="Instance Interface">Interface for use with the instances.</description>
+    <description compact="Instance Interface.">Interface for use with the instances.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
     <licence value="https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)"/>
     <package value="Hive"/>
@@ -53,7 +53,7 @@
   </method>
   <method name="method" start="76" end="76" abstract="false" final="false" static="true" visibility="public">
     <docblock>
-      <description compact="Start/Stop a benchmark with the current 'methods' name"/>
+      <description compact="Start/Stop a benchmark with the current 'methods' name."/>
       <return type="object">
         <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
       </return>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object" abstract="false" final="false" start="17" end="172">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4644" time="2016-07-04T21:37:52+11:00" unixtime="1467628672" sha1="aba6281cdde327f62ba1087d4fe4a895d9dc5493" relative="Object.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object" abstract="false" final="false" start="16" end="168">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4149" time="2016-07-07T04:05:29+11:00" unixtime="1467824729" sha1="f54beebdd2fe9e401b9e255738aeb62738a69d48" relative="Object.php"/>
   <docblock>
     <description compact="Object Library.">Allows access to the library through an object.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -11,13 +11,13 @@
   </docblock>
   <extends full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library"/>
   <implements full="Hive\Benchmark\Contract\Object" namespace="Hive\Benchmark\Contract" name="Object"/>
-  <member name="config" type="array" default="" visibility="private" static="false" line="26">
+  <member name="config" type="array" default="" visibility="private" static="false" line="25">
     <docblock>
       <description compact="Default configuration settings.">config['enabled'] boolean Whether or not the benchmark is enabled, set to false if you wish to disabled on production</description>
       <var description="config default object configuration for the library" type="array"/>
     </docblock>
   </member>
-  <constructor name="__construct" start="38" end="45" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="37" end="43" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Object constructor."/>
       <param type="array" variable="$config"/>
@@ -27,10 +27,10 @@
     </docblock>
     <parameter name="config" byreference="false" type="array" default=""/>
     <inline>
-      <comment value="Merge the received config with the defaults" line="40"/>
+      <comment value="Merge the received config with the defaults" line="39"/>
     </inline>
   </constructor>
-  <method name="start" start="54" end="60" abstract="false" final="false" static="false" visibility="public">
+  <method name="start" start="52" end="58" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Start a benchmark."/>
       <param description="benchmark name" variable="$name" type="string"/>
@@ -40,10 +40,10 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Config Check : Are Benchmarks enabled" line="56"/>
+      <comment value="Config Check : Are Benchmarks enabled" line="54"/>
     </inline>
   </method>
-  <method name="stop" start="69" end="76" abstract="false" final="false" static="false" visibility="public">
+  <method name="stop" start="67" end="73" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Stop a benchmark."/>
       <param description="benchmark name" variable="$name" type="string"/>
@@ -53,10 +53,10 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Config Check : Are Benchmarks enabled" line="71"/>
+      <comment value="Config Check : Are Benchmarks enabled" line="69"/>
     </inline>
   </method>
-  <method name="details" start="85" end="91" abstract="false" final="false" static="false" visibility="public">
+  <method name="details" start="82" end="88" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get details of a benchmark."/>
       <param description="benchmark name" variable="$name" type="string"/>
@@ -66,10 +66,10 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Config Check : Are Benchmarks enabled" line="87"/>
+      <comment value="Config Check : Are Benchmarks enabled" line="84"/>
     </inline>
   </method>
-  <method name="get" start="106" end="135" abstract="false" final="false" static="false" visibility="public">
+  <method name="get" start="103" end="129" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Retrieve an summary of benchmark.">Rather then retreive all of the benchmark data, this instead
 will gather all benchmarks with the same name and return an array
@@ -82,17 +82,20 @@ including, total, count, min, max, mean and median values of the benchmark</desc
     </docblock>
     <parameter name="name" byreference="false" type="boolean" default="false"/>
   </method>
-  <method name="summary" start="138" end="148" abstract="false" final="false" static="false" visibility="public"/>
-  <method name="calculate" start="161" end="170" abstract="false" final="false" static="false" visibility="private">
+  <method name="summary" start="133" end="142" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="calculate" start="155" end="167" abstract="false" final="false" static="false" visibility="private">
     <docblock>
-      <description compact="Quick function for summary calculations">Does a bunch of calculations upon an array of values, returns
-the result</description>
+      <description compact="Quick function for summary calculations.">Does a bunch of calculations upon an array of values, returns
+the result.</description>
       <param variable="$values"/>
       <param type="int" variable="$decimals"/>
       <return type="array"/>
     </docblock>
     <parameter name="values" byreference="false" type="{unknown}"/>
     <parameter name="decimals" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="remove any values which are 0" line="157"/>
+    </inline>
   </method>
   <parent full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library">
     <implements full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library"/>
@@ -102,7 +105,7 @@ the result</description>
         <var type="array"/>
       </docblock>
     </member>
-    <constructor name="__construct" start="49" end="65" abstract="false" final="false" static="false" visibility="public">
+    <constructor name="__construct" start="49" end="56" abstract="false" final="false" static="false" visibility="public">
       <docblock>
         <description compact="Library constructor."/>
         <param type="array" variable="$config"/>
@@ -112,11 +115,10 @@ the result</description>
       </docblock>
       <parameter name="config" byreference="false" type="array" default=""/>
       <inline>
-        <comment value="Merge the received config with the defaults" line="51"/>
-        <comment value="sanity check upon memory" line="56"/>
+        <comment value="Merge the received config with the defaults." line="51"/>
       </inline>
     </constructor>
-    <method name="start" start="74" end="91" abstract="false" final="false" static="false" visibility="public">
+    <method name="start" start="65" end="81" abstract="false" final="false" static="false" visibility="public">
       <docblock>
         <description compact="Start a benchmark."/>
         <param description="benchmark name" variable="$name" type="string"/>
@@ -126,13 +128,13 @@ the result</description>
       </docblock>
       <parameter name="name" byreference="false" type="{unknown}"/>
       <inline>
-        <comment value="create the parent holder" line="76"/>
-        <comment value="initialise the variable" line="82"/>
-        <comment value="get the benchmarks" line="85"/>
-        <comment value="Add the item to the top of its array" line="89"/>
+        <comment value="create the parent holder" line="67"/>
+        <comment value="initialise the variable" line="72"/>
+        <comment value="get the benchmarks" line="75"/>
+        <comment value="Add the item to the top of its array" line="79"/>
       </inline>
     </method>
-    <method name="stop" start="103" end="128" abstract="false" final="false" static="false" visibility="public">
+    <method name="stop" start="93" end="114" abstract="false" final="false" static="false" visibility="public">
       <docblock>
         <description compact="Stop a benchmark."/>
         <param description="benchmark name" variable="$name" type="string"/>
@@ -148,10 +150,10 @@ the result</description>
       </docblock>
       <parameter name="name" byreference="false" type="{unknown}"/>
       <inline>
-        <comment value="GIGO : The benchmark we are attempting to stop has been started" line="105"/>
+        <comment value="GIGO : The benchmark we are attempting to stop has been started" line="95"/>
       </inline>
     </method>
-    <method name="details" start="168" end="188" abstract="false" final="false" static="false" visibility="public">
+    <method name="details" start="155" end="177" abstract="false" final="false" static="false" visibility="public">
       <docblock>
         <description compact="Get a benchmark."/>
         <param description="the name of the benchmark to get" variable="$name" type="string"/>
@@ -170,7 +172,7 @@ the result</description>
       </docblock>
       <parameter name="name" byreference="false" type="{unknown}"/>
     </method>
-    <method name="retrieve" start="202" end="247" abstract="false" final="false" static="false" visibility="protected">
+    <method name="retrieve" start="191" end="237" abstract="false" final="false" static="false" visibility="protected">
       <docblock>
         <description compact="Retrieve an all benchmarks of a perticular name from the internal marks storage array.">Internal process, no gigo/sanity</description>
         <param variable="$name"/>
@@ -205,7 +207,7 @@ the result</description>
     </method>
     <method name="details" start="43" end="43" abstract="false" final="false" static="false" visibility="public">
       <docblock>
-        <description compact="Get benchmark's details"/>
+        <description compact="Get benchmark's details."/>
         <param description="the benchmark to get the details of." type="string" variable="$name"/>
         <return type="array"/>
       </docblock>
@@ -216,7 +218,7 @@ the result</description>
     <extends full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library"/>
     <method name="get" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
       <docblock>
-        <description compact="Get benchmark's results"/>
+        <description compact="Get benchmark's results."/>
         <param description="the benchmark to get." type="string" variable="$name"/>
         <return type="array"/>
       </docblock>
