@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance" abstract="false" final="false" start="16" end="77">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="1644" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="77edac855f1a671d2de2d366d46a4a3b1c1970c6" relative="Contract/Instance.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Instance.php" size="1660" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="78259cdc76378462a83c239ade24a7c51b707115" relative="Contract/Instance.php"/>
   <docblock>
     <description compact="Instance Interface.">Interface for use with the instances.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>

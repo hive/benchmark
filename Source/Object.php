@@ -5,11 +5,11 @@
  *
  * Allows access to the library through an object.
  *
- * @author Jamie Peake <jamie.peake@gmail.com>
+ * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
  *
- * @package Hive
- * @subpackage Benchmark
+ * @package       Hive
+ * @subpackage    Benchmark
  *
  * @copyright (c) 2016 Jamie Peake
  */
@@ -23,8 +23,8 @@ class Object extends Library implements Contract\Object
      * @var array config default object configuration for the library
      */
     private $config = [
-        'enabled'   => true,
-        'decimals'  => 8
+        'enabled'  => true,
+        'decimals' => 8
     ];
 
     /**
@@ -111,14 +111,14 @@ class Object extends Library implements Contract\Object
 
             // Gather the totals
             foreach ($marks as $mark) {
-                $time[]     = $mark['time'];
-                $memory[]   = $mark['memory'];
+                $time[] = $mark['time'];
+                $memory[] = $mark['memory'];
             }
 
             $result = [
-                'count'     => count($time),
-                'time'      => $this->calculate($time, $this->config['decimals']),
-                'memory'    => $result['memory'] = $this->calculate($memory)
+                'count'  => count($time),
+                'time'   => $this->calculate($time, $this->config['decimals']),
+                'memory' => $result['memory'] = $this->calculate($memory)
             ];
 
         } catch (\Exception $e) {
@@ -127,7 +127,6 @@ class Object extends Library implements Contract\Object
 
         return $result;
     }
-
 
 
     public function summary()
@@ -155,14 +154,14 @@ class Object extends Library implements Contract\Object
     private function calculate($values, $decimals = 0)
     {
         // remove any values which are 0
-       $values = array_filter($values);
+        $values = array_filter($values);
 
         return [
-            'total'     => number_format(array_sum($values), $decimals),
-            'min'       => number_format(min($values), $decimals),
-            'max'       => number_format(max($values), $decimals),
-            'mean'      => number_format(array_sum($values) / count($values), $decimals),
-            'median'    => number_format($values[round(count($values) / 2) - 1], $decimals),
+            'total'  => number_format(array_sum($values), $decimals),
+            'min'    => number_format(min($values), $decimals),
+            'max'    => number_format(max($values), $decimals),
+            'mean'   => number_format(array_sum($values) / count($values), $decimals),
+            'median' => number_format($values[round(count($values) / 2) - 1], $decimals),
         ];
     }
 }

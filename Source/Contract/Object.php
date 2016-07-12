@@ -5,11 +5,11 @@
  *
  * Interface for the object class used as a contract.
  *
- * @author Jamie Peake <jamie.peake@gmail.com>
+ * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
  *
- * @package Hive
- * @subpackage Benchmark
+ * @package       Hive
+ * @subpackage    Benchmark
  *
  * @copyright (c) 2016 Jamie Peake
  *

@@ -1,6 +1,6 @@
 <?php
 
-    class testObjectGet extends PHPUnit_Framework_TestCase
+    class testObjectGet extends base
     {
 
         public function testSanity()
@@ -27,12 +27,4 @@
             $bm->stop('simple');
         }
 
-        public function strToFloat($variable)
-        {
-            if (is_string($variable)) {
-                $value = floatval(str_replace(',', '', $variable));
-
-                return $value;
-            }
-        }
     }

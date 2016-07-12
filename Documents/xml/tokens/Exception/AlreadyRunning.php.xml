@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1212" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="21e6cf91e409e2fad50be561be7927c3de6c78f3" relative="Exception/AlreadyRunning.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1219" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="538bf370167ac8eb247153f2b8d609437b32dad7" relative="Exception/AlreadyRunning.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -32,7 +32,7 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="9">
-    <token name="T_DOC_COMMENT"> * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="10">
     <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
@@ -41,10 +41,10 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="12">
-    <token name="T_DOC_COMMENT"> * @package Hive</token>
+    <token name="T_DOC_COMMENT"> * @package       Hive</token>
   </line>
   <line no="13">
-    <token name="T_DOC_COMMENT"> * @subpackage Benchmark</token>
+    <token name="T_DOC_COMMENT"> * @subpackage    Benchmark</token>
   </line>
   <line no="14">
     <token name="T_DOC_COMMENT"> *</token>
@@ -156,7 +156,7 @@
   <line no="38">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$code</token>
-    <token name="T_WHITESPACE">       </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">self</token>
@@ -167,7 +167,7 @@
   <line no="39">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$message</token>
-    <token name="T_WHITESPACE">    </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">strtr</token>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception" namespace="Hive\Benchmark" name="Exception" abstract="false" final="false" start="16" end="44">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1263" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="d6d5adca5dc4783390dfd7e14f9d4885cb52a95e" relative="Exception.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1283" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="8a3941e3db7eba3f08473cf2a3fa37711a21d1b6" relative="Exception.php"/>
   <docblock>
     <description compact="Requires Memory Get Usage Exception.">Called when the library has memory benchmarks enabled but no way to get the memory data.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>

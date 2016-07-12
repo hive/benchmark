@@ -5,11 +5,11 @@
  *
  * Allows access to the benchmark object through a instance.
  *
- * @author Jamie Peake <jamie.peake@gmail.com>
+ * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
  *
- * @package Hive
- * @subpackage Benchmark
+ * @package       Hive
+ * @subpackage    Benchmark
  *
  * @copyright (c) 2016 Jamie Peake
  */
@@ -34,6 +34,7 @@ class Instance implements Contract\Instance
      * Static Alias to the Benchmark/Object/Start.
      *
      * @param  string $name The benchmark to start.
+     *
      * @return void
      */
     public static function start($name)
@@ -47,6 +48,7 @@ class Instance implements Contract\Instance
      * Static Alias to the Benchmark/Object/Stop.
      *
      * @param  string $name The benchmark to stop.
+     *
      * @return void
      */
     public static function stop($name)
@@ -60,6 +62,7 @@ class Instance implements Contract\Instance
      * Static Alias to the Benchmark/Object/Details.
      *
      * @param  string $name The benchmark to get
+     *
      * @return array
      */
     public static function details($name)
@@ -73,6 +76,7 @@ class Instance implements Contract\Instance
      * Static Alias to the Benchmark/Object/Get.
      *
      * @param  string $name The benchmark to get a summary of.
+     *
      * @return array
      */
     public static function get($name)
@@ -100,8 +104,8 @@ class Instance implements Contract\Instance
      * or even setting whether to start/stop.
      *
      * @param string $action (auto|start|stop) auto will determine whether to start or stop.
-     * @param int    $stack  how far in the stacktrace to go back.
-    */
+     * @param int $stack     how far in the stacktrace to go back.
+     */
     public static function method($action = 'auto', $stack = 3)
     {
         // Get the name of the caller method
@@ -141,13 +145,14 @@ class Instance implements Contract\Instance
     /**
      * Simple debug_backtrace to get the name of the method which called.
      *
-     * @param  int    $stack How far in the stacktrace to go back.
+     * @param  int $stack How far in the stacktrace to go back.
+     *
      * @return string $name   The caller class/method.
      */
     private static function trace($stack = 2)
     {
         $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $stack)[$stack - 1];
 
-        return $caller['class'] . '\\' .$caller['function'];
+        return $caller['class'] . '\\' . $caller['function'];
     }
 }

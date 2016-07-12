@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1263" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="d6d5adca5dc4783390dfd7e14f9d4885cb52a95e" relative="Exception.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1283" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="8a3941e3db7eba3f08473cf2a3fa37711a21d1b6" relative="Exception.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -27,7 +27,7 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="8">
-    <token name="T_DOC_COMMENT"> * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="9">
     <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
@@ -36,10 +36,10 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="11">
-    <token name="T_DOC_COMMENT"> * @package Hive</token>
+    <token name="T_DOC_COMMENT"> * @package       Hive</token>
   </line>
   <line no="12">
-    <token name="T_DOC_COMMENT"> * @subpackage Benchmark</token>
+    <token name="T_DOC_COMMENT"> * @subpackage    Benchmark</token>
   </line>
   <line no="13">
     <token name="T_DOC_COMMENT"> *</token>
@@ -134,7 +134,7 @@
     <token name="T_DOC_COMMENT">     * @param null|string $message The exceptions message.</token>
   </line>
   <line no="37">
-    <token name="T_DOC_COMMENT">     * @param null|int    $code    The exception code.</token>
+    <token name="T_DOC_COMMENT">     * @param null|int $code       The exception code.</token>
   </line>
   <line no="38">
     <token name="T_DOC_COMMENT">     */</token>
@@ -181,11 +181,15 @@
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">VENDOR</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">PACKAGE</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$code</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>

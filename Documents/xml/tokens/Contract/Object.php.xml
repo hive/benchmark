@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Object.php" size="662" time="2016-07-04T23:45:14+11:00" unixtime="1467636314" sha1="46392b0500e17c2441f4c745e5bab5ec2b267627" relative="Contract/Object.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Object.php" size="678" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="3fee93a5d4b51a83f9e0c6729d3ce1522fc94e17" relative="Contract/Object.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -29,7 +29,7 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="8">
-    <token name="T_DOC_COMMENT"> * @author Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
   </line>
   <line no="9">
     <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
@@ -38,10 +38,10 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="11">
-    <token name="T_DOC_COMMENT"> * @package Hive</token>
+    <token name="T_DOC_COMMENT"> * @package       Hive</token>
   </line>
   <line no="12">
-    <token name="T_DOC_COMMENT"> * @subpackage Benchmark</token>
+    <token name="T_DOC_COMMENT"> * @subpackage    Benchmark</token>
   </line>
   <line no="13">
     <token name="T_DOC_COMMENT"> *</token>

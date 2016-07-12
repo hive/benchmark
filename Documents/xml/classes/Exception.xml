@@ -91,4 +91,4 @@
       <return type="void"/>
     </docblock>
   </method>
-<extenders><extender full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning"/><extender full="Hive\Benchmark\Exception\NotRunning" namespace="Hive\Benchmark\Exception" name="NotRunning"/><extender full="Hive\Benchmark\Exception\RequiresMemoryGetUsage" namespace="Hive\Benchmark\Exception" name="RequiresMemoryGetUsage"/><extender full="Hive\Benchmark\Exception\StoppedRunning" namespace="Hive\Benchmark\Exception" name="StoppedRunning"/><extender full="Hive\Benchmark\Exception" namespace="Hive\Benchmark" name="Exception"/></extenders></class>
+<extenders><extender full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning"/><extender full="Hive\Benchmark\Exception\NotRunning" namespace="Hive\Benchmark\Exception" name="NotRunning"/><extender full="Hive\Benchmark\Exception\StoppedRunning" namespace="Hive\Benchmark\Exception" name="StoppedRunning"/><extender full="Hive\Benchmark\Exception" namespace="Hive\Benchmark" name="Exception"/></extenders></class>

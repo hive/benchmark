@@ -5,11 +5,11 @@
  *
  * The actual benchmark library, which does the core operations.
  *
- * @author Jamie Peake <jamie.peake@gmail.com>
+ * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
  *
- * @package Hive
- * @subpackage Benchmark
+ * @package       Hive
+ * @subpackage    Benchmark
  *
  * @copyright (c) 2016 Jamie Peake
  */
@@ -26,9 +26,9 @@ class Library implements Contract\Library
      * @var array ['decimals'] : integer : The number of decimals to benchmark against
      */
     private $config = [
-        'timer'     => true,
-        'memory'    => true,
-        'decimals'  => 9
+        'timer'    => true,
+        'memory'   => true,
+        'decimals' => 9
     ];
 
     /**
@@ -52,7 +52,7 @@ class Library implements Contract\Library
          * Merge the received config with the defaults.
          */
         $this->config = array_merge($config, $this->config);
-        
+
     }
 
     /**
@@ -115,6 +115,7 @@ class Library implements Contract\Library
 
     /**
      * Sets the current time into supplied variable.
+     *
      * @param $variable
      */
     private function timer(&$variable)
@@ -192,9 +193,9 @@ class Library implements Contract\Library
     {
         try {
             // Initialise the variables
-            $time       = false;
-            $memory     = false;
-            $results    = [];
+            $time = false;
+            $memory = false;
+            $results = [];
 
             /**
              * Return the time between the start and stop points for each
@@ -218,15 +219,15 @@ class Library implements Contract\Library
                 }
 
                 $result = [
-                    'time'   => number_format($time, $this->config['decimals']),
-                    'count'  => count($this->marks[$name])
+                    'time'  => number_format($time, $this->config['decimals']),
+                    'count' => count($this->marks[$name])
                 ];
 
                 // If memory has been assigned
                 if ($this->config['memory']) {
                     $result['memory'] = $memory;
                 }
-                
+
                 $results[] = $result;
             }
         } catch (\Exception $e) {

@@ -1,6 +1,6 @@
 <?php
 
-    class testInstanceDetails extends PHPUnit_Framework_TestCase
+    class testInstanceDetails extends base
     {
         public function testSanity()
         {
