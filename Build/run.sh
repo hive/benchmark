@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+phpcs ../Source/;
+
+
 # Gather php lines of code
 phploc --log-xml ../Documents/xml/phploc.xml --progress ../Source/;
 
@@ -7,7 +10,7 @@ phploc --log-xml ../Documents/xml/phploc.xml --progress ../Source/;
 phpunit --configuration phpunit.xml --testsuite All;
 
 
-phpcs ../Source/;
+
 
 # Run php mess detector
 phpmd ../Source xml codesize,controversial,design,naming,unusedcode --reportfile ../Documents/xml/phpmd.xml --suffixes php;
