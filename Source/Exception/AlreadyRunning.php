@@ -24,7 +24,7 @@ class AlreadyRunning extends \Hive\Benchmark\Exception
     /**
      * Exception Message to be displayed.
      */
-    const MESSAGE = 'A benchmark named :name is already running, either stop the benchmark named :name or create a benchmark with a new name';
+    const MESSAGE = 'A benchmark named :name is already running, either stop it or create a benchmark with a new name';
 
     /**
      * Already Running Constructor, assigns exception code and places the message.

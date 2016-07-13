@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="16" end="158">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Instance.php" size="3719" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="48aa6b2ed2f524ff0b5126e7eb134d5fa140fd18" relative="Instance.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="16" end="156">
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Instance.php" size="3717" time="2016-07-12T19:48:11+11:00" unixtime="1468313291" sha1="09af3f67f1dee899841ee27e6a6c316c8481beb8" relative="Instance.php"/>
   <docblock>
     <description compact="Benchmark Instance.">Allows access to the benchmark object through a instance.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -59,7 +59,7 @@
       <return type="array"/>
     </docblock>
   </method>
-  <method name="method" start="109" end="142" abstract="false" final="false" static="true" visibility="public">
+  <method name="method" start="109" end="140" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Auto Method for setting benchmarks on a method, with out requiring its name.">or even setting whether to start/stop.</description>
       <param description="(auto|start|stop) auto will determine whether to start or stop." type="string" variable="$action"/>
@@ -70,10 +70,10 @@
     <inline>
       <comment value="Get the name of the caller method" line="111"/>
       <comment value="If its an auto, find out what method to run." line="114"/>
-      <comment value="run the action" line="140"/>
+      <comment value="run the action" line="138"/>
     </inline>
   </method>
-  <method name="trace" start="152" end="157" abstract="false" final="false" static="true" visibility="private">
+  <method name="trace" start="150" end="155" abstract="false" final="false" static="true" visibility="private">
     <docblock>
       <description compact="Simple debug_backtrace to get the name of the method which called."/>
       <param description="How far in the stacktrace to go back." type="int" variable="$stack"/>

@@ -121,14 +121,12 @@ class Instance implements Contract\Instance
              * so it much be a start action.
              */
             if (!isset(self::$methods[$name])) {
-
                 // Set the benchmark to start()
                 $action = 'start';
 
                 // Add the benchmark to our list of running methods
                 self::$methods[$name] = true;
             } else {
-
                 // Set the benchmark to stop()
                 $action = 'stop';
 

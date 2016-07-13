@@ -1,15 +1,23 @@
 <?xml version="1.0"?>
 <ruleset name="PHP_CodeSniffer">
-    <description>The coding standard for PHP_CodeSniffer itself.</description>
+    <description>Hive CS.</description>
 
-    <file>Source</file>
+    <file>../Source/</file>
 
-    <exclude-pattern>*/Documents/*</exclude-pattern>
-    <exclude-pattern>*/Examples/*</exclude-pattern>
-    <exclude-pattern>*/Tests/*</exclude-pattern>
 
-    <arg name="report" value="summary"/>
+
+
+
+    <arg name="report-full" value="../Documents/html/Sniffer/full.txt"/>
+    <arg name="report-summary" value="../Documents/html/Sniffer/summary.txt"/>
+    <arg name="report-source" value="../Documents/html/Sniffer/source.txt"/>
+    <arg name="report-info" value="../Documents/html/Sniffer/info.txt"/>
+    <arg name="report-xml" value="../Documents/xml/Sniffer/log.xml"/>
+    <arg name="report-width" value="auto"/>
+
     <arg value="np"/>
 
+
+    <rule ref="PSR1"/>
     <rule ref="PSR2"/>
 </ruleset>

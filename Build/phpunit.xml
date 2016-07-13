@@ -3,13 +3,16 @@
 <phpunit bootstrap="../Tests/PHPUnit/bootstrap.php" colors="true">
     <testsuites>
         <testsuite name="All">
-            <directory suffix='.php'>../PHPUnit/Tests/</directory>
+            <directory suffix='.php'>../Tests/PHPUnit/</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist>
-            <directory>../</directory>
+            <directory>../Source</directory>
             <exclude>
+                <directory>../Build</directory>
+                <directory>../Documents</directory>
+                <directory>../Examples</directory>
                 <directory>../Tests</directory>
                 <directory>../vendor</directory>
             </exclude>
@@ -25,8 +28,9 @@
                 lowUpperBound="50"
                 highLowerBound="80"
         />
-        <log type="testdox-html" target="../Documents/html/phpunit.html" />
+        <log type="testdox-html" target="../Documents/html/phpunit/testdox.html" />
         <log type="coverage-clover" target="../Documents/xml/coverage.xml"/>
+        <log type="coverage-xml" target="../Documents/xml/coverage/"/>
         <log type="junit" target="../Documents/xml/phpunit.xml" logIncompleteSkipped="false"/>
     </logging>
 

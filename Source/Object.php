@@ -18,9 +18,10 @@ class Object extends Library implements Contract\Object
     /**
      * Default configuration settings.
      *
-     * config['enabled'] boolean Whether or not the benchmark is enabled, set to false if you wish to disabled on production
+     * config['enabled'] boolean Whether or not the benchmark is enabled,
+     * set to false if you wish to disabled on production.
      *
-     * @var array config default object configuration for the library
+     * @var array config default object configuration for the library.
      */
     private $config = [
         'enabled'  => true,

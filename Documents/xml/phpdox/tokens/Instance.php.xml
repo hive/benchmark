@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Instance.php" size="3719" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="48aa6b2ed2f524ff0b5126e7eb134d5fa140fd18" relative="Instance.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Instance.php" size="3717" time="2016-07-12T19:48:11+11:00" unixtime="1468313291" sha1="09af3f67f1dee899841ee27e6a6c316c8481beb8" relative="Instance.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -614,12 +614,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="124"/>
-  <line no="125">
+  <line no="124">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Set the benchmark to start()</token>
   </line>
-  <line no="126">
+  <line no="125">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$action</token>
     <token name="T_WHITESPACE"> </token>
@@ -628,12 +627,12 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'start'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="127"/>
-  <line no="128">
+  <line no="126"/>
+  <line no="127">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Add the benchmark to our list of running methods</token>
   </line>
-  <line no="129">
+  <line no="128">
     <token name="T_WHITESPACE">                </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -647,7 +646,7 @@
     <token name="T_STRING">true</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="130">
+  <line no="129">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_WHITESPACE"> </token>
@@ -655,12 +654,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="131"/>
-  <line no="132">
+  <line no="130">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Set the benchmark to stop()</token>
   </line>
-  <line no="133">
+  <line no="131">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$action</token>
     <token name="T_WHITESPACE"> </token>
@@ -669,12 +667,12 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'stop'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="134"/>
-  <line no="135">
+  <line no="132"/>
+  <line no="133">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Remove the benchmark from our list of running methods</token>
   </line>
-  <line no="136">
+  <line no="134">
     <token name="T_WHITESPACE">                </token>
     <token name="T_UNSET">unset</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -687,20 +685,20 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="137">
+  <line no="135">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="138">
+  <line no="136">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="139"/>
-  <line no="140">
+  <line no="137"/>
+  <line no="138">
     <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// run the action</token>
   </line>
-  <line no="141">
+  <line no="139">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -710,35 +708,35 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="142">
+  <line no="140">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="143"/>
-  <line no="144"/>
-  <line no="145">
+  <line no="141"/>
+  <line no="142"/>
+  <line no="143">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="146">
+  <line no="144">
     <token name="T_DOC_COMMENT">     * Simple debug_backtrace to get the name of the method which called.</token>
+  </line>
+  <line no="145">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="146">
+    <token name="T_DOC_COMMENT">     * @param  int $stack How far in the stacktrace to go back.</token>
   </line>
   <line no="147">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="148">
-    <token name="T_DOC_COMMENT">     * @param  int $stack How far in the stacktrace to go back.</token>
-  </line>
-  <line no="149">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
-  <line no="150">
     <token name="T_DOC_COMMENT">     * @return string $name   The caller class/method.</token>
   </line>
-  <line no="151">
+  <line no="149">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="152">
+  <line no="150">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
@@ -755,11 +753,11 @@
     <token name="T_LNUMBER">2</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="153">
+  <line no="151">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="154">
+  <line no="152">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$caller</token>
     <token name="T_WHITESPACE"> </token>
@@ -781,8 +779,8 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="155"/>
-  <line no="156">
+  <line no="153"/>
+  <line no="154">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -803,12 +801,12 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="157">
+  <line no="155">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="158">
+  <line no="156">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="159"/>
+  <line no="157"/>
 </source>

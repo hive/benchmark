@@ -6,22 +6,24 @@
       <!--<exclude mask="**features**"/>-->
     </collector>
     <generator output="${basedir}/../Documents">
-            <enrich base="${basedir}">
-                <source type="build" />
-                <source type="git">
-                    <history enabled="true" limit="15" />
-                </source>
-                <!--<source type="checkstyle" />-->
-                <!-- alternative checkstyler to support phpcs xml output -->
-                <source type="phpcs" />
-                <!--<source type="pmd" />-->
-		        <source type="phploc">
-                    <file name="../Documents/xml/phploc.xml" />
-                </source>
-                <!--<source type="phpunit">-->
-                    <!--<coverage path="coverage/xml" />-->
-                <!--</source>-->
-            </enrich>
+        <enrich base="${basedir}">
+            <source type="build" />
+            <source type="git">
+                <history enabled="true" limit="25" />
+            </source>
+            <!--<source type="checkstyle" />-->
+            <!-- alternative checkstyler to support phpcs xml output -->
+            <source type="phpcs" />
+            <source type="pmd">
+                <file name="../Documents/xml/phpmd.xml" />
+            </source>
+            <source type="phploc">
+                <file name="../Documents/xml/phploc.xml" />
+            </source>
+            <source type="phpunit">
+                <coverage path="../Documents/xml/coverage" />
+            </source>
+        </enrich>
       <build engine="html" output="html/phpdox"/>
     </generator>
   </project>

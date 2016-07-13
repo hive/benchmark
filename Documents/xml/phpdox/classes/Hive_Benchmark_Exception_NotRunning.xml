@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\NotRunning" namespace="Hive\Benchmark\Exception" name="NotRunning" abstract="false" final="false" start="16" end="42">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/build/../Source/Exception" file="NotRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/NotRunning.php" size="1110" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="211abbfbed034939a1823ff68876cc1abf668522" relative="Exception/NotRunning.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source/Exception" file="NotRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/NotRunning.php" size="1110" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="211abbfbed034939a1823ff68876cc1abf668522" relative="Exception/NotRunning.php"/>
   <docblock>
     <description compact="Finished Running Exception.">Called when the library attempts to stop a benchmark which was not started.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
