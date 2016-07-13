@@ -18,7 +18,7 @@ php /usr/local/zend/bin/phpcs --generator=html > ../Documents/html/codesniffer/r
 
 
 # Run it a second time gathering all the output into one file
-php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/codesniffer/all.txt;
+php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../Source >  ../Documents/html/codesniffer/all.txt;
 
 # Create phpUnit html
 xsltproc templates/phpunit.xsl ../Documents/xml/phpunit.xml > ../Documents/html/phpunit/index.html;
