@@ -19,7 +19,7 @@ phpmd ../Source xml codesize,controversial,design,naming,unusedcode --reportfile
 #phpcs --standard=PSR1,PSR2  --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;
 
 #they need to all be ran at once
-phpcs --generator=html > ../Documents/html/Sniffer/rules.html;phpcs --standard=PSR1,PSR2  --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;#phpcs ../Source/;
+phpcs --generator=html > ../Documents/html/Sniffer/rules.html;phpcs --standard=PSR1,PSR2  --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;phpcs ../Source/;
 
 # Create phpUnit html
 xsltproc templates/phpunit.xls ../Documents/xml/phpunit.xml > ../Documents/html/phpunit/index.html;
