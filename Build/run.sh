@@ -6,6 +6,9 @@ phploc --log-xml ../Documents/xml/phploc.xml --progress ../Source/;
 # Run phpunit
 phpunit --configuration phpunit.xml --testsuite All;
 
+
+phpcs ../Source/;
+
 # Run php mess detector
 phpmd ../Source xml codesize,controversial,design,naming,unusedcode --reportfile ../Documents/xml/phpmd.xml --suffixes php;
 
@@ -13,13 +16,13 @@ phpmd ../Source xml codesize,controversial,design,naming,unusedcode --reportfile
 #phpcs --generator=html > ../Documents/html/Sniffer/rules.html;
 
 # Run php Code Sniffer
-#phpcs ../Source/;
+
 
 # Run it a second time gathering all the output into one file
 #phpcs --standard=PSR1,PSR2  --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;
 
 #they need to all be ran at once
-phpcs --generator=html > ../Documents/html/Sniffer/rules.html;phpcs --standard=PSR1,PSR2  --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;phpcs ../Source/;
+phpcs --generator=html > ../Documents/html/Sniffer/rules.html;phpcs --standard=PSR1,PSR2  --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;
 
 # Create phpUnit html
 xsltproc templates/phpunit.xls ../Documents/xml/phpunit.xml > ../Documents/html/phpunit/index.html;
