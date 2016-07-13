@@ -123,7 +123,7 @@
                     <td class="percent" />
                 </tr>
             </table>
-            <h2>Size</h2>
+            <h5>Size</h5>
             <table class="styled overview">
                 <tr>
                     <td>Lines of Code (LOC)</td>
