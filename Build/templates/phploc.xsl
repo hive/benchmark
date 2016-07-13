@@ -123,7 +123,7 @@
                     <td class="percent" />
                 </tr>
             </table>
-            <h5>Size</h5>
+            <h4>Size</h4>
             <table class="styled overview">
                 <tr>
                     <td>Lines of Code (LOC)</td>
@@ -196,7 +196,7 @@
                     <td class="percent">(<xsl:value-of select="phpqa:format-number(llocGlobal div lloc * 100,'0.##')" />%)</td>
                 </tr>
             </table>
-            <h2>Cyclomatic Complexity</h2>
+            <h5>Cyclomatic Complexity</h5>
             <table class="styled overview">
                 <tr>
                     <td>Average Complexity per LLOC</td>
@@ -234,7 +234,7 @@
                     <td class="percent"/>
                 </tr>
             </table>
-            <h2>Dependencies</h2>
+            <h5>Dependencies</h5>
             <table class="styled overview">
                 <tr>
                     <td>Global Accesses</td>
@@ -287,7 +287,7 @@
                     <td class="percent">(<xsl:value-of select="phpqa:format-number(staticMethodCalls div methodCalls * 100,'0.##')" />%)</td>
                 </tr>
             </table>
-            <h2>Structure</h2>
+            <h5>Structure</h5>
             <table class="styled overview">
                 <tr>
                     <td>Namespaces</td>
