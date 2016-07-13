@@ -14,7 +14,7 @@ after the xml opening tag of the logfile:
 The thresholds used for the colour-coding can be changed by adjusting the variables at the top of this file.
 Be careful when changing the values: the double quoting is intentional and needed. Don't remove.
 
-Copyright Â©2014 Juliette Reinders Folmer (Twitter: @jrf_nl / GitHub: @jrfnl)
+Copyright ©2014 Juliette Reinders Folmer (Twitter: @jrf_nl / GitHub: @jrfnl)
 License: DWTFYW
 Updates will be published via: https://gist.github.com/jrfnl/3c28ea6d9b07fd48656d
 Loosely inspired by: https://www.ruby-forum.com/topic/120869
@@ -54,6 +54,9 @@ Default value: 0 (no)
 </head>
 <body>
 
+	<div class="container">
+		<h3>PhpUnit</h3>
+	</div>
 	<xsl:apply-templates/>
 
 
@@ -62,8 +65,10 @@ Default value: 0 (no)
 </xsl:template>
 
 
+
+
 <xsl:template match="/testsuites/testsuite" mode="high-level">
-	<h3>Test Totals: <xsl:value-of select="@name"/></h3>
+	<h5><xsl:value-of select="@name"/></h5>
         <table class="table" id="high-level">
             <tr>
                 <td><b>Number of Tests:</b></td>
