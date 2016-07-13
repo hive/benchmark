@@ -10,12 +10,17 @@ phpunit --configuration phpunit.xml --testsuite All;
 # Run php mess detector
 phpmd ../Source xml codesize,controversial,design,naming,unusedcode --reportfile ../Documents/xml/phpmd.xml --suffixes php;
 
+# Run Copy/Paste Detection
+phpcpd ../Source --log-pmd ../Documents/xml/phpcpd.xml;
+
+# Run php metrics
+phpmetrics --report-cli --report-html=../Documents/html/phpmetrics/index.html --report-xml=../Documents/xml/phpmetrics.xml ../Source
+
 # Run php Code Sniffer
 php /usr/local/zend/bin/phpcs;
 
 # Output the rules of the CodeSniffer
 php /usr/local/zend/bin/phpcs --generator=html > ../Documents/html/codesniffer/rules.html;
-
 
 # Run it a second time gathering all the output into one file
 php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../Source >  ../Documents/html/codesniffer/all.txt;
@@ -25,6 +30,15 @@ xsltproc templates/phpunit.xsl ../Documents/xml/phpunit.xml > ../Documents/html/
 
 # Create codeSniffer html
 xsltproc templates/codesniffer.xsl ../Documents/xml/codesniffer.xml > ../Documents/html/codesniffer/index.html;
+
+# Create phpMD html
+xsltproc templates/phpmd.xsl ../Documents/xml/phpmd.xml > ../Documents/html/phpmd/index.html;
+
+# Create phpMD html
+xsltproc templates/phpcpd.xsl ../Documents/xml/phpcpd.xml > ../Documents/html/phpcpd/index.html;
+
+# Create phpLoc html
+xsltproc templates/phploc.xsl ../Documents/xml/phploc.xml > ../Documents/html/phploc/index.html;
 
 
 # Run phpDox

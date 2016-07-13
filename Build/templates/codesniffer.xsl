@@ -61,7 +61,7 @@
                 <br/>
                 <div class="container">
                     <h4>Details</h4>
-                        <xsl:apply-templates select="phpcs/file"/>
+                    <xsl:apply-templates select="phpcs/file"/>
 
                 </div>
             </body>
@@ -69,7 +69,7 @@
     </xsl:template>
     <xsl:template match="file">
     <table class="table" style="margin-top:25px;">
-        <thead >
+        <thead>
             <tr>
                 <th colspan="4"><xsl:value-of select="@name"/></th>
             </tr>
