@@ -14,8 +14,8 @@
     <class name="Exception" src="Exception.php" description="Requires Memory Get Usage Exception." xml="classes/Hive_Benchmark_Exception.xml"/>
     <class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/>
     <class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/>
-    <class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/>
-  </namespace>
+    
+  <class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/></namespace>
   <namespace name="">
     <class name="Exception" xml="classes/Exception.xml"/>
   </namespace>
