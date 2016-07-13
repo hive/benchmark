@@ -9,6 +9,11 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
       </head>
       <body>
+
+        <div class="container">
+          <h3>PHPCPD Violations</h3>
+        </div>
+
         <div class="container">
           <table class="table">
             <thead>
