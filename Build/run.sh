@@ -11,15 +11,14 @@ phpunit --configuration phpunit.xml --testsuite All;
 phpmd ../Source xml codesize,controversial,design,naming,unusedcode --reportfile ../Documents/xml/phpmd.xml --suffixes php;
 
 # Run php Code Sniffer
-phpcs --tab-width=auto  --standard=PSR1,PSR2  --report-info=../Documents/html/Sniffer/info.txt --report-full=../Documents/html/Sniffer/full.txt --report-source=../Documents/html/Sniffer/source.txt --report-summary=../Documents/html/Sniffer/summary.txt --report-xml=../Documents/xml/codesniffer.xml ../Source/;
-
+php /usr/local/zend/bin/phpcs;
 
 # Output the rules of the CodeSniffer
-#phpcs --generator=html > ../Documents/html/Sniffer/rules.html;
+php /usr/local/zend/bin/phpcs --generator=html > ../Documents/html/Sniffer/rules.html;
 
 
 # Run it a second time gathering all the output into one file
-phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;
+php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../Source > ../Documents/html/sniffer/all.txt  > ../Documents/html/sniffer/all.txt;
 
 # Create phpUnit html
 xsltproc templates/phpunit.xls ../Documents/xml/phpunit.xml > ../Documents/html/phpunit/index.html;
