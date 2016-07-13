@@ -25,7 +25,7 @@ phpcs --generator=html > ../Documents/html/Sniffer/rules.html;phpcs --standard=P
 xsltproc templates/phpunit.xls ../Documents/xml/phpunit.xml > ../Documents/html/phpunit/index.html;
 
 # Create codeSniffer html
-xsltproc templates/codesniffer.xls ../Documents/xml/codesniffer.xml > ../Documents/html/codesniffer/index.html;
+xsltproc templates/codesniffer.xsl ../Documents/xml/codesniffer.xml > ../Documents/html/codesniffer/index.html;
 
 
 # Run phpDox
