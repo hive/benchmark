@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="All" tests="13" assertions="13" failures="0" errors="0" time="0.063284">
-    <testsuite name="testInstanceDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceDetailsTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.005463">
-      <testcase name="testSanity" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceDetailsTest.php" line="5" assertions="1" time="0.005463"/>
+  <testsuite name="All" tests="13" assertions="13" failures="0" errors="0" time="0.062362">
+    <testsuite name="testInstanceDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceDetailsTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004870">
+      <testcase name="testSanity" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceDetailsTest.php" line="5" assertions="1" time="0.004870"/>
     </testsuite>
-    <testsuite name="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.014818">
-      <testcase name="testSanity" class="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" line="6" assertions="1" time="0.004161"/>
-      <testcase name="testNotRunningException" class="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" line="11" assertions="1" time="0.004807"/>
-      <testcase name="testStoppedRunningException" class="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" line="17" assertions="1" time="0.005850"/>
+    <testsuite name="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.014749">
+      <testcase name="testSanity" class="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" line="6" assertions="1" time="0.004462"/>
+      <testcase name="testNotRunningException" class="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" line="11" assertions="1" time="0.004899"/>
+      <testcase name="testStoppedRunningException" class="testInstanceGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceGetTest.php" line="17" assertions="1" time="0.005388"/>
     </testsuite>
-    <testsuite name="testInstanceMethod" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceMethodTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.005930">
-      <testcase name="testSanity" class="testInstanceMethod" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceMethodTest.php" line="5" assertions="1" time="0.005930"/>
+    <testsuite name="testInstanceMethod" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceMethodTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004438">
+      <testcase name="testSanity" class="testInstanceMethod" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceMethodTest.php" line="5" assertions="1" time="0.004438"/>
     </testsuite>
-    <testsuite name="testInstanceSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceSummaryTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004350">
-      <testcase name="testSanity" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceSummaryTest.php" line="5" assertions="1" time="0.004350"/>
+    <testsuite name="testInstanceSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceSummaryTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004278">
+      <testcase name="testSanity" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/InstanceSummaryTest.php" line="5" assertions="1" time="0.004278"/>
     </testsuite>
-    <testsuite name="LargeInstanceTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeInstanceTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004042">
-      <testcase name="testSanity" class="LargeInstanceTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeInstanceTest.php" line="5" assertions="1" time="0.004042"/>
+    <testsuite name="LargeInstanceTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeInstanceTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004036">
+      <testcase name="testSanity" class="LargeInstanceTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeInstanceTest.php" line="5" assertions="1" time="0.004036"/>
     </testsuite>
-    <testsuite name="LargeObjectTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeObjectTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004803">
-      <testcase name="testSanity" class="LargeObjectTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeObjectTest.php" line="5" assertions="1" time="0.004803"/>
+    <testsuite name="LargeObjectTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeObjectTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004862">
+      <testcase name="testSanity" class="LargeObjectTest" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/LargeObjectTest.php" line="5" assertions="1" time="0.004862"/>
     </testsuite>
-    <testsuite name="testObjectDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectDetailsTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004597">
-      <testcase name="testSanity" class="testObjectDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectDetailsTest.php" line="5" assertions="1" time="0.004597"/>
+    <testsuite name="testObjectDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectDetailsTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.006192">
+      <testcase name="testSanity" class="testObjectDetails" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectDetailsTest.php" line="5" assertions="1" time="0.006192"/>
     </testsuite>
-    <testsuite name="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.014294">
-      <testcase name="testSanity" class="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" line="6" assertions="1" time="0.004489"/>
-      <testcase name="testNotRunningException" class="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" line="11" assertions="1" time="0.004892"/>
-      <testcase name="testStoppedRunningException" class="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" line="19" assertions="1" time="0.004913"/>
+    <testsuite name="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.014863">
+      <testcase name="testSanity" class="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" line="6" assertions="1" time="0.004873"/>
+      <testcase name="testNotRunningException" class="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" line="11" assertions="1" time="0.004960"/>
+      <testcase name="testStoppedRunningException" class="testObjectGet" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectGetTest.php" line="19" assertions="1" time="0.005030"/>
     </testsuite>
-    <testsuite name="testObjectSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectSummaryTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004987">
-      <testcase name="testSanity" class="testObjectSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectSummaryTest.php" line="5" assertions="1" time="0.004987"/>
+    <testsuite name="testObjectSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectSummaryTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004074">
+      <testcase name="testSanity" class="testObjectSummary" file="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Tests/PHPUnit/ObjectSummaryTest.php" line="5" assertions="1" time="0.004074"/>
     </testsuite>
   </testsuite>
 </testsuites>
