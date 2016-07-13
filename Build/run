@@ -44,6 +44,12 @@ xsltproc templates/phploc.xsl ../Documents/xml/phploc.xml > ../Documents/html/ph
 # Run phpDox
 ~/Sites/phpdox/phpdox -f phpdox.xml;
 
+# move our html viewer
+
+cp templates/index.html ../Documents/html/index.html
+cp templates/nav.html ../Documents/html/nav.html
+
+
 # Commit the changes
 git add .;
 git commit -am 'Update Documentation';
