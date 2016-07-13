@@ -12,7 +12,7 @@
     <arg name="report-summary" value="../Documents/html/Sniffer/summary.txt"/>
     <arg name="report-source" value="../Documents/html/Sniffer/source.txt"/>
     <arg name="report-info" value="../Documents/html/Sniffer/info.txt"/>
-    <arg name="report-xml" value="../Documents/xml/Sniffer/log.xml"/>
+    <arg name="report-xml" value="../Documents/xml/codesniffer.xml"/>
     <arg name="report-width" value="auto"/>
 
     <arg value="np"/>
