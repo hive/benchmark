@@ -6,16 +6,16 @@
     <interface name="Object" src="Contract/Object.php" description="Object Interface." xml="interfaces/Hive_Benchmark_Contract_Object.xml"/>
   </namespace>
   <namespace name="Hive\Benchmark\Exception">
-    
+    <class name="AlreadyRunning" src="Exception/AlreadyRunning.php" description="Already Running Exception." xml="classes/Hive_Benchmark_Exception_AlreadyRunning.xml"/>
     <class name="NotRunning" src="Exception/NotRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_NotRunning.xml"/>
     <class name="StoppedRunning" src="Exception/StoppedRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_StoppedRunning.xml"/>
-  <class name="AlreadyRunning" src="Exception/AlreadyRunning.php" description="Already Running Exception." xml="classes/Hive_Benchmark_Exception_AlreadyRunning.xml"/></namespace>
+  </namespace>
   <namespace name="Hive\Benchmark">
     <class name="Exception" src="Exception.php" description="Requires Memory Get Usage Exception." xml="classes/Hive_Benchmark_Exception.xml"/>
     <class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/>
     <class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/>
-    
-  <class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/></namespace>
+    <class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/>
+  </namespace>
   <namespace name="">
     <class name="Exception" xml="classes/Exception.xml"/>
   </namespace>
