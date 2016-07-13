@@ -44,7 +44,7 @@ Spaces after control structure open parenthesis: 0 [20/20, 100%]
 Spaces before control structure close parenthesis: 0 [20/20, 100%]
 
 ----------------------------------------------------------------------
-Time: 433ms; Memory: 7.25Mb
+Time: 296ms; Memory: 7.25Mb
 
 
 FILE: ...ocal/zend/var/apps/http/vendor/hive/benchmark/Source/Library.php
@@ -72,7 +72,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 434ms; Memory: 7.25Mb
+Time: 297ms; Memory: 7.25Mb
 
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
@@ -88,7 +88,7 @@ A TOTAL OF 7 SNIFF VIOLATIONS WERE FOUND IN 3 SOURCES
 PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (6 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 434ms; Memory: 7.25Mb
+Time: 297ms; Memory: 7.25Mb
 
 
 PHP CODE SNIFFER REPORT SUMMARY
@@ -103,5 +103,5 @@ A TOTAL OF 6 ERRORS AND 1 WARNING WERE FOUND IN 10 FILES
 PHPCBF CAN FIX 6 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 435ms; Memory: 7.25Mb
+Time: 297ms; Memory: 7.25Mb
 
