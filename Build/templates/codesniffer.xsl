@@ -34,7 +34,7 @@
             <body>
 
                 <div class="container">
-                    <h3>PHPCS Violations</h3>
+                    <h3>PHPCS</h3>
                 </div>
                 <div class="container">
                     <h4>Summary</h4>

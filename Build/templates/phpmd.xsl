@@ -12,7 +12,7 @@
 
 
         <div class="container">
-          <h3>PHPMD Violations</h3>
+          <h3>PHPMD</h3>
         </div>
 
         <div class="container">

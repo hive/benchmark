@@ -107,7 +107,9 @@
             font-size: 0.9em;
             }
         </style>
-
+        <div class="container">
+            <h3>PHPLoC</h3>
+        </div>
         <div class="container">
             <table class="styled overview">
                 <tr>

@@ -11,7 +11,7 @@
       <body>
 
         <div class="container">
-          <h3>PHPCPD Violations</h3>
+          <h3>PHPCPD</h3>
         </div>
 
         <div class="container">
