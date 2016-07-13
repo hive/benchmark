@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object" abstract="false" final="false" start="16" end="168">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4132" time="2016-07-13T15:17:56+11:00" unixtime="1468383476" sha1="afae1d2b5ea79f68cb4ba6d0df104f577db27b67" relative="Object.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4142" time="2016-07-13T15:18:15+11:00" unixtime="1468383495" sha1="3fff8e46fc90620095beaef23b10a5275099aa5c" relative="Object.php"/>
   <docblock>
     <description compact="Object Library.">Allows access to the library through an object.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>

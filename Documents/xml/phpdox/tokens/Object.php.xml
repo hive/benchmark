@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4132" time="2016-07-13T15:17:56+11:00" unixtime="1468383476" sha1="afae1d2b5ea79f68cb4ba6d0df104f577db27b67" relative="Object.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4142" time="2016-07-13T15:18:15+11:00" unixtime="1468383495" sha1="3fff8e46fc90620095beaef23b10a5275099aa5c" relative="Object.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -747,6 +747,9 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$mark</token>
     <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$values</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>

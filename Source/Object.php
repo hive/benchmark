@@ -134,7 +134,7 @@ class Object extends Library implements Contract\Object
     {
         $results = [];
 
-        foreach ($this->marks as $mark ) {
+        foreach ($this->marks as $mark => $values) {
             $results[$mark] = $this->get($mark);
         }
 
