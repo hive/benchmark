@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Exception.php">
+    <totals>
+      <lines total="44" comments="31" code="13" executable="2" executed="2" percent="100.00%"/>
+      <methods count="1" tested="1" percent="100.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="1" percent="100.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Exception" start="16" executable="2" executed="2" crap="1">
+      <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
+      <namespace name="Hive\Benchmark"/>
+      <method name="__construct" signature="__construct($message = null, $code = null)" start="39" end="43" crap="1" executable="2" executed="2" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="42">
+        <covered by="testInstanceGet::testNotRunningException"/>
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+        <covered by="testObjectGet::testNotRunningException"/>
+        <covered by="testObjectGet::testStoppedRunningException"/>
+      </line>
+      <line nr="43">
+        <covered by="testInstanceGet::testNotRunningException"/>
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+        <covered by="testObjectGet::testNotRunningException"/>
+        <covered by="testObjectGet::testStoppedRunningException"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

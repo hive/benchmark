@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2016-07-13T15:18:19+11:00">
+  <file name="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php">
+    <violation beginline="137" endline="137" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$values'.
+    </violation>
+  </file>
+</pmd>

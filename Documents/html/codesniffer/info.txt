@@ -1,0 +1,47 @@
+
+PHP CODE SNIFFER INFORMATION REPORT
+----------------------------------------------------------------------
+CamelCase class name: yes [10/10, 100%]
+
+CamelCase method name: yes [31/31, 100%]
+
+Class defined in namespace: yes [10/10, 100%]
+
+Class opening brace placement: new line [10/10, 100%]
+
+Constant name case: upper [8/8, 100%]
+
+Control structure defined inline: no [22/22, 100%]
+
+Declarations and side effects mixed: no [10/10, 100%]
+
+EOL char: \n [10/10, 100%]
+
+Function opening brace placement: new line [26/26, 100%]
+
+Line indent: spaces [616/616, 100%]
+
+Line length: 80 or less [766/788, 97.21%]
+	81-120 => 21 (2.66%)
+	121-150 => 1 (0.13%)
+
+Multiple statements on same line: no [110/110, 100%]
+
+Number of newlines at EOF: 1 [10/10, 100%]
+
+One class per file: yes [10/10, 100%]
+
+PHP closing tag at end of PHP-only file: no [10/10, 100%]
+
+PHP constant case: lower [11/11, 100%]
+
+PHP keyword case: lower [190/190, 100%]
+
+PHP short open tag used: no [10/10, 100%]
+
+Spaces after control structure open parenthesis: 0 [20/20, 100%]
+
+Spaces before control structure close parenthesis: 0 [20/20, 100%]
+
+----------------------------------------------------------------------
+

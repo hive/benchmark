@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="AlreadyRunning.php">
+    <totals>
+      <lines total="43" comments="27" code="16" executable="4" executed="0" percent="0.00%"/>
+      <methods count="1" tested="0" percent="0.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="AlreadyRunning" start="17" executable="4" executed="0" crap="2">
+      <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
+      <namespace name="Hive\Benchmark\Exception"/>
+      <method name="__construct" signature="__construct($name)" start="36" end="42" crap="2" executable="4" executed="0" coverage="0"/>
+    </class>
+  </file>
+</phpunit>

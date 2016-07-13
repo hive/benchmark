@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Instance.php">
+    <totals>
+      <lines total="156" comments="84" code="72" executable="29" executed="10" percent="34.48%"/>
+      <methods count="8" tested="3" percent="37.50%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Instance" start="16" executable="29" executed="10" crap="45.03">
+      <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
+      <namespace name="Hive\Benchmark"/>
+      <method name="init" signature="init()" start="26" end="31" crap="2" executable="4" executed="4" coverage="100"/>
+      <method name="start" signature="start($name)" start="40" end="45" crap="1" executable="3" executed="3" coverage="100"/>
+      <method name="stop" signature="stop($name)" start="54" end="59" crap="1" executable="3" executed="3" coverage="100"/>
+      <method name="details" signature="details($name)" start="68" end="73" crap="2" executable="2" executed="0" coverage="0"/>
+      <method name="get" signature="get($name)" start="82" end="87" crap="2" executable="2" executed="0" coverage="0"/>
+      <method name="summary" signature="summary()" start="94" end="99" crap="2" executable="2" executed="0" coverage="0"/>
+      <method name="method" signature="method($action = 'auto', $stack = 3)" start="109" end="140" crap="12" executable="11" executed="0" coverage="0"/>
+      <method name="trace" signature="trace($stack = 2)" start="150" end="155" crap="2" executable="2" executed="0" coverage="0"/>
+    </class>
+    <coverage>
+      <line nr="28">
+        <covered by="testInstanceGet::testNotRunningException"/>
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+      <line nr="29">
+        <covered by="testInstanceGet::testNotRunningException"/>
+      </line>
+      <line nr="30">
+        <covered by="testInstanceGet::testNotRunningException"/>
+      </line>
+      <line nr="31">
+        <covered by="testInstanceGet::testNotRunningException"/>
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+      <line nr="42">
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+      <line nr="44">
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+      <line nr="45">
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+      <line nr="56">
+        <covered by="testInstanceGet::testNotRunningException"/>
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+      <line nr="58">
+        <covered by="testInstanceGet::testNotRunningException"/>
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+      <line nr="59">
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

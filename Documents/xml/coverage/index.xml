@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <project name="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source">
+    <tests>
+      <test name="testInstanceDetails::testSanity" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testNotRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testNotRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
+    </tests>
+    <directory name="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source">
+      <totals>
+        <lines total="886" comments="531" code="355" executable="140" executed="59" percent="42.14%"/>
+        <methods count="26" tested="14" percent="53.85%"/>
+        <functions count="0" tested="0" percent=""/>
+        <classes count="7" tested="3" percent="42.86%"/>
+        <traits count="0" tested="0" percent=""/>
+      </totals>
+      <directory name="Contract">
+        <totals>
+          <lines total="155" comments="121" code="34" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+        <file name="Instance.php" href="Contract/Instance.php.xml">
+          <totals>
+            <lines total="77" comments="61" code="16" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="Library.php" href="Contract/Library.php.xml">
+          <totals>
+            <lines total="44" comments="34" code="10" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="Object.php" href="Contract/Object.php.xml">
+          <totals>
+            <lines total="34" comments="26" code="8" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="Instance.php" href="Contract/Instance.php.xml">
+        <totals>
+          <lines total="77" comments="61" code="16" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Library.php" href="Contract/Library.php.xml">
+        <totals>
+          <lines total="44" comments="34" code="10" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Object.php" href="Contract/Object.php.xml">
+        <totals>
+          <lines total="34" comments="26" code="8" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Exception.php" href="Exception.php.xml">
+        <totals>
+          <lines total="44" comments="31" code="13" executable="2" executed="2" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <directory name="Exception">
+        <totals>
+          <lines total="124" comments="76" code="48" executable="12" executed="8" percent="66.67%"/>
+          <methods count="3" tested="2" percent="66.67%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="3" tested="2" percent="66.67%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+        <file name="AlreadyRunning.php" href="Exception/AlreadyRunning.php.xml">
+          <totals>
+            <lines total="43" comments="27" code="16" executable="4" executed="0" percent="0.00%"/>
+            <methods count="1" tested="0" percent="0.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="NotRunning.php" href="Exception/NotRunning.php.xml">
+          <totals>
+            <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+            <methods count="1" tested="1" percent="100.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="StoppedRunning.php" href="Exception/StoppedRunning.php.xml">
+          <totals>
+            <lines total="39" comments="23" code="16" executable="4" executed="4" percent="100.00%"/>
+            <methods count="1" tested="1" percent="100.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="AlreadyRunning.php" href="Exception/AlreadyRunning.php.xml">
+        <totals>
+          <lines total="43" comments="27" code="16" executable="4" executed="0" percent="0.00%"/>
+          <methods count="1" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="NotRunning.php" href="Exception/NotRunning.php.xml">
+        <totals>
+          <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="StoppedRunning.php" href="Exception/StoppedRunning.php.xml">
+        <totals>
+          <lines total="39" comments="23" code="16" executable="4" executed="4" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Instance.php" href="Instance.php.xml">
+        <totals>
+          <lines total="156" comments="84" code="72" executable="29" executed="10" percent="34.48%"/>
+          <methods count="8" tested="3" percent="37.50%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Library.php" href="Library.php.xml">
+        <totals>
+          <lines total="239" comments="132" code="107" executable="58" executed="28" percent="48.28%"/>
+          <methods count="7" tested="5" percent="71.43%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Object.php" href="Object.php.xml">
+        <totals>
+          <lines total="168" comments="87" code="81" executable="39" executed="11" percent="28.21%"/>
+          <methods count="7" tested="3" percent="42.86%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+    </directory>
+  </project>
+</phpunit>

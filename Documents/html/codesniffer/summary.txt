@@ -1,0 +1,14 @@
+
+PHP CODE SNIFFER REPORT SUMMARY
+-------------------------------------------------------------------------------------------
+FILE                                                                       ERRORS  WARNINGS
+-------------------------------------------------------------------------------------------
+/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Library.php     4       0
+/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php      2       0
+-------------------------------------------------------------------------------------------
+A TOTAL OF 6 ERRORS AND 0 WARNINGS WERE FOUND IN 10 FILES
+-------------------------------------------------------------------------------------------
+PHPCBF CAN FIX 6 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------
+
+
