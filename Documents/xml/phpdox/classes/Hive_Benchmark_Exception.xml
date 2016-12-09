@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception" namespace="Hive\Benchmark" name="Exception" abstract="false" final="false" start="16" end="44">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1283" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="8a3941e3db7eba3f08473cf2a3fa37711a21d1b6" relative="Exception.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1242" time="2016-08-04T15:27:50+11:00" unixtime="1470284870" sha1="b973f49398fe0cfc327b29308c2f06e3355ca0d5" relative="Exception.php"/>
   <docblock>
-    <description compact="Requires Memory Get Usage Exception.">Called when the library has memory benchmarks enabled but no way to get the memory data.</description>
+    <description compact="General Exception Handler.">Parent of exception handlers.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
     <licence value="https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)"/>
     <package value="Hive"/>
@@ -10,12 +10,12 @@
     <copyright value="(c) 2016 Jamie Peake"/>
   </docblock>
   <extends full="Exception" namespace="" name="Exception"/>
-  <constant type="{unknown}" name="VENDOR" value="8883">
+  <constant type="{unknown}" name="VENDOR_NUMBER" value="8883">
     <docblock>
       <description compact="Arbitrarily assigned vendor exception code used to prefix all hive exceptions."/>
     </docblock>
   </constant>
-  <constant type="{unknown}" name="PACKAGE" value="1">
+  <constant type="{unknown}" name="PACKAGE_NUMBER" value="1">
     <docblock>
       <description compact="Package exception code, sequential package numbers."/>
     </docblock>
@@ -38,9 +38,7 @@ so that we have a unique exception code.</description>
     </inline>
   </constructor>
   <extenders>
-    <extender full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning"/>
     <extender full="Hive\Benchmark\Exception\NotRunning" namespace="Hive\Benchmark\Exception" name="NotRunning"/>
-    <extender full="Hive\Benchmark\Exception\StoppedRunning" namespace="Hive\Benchmark\Exception" name="StoppedRunning"/>
   </extenders>
   <parent full="Exception" namespace="" name="Exception">
     <member name="message" static="false" visibility="protected">

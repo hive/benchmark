@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1283" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="8a3941e3db7eba3f08473cf2a3fa37711a21d1b6" relative="Exception.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Exception.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception.php" size="1242" time="2016-08-04T15:27:50+11:00" unixtime="1470284870" sha1="b973f49398fe0cfc327b29308c2f06e3355ca0d5" relative="Exception.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -15,13 +15,13 @@
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="4">
-    <token name="T_DOC_COMMENT"> * Requires Memory Get Usage Exception.</token>
+    <token name="T_DOC_COMMENT"> * General Exception Handler.</token>
   </line>
   <line no="5">
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT"> * Called when the library has memory benchmarks enabled but no way to get the memory data.</token>
+    <token name="T_DOC_COMMENT"> * Parent of exception handlers.</token>
   </line>
   <line no="7">
     <token name="T_DOC_COMMENT"> *</token>
@@ -81,7 +81,7 @@
     <token name="T_WHITESPACE">    </token>
     <token name="T_CONST">const</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">VENDOR</token>
+    <token name="T_STRING">VENDOR_NUMBER</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
@@ -103,7 +103,7 @@
     <token name="T_WHITESPACE">    </token>
     <token name="T_CONST">const</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">PACKAGE</token>
+    <token name="T_STRING">PACKAGE_NUMBER</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
@@ -180,13 +180,13 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
-    <token name="T_STRING">VENDOR</token>
+    <token name="T_STRING">VENDOR_NUMBER</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
-    <token name="T_STRING">PACKAGE</token>
+    <token name="T_STRING">PACKAGE_NUMBER</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
     <token name="T_WHITESPACE"> </token>
