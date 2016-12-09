@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 # Gather php lines of code
 phploc --log-xml ../Documents/xml/phploc.xml --progress ../Source/;
 
@@ -50,6 +49,6 @@ cp templates/index.html ../Documents/html/index.html
 cp templates/nav.html ../Documents/html/nav.html
 
 
-# Commit the changes
+# Commit the document changes
 git add .;
 git commit -am 'Update Documentation';

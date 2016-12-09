@@ -1,9 +1,9 @@
 <?php namespace Hive\Benchmark;
 
 /**
- * Requires Memory Get Usage Exception.
+ * General Exception Handler.
  *
- * Called when the library has memory benchmarks enabled but no way to get the memory data.
+ * Parent of exception handlers.
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
@@ -20,12 +20,12 @@ class Exception extends \Exception
      * Arbitrarily assigned vendor exception code
      * used to prefix all hive exceptions.
      */
-    const VENDOR = 8883;
+    const VENDOR_NUMBER = 8883;
 
     /**
      * Package exception code, sequential package numbers.
      */
-    const PACKAGE = 1;
+    const PACKAGE_NUMBER = 1;
 
     /**
      * Exception constructor, assigns the message and code and calls the exception handler.
@@ -39,6 +39,6 @@ class Exception extends \Exception
     public function __construct($message = null, $code = null)
     {
         // Call the parent with the message and our now unique error code
-        parent::__construct($message, self::VENDOR . self::PACKAGE . $code);
+        parent::__construct($message, self::VENDOR_NUMBER . self::PACKAGE_NUMBER . $code);
     }
 }

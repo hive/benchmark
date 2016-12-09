@@ -30,7 +30,7 @@ class NotRunning extends \Hive\Benchmark\Exception
      *
      * Will also place the name of the benchmark into the exception message if we have it.
      *
-     * @param string $name name of the benchmark which was not started
+     * @param string $name the name of the benchmark which was not started
      */
     public function __construct($name)
     {
