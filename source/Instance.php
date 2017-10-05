@@ -25,7 +25,8 @@ class Instance implements Contract\Instance
      */
     private static function init()
     {
-        if (is_null(self::$object)) {
+        if (is_null(self::$object))
+        {
             self::$object = new Object();
         }
     }
@@ -110,23 +111,26 @@ class Instance implements Contract\Instance
     {
         // Get the name of the caller method
         $name = self::trace($stack);
-
         /**
          * If its an auto, find out what method to run.
          */
-        if ($action == 'auto') {
+        if ($action == 'auto')
+        {
 
             /**
-             * We dont have an active benchmark for this method
+             * We don't have an active benchmark for this method
              * so it much be a start action.
              */
-            if (!isset(self::$methods[$name])) {
+            if (!isset(self::$methods[$name]))
+            {
                 // Set the benchmark to start()
                 $action = 'start';
 
                 // Add the benchmark to our list of running methods
                 self::$methods[$name] = true;
-            } else {
+            }
+            else
+            {
                 // Set the benchmark to stop()
                 $action = 'stop';
 
@@ -150,7 +154,6 @@ class Instance implements Contract\Instance
     private static function trace($stack = 2)
     {
         $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $stack)[$stack - 1];
-
         return $caller['class'] . '\\' . $caller['function'];
     }
 }

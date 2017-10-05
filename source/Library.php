@@ -191,7 +191,8 @@ class Library implements Contract\Library
      */
     protected function retrieve($name)
     {
-        try {
+        try
+        {
             // Initialise the variables
             $time = false;
             $memory = false;
@@ -202,13 +203,15 @@ class Library implements Contract\Library
              * of the benchmarks with the requested name. Then update them
              * as a whole.
              */
-            for ($i = 0; $i < count($this->marks[$name]); $i++) {
+            for ($i = 0; $i < count($this->marks[$name]); $i++)
+            {
 
                 // Just an alias
                 $mark = &$this->marks[$name][$i];
                 $time = $mark['timer']['stop'] - $mark['timer']['start'];
 
-                if (isset($mark['memory'])) {
+                if (isset($mark['memory']))
+                {
                     $memory = $mark['memory']['stop'] - $mark['memory']['start'];
 
                     /**
@@ -224,13 +227,16 @@ class Library implements Contract\Library
                 ];
 
                 // If memory has been assigned
-                if ($this->config['memory']) {
+                if ($this->config['memory'])
+                {
                     $result['memory'] = $memory;
                 }
 
                 $results[] = $result;
             }
-        } catch (\Exception $e) {
+        }
+        catch (\Exception $e)
+        {
             throw new Exception($e->getMessage(), $e->getCode());
         }
 
