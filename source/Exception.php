@@ -20,7 +20,7 @@ class Exception extends \Exception
      * Arbitrarily assigned vendor exception code
      * used to prefix all hive exceptions.
      */
-    const VENDOR_NUMBER = 8883;
+    const VENDOR_NUMBER = 8383;
 
     /**
      * Package exception code, sequential package numbers.
