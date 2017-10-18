@@ -9,11 +9,11 @@
 // Include the package, using the simple php include
 include __DIR__ . '/../include.php';
 
-class apple
+class Apple
 {
 
     // Use the benchmark
-    use hive\benchmark;
+    use Hive\Benchmark;
 
     public function foo ()
     {
@@ -30,8 +30,8 @@ class apple
     }
 }
 
-$helloWorld = new apple();
+$helloWorld = new Apple();
 $helloWorld->foo();
 
 // print a summary of the benchmark
-print_r(Benchmark\instance::summary());
+print_r(Benchmark\Instance::summary());

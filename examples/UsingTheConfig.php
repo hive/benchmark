@@ -8,7 +8,7 @@
 include __DIR__ . '/../include.php';
 
 // Use the benchmark
-use hive\benchmark;
+use Hive\Benchmark;
 
 $config = [
     'enabled'   => true,    // whether or not the benchmark is enabled.
@@ -20,4 +20,4 @@ $config = [
 // disabling benchmarking on production servers is easy
 $config['enabled'] = (IN_DEVELOPMENT || IN_STAGING);
 
-$bench = new benchmark\object($config);
+$bench = new Benchmark\Object($config);

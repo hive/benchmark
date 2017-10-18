@@ -20,7 +20,7 @@ Recommended installation [through composer](http://getcomposer.org).
 ```JSON
 {
     "require": {
-        "hive/benchmark": "dev-master"
+        "Hive/Benchmark": "dev-master"
     }
 }
 ```
@@ -32,7 +32,7 @@ Via Composer Command line
 curl -sS https://getcomposer.org/installer | php
 
 # Install the latest version
-composer require hive/benchmark
+composer require Hive/Benchmark
 
 ```
 
@@ -65,7 +65,7 @@ The code is split up into the following classes :
 ## Useage
 -------
  ```php
-    use hive\benchmark;
+    use Hive\Benchmark;
  ```
  
  
@@ -73,39 +73,39 @@ The code is split up into the following classes :
  ```php
  
     // Start the benchmark
-    benchmark\instance::start('NameOfBenchmark');
+    Benchmark\Instance::start('NameOfBenchmark');
     
     sleep(1);
     
     // Stop the benchmark 
-    benchmark\instance::stop('NameOfBenchmark');
+    Benchmark\Instance::stop('NameOfBenchmark');
  
  ```
  
 **Multiple Instance**
  
  ```php    
-    use hive\benchmark;
+    use Hive\Benchmark;
     
     // Start the benchmark
-    benchmark\instance::start('FirstBenchmark');
+    Benchmark\Instance::start('FirstBenchmark');
 
     // start a second benchmark
-    benchmark\instance::start('SecondBenchmark');
+    Benchmark\Instance::start('SecondBenchmark');
 
     sleep(1);
 
     // Stop the second benchmark
-    benchmark\instance::stop('SecondBenchmark');
+    Benchmark\Instance::stop('SecondBenchmark');
 
     sleep(1);
 
     // Stop the benchmark
-    benchmark\instance::stop('FirstBenchmark');
+    Benchmark\Instance::stop('FirstBenchmark');
     echo '<pre>';
     // get the results of the benchmarks
-    print_r(benchmark\instance::get('FirstBenchmark'));
-    print_r(benchmark\instance::get('SecondBenchmark'));
+    print_r(Benchmark\Instance::get('FirstBenchmark'));
+    print_r(Benchmark\Instance::get('SecondBenchmark'));
 ```
 
 The above example will output 
@@ -161,29 +161,29 @@ The above example will output
 
 ```php
      
-     use hive\benchmark;
+     use Hive\Benchmark;
          
      // Start the benchmark
-     benchmark\instance::start('FirstBenchmark');
+     Benchmark\Instance::start('FirstBenchmark');
  
      for ($i=rand(1,100); $i>0; $i--) {
  
          // start another benchmark
-         benchmark\instance::start('SubBenchmark');
+         Benchmark\Instance::start('SubBenchmark');
  
          // Do Some Actions
  
          // Stop the other benchmark
-         benchmark\instance::stop('SubBenchmark');
+         Benchmark\Instance::stop('SubBenchmark');
      }
  
      sleep(1);
  
      // Stop the benchmark
-     benchmark\instance::stop('FirstBenchmark');
+     Benchmark\Instance::stop('FirstBenchmark');
  
      // Get a summary of all benchmarks
-     print_r(benchmark\instance::summary());
+     print_r(Benchmark\Instance::summary());
          
 ```
 
@@ -246,7 +246,7 @@ Using the Method
     
   public class foo {
    
-      use hive\benchmark;
+      use Hive\Benchmark;
       
       class apple {
   
@@ -270,7 +270,7 @@ Using the Method
           $helloWorld = new apple();
           $helloWorld->foo();
       
-          print_r(Benchmark\instance::summary());
+          print_r(Benchmark\Instance::summary());
           
 ```
   The above example will output 
@@ -331,7 +331,7 @@ All of which (other the instance::method()) can be called directly from the obje
 
 ```php
 
-    $bm = new \hive\benchmark\object(); 
+    $bm = new \Hive\Benchmark\Object(); 
     
     $bm->start('MyNewBenchmark'); 
     
@@ -356,7 +356,7 @@ Using the config
     // disabling benchmarking on production servers is easy
     $config['enabled'] = (IN_DEVELOPMENT || IN_STAGING); 
 
-    $bench = new \hive\benchmark\object($config); 
+    $bench = new \Hive\Benchmark\Object($config); 
 
 ```
 

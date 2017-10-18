@@ -8,21 +8,21 @@
 include __DIR__ . '/../include.php';
 
 // Use the benchmark
-use hive\benchmark;
+use Hive\Benchmark;
 
 // Start the benchmark
-benchmark\instance::start('FirstBenchmark');
+Benchmark\Instance::start('FirstBenchmark');
 
 // Start a second benchmark
-benchmark\instance::start('SecondBenchmark');
+Benchmark\Instance::start('SecondBenchmark');
 
 // Stop the second benchmark
-benchmark\instance::stop('SecondBenchmark');
+Benchmark\Instance::stop('SecondBenchmark');
 
 // Stop the benchmark
-benchmark\instance::stop('FirstBenchmark');
+Benchmark\Instance::stop('FirstBenchmark');
 
 // get the results of the benchmarks
-print_r(benchmark\instance::get('FirstBenchmark'));
-print_r(benchmark\instance::get('SecondBenchmark'));
+print_r(Benchmark\Instance::get('FirstBenchmark'));
+print_r(Benchmark\Instance::get('SecondBenchmark'));
 

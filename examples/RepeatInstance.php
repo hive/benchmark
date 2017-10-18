@@ -8,24 +8,24 @@
 include __DIR__ . '/../include.php';
 
 // Use the benchmark
-use hive\benchmark;
+use Hive\Benchmark;
 
 // Start the benchmark
-benchmark\instance::start('FirstBenchmark');
+Benchmark\Instance::start('FirstBenchmark');
 
 for ($i=rand(1,100); $i>0; $i--) {
 
     // Start another benchmark
-    benchmark\instance::start('SubBenchmark');
+    Benchmark\Instance::start('SubBenchmark');
 
     // Do Some Actions
 
     // Stop the other benchmark
-    benchmark\instance::stop('SubBenchmark');
+    Benchmark\Instance::stop('SubBenchmark');
 }
 
 // Stop the benchmark
-benchmark\instance::stop('FirstBenchmark');
+Benchmark\Instance::stop('FirstBenchmark');
 
 // Get a summary of all benchmarks
-print_r(benchmark\instance::summary());
+print_r(Benchmark\Instance::summary());

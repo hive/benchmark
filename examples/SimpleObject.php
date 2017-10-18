@@ -8,10 +8,10 @@
 include __DIR__ . '/../include.php';
 
 // Use the benchmark
-use hive\benchmark;
+use Hive\Benchmark;
 
 // Create the object
-$benchmark = new benchmark\object();
+$benchmark = new Benchmark\Object();
 
 // Start the benchmark
 $benchmark->start('NameOfBenchmark');

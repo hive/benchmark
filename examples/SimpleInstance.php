@@ -8,13 +8,13 @@
 include __DIR__ . '/../include.php';
 
 // Use the benchmark
-use hive\benchmark;
+use Hive\Benchmark;
 
 // Start the benchmark
-benchmark/instance::start('NameOfBenchmark');
+Benchmark\Instance::start('NameOfBenchmark');
 
 // Stop the benchmark
-benchmark/instance::stop('NameOfBenchmark');
+Benchmark\Instance::stop('NameOfBenchmark');
 
 // Output the benchmark
-print_r(benchmark\instance::get('SecondBenchmark'));
+print_r(Benchmark\Instance::get('SecondBenchmark'));
