@@ -20,4 +20,4 @@ $config = [
 // disabling benchmarking on production servers is easy
 $config['enabled'] = (IN_DEVELOPMENT || IN_STAGING);
 
-$bench = new \hive\benchmark\object($config);
+$bench = new benchmark\object($config);
