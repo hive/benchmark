@@ -73,12 +73,12 @@ The code is split up into the following classes :
  ```php
  
     // Start the benchmark
-    benchmark/instance::start('NameOfBenchmark');
+    benchmark\instance::start('NameOfBenchmark');
     
     sleep(1);
     
     // Stop the benchmark 
-    benchmark/instance::stop('NameOfBenchmark');
+    benchmark\instance::stop('NameOfBenchmark');
  
  ```
  
@@ -106,7 +106,6 @@ The code is split up into the following classes :
     // get the results of the benchmarks
     print_r(benchmark\instance::get('FirstBenchmark'));
     print_r(benchmark\instance::get('SecondBenchmark'));
- 
 ```
 
 The above example will output 
@@ -332,7 +331,7 @@ All of which (other the instance::method()) can be called directly from the obje
 
 ```php
 
-    $bm = new /hive/benchmark/object(); 
+    $bm = new \hive\benchmark\object(); 
     
     $bm->start('MyNewBenchmark'); 
     
@@ -357,7 +356,7 @@ Using the config
     // disabling benchmarking on production servers is easy
     $config['enabled'] = (IN_DEVELOPMENT || IN_STAGING); 
 
-    $bench = new /hive/benchmark/object($config); 
+    $bench = new \hive\benchmark\object($config); 
 
 ```
 
@@ -365,28 +364,35 @@ Using the config
 
 The code is split up into the following classes : 
 
+
 1. /Tests : folder for any unit testing
 2. /Examples : folder for any examples
 3. /Documents : folder for any documentation  
 4. /Source : folder for source code
-  1. Library.php : The actual benchmarking library, useful for extending functionality.
-    * __construct( array $config )
-    * start         (string $nameOfBenchmark) 
-    * stop          (string $nameOfBenchmark) 
-    * details       (string $nameOfBenchmark) 
-  2. Source/Object.php : Class for accessing the benchmark object.
-    * __construct( array $config )
-    * start         (string $nameOfBenchmark)
-    * stop          (string $nameOfBenchmark)
-    * details       (string $nameOfBenchMark)
-    * get           (string $nameOfBenchMark)
-    * summary       ()
-  3. Source/Instance.php : Instance of the object class.
-    * static start  (string $nameOfBenchmark)
-    * static stop   (string $nameOfBenchmark)
-    * static details(string $nameOfBenchMark)
-    * static get    (string $nameOfBenchMark)
-    * static summary()
-    * static method (string $action, integer $stack)
-  4. Source/Exception : Folder for any exceptions the object will throw
-  5. Source/Contact : folder for any interfaces or abstract classes they implement
+    1. Library.php : The actual benchmarking library, useful for extending functionality.
+        *  __construct( array $config )
+        *  start         (string $nameOfBenchmark) 
+        * stop          (string $nameOfBenchmark) 
+        * details       (string $nameOfBenchmark) 
+    2. Object.php : Class for accessing the benchmark object.
+        * __construct( array $config )
+        * start         (string $nameOfBenchmark)
+        * stop          (string $nameOfBenchmark)
+        * details       (string $nameOfBenchMark)
+        * get           (string $nameOfBenchMark)
+        * summary       ()
+    3. Instance.php : Instance of the object class.
+        * static start  (string $nameOfBenchmark)
+        * static stop   (string $nameOfBenchmark)
+        * static details(string $nameOfBenchMark)
+        * static get    (string $nameOfBenchMark)
+        * static summary()
+        * static method (string $action, integer $stack)
+    4. Exception : Folder for any exceptions the object will throw.
+        * AlreadyRunning.php
+        * NotRunning.php
+        * StoppedRunning.php
+    5. Contact : folder for any interfaces or abstract classes they implement
+        * Instance.php
+        * Library.php
+        * Object.php
