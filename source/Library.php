@@ -65,7 +65,8 @@ class Library implements Contract\Library
     public function start($name)
     {
         // create the parent holder
-        if (!isset($this->marks[$name])) {
+        if (!isset($this->marks[$name]))
+        {
             $this->marks[$name] = [];
         }
 
@@ -93,22 +94,26 @@ class Library implements Contract\Library
     public function stop($name)
     {
         // GIGO : The benchmark we are attempting to stop has been started
-        if (isset($this->marks[$name])) {
-
+        if (isset($this->marks[$name]))
+        {
             // Just an alias
             $mark = &$this->marks[$name][0];
 
             // GIGO : It hasn't already been stopped
-            if (!isset($mark['timer']['stop'])) {
-
+            if (!isset($mark['timer']['stop']))
+            {
                 // Assign the stop values
                 $this->timer($mark['timer']['stop']);
                 $this->memory($mark['memory']['stop']);
 
-            } else {
+            }
+            else
+            {
                 throw new Exception\StoppedRunning($name);
             }
-        } else {
+        }
+        else
+        {
             throw new Exception\NotRunning($name);
         }
     }
@@ -121,7 +126,8 @@ class Library implements Contract\Library
     private function timer(&$variable)
     {
         // If the timer benchmark is enabled
-        if ($this->config['timer']) {
+        if ($this->config['timer'])
+        {
             $variable = microtime(true);
         }
     }
@@ -198,42 +204,51 @@ class Library implements Contract\Library
             $memory = false;
             $results = [];
 
-            /**
-             * Return the time between the start and stop points for each
-             * of the benchmarks with the requested name. Then update them
-             * as a whole.
-             */
-            for ($i = 0; $i < count($this->marks[$name]); $i++)
+
+            if (isset($this->marks[$name]))
             {
-
-                // Just an alias
-                $mark = &$this->marks[$name][$i];
-                $time = $mark['timer']['stop'] - $mark['timer']['start'];
-
-                if (isset($mark['memory']))
+                /**
+                 * Return the time between the start and stop points for each
+                 * of the benchmarks with the requested name. Then update them
+                 * as a whole.
+                 */
+                for ($i = 0; $i < count($this->marks[$name]); $i++)
                 {
-                    $memory = $mark['memory']['stop'] - $mark['memory']['start'];
 
-                    /**
-                     * Sanity check against the memory in case it was a minor benchmark
-                     * and there was a garbage collection during the running.
-                     */
-                    $memory = ($memory > 1) ? $memory : 0;
+                    // Just an alias
+                    $mark = &$this->marks[$name][$i];
+                    $time = $mark['timer']['stop'] - $mark['timer']['start'];
+
+                    if (isset($mark['memory']))
+                    {
+                        $memory = $mark['memory']['stop'] - $mark['memory']['start'];
+
+                        /**
+                         * Sanity check against the memory in case it was a minor benchmark
+                         * and there was a garbage collection during the running.
+                         */
+                        $memory = ($memory > 1) ? $memory : 0;
+                    }
+
+                    $result = [
+                        'time'  => number_format($time, $this->config['decimals']),
+                        'count' => count($this->marks[$name])
+                    ];
+
+                    // If memory has been assigned
+                    if ($this->config['memory'])
+                    {
+                        $result['memory'] = $memory;
+                    }
+
+                    $results[] = $result;
                 }
-
-                $result = [
-                    'time'  => number_format($time, $this->config['decimals']),
-                    'count' => count($this->marks[$name])
-                ];
-
-                // If memory has been assigned
-                if ($this->config['memory'])
-                {
-                    $result['memory'] = $memory;
-                }
-
-                $results[] = $result;
             }
+            else
+            {
+                throw new Exception\DoesNotExist($name);
+            }
+
         }
         catch (\Exception $e)
         {

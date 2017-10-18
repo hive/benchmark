@@ -19,7 +19,7 @@ phpmetrics --report-cli --report-html=../Documents/html/phpmetrics/index.html --
 php /usr/local/zend/bin/phpcs;
 
 # Output the rules of the CodeSniffer
-php /usr/local/zend/bin/phpcs --genertor=html > ../Documents/html/codesniffer/rules.html;
+php /usr/local/zend/bin/phpctor=html > ../Documents/html/codesniffer/rules.html;
 
 # Run it a second time gathering all the output into one file
 php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../source >  ../Documents/html/codesniffer/all.txt;

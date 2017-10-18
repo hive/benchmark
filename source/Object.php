@@ -122,7 +122,9 @@ class Object extends Library implements Contract\Object
                 'memory' => $result['memory'] = $this->calculate($memory)
             ];
 
-        } catch (\Exception $e) {
+        }
+        catch (\Exception $e)
+        {
             throw new Exception($e->getMessage(), $e->getCode());
         }
 
@@ -156,7 +158,6 @@ class Object extends Library implements Contract\Object
     {
         // remove any values which are 0
         $values = array_filter($values);
-
         return [
             'total'  => number_format(array_sum($values), $decimals),
             'min'    => number_format(min($values), $decimals),

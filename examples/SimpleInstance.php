@@ -17,4 +17,4 @@ Benchmark\Instance::start('NameOfBenchmark');
 Benchmark\Instance::stop('NameOfBenchmark');
 
 // Output the benchmark
-print_r(Benchmark\Instance::get('SecondBenchmark'));
+print_r(Benchmark\Instance::get('NameOfBenchmark'));

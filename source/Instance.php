@@ -3,7 +3,9 @@
 /**
  * Benchmark Instance.
  *
- * Allows access to the benchmark object through a instance.
+ * Allows access to the benchmark object through a instance as a singleton.
+ *
+ * @todo remove methods and add __callStatic, direct access to the object
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
@@ -15,13 +17,24 @@
  */
 class Instance implements Contract\Instance
 {
+    /**
+     * Singleton.
+     * @var
+     */
     private static $object;
+
+    /**
+     * Stores method names, for use the the method().
+     * @var array
+     */
     private static $methods = [];
 
     /**
      * Initialise the instance.
      *
-     * Will create the object if it does not exist.
+     * Will create the object if it does not exist or return it if previously created.
+     *
+     * @return \Hive\Benchmark\Object the instance
      */
     private static function init()
     {
@@ -29,7 +42,10 @@ class Instance implements Contract\Instance
         {
             self::$object = new Object();
         }
+
+        return self::$object;
     }
+
 
     /**
      * Static Alias to the Benchmark/Object/Start.
@@ -40,9 +56,7 @@ class Instance implements Contract\Instance
      */
     public static function start($name)
     {
-        self::init();
-
-        self::$object->start($name);
+        self::init()->start($name);
     }
 
     /**
@@ -54,9 +68,7 @@ class Instance implements Contract\Instance
      */
     public static function stop($name)
     {
-        self::init();
-
-        self::$object->stop($name);
+        self::init()->stop($name);
     }
 
     /**
@@ -64,13 +76,11 @@ class Instance implements Contract\Instance
      *
      * @param  string $name The benchmark to get
      *
-     * @return array
+     * @return array details
      */
     public static function details($name)
     {
-        self::init();
-
-        return self::$object->details($name);
+        return self::init()->details($name);
     }
 
     /**
@@ -82,9 +92,7 @@ class Instance implements Contract\Instance
      */
     public static function get($name)
     {
-        self::init();
-
-        return self::$object->get($name);
+        return self::init()->get($name);
     }
 
     /**
@@ -94,9 +102,7 @@ class Instance implements Contract\Instance
      */
     public static function summary()
     {
-        self::init();
-
-        return self::$object->summary();
+        return self::init()->summary();
     }
 
 
@@ -116,7 +122,6 @@ class Instance implements Contract\Instance
          */
         if ($action == 'auto')
         {
-
             /**
              * We don't have an active benchmark for this method
              * so it much be a start action.
