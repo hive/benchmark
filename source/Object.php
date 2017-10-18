@@ -53,7 +53,8 @@ class Object extends Library implements Contract\Object
     public function start($name)
     {
         // Config Check : Are Benchmarks enabled
-        if ($this->config['enabled']) {
+        if ($this->config['enabled'])
+        {
             parent::start($name);
         }
     }
@@ -68,7 +69,8 @@ class Object extends Library implements Contract\Object
     public function stop($name)
     {
         // Config Check : Are Benchmarks enabled
-        if ($this->config['enabled']) {
+        if ($this->config['enabled'])
+        {
             parent::stop($name);
         }
     }
@@ -83,7 +85,8 @@ class Object extends Library implements Contract\Object
     public function details($name)
     {
         // Config Check : Are Benchmarks enabled
-        if ($this->config['enabled']) {
+        if ($this->config['enabled'])
+        {
             return parent::details($name);
         }
     }
@@ -103,7 +106,8 @@ class Object extends Library implements Contract\Object
      */
     public function get($name = false)
     {
-        try {
+        try
+        {
 
             // Initialise the variables
             $time = $memory = [];
@@ -111,7 +115,8 @@ class Object extends Library implements Contract\Object
             $marks = $this->retrieve($name);
 
             // Gather the totals
-            foreach ($marks as $mark) {
+            foreach ($marks as $mark)
+            {
                 $time[] = $mark['time'];
                 $memory[] = $mark['memory'];
             }
@@ -136,7 +141,8 @@ class Object extends Library implements Contract\Object
     {
         $results = [];
 
-        foreach ($this->marks as $mark => $values) {
+        foreach ($this->marks as $mark => $values)
+        {
             $results[$mark] = $this->get($mark);
         }
 
