@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Contract\Object" namespace="Hive\Benchmark\Contract" name="Object" abstract="false" final="false" start="17" end="34">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Contract/Object.php" size="678" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="3fee93a5d4b51a83f9e0c6729d3ce1522fc94e17" relative="Contract/Object.php"/>
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Contract/Object.php" size="678" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="3fee93a5d4b51a83f9e0c6729d3ce1522fc94e17" relative="Contract/Object.php"/>
   <docblock>
     <description compact="Object Interface.">Interface for the object class used as a contract.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -56,5 +56,5 @@
   </parent>
   <implementors>
     <class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/>
-  <class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/></implementors>
+  </implementors>
 </interface>

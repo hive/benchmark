@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="16" end="156">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Instance.php" size="3717" time="2016-07-12T19:48:11+11:00" unixtime="1468313291" sha1="09af3f67f1dee899841ee27e6a6c316c8481beb8" relative="Instance.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="16" end="159">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Instance.php" size="3768" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="b8c48b72c03c9cd2f4784d8484177d0320cfa1f7" relative="Instance.php"/>
   <docblock>
     <description compact="Benchmark Instance.">Allows access to the benchmark object through a instance.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -12,12 +12,12 @@
   <implements full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance"/>
   <member name="object" visibility="private" static="true" line="18"/>
   <member name="methods" type="array" default="" visibility="private" static="true" line="19"/>
-  <method name="init" start="26" end="31" abstract="false" final="false" static="true" visibility="private">
+  <method name="init" start="26" end="32" abstract="false" final="false" static="true" visibility="private">
     <docblock>
       <description compact="Initialise the instance.">Will create the object if it does not exist.</description>
     </docblock>
   </method>
-  <method name="start" start="40" end="45" abstract="false" final="false" static="true" visibility="public">
+  <method name="start" start="41" end="46" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Static Alias to the Benchmark/Object/Start."/>
       <param description="The benchmark to start." type="string" variable="$name"/>
@@ -27,7 +27,7 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="stop" start="54" end="59" abstract="false" final="false" static="true" visibility="public">
+  <method name="stop" start="55" end="60" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Static Alias to the Benchmark/Object/Stop."/>
       <param description="The benchmark to stop." type="string" variable="$name"/>
@@ -37,7 +37,7 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="details" start="68" end="73" abstract="false" final="false" static="true" visibility="public">
+  <method name="details" start="69" end="74" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Static Alias to the Benchmark/Object/Details."/>
       <param description="The benchmark to get" type="string" variable="$name"/>
@@ -45,7 +45,7 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="get" start="82" end="87" abstract="false" final="false" static="true" visibility="public">
+  <method name="get" start="83" end="88" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Static Alias to the Benchmark/Object/Get."/>
       <param description="The benchmark to get a summary of." type="string" variable="$name"/>
@@ -53,13 +53,13 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="summary" start="94" end="99" abstract="false" final="false" static="true" visibility="public">
+  <method name="summary" start="95" end="100" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Static Alias to the Benchmark/Object/Summary."/>
       <return type="array"/>
     </docblock>
   </method>
-  <method name="method" start="109" end="140" abstract="false" final="false" static="true" visibility="public">
+  <method name="method" start="110" end="144" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Auto Method for setting benchmarks on a method, with out requiring its name.">or even setting whether to start/stop.</description>
       <param description="(auto|start|stop) auto will determine whether to start or stop." type="string" variable="$action"/>
@@ -68,12 +68,12 @@
     <parameter name="action" byreference="false" type="string" default="'auto'"/>
     <parameter name="stack" byreference="false" type="integer" default="3"/>
     <inline>
-      <comment value="Get the name of the caller method" line="111"/>
+      <comment value="Get the name of the caller method" line="112"/>
       <comment value="If its an auto, find out what method to run." line="114"/>
-      <comment value="run the action" line="138"/>
+      <comment value="run the action" line="142"/>
     </inline>
   </method>
-  <method name="trace" start="150" end="155" abstract="false" final="false" static="true" visibility="private">
+  <method name="trace" start="154" end="158" abstract="false" final="false" static="true" visibility="private">
     <docblock>
       <description compact="Simple debug_backtrace to get the name of the method which called."/>
       <param description="How far in the stacktrace to go back." type="int" variable="$stack"/>

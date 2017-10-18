@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\StoppedRunning" namespace="Hive\Benchmark\Exception" name="StoppedRunning" abstract="false" final="false" start="16" end="39">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/StoppedRunning.php" size="1088" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="50a740bd7190a474312f8d57a09221423b128ec6" relative="Exception/StoppedRunning.php"/>
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Exception/StoppedRunning.php" size="1088" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="50a740bd7190a474312f8d57a09221423b128ec6" relative="Exception/StoppedRunning.php"/>
   <docblock>
     <description compact="Finished Running Exception.">Called when the library attempts to stop a benchmark which has already been stopped.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -25,12 +25,12 @@
   </constructor>
   <parent full="Hive\Benchmark\Exception" namespace="Hive\Benchmark" name="Exception">
     <extends full="Exception" namespace="" name="Exception"/>
-    <constant type="{unknown}" name="VENDOR" value="8883">
+    <constant type="{unknown}" name="VENDOR_NUMBER" value="8383">
       <docblock>
         <description compact="Arbitrarily assigned vendor exception code used to prefix all hive exceptions."/>
       </docblock>
     </constant>
-    <constant type="{unknown}" name="PACKAGE" value="1">
+    <constant type="{unknown}" name="PACKAGE_NUMBER" value="1">
       <docblock>
         <description compact="Package exception code, sequential package numbers."/>
       </docblock>

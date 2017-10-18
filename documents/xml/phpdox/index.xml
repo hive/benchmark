@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <index xmlns="http://xml.phpdox.net/src" basedir="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source">
   <namespace name="Hive\Benchmark\Contract">
-    <interface name="Instance" src="Contract/Instance.php" description="Instance Interface." xml="interfaces/Hive_Benchmark_Contract_Instance.xml"/>
-    <interface name="Library" src="Contract/Library.php" description="Library Interface." xml="interfaces/Hive_Benchmark_Contract_Library.xml"/>
-    <interface name="Object" src="Contract/Object.php" description="Object Interface." xml="interfaces/Hive_Benchmark_Contract_Object.xml"/>
-  </namespace>
-  <namespace name="Hive\Benchmark\Exception">
-    <class name="AlreadyRunning" src="Exception/AlreadyRunning.php" description="Already Running Exception." xml="classes/Hive_Benchmark_Exception_AlreadyRunning.xml"/>
     
-    <class name="StoppedRunning" src="Exception/StoppedRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_StoppedRunning.xml"/>
-  <class name="NotRunning" src="Exception/NotRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_NotRunning.xml"/></namespace>
+    
+    
+  <interface name="Instance" src="Contract/Instance.php" description="Instance Interface." xml="interfaces/Hive_Benchmark_Contract_Instance.xml"/><interface name="Library" src="Contract/Library.php" description="Library Interface." xml="interfaces/Hive_Benchmark_Contract_Library.xml"/><interface name="Object" src="Contract/Object.php" description="Object Interface." xml="interfaces/Hive_Benchmark_Contract_Object.xml"/></namespace>
+  <namespace name="Hive\Benchmark\Exception">
+    
+    
+    
+  <class name="StoppedRunning" src="Exception/StoppedRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_StoppedRunning.xml"/><class name="AlreadyRunning" src="Exception/AlreadyRunning.php" description="Already Running Exception." xml="classes/Hive_Benchmark_Exception_AlreadyRunning.xml"/><class name="NotRunning" src="Exception/NotRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_NotRunning.xml"/></namespace>
   <namespace name="Hive\Benchmark">
     
-    <class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/>
-    <class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/>
     
-  <class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/><class name="Exception" src="Exception.php" description="General Exception Handler." xml="classes/Hive_Benchmark_Exception.xml"/></namespace>
+    
+    
+  <class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/><class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/><class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/><class name="Exception" src="Exception.php" description="General Exception Handler." xml="classes/Hive_Benchmark_Exception.xml"/></namespace>
   <namespace name="">
     <class name="Exception" xml="classes/Exception.xml"/>
   </namespace>

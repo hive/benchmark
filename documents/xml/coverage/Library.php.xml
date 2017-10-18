@@ -2,13 +2,13 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Library.php">
     <totals>
-      <lines total="239" comments="132" code="107" executable="58" executed="28" percent="48.28%"/>
+      <lines total="245" comments="132" code="113" executable="60" executed="28" percent="46.67%"/>
       <methods count="7" tested="5" percent="71.43%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Library" start="16" executable="58" executed="28" crap="68.96">
+    <class name="Library" start="16" executable="60" executed="28" crap="73.77">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark"/>
       <method name="__construct" signature="__construct(array $config = [])" start="49" end="56" crap="1" executable="2" executed="2" coverage="100"/>
@@ -17,7 +17,7 @@
       <method name="timer" signature="timer(&amp;$variable)" start="121" end="127" crap="2" executable="4" executed="4" coverage="100"/>
       <method name="memory" signature="memory(&amp;$variable)" start="137" end="143" crap="2" executable="4" executed="4" coverage="100"/>
       <method name="details" signature="details($name)" start="156" end="178" crap="12" executable="9" executed="0" coverage="0"/>
-      <method name="retrieve" signature="retrieve($name)" start="192" end="238" crap="42" executable="21" executed="0" coverage="0"/>
+      <method name="retrieve" signature="retrieve($name)" start="192" end="244" crap="42" executable="23" executed="0" coverage="0"/>
     </class>
     <coverage>
       <line nr="54">

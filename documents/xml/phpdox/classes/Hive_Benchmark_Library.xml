@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library" abstract="false" final="false" start="16" end="239">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Library.php" size="6504" time="2016-07-12T15:51:11+11:00" unixtime="1468299071" sha1="36942d869ab0da57afb114a7e9d517f127a84f30" relative="Library.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library" abstract="false" final="false" start="16" end="245">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Library.php" size="6572" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="ade99d75e03d2589a3bccee787ff29628d50a869" relative="Library.php"/>
   <docblock>
     <description compact="Benchmark Library.">The actual benchmark library, which does the core operations.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -112,7 +112,7 @@ memory_get_usage to be LOWER then the first call.</description>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="retrieve" start="192" end="238" abstract="false" final="false" static="false" visibility="protected">
+  <method name="retrieve" start="192" end="244" abstract="false" final="false" static="false" visibility="protected">
     <docblock>
       <description compact="Retrieve an all benchmarks of a perticular name from the internal marks storage array.">Internal process, no gigo/sanity</description>
       <param variable="$name"/>

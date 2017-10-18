@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning" abstract="false" final="false" start="17" end="43">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1196" time="2016-07-13T01:10:12+11:00" unixtime="1468332612" sha1="47fb41e19df0a4d624c5978b8bf08adad74ba958" relative="Exception/AlreadyRunning.php"/>
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Exception/AlreadyRunning.php" size="1196" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="47fb41e19df0a4d624c5978b8bf08adad74ba958" relative="Exception/AlreadyRunning.php"/>
   <docblock>
     <description compact="Already Running Exception.">Called when the library attempts to start a benchmark
 the same benchmark is already running.</description>
@@ -30,12 +30,12 @@ the same benchmark is already running.</description>
   </constructor>
   <parent full="Hive\Benchmark\Exception" namespace="Hive\Benchmark" name="Exception">
     <extends full="Exception" namespace="" name="Exception"/>
-    <constant type="{unknown}" name="VENDOR" value="8883">
+    <constant type="{unknown}" name="VENDOR_NUMBER" value="8383">
       <docblock>
         <description compact="Arbitrarily assigned vendor exception code used to prefix all hive exceptions."/>
       </docblock>
     </constant>
-    <constant type="{unknown}" name="PACKAGE" value="1">
+    <constant type="{unknown}" name="PACKAGE_NUMBER" value="1">
       <docblock>
         <description compact="Package exception code, sequential package numbers."/>
       </docblock>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object" abstract="false" final="false" start="16" end="168">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Build/../Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/benchmark/Source/Object.php" size="4142" time="2016-07-13T15:18:15+11:00" unixtime="1468383495" sha1="3fff8e46fc90620095beaef23b10a5275099aa5c" relative="Object.php"/>
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source" file="Object.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Object.php" size="4142" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="3fff8e46fc90620095beaef23b10a5275099aa5c" relative="Object.php"/>
   <docblock>
     <description compact="Object Library.">Allows access to the library through an object.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -101,135 +101,135 @@ the result.</description>
   <parent full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library">
     <implements full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library"/>
     <member name="marks" type="array" default="" visibility="protected" static="false" line="39">
-    <docblock>
-      <description compact="Internal storage for benchmarks."/>
-      <var type="array"/>
-    </docblock>
-  </member>
+      <docblock>
+        <description compact="Internal storage for benchmarks."/>
+        <var type="array"/>
+      </docblock>
+    </member>
     <constructor name="__construct" start="49" end="56" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Library constructor."/>
-      <param type="array" variable="$config"/>
-      <throws type="object">
-        <type full="Hive\Benchmark\Exception\RequiresMemoryGetUsage" namespace="Hive\Benchmark\Exception" name="RequiresMemoryGetUsage"/>
-      </throws>
-    </docblock>
-    <parameter name="config" byreference="false" type="array" default=""/>
-    <inline>
-      <comment value="Merge the received config with the defaults." line="51"/>
-    </inline>
-  </constructor>
+      <docblock>
+        <description compact="Library constructor."/>
+        <param type="array" variable="$config"/>
+        <throws type="object">
+          <type full="Hive\Benchmark\Exception\RequiresMemoryGetUsage" namespace="Hive\Benchmark\Exception" name="RequiresMemoryGetUsage"/>
+        </throws>
+      </docblock>
+      <parameter name="config" byreference="false" type="array" default=""/>
+      <inline>
+        <comment value="Merge the received config with the defaults." line="51"/>
+      </inline>
+    </constructor>
     <method name="start" start="65" end="81" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Start a benchmark."/>
-      <param description="benchmark name" variable="$name" type="string"/>
-      <return type="object">
-        <type full="Hive\Benchmark\void" namespace="Hive\Benchmark" name="void"/>
-      </return>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-    <inline>
-      <comment value="create the parent holder" line="67"/>
-      <comment value="initialise the variable" line="72"/>
-      <comment value="get the benchmarks" line="75"/>
-      <comment value="Add the item to the top of its array" line="79"/>
-    </inline>
-  </method>
+      <docblock>
+        <description compact="Start a benchmark."/>
+        <param description="benchmark name" variable="$name" type="string"/>
+        <return type="object">
+          <type full="Hive\Benchmark\void" namespace="Hive\Benchmark" name="void"/>
+        </return>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="create the parent holder" line="67"/>
+        <comment value="initialise the variable" line="72"/>
+        <comment value="get the benchmarks" line="75"/>
+        <comment value="Add the item to the top of its array" line="79"/>
+      </inline>
+    </method>
     <method name="stop" start="93" end="114" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Stop a benchmark."/>
-      <param description="benchmark name" variable="$name" type="string"/>
-      <throws type="object">
-        <type full="\Hive\Benchmark\Exception\StoppedRunning" namespace="\Hive\Benchmark\Exception" name="StoppedRunning"/>
-      </throws>
-      <throws type="object">
-        <type full="\Hive\Benchmark\Exception\NotRunning" namespace="\Hive\Benchmark\Exception" name="NotRunning"/>
-      </throws>
-      <return type="object">
-        <type full="Hive\Benchmark\void" namespace="Hive\Benchmark" name="void"/>
-      </return>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-    <inline>
-      <comment value="GIGO : The benchmark we are attempting to stop has been started" line="95"/>
-    </inline>
-  </method>
+      <docblock>
+        <description compact="Stop a benchmark."/>
+        <param description="benchmark name" variable="$name" type="string"/>
+        <throws type="object">
+          <type full="\Hive\Benchmark\Exception\StoppedRunning" namespace="\Hive\Benchmark\Exception" name="StoppedRunning"/>
+        </throws>
+        <throws type="object">
+          <type full="\Hive\Benchmark\Exception\NotRunning" namespace="\Hive\Benchmark\Exception" name="NotRunning"/>
+        </throws>
+        <return type="object">
+          <type full="Hive\Benchmark\void" namespace="Hive\Benchmark" name="void"/>
+        </return>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="GIGO : The benchmark we are attempting to stop has been started" line="95"/>
+      </inline>
+    </method>
     <method name="details" start="156" end="178" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Get a benchmark."/>
-      <param description="the name of the benchmark to get" variable="$name" type="string"/>
-      <throws type="object">
-        <type full="\Hive\Benchmark\Exception" namespace="\Hive\Benchmark" name="Exception"/>
-      </throws>
-      <throws type="object">
-        <type full="\Hive\Benchmark\Exception\StoppedRunning" namespace="\Hive\Benchmark\Exception" name="StoppedRunning"/>
-      </throws>
-      <throws type="object">
-        <type full="\Hive\Benchmark\Exception\NotRunning" namespace="\Hive\Benchmark\Exception" name="NotRunning"/>
-      </throws>
-      <return description="Either an array of requested marks or false on fail" type="object">
-        <type full="Hive\Benchmark\array|bool" namespace="Hive\Benchmark" name="array|bool"/>
-      </return>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-  </method>
-    <method name="retrieve" start="192" end="238" abstract="false" final="false" static="false" visibility="protected">
-    <docblock>
-      <description compact="Retrieve an all benchmarks of a perticular name from the internal marks storage array.">Internal process, no gigo/sanity</description>
-      <param variable="$name"/>
-      <throws type="object">
-        <type full="\Hive\Benchmark\Exception" namespace="\Hive\Benchmark" name="Exception"/>
-      </throws>
-      <return type="array"/>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-  </method>
+      <docblock>
+        <description compact="Get a benchmark."/>
+        <param description="the name of the benchmark to get" variable="$name" type="string"/>
+        <throws type="object">
+          <type full="\Hive\Benchmark\Exception" namespace="\Hive\Benchmark" name="Exception"/>
+        </throws>
+        <throws type="object">
+          <type full="\Hive\Benchmark\Exception\StoppedRunning" namespace="\Hive\Benchmark\Exception" name="StoppedRunning"/>
+        </throws>
+        <throws type="object">
+          <type full="\Hive\Benchmark\Exception\NotRunning" namespace="\Hive\Benchmark\Exception" name="NotRunning"/>
+        </throws>
+        <return description="Either an array of requested marks or false on fail" type="object">
+          <type full="Hive\Benchmark\array|bool" namespace="Hive\Benchmark" name="array|bool"/>
+        </return>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="retrieve" start="192" end="244" abstract="false" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="Retrieve an all benchmarks of a perticular name from the internal marks storage array.">Internal process, no gigo/sanity</description>
+        <param variable="$name"/>
+        <throws type="object">
+          <type full="\Hive\Benchmark\Exception" namespace="\Hive\Benchmark" name="Exception"/>
+        </throws>
+        <return type="array"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
   </parent>
   <interface full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library">
     <method name="start" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Starts a benchmark of give name."/>
-      <param description="the benchmark to start." type="string" variable="$name"/>
-      <return type="object">
-        <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
-      </return>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-  </method>
+      <docblock>
+        <description compact="Starts a benchmark of give name."/>
+        <param description="the benchmark to start." type="string" variable="$name"/>
+        <return type="object">
+          <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+        </return>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
     <method name="stop" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Stops a benchmark of given name."/>
-      <param description="the benchmark to stop." type="string" variable="$name"/>
-      <return type="object">
-        <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
-      </return>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-  </method>
+      <docblock>
+        <description compact="Stops a benchmark of given name."/>
+        <param description="the benchmark to stop." type="string" variable="$name"/>
+        <return type="object">
+          <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+        </return>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
     <method name="details" start="43" end="43" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Get benchmark's details."/>
-      <param description="the benchmark to get the details of." type="string" variable="$name"/>
-      <return type="array"/>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-  </method>
+      <docblock>
+        <description compact="Get benchmark's details."/>
+        <param description="the benchmark to get the details of." type="string" variable="$name"/>
+        <return type="array"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
   </interface>
   <interface full="Hive\Benchmark\Contract\Object" namespace="Hive\Benchmark\Contract" name="Object">
     <extends full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library"/>
     <method name="get" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Get benchmark's results."/>
-      <param description="the benchmark to get." type="string" variable="$name"/>
-      <return type="array"/>
-    </docblock>
-    <parameter name="name" byreference="false" type="{unknown}"/>
-  </method>
+      <docblock>
+        <description compact="Get benchmark's results."/>
+        <param description="the benchmark to get." type="string" variable="$name"/>
+        <return type="array"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
     <method name="summary" start="33" end="33" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Get a summary of all benchmarks."/>
-      <return type="array"/>
-    </docblock>
-  </method>
+      <docblock>
+        <description compact="Get a summary of all benchmarks."/>
+        <return type="array"/>
+      </docblock>
+    </method>
   </interface>
 </class>
