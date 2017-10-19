@@ -61,5 +61,5 @@
   </method>
   <implementors>
     <class full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance"/>
-  </implementors>
+  <class full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance"/></implementors>
 </interface>

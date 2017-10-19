@@ -2,22 +2,22 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Object.php">
     <totals>
-      <lines total="168" comments="87" code="81" executable="39" executed="11" percent="28.21%"/>
+      <lines total="175" comments="87" code="88" executable="42" executed="13" percent="30.95%"/>
       <methods count="7" tested="3" percent="42.86%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Object" start="16" executable="39" executed="11" crap="75.54">
+    <class name="Object" start="16" executable="42" executed="13" crap="68.63">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark"/>
       <method name="__construct" signature="__construct($config = [])" start="38" end="44" crap="1" executable="3" executed="3" coverage="100"/>
-      <method name="start" signature="start($name)" start="53" end="59" crap="2" executable="4" executed="4" coverage="100"/>
-      <method name="stop" signature="stop($name)" start="68" end="74" crap="2" executable="4" executed="4" coverage="100"/>
-      <method name="details" signature="details($name)" start="83" end="89" crap="6" executable="3" executed="0" coverage="0"/>
-      <method name="get" signature="get($name = false)" start="104" end="130" crap="12" executable="13" executed="0" coverage="0"/>
-      <method name="summary" signature="summary()" start="133" end="142" crap="6" executable="5" executed="0" coverage="0"/>
-      <method name="calculate" signature="calculate($values, $decimals = 0)" start="155" end="167" crap="2" executable="7" executed="0" coverage="0"/>
+      <method name="start" signature="start($name)" start="53" end="60" crap="2" executable="5" executed="5" coverage="100"/>
+      <method name="stop" signature="stop($name)" start="69" end="76" crap="2" executable="5" executed="5" coverage="100"/>
+      <method name="details" signature="details($name)" start="85" end="92" crap="6" executable="4" executed="0" coverage="0"/>
+      <method name="get" signature="get($name = false)" start="107" end="137" crap="12" executable="13" executed="0" coverage="0"/>
+      <method name="summary" signature="summary()" start="140" end="150" crap="6" executable="5" executed="0" coverage="0"/>
+      <method name="calculate" signature="calculate($values, $decimals = 0)" start="163" end="174" crap="2" executable="7" executed="0" coverage="0"/>
     </class>
     <coverage>
       <line nr="41">
@@ -51,10 +51,8 @@
         <covered by="testInstanceGet::testStoppedRunningException"/>
         <covered by="testObjectGet::testStoppedRunningException"/>
       </line>
-      <line nr="71">
-        <covered by="testInstanceGet::testNotRunningException"/>
+      <line nr="60">
         <covered by="testInstanceGet::testStoppedRunningException"/>
-        <covered by="testObjectGet::testNotRunningException"/>
         <covered by="testObjectGet::testStoppedRunningException"/>
       </line>
       <line nr="72">
@@ -64,10 +62,22 @@
         <covered by="testObjectGet::testStoppedRunningException"/>
       </line>
       <line nr="73">
+        <covered by="testInstanceGet::testNotRunningException"/>
         <covered by="testInstanceGet::testStoppedRunningException"/>
+        <covered by="testObjectGet::testNotRunningException"/>
         <covered by="testObjectGet::testStoppedRunningException"/>
       </line>
       <line nr="74">
+        <covered by="testInstanceGet::testNotRunningException"/>
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+        <covered by="testObjectGet::testNotRunningException"/>
+        <covered by="testObjectGet::testStoppedRunningException"/>
+      </line>
+      <line nr="75">
+        <covered by="testInstanceGet::testStoppedRunningException"/>
+        <covered by="testObjectGet::testStoppedRunningException"/>
+      </line>
+      <line nr="76">
         <covered by="testInstanceGet::testStoppedRunningException"/>
         <covered by="testObjectGet::testStoppedRunningException"/>
       </line>

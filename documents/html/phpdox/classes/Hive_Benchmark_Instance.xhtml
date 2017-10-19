@@ -59,6 +59,9 @@
             <a href="#coverage">Coverage</a>
           </li>
           <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
             <a href="#members">Members</a>
           </li>
           <li>
@@ -68,14 +71,14 @@
             <a href="#history">History</a>
           </li>
           <li>
-            <a href="../source/Instance.php.xhtml#line16">Source</a>
+            <a href="../source/Instance.php.xhtml#line18">Source</a>
           </li>
         </ul>
       </nav>
       <section>
         <h1 id="introduction"><small>Hive\Benchmark\</small>Instance</h1>
         <h4>Benchmark Instance.</h4>
-        <p>Allows access to the benchmark object through a instance.</p>
+        <p>Allows access to the benchmark object through a instance as a singleton.</p>
         <ul>
           <li>Author: Jamie Peake &lt;jamie.peake@gmail.com&gt;</li>
           <li>Copyright: (c) 2016 Jamie Peake</li>
@@ -87,7 +90,7 @@
             {<br/><ul class="none"><li>// members</li><li>private static  <a href="#members">$object</a>;
                     </li><li>private static array <a href="#members">$methods</a> =
                         ;
-                    </li></ul><ul class="none"><li>// methods</li><li>private static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/init.xhtml">init</a>()
+                    </li></ul><ul class="none"><li>// methods</li><li>private static Object <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/init.xhtml">init</a>()
                     </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/start.xhtml">start</a>()
                     </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/stop.xhtml">stop</a>()
                     </li><li>public static array <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/details.xhtml">details</a>()
@@ -120,16 +123,29 @@
             <td class="nummeric"> / </td>
           </tr>
         </table>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">18+</td>
+            <td>remove methods and add __callStatic, direct access to the object</td>
+          </tr>
+        </table>
         <h2 id="members">Members</h2>
         <div class="styled members">
           <h4>private</h4>
           <ul class="members">
-            <li id="methods">
-              <strong>$methods</strong>
-            </li>
-            <li id="object">
-              <strong>$object</strong>
-            </li>
+            <li id="methods"><strong>$methods</strong>
+                —
+                array<br/><span class="indent">Stores method names, for use the the method().</span></li>
+            <li id="object"><strong>$object</strong>
+                —
+                <br/><span class="indent">Singleton.</span></li>
           </ul>
         </div>
         <h2 id="methods">Methods</h2>

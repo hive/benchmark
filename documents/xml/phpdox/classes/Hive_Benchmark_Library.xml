@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library" abstract="false" final="false" start="16" end="245">
-  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Library.php" size="6572" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="ade99d75e03d2589a3bccee787ff29628d50a869" relative="Library.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library" abstract="false" final="false" start="16" end="260">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Library.php" size="6942" time="2017-10-19T00:35:38+11:00" unixtime="1508333738" sha1="ae7db5704fbc35ee023c7235c1f9c92ca5ca1efe" relative="Library.php"/>
   <docblock>
     <description compact="Benchmark Library.">The actual benchmark library, which does the core operations.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -37,7 +37,7 @@
       <comment value="Merge the received config with the defaults." line="51"/>
     </inline>
   </constructor>
-  <method name="start" start="65" end="81" abstract="false" final="false" static="false" visibility="public">
+  <method name="start" start="65" end="82" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Start a benchmark."/>
       <param description="benchmark name" variable="$name" type="string"/>
@@ -48,12 +48,12 @@
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
       <comment value="create the parent holder" line="67"/>
-      <comment value="initialise the variable" line="72"/>
-      <comment value="get the benchmarks" line="75"/>
-      <comment value="Add the item to the top of its array" line="79"/>
+      <comment value="initialise the variable" line="73"/>
+      <comment value="get the benchmarks" line="76"/>
+      <comment value="Add the item to the top of its array" line="80"/>
     </inline>
   </method>
-  <method name="stop" start="93" end="114" abstract="false" final="false" static="false" visibility="public">
+  <method name="stop" start="94" end="119" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Stop a benchmark."/>
       <param description="benchmark name" variable="$name" type="string"/>
@@ -69,20 +69,20 @@
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="GIGO : The benchmark we are attempting to stop has been started" line="95"/>
+      <comment value="GIGO : The benchmark we are attempting to stop has been started" line="96"/>
     </inline>
   </method>
-  <method name="timer" start="121" end="127" abstract="false" final="false" static="false" visibility="private">
+  <method name="timer" start="126" end="133" abstract="false" final="false" static="false" visibility="private">
     <docblock>
       <description compact="Sets the current time into supplied variable."/>
       <param variable="$variable"/>
     </docblock>
     <parameter name="variable" byreference="true" type="{unknown}"/>
     <inline>
-      <comment value="If the timer benchmark is enabled" line="123"/>
+      <comment value="If the timer benchmark is enabled" line="128"/>
     </inline>
   </method>
-  <method name="memory" start="137" end="143" abstract="false" final="false" static="false" visibility="private">
+  <method name="memory" start="143" end="149" abstract="false" final="false" static="false" visibility="private">
     <docblock>
       <description compact="Sets the current memory usage into supplied variable.">It is worth noting that, with garbage collection, it is possible for the
 memory_get_usage to be LOWER then the first call.</description>
@@ -90,10 +90,10 @@ memory_get_usage to be LOWER then the first call.</description>
     </docblock>
     <parameter name="variable" byreference="true" type="{unknown}"/>
     <inline>
-      <comment value="If the memory benchmark is enabled" line="139"/>
+      <comment value="If the memory benchmark is enabled" line="145"/>
     </inline>
   </method>
-  <method name="details" start="156" end="178" abstract="false" final="false" static="false" visibility="public">
+  <method name="details" start="162" end="184" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get a benchmark."/>
       <param description="the name of the benchmark to get" variable="$name" type="string"/>
@@ -112,7 +112,7 @@ memory_get_usage to be LOWER then the first call.</description>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="retrieve" start="192" end="244" abstract="false" final="false" static="false" visibility="protected">
+  <method name="retrieve" start="198" end="259" abstract="false" final="false" static="false" visibility="protected">
     <docblock>
       <description compact="Retrieve an all benchmarks of a perticular name from the internal marks storage array.">Internal process, no gigo/sanity</description>
       <param variable="$name"/>
@@ -125,33 +125,33 @@ memory_get_usage to be LOWER then the first call.</description>
   </method>
   <interface full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library">
     <method name="start" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
-      <docblock>
-        <description compact="Starts a benchmark of give name."/>
-        <param description="the benchmark to start." type="string" variable="$name"/>
-        <return type="object">
-          <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
-        </return>
-      </docblock>
-      <parameter name="name" byreference="false" type="{unknown}"/>
-    </method>
+    <docblock>
+      <description compact="Starts a benchmark of give name."/>
+      <param description="the benchmark to start." type="string" variable="$name"/>
+      <return type="object">
+        <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
     <method name="stop" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
-      <docblock>
-        <description compact="Stops a benchmark of given name."/>
-        <param description="the benchmark to stop." type="string" variable="$name"/>
-        <return type="object">
-          <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
-        </return>
-      </docblock>
-      <parameter name="name" byreference="false" type="{unknown}"/>
-    </method>
+    <docblock>
+      <description compact="Stops a benchmark of given name."/>
+      <param description="the benchmark to stop." type="string" variable="$name"/>
+      <return type="object">
+        <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
     <method name="details" start="43" end="43" abstract="false" final="false" static="false" visibility="public">
-      <docblock>
-        <description compact="Get benchmark's details."/>
-        <param description="the benchmark to get the details of." type="string" variable="$name"/>
-        <return type="array"/>
-      </docblock>
-      <parameter name="name" byreference="false" type="{unknown}"/>
-    </method>
+    <docblock>
+      <description compact="Get benchmark's details."/>
+      <param description="the benchmark to get the details of." type="string" variable="$name"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
   </interface>
   <extenders>
     <extender full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/>

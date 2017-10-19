@@ -7,13 +7,13 @@ phploc --log-xml ../documents/xml/phploc.xml --progress ../source/;
 phpunit --configuration phpunit.xml --testsuite All;
 
 # Run php mess detector
-phpmd ../source xml codesize,controversial,design,naming,unusedcode --reportfile ../Documents/xml/phpmd.xml --suffixes php;
+phpmd ../source xml codesize,controversial,design,naming,unusedcode --reportfile ../documents/xml/phpmd.xml --suffixes php;
 
 # Run Copy/Paste Detection
-phpcpd ../source --log-pmd ../Documents/xml/phpcpd.xml;
+phpcpd ../source --log-pmd ../documents/xml/phpcpd.xml;
 
 # Run php metrics
-phpmetrics --report-cli --report-html=../Documents/html/phpmetrics/index.html --report-xml=../Documents/xml/phpmetrics.xml ../source
+phpmetrics --report-cli --report-html=../Documents/html/phpmetrics/index.html --report-xml=../documents/xml/phpmetrics.xml ../source
 
 # Run php Code Sniffer
 php /usr/local/zend/bin/phpcs;

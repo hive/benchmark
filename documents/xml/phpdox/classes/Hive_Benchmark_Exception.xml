@@ -128,5 +128,5 @@ so that we have a unique exception code.</description>
     <extender full="Hive\Benchmark\Exception\StoppedRunning" namespace="Hive\Benchmark\Exception" name="StoppedRunning"/>
     <extender full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning"/>
     <extender full="Hive\Benchmark\Exception\NotRunning" namespace="Hive\Benchmark\Exception" name="NotRunning"/>
-  </extenders>
+  <extender full="Hive\Benchmark\Exception\DoesNotExist" namespace="Hive\Benchmark\Exception" name="DoesNotExist"/></extenders>
 </class>
