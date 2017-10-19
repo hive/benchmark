@@ -1,6 +1,11 @@
 <?php namespace Hive\Benchmark\Exception;
 
 /**
+ * Extends Hive\Benchmark\Exception
+ */
+use Hive\Benchmark\Exception;
+
+/**
  * Does Not Exist Exception.
  *
  * Called when the library attempts to retrieve a benchmark which was not started.
@@ -13,12 +18,12 @@
  *
  * @copyright (c) 2016 Jamie Peake
  */
-class DoesNotExist extends \Hive\Benchmark\Exception
+class DoesNotExist extends Exception
 {
     /**
      * Exception code, sequential exception numbers.
      */
-    const CODE = 4;
+    const CODE = 3;
 
     /**
      *  Exception Message to be displayed.

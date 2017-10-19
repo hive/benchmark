@@ -1,6 +1,11 @@
 <?php namespace Hive\Benchmark\Exception;
 
 /**
+ * Extends Hive\Benchmark\Exception
+ */
+use Hive\Benchmark\Exception;
+
+/**
  * Finished Running Exception.
  *
  * Called when the library attempts to stop a benchmark which has already been stopped.
@@ -13,13 +18,16 @@
  *
  * @copyright (c) 2016 Jamie Peake
  */
-class StoppedRunning extends \Hive\Benchmark\Exception
+class StoppedRunning extends Exception
 {
     /**
      * Exception code, sequential exception numbers.
      */
-    const CODE = 2;
+    const CODE = 1;
 
+    /**
+     *  Exception Message to be displayed.
+     */
     const MESSAGE = 'A benchmark named :name has already been stopped.';
 
     /**

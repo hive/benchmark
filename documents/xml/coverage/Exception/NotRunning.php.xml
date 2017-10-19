@@ -2,33 +2,41 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="NotRunning.php">
     <totals>
-      <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+      <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
       <methods count="1" tested="1" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="NotRunning" start="16" executable="4" executed="4" crap="1">
+    <class name="NotRunning" start="21" executable="4" executed="4" crap="1">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark\Exception"/>
-      <method name="__construct" signature="__construct($name)" start="35" end="41" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="__construct" signature="__construct($name)" start="40" end="46" crap="1" executable="4" executed="4" coverage="100"/>
     </class>
     <coverage>
-      <line nr="37">
-        <covered by="testInstanceGet::testNotRunningException"/>
-        <covered by="testObjectGet::testNotRunningException"/>
+      <line nr="42">
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObject::testNotRunningException"/>
       </line>
-      <line nr="38">
-        <covered by="testInstanceGet::testNotRunningException"/>
-        <covered by="testObjectGet::testNotRunningException"/>
+      <line nr="43">
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObject::testNotRunningException"/>
       </line>
-      <line nr="40">
-        <covered by="testInstanceGet::testNotRunningException"/>
-        <covered by="testObjectGet::testNotRunningException"/>
+      <line nr="45">
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObject::testNotRunningException"/>
       </line>
-      <line nr="41">
-        <covered by="testInstanceGet::testNotRunningException"/>
-        <covered by="testObjectGet::testNotRunningException"/>
+      <line nr="46">
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObject::testNotRunningException"/>
       </line>
     </coverage>
   </file>

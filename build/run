@@ -19,7 +19,7 @@ phpmetrics --report-cli --report-html=../documents/html/phpmetrics/index.html --
 php /usr/local/zend/bin/phpcs;
 
 # Output the rules of the CodeSniffer
-php /usr/local/zend/bin/phpctor=html > ../documents/html/codesniffer/rules.html;
+php /usr/local/zend/bin/phpcs --generator=html > ../documents/html/codesniffer/rules.html;
 
 # Run it a second time gathering all the output into one file
 php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../source >  ../documents/html/codesniffer/all.txt;
@@ -50,5 +50,5 @@ cp templates/nav.html ../documents/html/nav.html
 
 
 # Commit the document changes
-git add .;
-git commit -am 'Update Documentation';
+#git add .;
+#git commit -am 'Update Documentation';

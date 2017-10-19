@@ -23,7 +23,7 @@ class Object extends Library implements Contract\Object
      *
      * @var array config default object configuration for the library.
      */
-    private $config = [
+    protected $config = [
         'enabled'  => true,
         'decimals' => 8
     ];
@@ -37,9 +37,9 @@ class Object extends Library implements Contract\Object
      */
     public function __construct($config = [])
     {
-        // Merge the received config with the defaults
-        $this->config = array_merge($config, $this->config);
 
+        // Merge the received config with the defaults
+        $this->config = array_merge($this->config, $config);
         parent::__construct($config);
     }
 
@@ -80,7 +80,7 @@ class Object extends Library implements Contract\Object
      *
      * @param $name string benchmark name
      *
-     * @return void
+     * @return array
      */
     public function details($name)
     {
@@ -89,18 +89,21 @@ class Object extends Library implements Contract\Object
         {
             return parent::details($name);
         }
+
+        return [];
     }
 
     /**
      * Retrieve an summary of benchmark.
      *
-     * Rather then retreive all of the benchmark data, this instead
+     * Rather then retrieve all of the benchmark data, this instead
      * will gather all benchmarks with the same name and return an array
      * including, total, count, min, max, mean and median values of the benchmark
      *
      * @param $name
      *
      * @throws \Hive\Benchmark\Exception
+     * @throws \Exception
      *
      * @return array
      */
@@ -108,7 +111,6 @@ class Object extends Library implements Contract\Object
     {
         try
         {
-
             // Initialise the variables
             $time = $memory = [];
 
@@ -126,7 +128,10 @@ class Object extends Library implements Contract\Object
                 'time'   => $this->calculate($time, $this->config['decimals']),
                 'memory' => $result['memory'] = $this->calculate($memory)
             ];
-
+        }
+        catch(Exception $e)
+        {
+            throw $e;   // Simply Rethrow any benchmark exceptions.
         }
         catch (\Exception $e)
         {
@@ -137,6 +142,10 @@ class Object extends Library implements Contract\Object
     }
 
 
+    /**
+     * Gathers all of the benchmarks results and returns a summary
+     * @return array
+     */
     public function summary()
     {
         $results = [];

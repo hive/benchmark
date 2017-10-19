@@ -56,5 +56,5 @@
   </parent>
   <implementors>
     <class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/>
-  </implementors>
+  <class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/><class full="Hive\Benchmark\Object" namespace="Hive\Benchmark" name="Object"/></implementors>
 </interface>

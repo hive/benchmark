@@ -3,17 +3,78 @@
   <project name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source">
     <tests>
       <test name="testInstanceDetails::testSanity" size="unknown" result="0" status="PASSED"/>
-      <test name="testInstanceGet::testNotRunningException" size="unknown" result="0" status="PASSED"/>
-      <test name="testInstanceGet::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
-      <test name="testObjectGet::testNotRunningException" size="unknown" result="0" status="PASSED"/>
-      <test name="testObjectGet::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testInvalidDetailsMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testDetailsMarkNameNotRunning" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testDetailsMarkNameStillRunning" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceDetails::testEmptyDetailsMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testSanity" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testStartStopGet" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testInvalidMark" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testEmptyGetMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceGet::testDoesNotExistException" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceInitEnabled::testSanity" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceInitEnabled::testDisabled" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceMethod::testSanity" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceMethod::testMethodGet" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceSummary::testSanity" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceSummary::testStartStopSummary" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceSummary::testMultipleStartStopSummary" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceSummary::testDifferentStartStopSummary" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceSummary::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstanceSummary::testEmptyMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testSanity" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testInvalidMark" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testEmptyMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testNotRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testChangeConfig" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testInvalidDetailsMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testDetailsMarkNameNotRunning" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testDetailsMarkNameStillRunning" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testEmptyDetailsMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectDetails::testForcedGeneralException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testInvalidMark" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testEmptyGetMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testDoesNotExistException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testForcedGeneralException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectSummary::testStartStopSummary" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectSummary::testMultipleStartStopSummary" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectSummary::testDifferentStartStopSummary" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectSummary::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectSummary::testEmptyMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testInvalidMark" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testEmptyMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testNotRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObject::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source">
       <totals>
-        <lines total="964" comments="569" code="395" executable="155" executed="64" percent="41.29%"/>
-        <methods count="27" tested="14" percent="51.85%"/>
+        <lines total="1017" comments="598" code="419" executable="165" executed="165" percent="100.00%"/>
+        <methods count="28" tested="28" percent="100.00%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="8" tested="3" percent="37.50%"/>
+        <classes count="8" tested="8" percent="100.00%"/>
         <traits count="0" tested="0" percent=""/>
       </totals>
       <directory name="Contract">
@@ -90,33 +151,33 @@
       </file>
       <directory name="Exception">
         <totals>
-          <lines total="166" comments="102" code="64" executable="16" executed="8" percent="50.00%"/>
-          <methods count="4" tested="2" percent="50.00%"/>
+          <lines total="186" comments="114" code="72" executable="16" executed="16" percent="100.00%"/>
+          <methods count="4" tested="4" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="4" tested="2" percent="50.00%"/>
+          <classes count="4" tested="4" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
-        <file name="AlreadyRunning.php" href="Exception/AlreadyRunning.php.xml">
+        <file name="AlreadyInitiated.php" href="Exception/AlreadyInitiated.php.xml">
           <totals>
-            <lines total="43" comments="27" code="16" executable="4" executed="0" percent="0.00%"/>
-            <methods count="1" tested="0" percent="0.00%"/>
+            <lines total="45" comments="27" code="18" executable="4" executed="4" percent="100.00%"/>
+            <methods count="1" tested="1" percent="100.00%"/>
             <functions count="0" tested="0" percent=""/>
-            <classes count="1" tested="0" percent="0.00%"/>
+            <classes count="1" tested="1" percent="100.00%"/>
             <traits count="0" tested="0" percent=""/>
           </totals>
         </file>
         <file name="DoesNotExist.php" href="Exception/DoesNotExist.php.xml">
           <totals>
-            <lines total="42" comments="26" code="16" executable="4" executed="0" percent="0.00%"/>
-            <methods count="1" tested="0" percent="0.00%"/>
+            <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
+            <methods count="1" tested="1" percent="100.00%"/>
             <functions count="0" tested="0" percent=""/>
-            <classes count="1" tested="0" percent="0.00%"/>
+            <classes count="1" tested="1" percent="100.00%"/>
             <traits count="0" tested="0" percent=""/>
           </totals>
         </file>
         <file name="NotRunning.php" href="Exception/NotRunning.php.xml">
           <totals>
-            <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+            <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
             <methods count="1" tested="1" percent="100.00%"/>
             <functions count="0" tested="0" percent=""/>
             <classes count="1" tested="1" percent="100.00%"/>
@@ -125,7 +186,7 @@
         </file>
         <file name="StoppedRunning.php" href="Exception/StoppedRunning.php.xml">
           <totals>
-            <lines total="39" comments="23" code="16" executable="4" executed="4" percent="100.00%"/>
+            <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
             <methods count="1" tested="1" percent="100.00%"/>
             <functions count="0" tested="0" percent=""/>
             <classes count="1" tested="1" percent="100.00%"/>
@@ -133,27 +194,27 @@
           </totals>
         </file>
       </directory>
-      <file name="AlreadyRunning.php" href="Exception/AlreadyRunning.php.xml">
+      <file name="AlreadyInitiated.php" href="Exception/AlreadyInitiated.php.xml">
         <totals>
-          <lines total="43" comments="27" code="16" executable="4" executed="0" percent="0.00%"/>
-          <methods count="1" tested="0" percent="0.00%"/>
+          <lines total="45" comments="27" code="18" executable="4" executed="4" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="DoesNotExist.php" href="Exception/DoesNotExist.php.xml">
         <totals>
-          <lines total="42" comments="26" code="16" executable="4" executed="0" percent="0.00%"/>
-          <methods count="1" tested="0" percent="0.00%"/>
+          <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="NotRunning.php" href="Exception/NotRunning.php.xml">
         <totals>
-          <lines total="42" comments="26" code="16" executable="4" executed="4" percent="100.00%"/>
+          <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
           <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>
@@ -162,7 +223,7 @@
       </file>
       <file name="StoppedRunning.php" href="Exception/StoppedRunning.php.xml">
         <totals>
-          <lines total="39" comments="23" code="16" executable="4" executed="4" percent="100.00%"/>
+          <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
           <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>
@@ -171,28 +232,28 @@
       </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="164" comments="96" code="68" executable="27" executed="9" percent="33.33%"/>
-          <methods count="8" tested="3" percent="37.50%"/>
+          <lines total="183" comments="102" code="81" executable="32" executed="32" percent="100.00%"/>
+          <methods count="9" tested="9" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="Library.php" href="Library.php.xml">
         <totals>
-          <lines total="260" comments="132" code="128" executable="68" executed="32" percent="47.06%"/>
-          <methods count="7" tested="5" percent="71.43%"/>
+          <lines total="265" comments="136" code="129" executable="71" executed="71" percent="100.00%"/>
+          <methods count="7" tested="7" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="Object.php" href="Object.php.xml">
         <totals>
-          <lines total="175" comments="87" code="88" executable="42" executed="13" percent="30.95%"/>
-          <methods count="7" tested="3" percent="42.86%"/>
+          <lines total="184" comments="94" code="90" executable="44" executed="44" percent="100.00%"/>
+          <methods count="7" tested="7" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>

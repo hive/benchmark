@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/StoppedRunning.php" size="1088" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="50a740bd7190a474312f8d57a09221423b128ec6" relative="Exception/StoppedRunning.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/StoppedRunning.php" size="1206" time="2017-10-19T16:24:01+11:00" unixtime="1508390641" sha1="d34b7f4e2ed18f5521d712aa6cf72d56ed0fb872" relative="Exception/StoppedRunning.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -17,69 +17,84 @@
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="4">
-    <token name="T_DOC_COMMENT"> * Finished Running Exception.</token>
+    <token name="T_DOC_COMMENT"> * Extends Hive\Benchmark\Exception</token>
   </line>
   <line no="5">
-    <token name="T_DOC_COMMENT"> *</token>
+    <token name="T_DOC_COMMENT"> */</token>
   </line>
   <line no="6">
-    <token name="T_DOC_COMMENT"> * Called when the library attempts to stop a benchmark which has already been stopped.</token>
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Hive</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Benchmark</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Exception</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="7">
-    <token name="T_DOC_COMMENT"> *</token>
-  </line>
+  <line no="7"/>
   <line no="8">
-    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+    <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="9">
-    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
+    <token name="T_DOC_COMMENT"> * Finished Running Exception.</token>
   </line>
   <line no="10">
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="11">
-    <token name="T_DOC_COMMENT"> * @package       Hive</token>
+    <token name="T_DOC_COMMENT"> * Called when the library attempts to stop a benchmark which has already been stopped.</token>
   </line>
   <line no="12">
-    <token name="T_DOC_COMMENT"> * @subpackage    Benchmark</token>
-  </line>
-  <line no="13">
     <token name="T_DOC_COMMENT"> *</token>
   </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * @author        Jamie Peake &lt;jamie.peake@gmail.com&gt;</token>
+  </line>
   <line no="14">
-    <token name="T_DOC_COMMENT"> * @copyright (c) 2016 Jamie Peake</token>
+    <token name="T_DOC_COMMENT"> * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)</token>
   </line>
   <line no="15">
-    <token name="T_DOC_COMMENT"> */</token>
+    <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="16">
+    <token name="T_DOC_COMMENT"> * @package       Hive</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @subpackage    Benchmark</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * @copyright (c) 2016 Jamie Peake</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="21">
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">StoppedRunning</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_EXTENDS">extends</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_NS_SEPARATOR">\</token>
-    <token name="T_STRING">Hive</token>
-    <token name="T_NS_SEPARATOR">\</token>
-    <token name="T_STRING">Benchmark</token>
-    <token name="T_NS_SEPARATOR">\</token>
     <token name="T_STRING">Exception</token>
   </line>
-  <line no="17">
+  <line no="22">
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="18">
+  <line no="23">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="19">
+  <line no="24">
     <token name="T_DOC_COMMENT">     * Exception code, sequential exception numbers.</token>
   </line>
-  <line no="20">
+  <line no="25">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="21">
+  <line no="26">
     <token name="T_WHITESPACE">    </token>
     <token name="T_CONST">const</token>
     <token name="T_WHITESPACE"> </token>
@@ -87,11 +102,21 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">2</token>
+    <token name="T_LNUMBER">1</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="22"/>
-  <line no="23">
+  <line no="27"/>
+  <line no="28">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">     *  Exception Message to be displayed.</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="31">
     <token name="T_WHITESPACE">    </token>
     <token name="T_CONST">const</token>
     <token name="T_WHITESPACE"> </token>
@@ -102,30 +127,30 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'A benchmark named :name has already been stopped.'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="24"/>
-  <line no="25">
+  <line no="32"/>
+  <line no="33">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="26">
+  <line no="34">
     <token name="T_DOC_COMMENT">     * Finished Running Constructor, assigns exception code and places the message.</token>
   </line>
-  <line no="27">
+  <line no="35">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
-  <line no="28">
+  <line no="36">
     <token name="T_DOC_COMMENT">     * Will also place the name of the benchmark into the exception message if we have it</token>
   </line>
-  <line no="29">
+  <line no="37">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
-  <line no="30">
+  <line no="38">
     <token name="T_DOC_COMMENT">     * @param string $name of the benchmark which has already finished</token>
   </line>
-  <line no="31">
+  <line no="39">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="32">
+  <line no="40">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -136,11 +161,11 @@
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="33">
+  <line no="41">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="34">
+  <line no="42">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$code</token>
     <token name="T_WHITESPACE"> </token>
@@ -151,7 +176,7 @@
     <token name="T_STRING">CODE</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="35">
+  <line no="43">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$message</token>
     <token name="T_WHITESPACE"> </token>
@@ -174,8 +199,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="36"/>
-  <line no="37">
+  <line no="44"/>
+  <line no="45">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">parent</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -188,12 +213,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="38">
+  <line no="46">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="39">
+  <line no="47">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="40"/>
+  <line no="48"/>
 </source>

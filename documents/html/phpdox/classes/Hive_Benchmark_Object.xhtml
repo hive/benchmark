@@ -88,15 +88,15 @@
                 extends <a title="Hive\Benchmark\Library" href="../classes/Hive_Benchmark_Library.xhtml">Library</a>
                 implements
                 <a title="Hive\Benchmark\Contract\Object" href="../interfaces/Hive_Benchmark_Contract_Object.xhtml">Object</a>
-            {<br/><ul class="none"><li>// members</li><li>private array <a href="#members">$config</a> =
+            {<br/><ul class="none"><li>// members</li><li>protected array <a href="#members">$config</a> =
                         ;
                     </li></ul><ul class="none"><li>// Inherited members from <span title="Hive\Benchmark\Library">Library</span></li><li>protected array <a href="#members">$marks</a>;
                         </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/__construct.xhtml">__construct</a>()
                     </li><li>public void <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/start.xhtml">start</a>()
                     </li><li>public void <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/stop.xhtml">stop</a>()
-                    </li><li>public void <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/details.xhtml">details</a>()
+                    </li><li>public array <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/details.xhtml">details</a>()
                     </li><li>public array <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/get.xhtml">get</a>()
-                    </li><li>public void <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/summary.xhtml">summary</a>()
+                    </li><li>public array <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/summary.xhtml">summary</a>()
                     </li><li>private array <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/calculate.xhtml">calculate</a>()
                     </li></ul><ul class="none"><li>// Inherited methods from <span title="Hive\Benchmark\Library">Library</span></li><li>public void <a title="Hive\Benchmark\Library" href="../classes/Hive_Benchmark_Library/__construct.xhtml">__construct</a>()
                         </li><li>public void <a title="Hive\Benchmark\Library" href="../classes/Hive_Benchmark_Library/start.xhtml">start</a>()
@@ -146,7 +146,7 @@
               </tr>
             </thead>
             <tr>
-              <td class="line">144</td>
+              <td class="line">153</td>
               <td>
                 <a href="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" target="_blank" title="Unused Code Rules">UnusedLocalVariable</a>
               </td>
@@ -156,14 +156,11 @@
         </div>
         <h2 id="members">Members</h2>
         <div class="styled members">
-          <h4>private</h4>
+          <h4>protected</h4>
           <ul class="members">
             <li id="config"><strong>$config</strong>
                 —
                 array<br/><span class="indent">Default configuration settings.</span></li>
-          </ul>
-          <h4>protected</h4>
-          <ul class="members">
             <li id="marks"><strong>$marks</strong>
                 —
                 array<br/><span class="indent">Internal storage for benchmarks.</span></li>
@@ -188,15 +185,14 @@
                 — Start a benchmark.</li>
             <li id="stop"><a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/stop.xhtml">stop()</a>
                 — Stop a benchmark.</li>
-            <li id="summary">
-              <a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/summary.xhtml">summary()</a>
-            </li>
+            <li id="summary"><a title="Hive\Benchmark\Object" href="../classes/Hive_Benchmark_Object/summary.xhtml">summary()</a>
+                — Gathers all of the benchmarks results and returns a summary</li>
           </ul>
           <h3>Inherited from <a title="Hive\Benchmark\Library" href="../classes/Hive_Benchmark_Library.xhtml">Hive\Benchmark\Library</a></h3>
           <h4>protected</h4>
           <ul>
             <li id="retrieve"><a title="Hive\Benchmark\Library" href="../classes/Hive_Benchmark_Library/retrieve.xhtml">retrieve()</a>
-                — Retrieve an all benchmarks of a perticular name from the internal marks storage array.</li>
+                — Retrieve an all benchmarks of a particular name from the internal marks storage array.</li>
           </ul>
           <h4>public</h4>
           <ul>

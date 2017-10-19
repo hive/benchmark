@@ -17,6 +17,7 @@
  */
 class Instance implements Contract\Instance
 {
+
     /**
      * Singleton.
      * @var
@@ -34,18 +35,27 @@ class Instance implements Contract\Instance
      *
      * Will create the object if it does not exist or return it if previously created.
      *
+     * @throws Exception\AlreadyInitiated
      * @return \Hive\Benchmark\Object the instance
      */
-    private static function init()
+
+    public static function init($config = [])
     {
         if (is_null(self::$object))
         {
-            self::$object = new Object();
+            self::$object = new Object($config);
+        }
+        else
+        {
+            // If the user is attempting to change the config after the object was previously created
+            if (count($config))
+            {
+                throw new Exception\AlreadyInitiated();
+            }
         }
 
         return self::$object;
     }
-
 
     /**
      * Static Alias to the Benchmark/Object/Start.
@@ -117,6 +127,7 @@ class Instance implements Contract\Instance
     {
         // Get the name of the caller method
         $name = self::trace($stack);
+
         /**
          * If its an auto, find out what method to run.
          */
@@ -160,5 +171,13 @@ class Instance implements Contract\Instance
     {
         $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $stack)[$stack - 1];
         return $caller['class'] . '\\' . $caller['function'];
+    }
+
+    /**
+     * Allows the destruction of the instance, this is used for Unit testing the instance.
+     */
+    public static function destroy()
+    {
+        self::$object = null;
     }
 }

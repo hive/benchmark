@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="DoesNotExist.php">
+    <totals>
+      <lines total="47" comments="29" code="18" executable="4" executed="4" percent="100.00%"/>
+      <methods count="1" tested="1" percent="100.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="1" percent="100.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="DoesNotExist" start="21" executable="4" executed="4" crap="1">
+      <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
+      <namespace name="Hive\Benchmark\Exception"/>
+      <method name="__construct" signature="__construct($name)" start="40" end="46" crap="1" executable="4" executed="4" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="42">
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
+      </line>
+      <line nr="43">
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
+      </line>
+      <line nr="45">
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
+      </line>
+      <line nr="46">
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

@@ -19,10 +19,10 @@ class Library implements Contract\Library
     /**
      * Default configuration settings.
      *
-     * config['memory'] array Whether or not to benchmark memory useage, uses memory_get_usage()
+     * config['memory'] array Whether or not to benchmark memory usage, uses memory_get_usage()
      *
      * @var array ['enabled'] : boolean : Whether or not the benchmark is enabled, set to false if you wish to disabled on production
-     * @var array ['memory'] : boolean : Whether or not to benchmark memory useage, uses memory_get_usage()
+     * @var array ['memory'] : boolean : Whether or not to benchmark memory usage, uses memory_get_usage()
      * @var array ['decimals'] : integer : The number of decimals to benchmark against
      */
     private $config = [
@@ -52,7 +52,6 @@ class Library implements Contract\Library
          * Merge the received config with the defaults.
          */
         $this->config = array_merge($config, $this->config);
-
     }
 
     /**
@@ -105,7 +104,6 @@ class Library implements Contract\Library
                 // Assign the stop values
                 $this->timer($mark['timer']['stop']);
                 $this->memory($mark['memory']['stop']);
-
             }
             else
             {
@@ -143,7 +141,8 @@ class Library implements Contract\Library
     private function memory(&$variable)
     {
         // If the memory benchmark is enabled
-        if ($this->config['memory']) {
+        if ($this->config['memory'])
+        {
             $variable = memory_get_usage();
         }
     }
@@ -161,19 +160,21 @@ class Library implements Contract\Library
      */
     public function details($name)
     {
-        $result = false;
-
-        if (isset($this->marks[$name])) {
+        if (isset($this->marks[$name]))
+        {
             /**
              * Trying to get the details on a benchmark still running!
              * Auto stop any running benchmarks in-case of error.
              */
-            if (!isset($this->marks[$name][0]['timer']['stop'])) {
+            if (!isset($this->marks[$name][0]['timer']['stop']))
+            {
                 $this->stop($name);
             }
-        } else {
+        }
+        else
+        {
             /**
-             * There is no exception with that name running.
+             * There is no benchmark with that name running.
              */
             throw new Exception\NotRunning($name);
         }
@@ -184,7 +185,7 @@ class Library implements Contract\Library
     }
 
     /**
-     * Retrieve an all benchmarks of a perticular name
+     * Retrieve an all benchmarks of a particular name
      * from the internal marks storage array.
      *
      * Internal process, no gigo/sanity
@@ -197,16 +198,16 @@ class Library implements Contract\Library
      */
     protected function retrieve($name)
     {
+
+        // Initialise the variables
+        $memory = false;
+        $results = [];
+
         try
         {
-            // Initialise the variables
-            $time = false;
-            $memory = false;
-            $results = [];
-
-
             if (isset($this->marks[$name]))
             {
+
                 /**
                  * Return the time between the start and stop points for each
                  * of the benchmarks with the requested name. Then update them
@@ -214,7 +215,6 @@ class Library implements Contract\Library
                  */
                 for ($i = 0; $i < count($this->marks[$name]); $i++)
                 {
-
                     // Just an alias
                     $mark = &$this->marks[$name][$i];
                     $time = $mark['timer']['stop'] - $mark['timer']['start'];
@@ -248,10 +248,15 @@ class Library implements Contract\Library
             {
                 throw new Exception\DoesNotExist($name);
             }
-
+        }
+        catch (Exception $e)
+        {
+            // Rethrow existing exceptions.
+            throw $e;
         }
         catch (\Exception $e)
         {
+            // Sanity
             throw new Exception($e->getMessage(), $e->getCode());
         }
 

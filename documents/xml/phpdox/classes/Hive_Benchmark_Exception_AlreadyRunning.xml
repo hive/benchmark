@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning" abstract="false" final="false" start="17" end="43">
-  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/AlreadyRunning.php" size="1196" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="47fb41e19df0a4d624c5978b8bf08adad74ba958" relative="Exception/AlreadyRunning.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\AlreadyRunning" namespace="Hive\Benchmark\Exception" name="AlreadyRunning" abstract="false" final="false" start="22" end="48">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Exception" file="AlreadyRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/AlreadyRunning.php" size="1255" time="2017-10-19T15:49:48+11:00" unixtime="1508388588" sha1="e90b37a492af67d1f2a5aec5b877ad7fdaa52b0d" relative="Exception/AlreadyRunning.php"/>
   <docblock>
     <description compact="Already Running Exception.">Called when the library attempts to start a benchmark
 the same benchmark is already running.</description>
@@ -21,7 +21,7 @@ the same benchmark is already running.</description>
       <description compact="Exception Message to be displayed."/>
     </docblock>
   </constant>
-  <constructor name="__construct" start="36" end="42" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="41" end="47" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Already Running Constructor, assigns exception code and places the message.">Will also place the name of the benchmark into the exception message if we have it</description>
       <param description="name of the benchmark already running" type="string" variable="$name"/>
@@ -31,32 +31,32 @@ the same benchmark is already running.</description>
   <parent full="Hive\Benchmark\Exception" namespace="Hive\Benchmark" name="Exception">
     <extends full="Exception" namespace="" name="Exception"/>
     <constant type="{unknown}" name="VENDOR_NUMBER" value="8383">
-      <docblock>
-        <description compact="Arbitrarily assigned vendor exception code used to prefix all hive exceptions."/>
-      </docblock>
-    </constant>
+    <docblock>
+      <description compact="Arbitrarily assigned vendor exception code used to prefix all hive exceptions."/>
+    </docblock>
+  </constant>
     <constant type="{unknown}" name="PACKAGE_NUMBER" value="1">
-      <docblock>
-        <description compact="Package exception code, sequential package numbers."/>
-      </docblock>
-    </constant>
+    <docblock>
+      <description compact="Package exception code, sequential package numbers."/>
+    </docblock>
+  </constant>
     <constructor name="__construct" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
-      <docblock>
-        <description compact="Exception constructor, assigns the message and code and calls the exception handler.">It will prepend the error code with the vendor code, package code and exception code,
+    <docblock>
+      <description compact="Exception constructor, assigns the message and code and calls the exception handler.">It will prepend the error code with the vendor code, package code and exception code,
 so that we have a unique exception code.</description>
-        <param description="The exceptions message." type="object" variable="$message">
-          <type full="Hive\Benchmark\null|string" namespace="Hive\Benchmark" name="null|string"/>
-        </param>
-        <param description="The exception code." type="object" variable="$code">
-          <type full="Hive\Benchmark\null|int" namespace="Hive\Benchmark" name="null|int"/>
-        </param>
-      </docblock>
-      <parameter name="message" byreference="false" type="{unknown}" default="" constant="null"/>
-      <parameter name="code" byreference="false" type="{unknown}" default="" constant="null"/>
-      <inline>
-        <comment value="Call the parent with the message and our now unique error code" line="41"/>
-      </inline>
-    </constructor>
+      <param description="The exceptions message." type="object" variable="$message">
+        <type full="Hive\Benchmark\null|string" namespace="Hive\Benchmark" name="null|string"/>
+      </param>
+      <param description="The exception code." type="object" variable="$code">
+        <type full="Hive\Benchmark\null|int" namespace="Hive\Benchmark" name="null|int"/>
+      </param>
+    </docblock>
+    <parameter name="message" byreference="false" type="{unknown}" default="" constant="null"/>
+    <parameter name="code" byreference="false" type="{unknown}" default="" constant="null"/>
+    <inline>
+      <comment value="Call the parent with the message and our now unique error code" line="41"/>
+    </inline>
+  </constructor>
   </parent>
   <parent full="Exception" namespace="" name="Exception">
     <member name="message" static="false" visibility="protected">

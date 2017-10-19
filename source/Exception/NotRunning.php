@@ -1,6 +1,11 @@
 <?php namespace Hive\Benchmark\Exception;
 
 /**
+ * Extends Hive\Benchmark\Exception
+ */
+use Hive\Benchmark\Exception;
+
+/**
  * Finished Running Exception.
  *
  * Called when the library attempts to stop a benchmark which was not started.
@@ -13,12 +18,12 @@
  *
  * @copyright (c) 2016 Jamie Peake
  */
-class NotRunning extends \Hive\Benchmark\Exception
+class NotRunning extends Exception
 {
     /**
      * Exception code, sequential exception numbers.
      */
-    const CODE = 3;
+    const CODE = 2;
 
     /**
      *  Exception Message to be displayed.

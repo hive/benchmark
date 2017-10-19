@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="AlreadyInitiated.php">
+    <totals>
+      <lines total="45" comments="27" code="18" executable="4" executed="4" percent="100.00%"/>
+      <methods count="1" tested="1" percent="100.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="1" percent="100.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="AlreadyInitiated" start="21" executable="4" executed="4" crap="1">
+      <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
+      <namespace name="Hive\Benchmark\Exception"/>
+      <method name="__construct" signature="__construct()" start="38" end="44" crap="1" executable="4" executed="4" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="40">
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="41">
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="43">
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="44">
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>
