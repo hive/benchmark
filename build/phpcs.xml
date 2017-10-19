@@ -2,17 +2,17 @@
 <ruleset name="PHP_CodeSniffer">
     <description>Hive CS.</description>
 
-    <file>../Source/</file>
+    <file>../source/</file>
 
 
 
 
 
-    <arg name="report-full" value="../Documents/html/codesniffer/full.txt"/>
-    <arg name="report-summary" value="../Documents/html/codesniffer/summary.txt"/>
-    <arg name="report-source" value="../Documents/html/codesniffer/source.txt"/>
-    <arg name="report-info" value="../Documents/html/codesniffer/info.txt"/>
-    <arg name="report-xml" value="../Documents/xml/codesniffer.xml"/>
+    <arg name="report-full" value="../documents/html/codesniffer/full.txt"/>
+    <arg name="report-summary" value="../documents/html/codesniffer/summary.txt"/>
+    <arg name="report-source" value="../documents/html/codesniffer/source.txt"/>
+    <arg name="report-info" value="../documents/html/codesniffer/info.txt"/>
+    <arg name="report-xml" value="../documents/xml/codesniffer.xml"/>
     <arg name="report-width" value="auto"/>
 
     <arg value="np"/>

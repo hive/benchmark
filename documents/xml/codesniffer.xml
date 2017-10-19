@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpcs version="2.6.1">
-<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Instance.php" errors="5" warnings="0" fixable="5">
+<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" errors="5" warnings="0" fixable="5">
  <error line="41" column="35" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
  <error line="123" column="30" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
  <error line="129" column="46" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 13</error>
  <error line="136" column="13" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace" severity="5" fixable="1">Expected 1 space after closing brace; newline found</error>
  <error line="137" column="13" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword" severity="5" fixable="1">Expected 1 space after ELSE keyword; newline found</error>
 </file>
-<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Library.php" errors="20" warnings="0" fixable="20">
+<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Library.php" errors="20" warnings="0" fixable="20">
  <error line="68" column="40" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
  <error line="97" column="39" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
  <error line="103" column="47" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 13</error>
@@ -29,7 +29,7 @@
  <error line="252" column="9" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace" severity="5" fixable="1">Expected 1 space after closing brace; newline found</error>
  <error line="253" column="29" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
 </file>
-<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Object.php" errors="10" warnings="0" fixable="10">
+<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Object.php" errors="10" warnings="0" fixable="10">
  <error line="56" column="37" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
  <error line="72" column="37" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
  <error line="88" column="37" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis" severity="5" fixable="1">Expected 1 space after closing parenthesis; found 9</error>
