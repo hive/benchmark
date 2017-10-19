@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../Source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Exception/StoppedRunning.php" size="1088" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="50a740bd7190a474312f8d57a09221423b128ec6" relative="Exception/StoppedRunning.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Exception" file="StoppedRunning.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/StoppedRunning.php" size="1088" time="2017-10-17T11:54:29+11:00" unixtime="1508201669" sha1="50a740bd7190a474312f8d57a09221423b128ec6" relative="Exception/StoppedRunning.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
