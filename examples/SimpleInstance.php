@@ -7,10 +7,12 @@
 // Include the package, using the simple php include
 include __DIR__ . '/../include.php';
 
+$bm = new \Hive\Benchmark\Object(['enabled' => false]);
+$bm->start('test');
+$bm->stop('test');
+$result = $bm->summary();
 
-\Hive\Benchmark\Instance::start('test');
-\Hive\Benchmark\Instance::stop('test');
-$result = \Hive\Benchmark\Instance::summary();
+
 
 var_dump($result);
 

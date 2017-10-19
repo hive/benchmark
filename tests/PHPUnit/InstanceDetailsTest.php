@@ -9,6 +9,9 @@ class testInstanceDetails extends base
     }
 
 
+    /**
+     *
+     */
     public function testStartStop ()
     {
         \Hive\Benchmark\Instance::start('test');

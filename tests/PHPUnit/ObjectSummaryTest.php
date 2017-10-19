@@ -1,14 +1,45 @@
 <?php
 
+/**
+ * Class testObjectSummary
+ *
+ * Tests the Benchmark Object Summary in various situations
+ */
 class testObjectSummary extends base
 {
 
+    /**
+     * Sanity check  php unit
+     */
     public function testSanity ()
     {
         $this->assertEquals(1 + 1, 2);
     }
 
 
+    /**
+     * Get the summary.
+     *
+     * @output
+     * array (size=1)
+     *  'test' =>
+     *  array (size=3)
+     *      'count' => int 1
+     *      'time' =>
+     *          array (size=5)
+     *              'total' => string '0.00005603' (length=10)
+     *              'min' => string '0.00005603' (length=10)
+     *              'max' => string '0.00005603' (length=10)
+     *              'mean' => string '0.00005603' (length=10)
+     *              'median' => string '0.00005603' (length=10)
+     *      'memory' =>
+     *          array (size=5)
+     *              'total' => string '584' (length=3)
+     *              'min' => string '584' (length=3)
+     *              'max' => string '584' (length=3)
+     *              'mean' => string '584' (length=3)
+     *              'median' => string '584' (length=3)
+     */
     public function testStartStopSummary ()
     {
         $bm = new \Hive\Benchmark\Object();
@@ -49,6 +80,29 @@ class testObjectSummary extends base
     }
 
 
+    /**
+     * Start and stop a mark multiple times
+     *
+     * @output
+     * array (size=1)
+     *  'test' =>
+     *      array (size=3)
+     *      'count' => int 4
+     *      'time' =>
+     *          array (size=5)
+     *              'total' => string '0.00009108' (length=10)
+     *              'min' => string '0.00001288' (length=10)
+     *              'max' => string '0.00004101' (length=10)
+     *              'mean' => string '0.00002277' (length=10)
+     *              'median' => string '0.00001288' (length=10)
+     *      'memory' =>
+     *          array (size=5)
+     *              'total' => string '1,664' (length=5)
+     *              'min' => string '360' (length=3)
+     *              'max' => string '584' (length=3)
+     *              'mean' => string '416' (length=3)
+     *              'median' => string '360' (length=3)
+     */
     public function testMultipleStartStopSummary ()
     {
         $bm = new \Hive\Benchmark\Object();
@@ -85,6 +139,63 @@ class testObjectSummary extends base
     }
 
 
+    /**
+     * Start and stop multiple marks, including nested
+     *
+     * @output
+     * array (size=3)
+     *  'test0' =>
+     *      array (size=3)
+     *          'count' => int 1
+     *          'time' =>
+     *              array (size=5)
+     *                  'total' => string '0.00008297' (length=10)
+     *                  'min' => string '0.00008297' (length=10)
+     *                  'max' => string '0.00008297' (length=10)
+     *                  'mean' => string '0.00008297' (length=10)
+     *                  'median' => string '0.00008297' (length=10)
+     *          'memory' =>
+     *              array (size=5)
+     *                  'total' => string '5,560' (length=5)
+     *                  'min' => string '5,560' (length=5)
+     *                  'max' => string '5,560' (length=5)
+     *                  'mean' => string '5,560' (length=5)
+     *                  'median' => string '5,560' (length=5)
+     *  'test1' =>
+     *      array (size=3)
+     *          'count' => int 2
+     *          'time' =>
+     *              array (size=5)
+     *                  'total' => string '0.00002599' (length=10)
+     *                  'min' => string '0.00001192' (length=10)
+     *                  'max' => string '0.00001407' (length=10)
+     *                  'mean' => string '0.00001299' (length=10)
+     *                  'median' => string '0.00001192' (length=10)
+     *          'memory' =>
+     *              array (size=5)
+     *                  'total' => string '944' (length=3)
+     *                  'min' => string '360' (length=3)
+     *                  'max' => string '584' (length=3)
+     *                  'mean' => string '472' (length=3)
+     *                  'median' => string '360' (length=3)
+     *  'test2' =>
+     *      array (size=3)
+     *          'count' => int 1
+     *          'time' =>
+     *          array (size=5)
+     *              'total' => string '0.00001097' (length=10)
+     *              'min' => string '0.00001097' (length=10)
+     *              'max' => string '0.00001097' (length=10)
+     *              'mean' => string '0.00001097' (length=10)
+     *              'median' => string '0.00001097' (length=10)
+     *          'memory' =>
+     *              array (size=5)
+     *                  'total' => string '440' (length=3)
+     *                  'min' => string '440' (length=3)
+     *                  'max' => string '440' (length=3)
+     *                  'mean' => string '440' (length=3)
+     *                  'median' => string '440' (length=3)
+     */
     public function testDifferentStartStopSummary ()
     {
         $bm = new \Hive\Benchmark\Object();
@@ -117,6 +228,13 @@ class testObjectSummary extends base
 
     }
 
+
+    /**
+     * Get the benchmark summary when Benchmarks are disabled
+     * @output
+     * array (size=0)
+     *  empty
+     */
     public function testConfigEnabledFalse()
     {
         $bm = new \Hive\Benchmark\Object(['enabled' => false]);
@@ -128,6 +246,11 @@ class testObjectSummary extends base
         $this->assertEmpty($result);
     }
 
+
+    /**
+     * Send a blank object
+     * @throws exception
+     */
     public function testEmptyMarkName ()
     {
         $this->setExpectedException('PHPUnit_Framework_Error_Warning');

@@ -51,216 +51,104 @@
         <div class="report-details">
             Created at 2017-10-19 22:38:25        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
-    <div class="row">
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label"><a href="violations.html">Violations</a> (0                    criticals, 1 errors)
-                </div>
-                <div class="number">1</div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label"><a href="loc.html">Lines of code</a></div>
-                <span title="Last value: 698" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>                <div class="number">698</div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label"><a href="oop.html">Classes</a></div>
-                <div class="number">8</div>
-                <span title="Last value: 8" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>            </div>
+
+
+
+
+<div class="row">
+    <div class="column">
+        <div class="bloc">
+            <h4>Percentile distribution of logical lines of code by class</h4>
+            <div id="lloc-repartition" style="height: 200px"></div>
+            <div class="help" style="text-align: center">Percentile</div>
         </div>
     </div>
+</div>
 
-
-    <div class="row">
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label"><a href="complexity.html">Average cyclomatic complexity by class</a></div>
-                <div class="number">3.38</div>
-                <span title="Last value: 3.38" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>            </div>
-        </div>
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">
-                    <a href="junit.html">Assertions in tests</a>
-                </div>
-                <div class="number">
-                    --                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label"><a href="complexity.html">Average bugs by class</a></div>
-                <div class="number">
-                    0.07                </div>
-                <span title="Last value: 0.07" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="column column-help">
-            <div class="column column-help-inner">
-                <div class="row">
-                    <div class="column with-help">
-                        <div class="bloc">
-                            <div class="label">Maintainability / complexity</div>
-                            <div id="svg-maintainability"></div>
-                        </div>
-                    </div>
-                    <div class="column help">
-                        <div class="help-inner">
-                            <p>Each file is symbolized by a circle. Size of the circle represents the Cyclomatic
-                                complexity.
-                                Color
-                                of the circle represents the Maintainability Index.</p>
-
-                            <p>Large red circles will be probably hard to maintain.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">ClassRank
-                    <small>(Google's page rank applied to relations between classes)</small>
-                </div>
-                <div class="clusterize small">
-                    <div id="clusterizeClassRank" class="clusterize-scroll">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>Class</th>
-                                <th>ClassRank</th>
-                            </tr>
-                            </thead>
-                            <tbody id="contentClassRank" class="clusterize-content">
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception <span class="badge"
-                                                                            title="Maintainability Index">117.86</span>
-                                    </td>
-                                    <td>0.35</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\NotRunning <span class="badge"
-                                                                            title="Maintainability Index">113.82</span>
-                                    </td>
-                                    <td>0.08</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\StoppedRunning <span class="badge"
-                                                                            title="Maintainability Index">113.82</span>
-                                    </td>
-                                    <td>0.06</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\DoesNotExist <span class="badge"
-                                                                            title="Maintainability Index">113.82</span>
-                                    </td>
-                                    <td>0.06</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\AlreadyInitiated <span class="badge"
-                                                                            title="Maintainability Index">115.12</span>
-                                    </td>
-                                    <td>0.05</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Library <span class="badge"
-                                                                            title="Maintainability Index">82.2</span>
-                                    </td>
-                                    <td>0.05</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Object <span class="badge"
-                                                                            title="Maintainability Index">87.99</span>
-                                    </td>
-                                    <td>0.05</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Instance <span class="badge"
-                                                                            title="Maintainability Index">90.65</span>
-                                    </td>
-                                    <td>0.04</td>
-                                </tr>
-                                                        </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+<div class="row">
+    <div class="column">
+        <div class="bloc">
+            <h4>Explore</h4>
+            <table class="js-sort-table" id="table-length">
+                <thead>
+                <tr>
+                    <th>Class</th>
+                    <th class="js-sort-number">LLOC</th>
+                    <th class="js-sort-number">CLOC</th>
+                    <th class="js-sort-number">Volume</th>
+                    <th class="js-sort-number">Intelligent content</th>
+                    <th class="js-sort-number">Comment Weight</th>
+                </tr>
+                </thead>
+                                    <tr>
+                        <td>Hive\Benchmark\Instance</td>
+                        <td>60</td>
+                        <td>95</td>
+                        <td>254.99</td>
+                        <td>30.51</td>
+                        <td>46.83</td>
+                    </tr>
+                                    <tr>
+                        <td>Hive\Benchmark\Library</td>
+                        <td>87</td>
+                        <td>121</td>
+                        <td>751.27</td>
+                        <td>28.78</td>
+                        <td>46.26</td>
+                    </tr>
+                                    <tr>
+                        <td>Hive\Benchmark\Object</td>
+                        <td>59</td>
+                        <td>86</td>
+                        <td>524.66</td>
+                        <td>47.89</td>
+                        <td>46.48</td>
+                    </tr>
+                                    <tr>
+                        <td>Hive\Benchmark\Exception</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>18.58</td>
+                        <td>24.77</td>
+                        <td>48.69</td>
+                    </tr>
+                                    <tr>
+                        <td>Hive\Benchmark\Exception\DoesNotExist</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>30.88</td>
+                        <td>41.17</td>
+                        <td>47.92</td>
+                    </tr>
+                                    <tr>
+                        <td>Hive\Benchmark\Exception\StoppedRunning</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>30.88</td>
+                        <td>41.17</td>
+                        <td>47.92</td>
+                    </tr>
+                                    <tr>
+                        <td>Hive\Benchmark\Exception\AlreadyInitiated</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>18.58</td>
+                        <td>24.77</td>
+                        <td>47.68</td>
+                    </tr>
+                                    <tr>
+                        <td>Hive\Benchmark\Exception\NotRunning</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>30.88</td>
+                        <td>41.17</td>
+                        <td>47.92</td>
+                    </tr>
+                            </table>
         </div>
     </div>
+</div>
 
-    <div class="row">
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">Composer dependencies</div>
-                <div class="clusterize small">
-                    <div id="clusterizePackages" class="clusterize-scroll">
-                        <table>
-                                                        <thead>
-                            <tr>
-                                <th>Package</th>
-                                <th>Required</th>
-                                                                <th>Latest</th>
-                                <th>License</th>
-                            </tr>
-                            </thead>
-                            <tbody id="contentPackages" class="clusterize-content">
-                                                        </tbody>
-                        </table>
-                                                    <div>No composer.json file found</div>
-                                                                            <div>No composer.lock file found</div>
-                                            </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">Licences of Composer dependencies</div>
-                                    <div>No composer.json file found</div>
-                                <div id="svg-licenses"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <script type="text/javascript">
-        document.onreadystatechange = function () {
-            if (document.readyState === 'complete') {
-                chartMaintainability();
-
-                new Clusterize({
-                    scrollId: 'clusterizeClassRank',
-                    contentId: 'contentClassRank'
-                });
-
-                new Clusterize({
-                    scrollId: 'clusterizePackages',
-                    contentId: 'contentPackages'
-                });
-
-                // prepare json for packages pie
-                                chartLicenses([]);
-            }
-        };
-    </script>
 
 </div>
 
@@ -419,3 +307,127 @@
 
 </body>
 </html>
+
+<script>
+
+    // table
+    sortTable(document.getElementById('table-length'), 1, -1);
+
+
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+        width = document.getElementById('lloc-repartition').offsetWidth - margin.left - margin.right,
+        height = document.getElementById('lloc-repartition').offsetHeight - margin.top - margin.bottom;
+
+    var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left")
+        ;
+
+    var svg = d3.select("#lloc-repartition").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    data = [
+    {
+        "lloc": 12,
+        "percentile": 50
+    },
+    {
+        "lloc": 12,
+        "percentile": 55
+    },
+    {
+        "lloc": 12,
+        "percentile": 60
+    },
+    {
+        "lloc": 12,
+        "percentile": 65
+    },
+    {
+        "lloc": 12,
+        "percentile": 70
+    },
+    {
+        "lloc": 12,
+        "percentile": 75
+    },
+    {
+        "lloc": 59,
+        "percentile": 80
+    },
+    {
+        "lloc": 59,
+        "percentile": 85
+    },
+    {
+        "lloc": 59,
+        "percentile": 90
+    },
+    {
+        "lloc": 60,
+        "percentile": 95
+    },
+    {
+        "lloc": 60,
+        "percentile": 100
+    }
+];
+
+    x.domain(data.map(function (d) {
+        return d.percentile;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.lloc;
+    })]);
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis)
+        .append("text")
+        .style("text-anchor", "end")
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Logical lines of code");
+
+    svg.selectAll(".bar")
+        .data(data)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", function (d) {
+            return x(d.percentile);
+        })
+        .attr("width", x.rangeBand())
+        .attr("y", function (d) {
+            return y(d.lloc);
+        })
+        .attr("height", function (d) {
+            return height - y(d.lloc);
+        });
+
+    function type(d) {
+        d.lloc = +d.lloc;
+        return d;
+    }
+
+</script>

@@ -51,217 +51,99 @@
         <div class="report-details">
             Created at 2017-10-19 22:38:25        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
+
+
     <div class="row">
         <div class="column">
             <div class="bloc bloc-number">
-                <div class="label"><a href="violations.html">Violations</a> (0                    criticals, 1 errors)
-                </div>
+                <div class="label">Violations</div>
                 <div class="number">1</div>
             </div>
         </div>
         <div class="column">
             <div class="bloc bloc-number">
-                <div class="label"><a href="loc.html">Lines of code</a></div>
-                <span title="Last value: 698" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>                <div class="number">698</div>
+                <div class="label">Information</div>
+                <div class="number">0</div>
             </div>
         </div>
         <div class="column">
             <div class="bloc bloc-number">
-                <div class="label"><a href="oop.html">Classes</a></div>
-                <div class="number">8</div>
-                <span title="Last value: 8" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>            </div>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label"><a href="complexity.html">Average cyclomatic complexity by class</a></div>
-                <div class="number">3.38</div>
-                <span title="Last value: 3.38" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>            </div>
-        </div>
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">
-                    <a href="junit.html">Assertions in tests</a>
-                </div>
-                <div class="number">
-                    --                </div>
+                <div class="label">Warnings</div>
+                <div class="number">0</div>
             </div>
         </div>
         <div class="column">
             <div class="bloc bloc-number">
-                <div class="label"><a href="complexity.html">Average bugs by class</a></div>
-                <div class="number">
-                    0.07                </div>
-                <span title="Last value: 0.07" class="progress progress-neutral progress-eq">0 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12l-4-4v3H3v2h15v3z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></span>            </div>
+                <div class="label">Errors</div>
+                <div class="number">1</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="bloc bloc-number">
+                <div class="label">Criticals</div>
+                <div class="number">0</div>
+            </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="column column-help">
-            <div class="column column-help-inner">
-                <div class="row">
-                    <div class="column with-help">
-                        <div class="bloc">
-                            <div class="label">Maintainability / complexity</div>
-                            <div id="svg-maintainability"></div>
-                        </div>
-                    </div>
-                    <div class="column help">
-                        <div class="help-inner">
-                            <p>Each file is symbolized by a circle. Size of the circle represents the Cyclomatic
-                                complexity.
-                                Color
-                                of the circle represents the Maintainability Index.</p>
-
-                            <p>Large red circles will be probably hard to maintain.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">ClassRank
-                    <small>(Google's page rank applied to relations between classes)</small>
-                </div>
-                <div class="clusterize small">
-                    <div id="clusterizeClassRank" class="clusterize-scroll">
-                        <table>
-                            <thead>
+            <div class="bloc">
+                <h4>Violations</h4>
+                <table class="table-pagerank table-small">
+                    <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Violations</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
                             <tr>
-                                <th>Class</th>
-                                <th>ClassRank</th>
-                            </tr>
-                            </thead>
-                            <tbody id="contentClassRank" class="clusterize-content">
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception <span class="badge"
-                                                                            title="Maintainability Index">117.86</span>
-                                    </td>
-                                    <td>0.35</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\NotRunning <span class="badge"
-                                                                            title="Maintainability Index">113.82</span>
-                                    </td>
-                                    <td>0.08</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\StoppedRunning <span class="badge"
-                                                                            title="Maintainability Index">113.82</span>
-                                    </td>
-                                    <td>0.06</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\DoesNotExist <span class="badge"
-                                                                            title="Maintainability Index">113.82</span>
-                                    </td>
-                                    <td>0.06</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Exception\AlreadyInitiated <span class="badge"
-                                                                            title="Maintainability Index">115.12</span>
-                                    </td>
-                                    <td>0.05</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Library <span class="badge"
-                                                                            title="Maintainability Index">82.2</span>
-                                    </td>
-                                    <td>0.05</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Object <span class="badge"
-                                                                            title="Maintainability Index">87.99</span>
-                                    </td>
-                                    <td>0.05</td>
-                                </tr>
-                                                            <tr>
-                                    <td>Hive\Benchmark\Instance <span class="badge"
-                                                                            title="Maintainability Index">90.65</span>
-                                    </td>
-                                    <td>0.04</td>
-                                </tr>
-                                                        </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <td>
+                                    <a onclick="return toggle('bloc-59e88eb15cd5e');">Hive\Benchmark\Instance</a>
+                                    <div class="violation-list" id="bloc-59e88eb15cd5e">
+                                                                                    <div class="violation">
+                                                <div class="name">
+                                                    Blob / God object                                                    <span
+                                                        class="badge level level-error">error</span>
 
-    <div class="row">
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">Composer dependencies</div>
-                <div class="clusterize small">
-                    <div id="clusterizePackages" class="clusterize-scroll">
-                        <table>
-                                                        <thead>
-                            <tr>
-                                <th>Package</th>
-                                <th>Required</th>
-                                                                <th>Latest</th>
-                                <th>License</th>
-                            </tr>
-                            </thead>
-                            <tbody id="contentPackages" class="clusterize-content">
-                                                        </tbody>
-                        </table>
-                                                    <div>No composer.json file found</div>
-                                                                            <div>No composer.lock file found</div>
+                                                </div>
+                                                <div
+                                                    class="description">A blob object (or "god class") does not follow the Single responsability principle.<br />
+<br />
+* object has lot of public methods  (8, excluding getters and setters)<br />
+* object has a high Lack of cohesion of methods (LCOM=9)<br />
+* object knows everything (and use lot of external classes)<br />
+<br />
+Maybe you should reducing the number of methods splitting this object in many sub objects.</div>
+
                                             </div>
-                </div>
-            </div>
-        </div>
+                                                                            </div>
+                                </td>
 
-        <div class="column">
-            <div class="bloc bloc-number">
-                <div class="label">Licences of Composer dependencies</div>
-                                    <div>No composer.json file found</div>
-                                <div id="svg-licenses"></div>
+                                <td valign="top">
+                                                                            <span
+                                            class="badge level level-error"> Blob / God object</span>
+                                                                    </td>
+                            </tr>
+                                            </tbody>
+                </table>
             </div>
         </div>
     </div>
-
 
     <script type="text/javascript">
-        document.onreadystatechange = function () {
-            if (document.readyState === 'complete') {
-                chartMaintainability();
-
-                new Clusterize({
-                    scrollId: 'clusterizeClassRank',
-                    contentId: 'contentClassRank'
-                });
-
-                new Clusterize({
-                    scrollId: 'clusterizePackages',
-                    contentId: 'contentPackages'
-                });
-
-                // prepare json for packages pie
-                                chartLicenses([]);
+        function toggle(id) {
+            var div = document.getElementById(id);
+            if (div.style.display === 'block') {
+                div.style.display = 'none';
             }
-        };
+            else {
+                div.style.display = 'block';
+            }
+        }
     </script>
-
 </div>
 
 <!-- Sidebar -->
