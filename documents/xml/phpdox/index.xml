@@ -5,12 +5,12 @@
     
     
     <class name="Exception" src="Exception.php" description="General Exception Handler." xml="classes/Hive_Benchmark_Exception.xml"/>
-  <class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/><class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/><class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/></namespace>
+  <class name="Trace" src="Facade/Trace.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Trace.xml"/><class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/><class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/><class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/></namespace>
   <namespace name="Hive\Benchmark\Contract">
-    <interface name="Instance" src="Contract/Instance.php" description="Instance Interface." xml="interfaces/Hive_Benchmark_Contract_Instance.xml"/>
+    
     <interface name="Library" src="Contract/Library.php" description="Library Interface." xml="interfaces/Hive_Benchmark_Contract_Library.xml"/>
     <interface name="Object" src="Contract/Object.php" description="Object Interface." xml="interfaces/Hive_Benchmark_Contract_Object.xml"/>
-  </namespace>
+  <interface name="Instance" src="Contract/Instance.php" description="Instance Interface." xml="interfaces/Hive_Benchmark_Contract_Instance.xml"/></namespace>
   <namespace name="Hive\Benchmark\Exception">
     
     

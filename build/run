@@ -45,7 +45,7 @@ xsltproc templates/phploc.xsl ../documents/xml/phploc.xml > ../documents/html/ph
 
 # move our html viewer
 
-cp templates/index.html ../documents/html/index.html
+cp templates/frame.html ../documents/html/frame.html
 cp templates/nav.html ../documents/html/nav.html
 
 

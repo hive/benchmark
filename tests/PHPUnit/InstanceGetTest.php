@@ -186,7 +186,7 @@ class testInstanceGet extends base
 
     public function testEmptyGetMarkName ()
     {
-        $this->setExpectedException('PHPUnit_Framework_Error_Warning');
+        $this->setExpectedException('PHPUnit_Framework_Error_Notice');
 
         $bm = new \Hive\Benchmark\Object();
         \Hive\Benchmark\Instance::get();

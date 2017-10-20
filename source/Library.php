@@ -160,7 +160,7 @@ class Library implements Contract\Library
      */
     public function details($name)
     {
-        if (!isset($this->marks[$name]))
+        if (isset($this->marks[$name]))
         {
             $result = $this->retrieve($name);
         }

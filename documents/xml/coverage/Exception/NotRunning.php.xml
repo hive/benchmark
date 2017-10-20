@@ -18,24 +18,28 @@
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
       </line>
       <line nr="43">
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
       </line>
       <line nr="45">
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
       </line>
       <line nr="46">
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
       </line>
     </coverage>

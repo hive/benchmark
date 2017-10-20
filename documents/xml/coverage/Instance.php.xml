@@ -2,27 +2,24 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Instance.php">
     <totals>
-      <lines total="183" comments="102" code="81" executable="32" executed="32" percent="100.00%"/>
-      <methods count="9" tested="9" percent="100.00%"/>
+      <lines total="148" comments="78" code="70" executable="30" executed="29" percent="96.67%"/>
+      <methods count="6" tested="5" percent="83.33%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="1" percent="100.00%"/>
+      <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Instance" start="18" executable="32" executed="32" crap="13">
+    <class name="Instance" start="18" executable="30" executed="29" crap="11">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark"/>
-      <method name="init" signature="init($config = [])" start="42" end="58" crap="3" executable="8" executed="8" coverage="100"/>
-      <method name="start" signature="start($name)" start="67" end="70" crap="1" executable="2" executed="2" coverage="100"/>
-      <method name="stop" signature="stop($name)" start="79" end="82" crap="1" executable="2" executed="2" coverage="100"/>
-      <method name="details" signature="details($name)" start="91" end="94" crap="1" executable="1" executed="1" coverage="100"/>
-      <method name="get" signature="get($name)" start="103" end="106" crap="1" executable="1" executed="1" coverage="100"/>
-      <method name="summary" signature="summary()" start="113" end="116" crap="1" executable="1" executed="1" coverage="100"/>
-      <method name="method" signature="method($action = 'auto', $stack = 3)" start="126" end="160" crap="3" executable="13" executed="13" coverage="100"/>
-      <method name="trace" signature="trace($stack = 2)" start="170" end="174" crap="1" executable="2" executed="2" coverage="100"/>
-      <method name="destroy" signature="destroy()" start="179" end="182" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="__callStatic" signature="__callStatic ($name, $arguments)" start="33" end="39" crap="2.06" executable="4" executed="3" coverage="75"/>
+      <method name="init" signature="init($config = [])" start="50" end="65" crap="3" executable="8" executed="8" coverage="100"/>
+      <method name="summary" signature="summary()" start="77" end="80" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="method" signature="method($action = 'auto', $stack = 3, $append = '')" start="91" end="125" crap="3" executable="13" executed="13" coverage="100"/>
+      <method name="trace" signature="trace($stack = 2)" start="135" end="139" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="destroy" signature="destroy()" start="144" end="147" crap="1" executable="2" executed="2" coverage="100"/>
     </class>
     <coverage>
-      <line nr="44">
+      <line nr="35">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -30,10 +27,12 @@
         <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
         <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
         <covered by="testInstanceGet::testDoesNotExistException"/>
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
@@ -41,16 +40,18 @@
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
         <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
         <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
         <covered by="testInstance::testStartStop"/>
         <covered by="testInstance::testMultipleStartStop"/>
         <covered by="testInstance::testMultipleDifferentStartStop"/>
         <covered by="testInstance::testConfigEnabledFalse"/>
         <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
       </line>
-      <line nr="45">
+      <line nr="36">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -58,10 +59,12 @@
         <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
         <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
         <covered by="testInstanceGet::testDoesNotExistException"/>
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
@@ -69,16 +72,18 @@
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
         <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
         <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
         <covered by="testInstance::testStartStop"/>
         <covered by="testInstance::testMultipleStartStop"/>
         <covered by="testInstance::testMultipleDifferentStartStop"/>
         <covered by="testInstance::testConfigEnabledFalse"/>
         <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
       </line>
-      <line nr="46">
+      <line nr="37">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -86,10 +91,12 @@
         <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
         <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
         <covered by="testInstanceGet::testDoesNotExistException"/>
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
@@ -97,62 +104,14 @@
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
         <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
         <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
         <covered by="testInstance::testStartStop"/>
         <covered by="testInstance::testMultipleStartStop"/>
         <covered by="testInstance::testMultipleDifferentStartStop"/>
         <covered by="testInstance::testConfigEnabledFalse"/>
         <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
         <covered by="testInstance::testNotRunningException"/>
-        <covered by="testInstance::testStoppedRunningException"/>
-        <covered by="testInstance::testChangeConfig"/>
-      </line>
-      <line nr="47">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
-        <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceGet::testInvalidMark"/>
-        <covered by="testInstanceGet::testDoesNotExistException"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStartStop"/>
-        <covered by="testInstance::testMultipleStartStop"/>
-        <covered by="testInstance::testMultipleDifferentStartStop"/>
-        <covered by="testInstance::testConfigEnabledFalse"/>
-        <covered by="testInstance::testInvalidMark"/>
-        <covered by="testInstance::testNotRunningException"/>
-        <covered by="testInstance::testStoppedRunningException"/>
-        <covered by="testInstance::testChangeConfig"/>
-      </line>
-      <line nr="51">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStartStop"/>
-        <covered by="testInstance::testMultipleStartStop"/>
-        <covered by="testInstance::testMultipleDifferentStartStop"/>
-        <covered by="testInstance::testConfigEnabledFalse"/>
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
       </line>
@@ -161,27 +120,34 @@
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
         <covered by="testInstanceDetails::testConfigEnabledFalse"/>
+        <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
         <covered by="testInstanceSummary::testStartStopSummary"/>
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
         <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
         <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
         <covered by="testInstance::testStartStop"/>
         <covered by="testInstance::testMultipleStartStop"/>
         <covered by="testInstance::testMultipleDifferentStartStop"/>
         <covered by="testInstance::testConfigEnabledFalse"/>
+        <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
+        <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
       </line>
       <line nr="53">
-        <covered by="testInstance::testChangeConfig"/>
-      </line>
-      <line nr="57">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -189,10 +155,12 @@
         <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
         <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
         <covered by="testInstanceGet::testDoesNotExistException"/>
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
@@ -200,105 +168,18 @@
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
         <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
         <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
         <covered by="testInstance::testStartStop"/>
         <covered by="testInstance::testMultipleStartStop"/>
         <covered by="testInstance::testMultipleDifferentStartStop"/>
         <covered by="testInstance::testConfigEnabledFalse"/>
         <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
       </line>
-      <line nr="69">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceGet::testInvalidMark"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStartStop"/>
-        <covered by="testInstance::testMultipleStartStop"/>
-        <covered by="testInstance::testMultipleDifferentStartStop"/>
-        <covered by="testInstance::testConfigEnabledFalse"/>
-        <covered by="testInstance::testInvalidMark"/>
-        <covered by="testInstance::testStoppedRunningException"/>
-        <covered by="testInstance::testChangeConfig"/>
-      </line>
-      <line nr="70">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStartStop"/>
-        <covered by="testInstance::testMultipleStartStop"/>
-        <covered by="testInstance::testMultipleDifferentStartStop"/>
-        <covered by="testInstance::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStoppedRunningException"/>
-        <covered by="testInstance::testChangeConfig"/>
-      </line>
-      <line nr="81">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStartStop"/>
-        <covered by="testInstance::testMultipleStartStop"/>
-        <covered by="testInstance::testMultipleDifferentStartStop"/>
-        <covered by="testInstance::testConfigEnabledFalse"/>
-        <covered by="testInstance::testNotRunningException"/>
-        <covered by="testInstance::testStoppedRunningException"/>
-        <covered by="testInstance::testChangeConfig"/>
-      </line>
-      <line nr="82">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStartStop"/>
-        <covered by="testInstance::testMultipleStartStop"/>
-        <covered by="testInstance::testMultipleDifferentStartStop"/>
-        <covered by="testInstance::testConfigEnabledFalse"/>
-        <covered by="testInstance::testStoppedRunningException"/>
-        <covered by="testInstance::testChangeConfig"/>
-      </line>
-      <line nr="93">
+      <line nr="54">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -306,67 +187,213 @@
         <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
+        <covered by="testInstance::testStartStop"/>
+        <covered by="testInstance::testMultipleStartStop"/>
+        <covered by="testInstance::testMultipleDifferentStartStop"/>
+        <covered by="testInstance::testConfigEnabledFalse"/>
+        <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testInstance::testStoppedRunningException"/>
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="55">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
+        <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
+        <covered by="testInstance::testStartStop"/>
+        <covered by="testInstance::testMultipleStartStop"/>
+        <covered by="testInstance::testMultipleDifferentStartStop"/>
+        <covered by="testInstance::testConfigEnabledFalse"/>
+        <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testInstance::testStoppedRunningException"/>
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="59">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
+        <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
+        <covered by="testInstance::testStartStop"/>
+        <covered by="testInstance::testMultipleStartStop"/>
+        <covered by="testInstance::testMultipleDifferentStartStop"/>
+        <covered by="testInstance::testConfigEnabledFalse"/>
+        <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testInstance::testStoppedRunningException"/>
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="60">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
+        <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
+        <covered by="testInstance::testStartStop"/>
+        <covered by="testInstance::testMultipleStartStop"/>
+        <covered by="testInstance::testMultipleDifferentStartStop"/>
+        <covered by="testInstance::testConfigEnabledFalse"/>
+        <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testInstance::testStoppedRunningException"/>
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="61">
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="64">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testConfigEnabledFalse"/>
+        <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testInvalidMark"/>
+        <covered by="testInstanceGet::testEmptyGetMarkName"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
+        <covered by="testInstance::testStartStop"/>
+        <covered by="testInstance::testMultipleStartStop"/>
+        <covered by="testInstance::testMultipleDifferentStartStop"/>
+        <covered by="testInstance::testConfigEnabledFalse"/>
+        <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
+        <covered by="testInstance::testNotRunningException"/>
+        <covered by="testInstance::testStoppedRunningException"/>
+        <covered by="testInstance::testChangeConfig"/>
+      </line>
+      <line nr="79">
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+      </line>
+      <line nr="94">
+        <covered by="testInstanceMethod::testMethodGet"/>
+      </line>
+      <line nr="99">
+        <covered by="testInstanceMethod::testMethodGet"/>
+      </line>
+      <line nr="100">
+        <covered by="testInstanceMethod::testMethodGet"/>
       </line>
       <line nr="105">
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceGet::testDoesNotExistException"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
       </line>
-      <line nr="115">
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testInstanceSummary::testConfigEnabledFalse"/>
-      </line>
-      <line nr="129">
+      <line nr="106">
         <covered by="testInstanceMethod::testMethodGet"/>
       </line>
-      <line nr="134">
+      <line nr="108">
         <covered by="testInstanceMethod::testMethodGet"/>
       </line>
-      <line nr="135">
+      <line nr="111">
         <covered by="testInstanceMethod::testMethodGet"/>
       </line>
-      <line nr="140">
+      <line nr="112">
         <covered by="testInstanceMethod::testMethodGet"/>
       </line>
-      <line nr="141">
+      <line nr="116">
         <covered by="testInstanceMethod::testMethodGet"/>
       </line>
-      <line nr="143">
+      <line nr="119">
+        <covered by="testInstanceMethod::testMethodGet"/>
+      </line>
+      <line nr="121">
+        <covered by="testInstanceMethod::testMethodGet"/>
+      </line>
+      <line nr="124">
+        <covered by="testInstanceMethod::testMethodGet"/>
+      </line>
+      <line nr="125">
+        <covered by="testInstanceMethod::testMethodGet"/>
+      </line>
+      <line nr="137">
+        <covered by="testInstanceMethod::testMethodGet"/>
+      </line>
+      <line nr="138">
         <covered by="testInstanceMethod::testMethodGet"/>
       </line>
       <line nr="146">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="147">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="151">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="154">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="156">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="159">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="160">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="172">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="173">
-        <covered by="testInstanceMethod::testMethodGet"/>
-      </line>
-      <line nr="181">
         <covered by="testInstanceDetails::testSanity"/>
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
@@ -404,7 +431,7 @@
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
       </line>
-      <line nr="182">
+      <line nr="147">
         <covered by="testInstanceDetails::testSanity"/>
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>

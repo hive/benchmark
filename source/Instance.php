@@ -34,7 +34,7 @@ class Instance implements Contract\Instance
     {
         if (method_exists(self::init(), $name))
         {
-            self::init()->$name($arguments[0]);
+            return self::init()->$name($arguments[0]);
         }
     }
 

@@ -2,13 +2,13 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Library.php">
     <totals>
-      <lines total="265" comments="136" code="129" executable="71" executed="71" percent="100.00%"/>
-      <methods count="7" tested="7" percent="100.00%"/>
+      <lines total="254" comments="135" code="119" executable="66" executed="64" percent="96.97%"/>
+      <methods count="7" tested="6" percent="85.71%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="1" percent="100.00%"/>
+      <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Library" start="16" executable="71" executed="71" crap="21">
+    <class name="Library" start="16" executable="66" executed="64" crap="22">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark"/>
       <method name="__construct" signature="__construct(array $config = [])" start="49" end="55" crap="1" executable="2" executed="2" coverage="100"/>
@@ -16,8 +16,8 @@
       <method name="stop" signature="stop($name)" start="93" end="117" crap="3" executable="12" executed="12" coverage="100"/>
       <method name="timer" signature="timer(&amp;$variable)" start="124" end="131" crap="2" executable="5" executed="5" coverage="100"/>
       <method name="memory" signature="memory(&amp;$variable)" start="141" end="148" crap="2" executable="5" executed="5" coverage="100"/>
-      <method name="details" signature="details($name)" start="161" end="185" crap="3" executable="10" executed="10" coverage="100"/>
-      <method name="retrieve" signature="retrieve($name)" start="199" end="264" crap="8" executable="28" executed="28" coverage="100"/>
+      <method name="details" signature="details($name)" start="161" end="174" crap="2" executable="6" executed="6" coverage="100"/>
+      <method name="retrieve" signature="retrieve($name)" start="188" end="253" crap="10.04" executable="27" executed="25" coverage="92.592592592593"/>
     </class>
     <coverage>
       <line nr="54">
@@ -28,6 +28,7 @@
         <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -40,11 +41,13 @@
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
         <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
         <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
         <covered by="testInstance::testStartStop"/>
         <covered by="testInstance::testMultipleStartStop"/>
         <covered by="testInstance::testMultipleDifferentStartStop"/>
         <covered by="testInstance::testConfigEnabledFalse"/>
         <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
@@ -87,6 +90,7 @@
         <covered by="testInstanceDetails::testInvalidDetailsMarkName"/>
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testEmptyDetailsMarkName"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -99,11 +103,13 @@
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
         <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
         <covered by="testInstanceSummary::testConfigEnabledFalse"/>
+        <covered by="testInstanceSummary::testEmptyMarkName"/>
         <covered by="testInstance::testStartStop"/>
         <covered by="testInstance::testMultipleStartStop"/>
         <covered by="testInstance::testMultipleDifferentStartStop"/>
         <covered by="testInstance::testConfigEnabledFalse"/>
         <covered by="testInstance::testInvalidMark"/>
+        <covered by="testInstance::testEmptyMarkName"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testInstance::testChangeConfig"/>
@@ -452,7 +458,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -469,7 +474,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -488,7 +492,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -505,7 +508,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -524,7 +526,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -540,7 +541,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -558,7 +558,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -574,7 +573,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -592,7 +590,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -608,7 +605,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -626,7 +622,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -642,7 +637,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -660,7 +654,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -676,7 +669,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -694,7 +686,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -710,7 +701,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -732,7 +722,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -748,7 +737,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -770,7 +758,6 @@
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
@@ -786,7 +773,6 @@
         <covered by="testObjectDetails::testStartStop"/>
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
@@ -1168,7 +1154,7 @@
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
       </line>
-      <line nr="169">
+      <line nr="165">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -1177,27 +1163,20 @@
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
+      </line>
+      <line nr="166">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
       </line>
       <line nr="170">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-      </line>
-      <line nr="171">
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-      </line>
-      <line nr="172">
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
+        <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
       </line>
       <line nr="173">
@@ -1209,34 +1188,8 @@
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
       </line>
-      <line nr="179">
-        <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
-        <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
-      </line>
-      <line nr="182">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-      </line>
-      <line nr="184">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-      </line>
-      <line nr="203">
+      <line nr="192">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -1254,7 +1207,6 @@
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
         <covered by="testObjectGet::testMultipleDifferentStartStop"/>
@@ -1266,7 +1218,7 @@
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
       </line>
-      <line nr="204">
+      <line nr="193">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -1284,7 +1236,6 @@
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
         <covered by="testObjectGet::testMultipleDifferentStartStop"/>
@@ -1292,6 +1243,87 @@
         <covered by="testObjectGet::testEmptyGetMarkName"/>
         <covered by="testObjectGet::testDoesNotExistException"/>
         <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="197">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
+        <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="198">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
+        <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="205">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
         <covered by="testObjectSummary::testStartStopSummary"/>
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
@@ -1304,8 +1336,6 @@
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceGet::testDoesNotExistException"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
         <covered by="testInstanceSummary::testStartStopSummary"/>
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
@@ -1314,49 +1344,14 @@
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
         <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectGet::testConfigEnabledFalse"/>
-        <covered by="testObjectGet::testEmptyGetMarkName"/>
-        <covered by="testObjectGet::testDoesNotExistException"/>
-        <covered by="testObjectGet::testForcedGeneralException"/>
         <covered by="testObjectSummary::testStartStopSummary"/>
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
       </line>
-      <line nr="209">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceGet::testDoesNotExistException"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectGet::testConfigEnabledFalse"/>
-        <covered by="testObjectGet::testEmptyGetMarkName"/>
-        <covered by="testObjectGet::testDoesNotExistException"/>
-        <covered by="testObjectGet::testForcedGeneralException"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="216">
+      <line nr="211">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -1372,11 +1367,55 @@
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
         <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="214">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="217">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
         <covered by="testObjectSummary::testStartStopSummary"/>
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
@@ -1397,31 +1436,6 @@
         <covered by="testObjectDetails::testMultipleStartStop"/>
         <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
         <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="220">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
         <covered by="testObjectGet::testMultipleDifferentStartStop"/>
@@ -1498,6 +1512,75 @@
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
       </line>
+      <line nr="225">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="228">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="229">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
       <line nr="230">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
@@ -1522,6 +1605,29 @@
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
       </line>
       <line nr="231">
+        <covered by="testInstanceDetails::testStartStop"/>
+        <covered by="testInstanceDetails::testMultipleStartStop"/>
+        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testInstanceGet::testStartStopGet"/>
+        <covered by="testInstanceGet::testMultipleStartStop"/>
+        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceMethod::testMethodGet"/>
+        <covered by="testInstanceSummary::testStartStopSummary"/>
+        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
+        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
+        <covered by="testObjectDetails::testStartStop"/>
+        <covered by="testObjectDetails::testMultipleStartStop"/>
+        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
+        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
+        <covered by="testObjectGet::testStartStop"/>
+        <covered by="testObjectGet::testMultipleStartStop"/>
+        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectSummary::testStartStopSummary"/>
+        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
+        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      </line>
+      <line nr="233">
         <covered by="testInstanceDetails::testStartStop"/>
         <covered by="testInstanceDetails::testMultipleStartStop"/>
         <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
@@ -1590,74 +1696,13 @@
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
       </line>
-      <line nr="236">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="239">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="240">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
+      <line nr="238">
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
+        <covered by="testObjectGet::testForcedGeneralException"/>
       </line>
       <line nr="241">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -1667,6 +1712,8 @@
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
+        <covered by="testInstanceGet::testDoesNotExistException"/>
+        <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstanceMethod::testMethodGet"/>
         <covered by="testInstanceSummary::testStartStopSummary"/>
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
@@ -1678,109 +1725,21 @@
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
         <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="242">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="244">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="245">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="246">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
+        <covered by="testObjectGet::testConfigEnabledFalse"/>
+        <covered by="testObjectGet::testEmptyGetMarkName"/>
+        <covered by="testObjectGet::testDoesNotExistException"/>
         <covered by="testObjectGet::testForcedGeneralException"/>
         <covered by="testObjectSummary::testStartStopSummary"/>
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>
       </line>
-      <line nr="249">
+      <line nr="244">
         <covered by="testInstanceGet::testDoesNotExistException"/>
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testObjectGet::testConfigEnabledFalse"/>
         <covered by="testObjectGet::testEmptyGetMarkName"/>
         <covered by="testObjectGet::testDoesNotExistException"/>
+        <covered by="testObjectGet::testForcedGeneralException"/>
       </line>
       <line nr="252">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -1790,49 +1749,6 @@
         <covered by="testInstanceGet::testStartStopGet"/>
         <covered by="testInstanceGet::testMultipleStartStop"/>
         <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceGet::testDoesNotExistException"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testInstanceMethod::testMethodGet"/>
-        <covered by="testInstanceSummary::testStartStopSummary"/>
-        <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
-        <covered by="testInstanceSummary::testDifferentStartStopSummary"/>
-        <covered by="testObjectDetails::testStartStop"/>
-        <covered by="testObjectDetails::testMultipleStartStop"/>
-        <covered by="testObjectDetails::testMultipleDifferentStartStop"/>
-        <covered by="testObjectDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-        <covered by="testObjectGet::testStartStop"/>
-        <covered by="testObjectGet::testMultipleStartStop"/>
-        <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectGet::testConfigEnabledFalse"/>
-        <covered by="testObjectGet::testEmptyGetMarkName"/>
-        <covered by="testObjectGet::testDoesNotExistException"/>
-        <covered by="testObjectGet::testForcedGeneralException"/>
-        <covered by="testObjectSummary::testStartStopSummary"/>
-        <covered by="testObjectSummary::testMultipleStartStopSummary"/>
-        <covered by="testObjectSummary::testDifferentStartStopSummary"/>
-      </line>
-      <line nr="255">
-        <covered by="testInstanceGet::testDoesNotExistException"/>
-        <covered by="testInstanceInitEnabled::testDisabled"/>
-        <covered by="testObjectGet::testConfigEnabledFalse"/>
-        <covered by="testObjectGet::testEmptyGetMarkName"/>
-        <covered by="testObjectGet::testDoesNotExistException"/>
-      </line>
-      <line nr="257">
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-      </line>
-      <line nr="260">
-        <covered by="testObjectDetails::testForcedGeneralException"/>
-      </line>
-      <line nr="263">
-        <covered by="testInstanceDetails::testStartStop"/>
-        <covered by="testInstanceDetails::testMultipleStartStop"/>
-        <covered by="testInstanceDetails::testMultipleDifferentStartStop"/>
-        <covered by="testInstanceDetails::testDetailsMarkNameStillRunning"/>
-        <covered by="testInstanceGet::testStartStopGet"/>
-        <covered by="testInstanceGet::testMultipleStartStop"/>
-        <covered by="testInstanceGet::testMultipleDifferentStartStop"/>
         <covered by="testInstanceMethod::testMethodGet"/>
         <covered by="testInstanceSummary::testStartStopSummary"/>
         <covered by="testInstanceSummary::testMultipleStartStopSummary"/>
@@ -1844,7 +1760,6 @@
         <covered by="testObjectGet::testStartStop"/>
         <covered by="testObjectGet::testMultipleStartStop"/>
         <covered by="testObjectGet::testMultipleDifferentStartStop"/>
-        <covered by="testObjectGet::testForcedGeneralException"/>
         <covered by="testObjectSummary::testStartStopSummary"/>
         <covered by="testObjectSummary::testMultipleStartStopSummary"/>
         <covered by="testObjectSummary::testDifferentStartStopSummary"/>

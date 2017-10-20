@@ -1,16 +1,147 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Benchmark by hive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://hive.github.io/benchmark/stylesheets/normalize.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://hive.github.io/benchmark/stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://hive.github.io/benchmark/stylesheets/github-light.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" media="screen">
 
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+
+        <script>hljs.initHighlightingOnLoad();</script>
+
     </head>
     <body>
+        <section class="page-header">
+            <h1 class="project-name">Benchmark</h1>
+            <h2 class="project-tagline">Simple decoupled benchmark Library</h2>
+            <a href="https://github.com/hive/benchmark" class="btn">View on GitHub</a>
+            <a href="https://github.com/hive/benchmark/zipball/master" class="btn">Download .zip</a>
+            <a href="https://github.com/hive/benchmark/tarball/master" class="btn">Download .tar.gz</a>
+        </section>
 
-        <div class="row">
-            <div class="col-xs-3" style="padding:0; margin:0;"><iframe src="./nav.html" border="0" height="100%" width="100%" name="nav"></iframe></div>
-            <div class="col-xs-9" style="padding:0; margin:0;"><iframe src="./phpmetrics/index.html" border="0" height="100%" width="100%" name="main"></iframe></div>
-        </div>
+        <section class="main-content">
+            <h1>
+                <a id="benchmark" class="anchor" href="#benchmark" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Benchmark</h1>
 
+            <p>Simple decoupled benchmark library</p>
+
+            <ul>
+                <li><a class="anchor" href="phpdox/index.xhtml" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">API Documentation</span></a></li>
+                <li><a class="anchor" href="phpunit/index.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Unit Tests</span></a></li>
+                <li><a class="anchor" href="coverage/dashboard.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Code Coverage Dashboard</span></a></li>
+                <li><a class="anchor" href="coverage/index.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Code Coverage Details</span></a></li>
+                <li><a class="anchor" href="phpmetrics/index.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Metrics</span></a></li>
+                <li><a class="anchor" href="codesniffer/index.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Coding Standard</span></a></li>
+                <li><a class="anchor" href="codesniffer/rules.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Coding Standard Rules</span></a></li>
+                <li><a class="anchor" href="phpcpd/index.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Copy Paste Detector</span></a></li>
+                <li><a class="anchor" href="phpmd/index.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Mess Detector</span></a></li>
+                <li><a class="anchor" href="phploc/index.html" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Statistics</span></a></li>
+                <li><a class="anchor" href="https://github.com/hive/benchmark/tree/master/examples" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Examples</span></a></li>
+            </ul>
+            <hr>
+            <h3>
+                Installing
+            </h3>
+
+            <p> Installing via composer (Recommended)</p>
+            <pre>
+                <code class="bash">
+composer require Hive/Benchmark
+                </code>
+            </pre>
+
+            <p> Installing via Git </p>
+<pre>
+<code class="bash">
+# Clone the repo
+cd helloworld.dev
+git clone https://github.com/hive/benchmark.git .
+</code>
+</pre>
+
+<pre>
+<code class="php">
+// With in your php file, include the package loader
+require 'hive/benchmark/include.php';
+</code>
+</pre>
+
+            <hr>
+            <h3>
+                Overview
+            </h3>
+            <p>The code is split up into the following classes</p>
+            <ol>
+                <li>Library.php : The actual benchmarking library, useful for extending functionality.</li>
+                <li>Object.php : Class for accessing the benchmark object.</li>
+                <li>Instance.php : Instance of the object class.</li>
+            </ol>
+            <hr>
+            <h3>
+                Usage
+            </h3>
+<pre>
+<code class="php">
+// With in your php file, include the package loader
+require 'hive/benchmark/include.php';
+
+use Hive\Benchmark;
+
+// Create the object
+$bm = new Benchmark\Object();
+
+// Start the mark
+$bm->start('NameOfMark');
+
+// Stop the mark
+$bm->stop('NameOfMark');
+
+// Output a summary
+var_dump($bm->summary());
+</code>
+</pre>
+            <p>Outputs</p>
+<pre>
+<code class="php">
+array (size=1)
+    'NameOfMark' =>
+        array (size=3)
+            'count' => int 1
+            'time' =>
+                array (size=5)
+                    'total' => string '0.00039911' (length=10)
+                    'min' => string '0.00039911' (length=10)
+                    'max' => string '0.00039911' (length=10)
+                    'mean' => string '0.00039911' (length=10)
+                    'median' => string '0.00039911' (length=10)
+            'memory' =>
+                array (size=5)
+                    'total' => string '608' (length=3)
+                    'min' => string '608' (length=3)
+                    'max' => string '608' (length=3)
+                    'mean' => string '608' (length=3)
+                    'median' => string '608' (length=3)
+</code>
+</pre>
+
+
+            <hr>
+            <h3>
+                Advance
+            </h3>
+            <p>The benchmark library has many many more options and features, to view them please see our <a class="anchor" href="https://github.com/hive/benchmark/tree/master/examples" target="_blank" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">Examples</span></a>.</p>
+
+            <footer class="site-footer">
+                <span class="site-footer-owner"><a href="https://github.com/hive/benchmark">Benchmark</a> is maintained by <a href="https://github.com/hive">Hive</a>.</span>
+            </footer>
+
+        </section>
     </body>
 </html>

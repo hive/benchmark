@@ -1,47 +1,47 @@
 
 PHP CODE SNIFFER INFORMATION REPORT
 ----------------------------------------------------------------------
-CamelCase class name: yes [11/11, 100%]
+CamelCase class name: yes [12/12, 100%]
 
-CamelCase method name: yes [32/32, 100%]
+CamelCase method name: yes [25/25, 100%]
 
-Class defined in namespace: yes [11/11, 100%]
+Class defined in namespace: yes [12/12, 100%]
 
-Class opening brace placement: new line [11/11, 100%]
+Class opening brace placement: new line [12/12, 100%]
 
 Constant name case: upper [10/10, 100%]
 
-Control structure defined inline: no [26/26, 100%]
+Control structure defined inline: no [28/28, 100%]
 
-Declarations and side effects mixed: no [11/11, 100%]
+Declarations and side effects mixed: no [12/12, 100%]
 
-EOL char: \n [11/11, 100%]
+EOL char: \n [12/12, 100%]
 
-Function opening brace placement: new line [28/28, 100%]
+Function opening brace placement: new line [27/27, 100%]
 
-Line indent: spaces [713/713, 100%]
+Line indent: spaces [653/653, 100%]
 
-Line length: 80 or less [889/919, 96.74%]
-	81-120 => 28 (3.05%)
-	121-150 => 2 (0.22%)
+Line length: 80 or less [847/878, 96.47%]
+	81-120 => 28 (3.19%)
+	121-150 => 3 (0.34%)
 
-Multiple statements on same line: no [120/120, 100%]
+Multiple statements on same line: no [119/119, 100%]
 
-Number of newlines at EOF: 1 [11/11, 100%]
+Number of newlines at EOF: 1 [12/12, 100%]
 
-One class per file: yes [11/11, 100%]
+One class per file: yes [12/12, 100%]
 
-PHP closing tag at end of PHP-only file: no [11/11, 100%]
+PHP closing tag at end of PHP-only file: no [12/12, 100%]
 
-PHP constant case: lower [10/10, 100%]
+PHP constant case: lower [17/17, 100%]
 
-PHP keyword case: lower [219/219, 100%]
+PHP keyword case: lower [210/210, 100%]
 
-PHP short open tag used: no [11/11, 100%]
+PHP short open tag used: no [12/12, 100%]
 
-Spaces after control structure open parenthesis: 0 [24/24, 100%]
+Spaces after control structure open parenthesis: 0 [26/26, 100%]
 
-Spaces before control structure close parenthesis: 0 [24/24, 100%]
+Spaces before control structure close parenthesis: 0 [26/26, 100%]
 
 ----------------------------------------------------------------------
 

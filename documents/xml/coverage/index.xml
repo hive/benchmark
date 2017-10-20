@@ -71,15 +71,15 @@
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source">
       <totals>
-        <lines total="1017" comments="598" code="419" executable="165" executed="165" percent="100.00%"/>
-        <methods count="28" tested="28" percent="100.00%"/>
+        <lines total="974" comments="548" code="426" executable="176" executed="155" percent="88.07%"/>
+        <methods count="27" tested="21" percent="77.78%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="8" tested="8" percent="100.00%"/>
+        <classes count="9" tested="5" percent="55.56%"/>
         <traits count="0" tested="0" percent=""/>
       </totals>
       <directory name="Contract">
         <totals>
-          <lines total="155" comments="121" code="34" executable="0" executed="0" percent=""/>
+          <lines total="102" comments="78" code="24" executable="0" executed="0" percent=""/>
           <methods count="0" tested="0" percent=""/>
           <functions count="0" tested="0" percent=""/>
           <classes count="0" tested="0" percent=""/>
@@ -87,7 +87,7 @@
         </totals>
         <file name="Instance.php" href="Contract/Instance.php.xml">
           <totals>
-            <lines total="77" comments="61" code="16" executable="0" executed="0" percent=""/>
+            <lines total="24" comments="18" code="6" executable="0" executed="0" percent=""/>
             <methods count="0" tested="0" percent=""/>
             <functions count="0" tested="0" percent=""/>
             <classes count="0" tested="0" percent=""/>
@@ -115,7 +115,7 @@
       </directory>
       <file name="Instance.php" href="Contract/Instance.php.xml">
         <totals>
-          <lines total="77" comments="61" code="16" executable="0" executed="0" percent=""/>
+          <lines total="24" comments="18" code="6" executable="0" executed="0" percent=""/>
           <methods count="0" tested="0" percent=""/>
           <functions count="0" tested="0" percent=""/>
           <classes count="0" tested="0" percent=""/>
@@ -230,30 +230,57 @@
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
+      <directory name="Facade">
+        <totals>
+          <lines total="32" comments="15" code="17" executable="8" executed="0" percent="0.00%"/>
+          <methods count="2" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+        <file name="Trace.php" href="Facade/Trace.php.xml">
+          <totals>
+            <lines total="32" comments="15" code="17" executable="8" executed="0" percent="0.00%"/>
+            <methods count="2" tested="0" percent="0.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="Trace.php" href="Facade/Trace.php.xml">
+        <totals>
+          <lines total="32" comments="15" code="17" executable="8" executed="0" percent="0.00%"/>
+          <methods count="2" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="183" comments="102" code="81" executable="32" executed="32" percent="100.00%"/>
-          <methods count="9" tested="9" percent="100.00%"/>
+          <lines total="148" comments="78" code="70" executable="30" executed="29" percent="96.67%"/>
+          <methods count="6" tested="5" percent="83.33%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="1" percent="100.00%"/>
+          <classes count="1" tested="0" percent="0.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="Library.php" href="Library.php.xml">
         <totals>
-          <lines total="265" comments="136" code="129" executable="71" executed="71" percent="100.00%"/>
-          <methods count="7" tested="7" percent="100.00%"/>
+          <lines total="254" comments="135" code="119" executable="66" executed="64" percent="96.97%"/>
+          <methods count="7" tested="6" percent="85.71%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="1" percent="100.00%"/>
+          <classes count="1" tested="0" percent="0.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="Object.php" href="Object.php.xml">
         <totals>
-          <lines total="184" comments="94" code="90" executable="44" executed="44" percent="100.00%"/>
-          <methods count="7" tested="7" percent="100.00%"/>
+          <lines total="208" comments="97" code="111" executable="54" executed="44" percent="81.48%"/>
+          <methods count="7" tested="5" percent="71.43%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="1" percent="100.00%"/>
+          <classes count="1" tested="0" percent="0.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>

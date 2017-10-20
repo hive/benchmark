@@ -127,6 +127,7 @@ class testInstanceDetails extends base
 
     public function testInvalidDetailsMarkName ()
     {
+        //$this->setExpectedException('PHPUnit_Framework_Error_Notice');
         $this->setExpectedException('PHPUnit_Framework_Error_Warning');
         \Hive\Benchmark\Instance::details(new stdClass());
 
@@ -158,7 +159,7 @@ class testInstanceDetails extends base
 
     public function testEmptyDetailsMarkName ()
     {
-        $this->setExpectedException('PHPUnit_Framework_Error_Warning');
+        $this->setExpectedException('PHPUnit_Framework_Error_Notice');
         \Hive\Benchmark\Instance::details();
 
     }

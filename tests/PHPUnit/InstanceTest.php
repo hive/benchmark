@@ -86,6 +86,7 @@ class testInstance extends base
     public function testInvalidMark ()
     {
         $this->setExpectedException('PHPUnit_Framework_Error_Warning');
+        //$this->setExpectedException('PHPUnit_Framework_Error_Notice');
 
         \Hive\Benchmark\Instance::start([]);
         \Hive\Benchmark\Instance::stop([]);
@@ -94,7 +95,7 @@ class testInstance extends base
 
     public function testEmptyMarkName ()
     {
-        $this->setExpectedException('PHPUnit_Framework_Error_Warning');
+        $this->setExpectedException('PHPUnit_Framework_Error_Notice');
 
         \Hive\Benchmark\Instance::start();
         \Hive\Benchmark\Instance::stop();
