@@ -12,14 +12,15 @@ PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php
 --------------------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 2 LINES
+FOUND 5 ERRORS AFFECTING 4 LINES
 --------------------------------------------------------------------------------------------
- 21 | ERROR | [ ] Expected "function abc(...)"; found "function abc (...)"
- 21 | ERROR | [x] Expected 0 spaces before opening parenthesis; 1 found
- 27 | ERROR | [ ] Expected "function abc(...)"; found "function abc (...)"
- 27 | ERROR | [x] Expected 0 spaces before opening parenthesis; 1 found
+ 47 | ERROR | [x] No space found after comma in function call
+ 59 | ERROR | [x] No space found after comma in function call
+ 71 | ERROR | [ ] Expected "function abc(...)"; found "function abc (...)"
+ 71 | ERROR | [x] Expected 0 spaces before opening parenthesis; 1 found
+ 92 | ERROR | [x] The closing brace for the class must go on the next line after the body
 --------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 --------------------------------------------------------------------------------------------
 
 

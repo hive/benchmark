@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1508507297">
-  <project timestamp="1508507297">
+<coverage generated="1508508978">
+  <project timestamp="1508508978">
     <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Contract/Instance.php">
       <metrics loc="24" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -22,19 +22,32 @@
       </file>
       <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Facade/Trace.php">
         <class name="Trace" namespace="Hive\Benchmark" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
-          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+          <metrics methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="23" coveredelements="0"/>
         </class>
-        <line num="21" type="method" name="start" crap="6" count="0"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="25" type="stmt" count="0"/>
-        <line num="27" type="method" name="stop" crap="6" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <metrics loc="32" ncloc="17" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+        <line num="33" type="method" name="start" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="45" type="method" name="stop" crap="2" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="57" type="method" name="get" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="71" type="method" name="name" crap="6" count="0"/>
+        <line num="72" type="stmt" count="0"/>
+        <line num="73" type="stmt" count="0"/>
+        <line num="74" type="stmt" count="0"/>
+        <line num="75" type="stmt" count="0"/>
+        <line num="76" type="stmt" count="0"/>
+        <line num="85" type="method" name="trace" crap="2" count="0"/>
+        <line num="86" type="stmt" count="0"/>
+        <line num="87" type="stmt" count="0"/>
+        <line num="89" type="stmt" count="0"/>
+        <line num="90" type="stmt" count="0"/>
+        <metrics loc="92" ncloc="41" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="23" coveredelements="0"/>
       </file>
       <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source/Instance.php">
         <class name="Instance" namespace="Hive\Benchmark" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
@@ -271,6 +284,6 @@
         <metrics loc="47" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
     </package>
-    <metrics files="12" loc="974" ncloc="426" classes="9" methods="27" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="176" coveredstatements="155" elements="203" coveredelements="176"/>
+    <metrics files="12" loc="1034" ncloc="450" classes="9" methods="30" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="186" coveredstatements="155" elements="216" coveredelements="176"/>
   </project>
 </coverage>

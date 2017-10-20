@@ -85,4 +85,4 @@ not having php5.6 support and the unpack.</description>
     </docblock>
   </method>
   </interface>
-</class>
+<extenders><extender full="Hive\Benchmark\Trace" namespace="Hive\Benchmark" name="Trace"/></extenders></class>

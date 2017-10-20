@@ -1,11 +1,11 @@
 <?php namespace Hive\Benchmark;
 
 /**
- * Benchmark Instance.
+ * Benchmark Trace Facade.
  *
- * Allows access to the benchmark object through a instance as a singleton.
- *
- * @todo remove methods and add __callStatic, direct access to the object
+ * Allows access to the benchmark instance with auto tracing,
+ * this will basically trace where the benchmark was called from and prepend
+ * that to the name of the mark. If no name is used it defaults to the trace itself.
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)
@@ -18,15 +18,75 @@
 class Trace extends Instance
 {
 
-    public static function start ($name = false, $separator = '.')
+    /**
+     * Default namespace/class/method separator
+     */
+    const DEFAULT_SEPARATOR = '.';
+
+
+    /**
+     * Start a benchmark trace
+     *
+     * @param bool   $name
+     * @param string $separator
+     */
+    public static function start($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
-        $name = ($name) ? $separator . $name : $name;
-        self::method('start', 4, $name);
+        parent::start(self::name($name, $separator));
     }
 
-    public static function stop ($name = false, $separator = '.')
+
+    /**
+     * Stop a benchmark trace
+     *
+     * @param bool   $name
+     * @param string $separator
+     */
+    public static function stop($name = false, $separator = self::DEFAULT_SEPARATOR)
+    {
+        parent::stop(self::name($name,$separator));
+    }
+
+
+    /**
+     * Retrieve a benchmark trace
+     *
+     * @param bool   $name
+     * @param string $separator
+     */
+    public static function get($name = false, $separator = self::DEFAULT_SEPARATOR)
+    {
+        parent::get(self::name($name,$separator));
+    }
+
+
+    /**
+     * Returns the name of the current benchmark trace
+     *
+     * @param bool   $name
+     * @param string $separator
+     *
+     * @return bool|string
+     */
+    public static function name ($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
         $name = ($name) ? $separator . $name : $name;
-        self::method('stop', 4, '.' . $name);
+        $name = self::trace(4, $separator) . $name;
+        return $name;
     }
+
+    /**
+     * Simple debug_backtrace to get the name of the method which called.
+     *
+     * @param  int $stack How far in the stacktrace to go back.
+     *
+     * @return string $name   The caller class/method.
+     */
+    private static function trace($stack = 2, $separator = '.')
+    {
+        $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $stack)[$stack - 1];
+
+        return str_replace('\\', $separator, strtolower($caller['class'])) . $separator . $caller['function'];
+    }
+
 }

@@ -71,8 +71,8 @@
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/Source">
       <totals>
-        <lines total="974" comments="548" code="426" executable="176" executed="155" percent="88.07%"/>
-        <methods count="27" tested="21" percent="77.78%"/>
+        <lines total="1034" comments="584" code="450" executable="186" executed="155" percent="83.33%"/>
+        <methods count="30" tested="21" percent="70.00%"/>
         <functions count="0" tested="0" percent=""/>
         <classes count="9" tested="5" percent="55.56%"/>
         <traits count="0" tested="0" percent=""/>
@@ -232,16 +232,16 @@
       </file>
       <directory name="Facade">
         <totals>
-          <lines total="32" comments="15" code="17" executable="8" executed="0" percent="0.00%"/>
-          <methods count="2" tested="0" percent="0.00%"/>
+          <lines total="92" comments="51" code="41" executable="18" executed="0" percent="0.00%"/>
+          <methods count="5" tested="0" percent="0.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="0" percent="0.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
         <file name="Trace.php" href="Facade/Trace.php.xml">
           <totals>
-            <lines total="32" comments="15" code="17" executable="8" executed="0" percent="0.00%"/>
-            <methods count="2" tested="0" percent="0.00%"/>
+            <lines total="92" comments="51" code="41" executable="18" executed="0" percent="0.00%"/>
+            <methods count="5" tested="0" percent="0.00%"/>
             <functions count="0" tested="0" percent=""/>
             <classes count="1" tested="0" percent="0.00%"/>
             <traits count="0" tested="0" percent=""/>
@@ -250,8 +250,8 @@
       </directory>
       <file name="Trace.php" href="Facade/Trace.php.xml">
         <totals>
-          <lines total="32" comments="15" code="17" executable="8" executed="0" percent="0.00%"/>
-          <methods count="2" tested="0" percent="0.00%"/>
+          <lines total="92" comments="51" code="41" executable="18" executed="0" percent="0.00%"/>
+          <methods count="5" tested="0" percent="0.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="0" percent="0.00%"/>
           <traits count="0" tested="0" percent=""/>

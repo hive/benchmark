@@ -4,12 +4,12 @@ PHP CODE SNIFFER REPORT SUMMARY
 FILE                                                                        ERRORS  WARNINGS
 --------------------------------------------------------------------------------------------
 ...end/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php  2       0
-...var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php  4       0
+...var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php  5       0
 .../zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Object.php  1       0
 --------------------------------------------------------------------------------------------
-A TOTAL OF 7 ERRORS AND 0 WARNINGS WERE FOUND IN 12 FILES
+A TOTAL OF 8 ERRORS AND 0 WARNINGS WERE FOUND IN 12 FILES
 --------------------------------------------------------------------------------------------
-PHPCBF CAN FIX 4 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX 6 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 --------------------------------------------------------------------------------------------
 
 

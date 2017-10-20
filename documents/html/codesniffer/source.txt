@@ -3,13 +3,15 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 --------------------------------------------------------------------------------------------
     STANDARD  CATEGORY            SNIFF                                                COUNT
 --------------------------------------------------------------------------------------------
-[x] Squiz     Functions           Multi line function declaration space before open p  3
-[ ] Squiz     Functions           Function declaration                                 3
+[x] Squiz     Functions           Multi line function declaration space before open p  2
+[x] Generic   Functions           Function call argument spacing no space after comma  2
+[ ] Squiz     Functions           Function declaration                                 2
 [x] Squiz     White space         Control structure spacing spacing before close       1
+[x] PSR2      Classes             Class declaration close brace after body             1
 --------------------------------------------------------------------------------------------
-A TOTAL OF 7 SNIFF VIOLATIONS WERE FOUND IN 3 SOURCES
+A TOTAL OF 8 SNIFF VIOLATIONS WERE FOUND IN 5 SOURCES
 --------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (4 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 4 MARKED SOURCES AUTOMATICALLY (6 VIOLATIONS IN TOTAL)
 --------------------------------------------------------------------------------------------
 
 

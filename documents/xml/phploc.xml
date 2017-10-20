@@ -2,14 +2,14 @@
 <phploc>
   <directories>3</directories>
   <files>12</files>
-  <loc>974</loc>
-  <lloc>121</lloc>
-  <llocClasses>105</llocClasses>
+  <loc>1034</loc>
+  <lloc>126</lloc>
+  <llocClasses>110</llocClasses>
   <llocFunctions>0</llocFunctions>
   <llocGlobal>16</llocGlobal>
-  <cloc>512</cloc>
-  <ccn>31</ccn>
-  <ccnMethods>31</ccnMethods>
+  <cloc>548</cloc>
+  <ccn>30</ccn>
+  <ccnMethods>30</ccnMethods>
   <interfaces>3</interfaces>
   <traits>0</traits>
   <classes>9</classes>
@@ -18,20 +18,20 @@
   <functions>0</functions>
   <namedFunctions>0</namedFunctions>
   <anonymousFunctions>0</anonymousFunctions>
-  <methods>33</methods>
-  <publicMethods>28</publicMethods>
-  <nonPublicMethods>5</nonPublicMethods>
+  <methods>36</methods>
+  <publicMethods>30</publicMethods>
+  <nonPublicMethods>6</nonPublicMethods>
   <nonStaticMethods>24</nonStaticMethods>
-  <staticMethods>9</staticMethods>
-  <constants>10</constants>
-  <classConstants>10</classConstants>
+  <staticMethods>12</staticMethods>
+  <constants>11</constants>
+  <classConstants>11</classConstants>
   <globalConstants>0</globalConstants>
   <testClasses>0</testClasses>
   <testMethods>0</testMethods>
-  <ccnByLloc>0.25619834710744</ccnByLloc>
+  <ccnByLloc>0.23809523809524</ccnByLloc>
   <llocByNof>0</llocByNof>
-  <methodCalls>33</methodCalls>
-  <staticMethodCalls>16</staticMethodCalls>
+  <methodCalls>38</methodCalls>
+  <staticMethodCalls>21</staticMethodCalls>
   <instanceMethodCalls>17</instanceMethodCalls>
   <attributeAccesses>30</attributeAccesses>
   <staticAttributeAccesses>7</staticAttributeAccesses>
@@ -41,17 +41,17 @@
   <superGlobalVariableAccesses>0</superGlobalVariableAccesses>
   <globalConstantAccesses>0</globalConstantAccesses>
   <classCcnMin>1</classCcnMin>
-  <classCcnAvg>3.5833333333333</classCcnAvg>
+  <classCcnAvg>3.5</classCcnAvg>
   <classCcnMax>16</classCcnMax>
   <classLlocMin>1</classLlocMin>
-  <classLlocAvg>8.75</classLlocAvg>
+  <classLlocAvg>9.1666666666667</classLlocAvg>
   <classLlocMax>34</classLlocMax>
   <methodCcnMin>1</methodCcnMin>
-  <methodCcnAvg>2.1481481481481</methodCcnAvg>
+  <methodCcnAvg>2</methodCcnAvg>
   <methodCcnMax>10</methodCcnMax>
   <methodLlocMin>1</methodLlocMin>
-  <methodLlocAvg>3.1111111111111</methodLlocAvg>
+  <methodLlocAvg>2.9333333333333</methodLlocAvg>
   <methodLlocMax>16</methodLlocMax>
   <namespaces>3</namespaces>
-  <ncloc>462</ncloc>
+  <ncloc>486</ncloc>
 </phploc>
