@@ -12,9 +12,9 @@ use Hive\Benchmark;
 
 $config = [
     'enabled'   => true,    // whether or not the benchmark is enabled.
-    'timer'     => true,    // whether or not to benchmark time.
+    'time'     => true,    // whether or not to benchmark time.
     'memory'    => true,    // whether or not to benchmark memory.
-    'decimaals' => 8        // number of decimal points to report on
+    'decimals' => 8        // number of decimal points to report on
 ];
 
 // disabling benchmarking on production servers is easy

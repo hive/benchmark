@@ -116,12 +116,15 @@ class Object extends Library implements Contract\Object
 
             $marks = $this->retrieve($name);
 
+
             // Gather the totals
             foreach ($marks as $mark)
             {
                 $time[] = $mark['time'];
                 $memory[] = $mark['memory'];
             }
+
+
 
             $result = [
                 'count'  => count($time),
@@ -173,12 +176,35 @@ class Object extends Library implements Contract\Object
     {
         // remove any values which are 0
         $values = array_filter($values);
-        return [
-            'total'  => number_format(array_sum($values), $decimals),
-            'min'    => number_format(min($values), $decimals),
-            'max'    => number_format(max($values), $decimals),
-            'mean'   => number_format(array_sum($values) / count($values), $decimals),
-            'median' => number_format($values[round(count($values) / 2) - 1], $decimals),
-        ];
+        try
+        {
+            if (count($values))
+            {
+                return [
+                    'total'  => number_format(array_sum($values), $decimals, '.', ''),
+                    'min'    => number_format(min($values), $decimals, '.', ''),
+                    'max'    => number_format(max($values), $decimals, '.', ''),
+                    'mean'   => number_format(array_sum($values) / count($values), $decimals, '.', ''),
+                    'median' => number_format($values[round(count($values) / 2) - 1], $decimals, '.', ''),
+                ];
+            }
+            else
+            {
+                return [
+                    'total'  => false,
+                    'min'    => false,
+                    'max'    => false,
+                    'mean'   => false,
+                    'median' => false,
+                ];
+            }
+
+        }
+        catch (\Exception $e)
+        {
+
+            throw $e;
+        }
+
     }
 }

@@ -122,11 +122,12 @@ class Instance implements Contract\Instance
      *
      * @param string $action (auto|start|stop) auto will determine whether to start or stop.
      * @param int $stack     how far in the stacktrace to go back.
+     * @param string $append any additional text to append to the method.
      */
-    public static function method($action = 'auto', $stack = 3)
+    public static function method($action = 'auto', $stack = 3, $append = '')
     {
         // Get the name of the caller method
-        $name = self::trace($stack);
+        $name = self::trace($stack) . $append;
 
         /**
          * If its an auto, find out what method to run.
