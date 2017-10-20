@@ -16,15 +16,19 @@
     <coverage>
       <line nr="40">
         <covered by="testInstance::testChangeConfig"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="41">
         <covered by="testInstance::testChangeConfig"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="43">
         <covered by="testInstance::testChangeConfig"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="44">
         <covered by="testInstance::testChangeConfig"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
     </coverage>
   </file>

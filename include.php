@@ -5,18 +5,22 @@
      */
 
     // Include the contracts
-    include 'Source/Contract/Library.php';
-    include 'Source/Contract/Object.php';
-    include 'Source/Contract/Instance.php';
+    include 'source/Contract/Library.php';
+    include 'source/Contract/Object.php';
+    include 'source/Contract/Instance.php';
 
     // Include the source files
-    include 'Source/Library.php';
-    include 'Source/Object.php';
-    include 'Source/Instance.php';
+    include 'source/Library.php';
+    include 'source/Object.php';
+    include 'source/Instance.php';
+
+    //Include Facades
+    include 'source/Facade/Trace.php';
 
     // Include the exceptions
-    include 'Source/Exception.php';
-    include 'Source/Exception/NotRunning.php';
-    include 'Source/Exception/StoppedRunning.php';
-    include 'Source/Exception/DoesNotExist.php';
-    include 'Source/Exception/AlreadyInitiated.php';
+    include 'source/Exception.php';
+    include 'source/Exception/NotRunning.php';
+    include 'source/Exception/StoppedRunning.php';
+    include 'source/Exception/DoesNotExist.php';
+    include 'source/Exception/AlreadyInitiated.php';
+    include 'source/Exception/BadMethodCall.php';

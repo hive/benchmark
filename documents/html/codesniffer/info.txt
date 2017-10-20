@@ -1,43 +1,44 @@
 
 PHP CODE SNIFFER INFORMATION REPORT
 ----------------------------------------------------------------------
-CamelCase class name: yes [12/12, 100%]
+CamelCase class name: yes [13/13, 100%]
 
 CamelCase method name: yes [28/28, 100%]
 
-Class defined in namespace: yes [12/12, 100%]
+Class defined in namespace: yes [13/13, 100%]
 
-Class opening brace placement: new line [12/12, 100%]
+Class opening brace placement: new line [13/13, 100%]
 
-Constant name case: upper [11/11, 100%]
+Constant name case: upper [13/13, 100%]
 
 Control structure defined inline: no [28/28, 100%]
 
-Declarations and side effects mixed: no [12/12, 100%]
+Declarations and side effects mixed: no [13/13, 100%]
 
-EOL char: \n [12/12, 100%]
+EOL char: \n [13/13, 100%]
 
-Function opening brace placement: new line [30/30, 100%]
+Function opening brace placement: new line [31/31, 100%]
 
-Line indent: spaces [703/703, 100%]
+Line indent: spaces [726/726, 100%]
 
-Line length: 80 or less [890/928, 95.91%]
-	81-120 => 35 (3.77%)
-	121-150 => 3 (0.32%)
+Line length: 80 or less [928/969, 95.77%]
+	81-120 => 38 (3.92%)
+	121-150 => 3 (0.31%)
 
-Multiple statements on same line: no [124/124, 100%]
+Multiple statements on same line: no [132/132, 100%]
 
-Number of newlines at EOF: 1 [12/12, 100%]
+Number of newlines at EOF: 1 [12/13, 92.31%]
+	0 => 1 (7.69%)
 
-One class per file: yes [12/12, 100%]
+One class per file: yes [13/13, 100%]
 
-PHP closing tag at end of PHP-only file: no [12/12, 100%]
+PHP closing tag at end of PHP-only file: no [13/13, 100%]
 
-PHP constant case: lower [19/19, 100%]
+PHP constant case: lower [20/20, 100%]
 
-PHP keyword case: lower [222/222, 100%]
+PHP keyword case: lower [231/231, 100%]
 
-PHP short open tag used: no [12/12, 100%]
+PHP short open tag used: no [13/13, 100%]
 
 Spaces after control structure open parenthesis: 0 [26/26, 100%]
 

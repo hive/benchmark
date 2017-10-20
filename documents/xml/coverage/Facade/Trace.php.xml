@@ -2,20 +2,105 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Trace.php">
     <totals>
-      <lines total="92" comments="51" code="41" executable="18" executed="0" percent="0.00%"/>
-      <methods count="5" tested="0" percent="0.00%"/>
+      <lines total="92" comments="51" code="41" executable="11" executed="9" percent="81.82%"/>
+      <methods count="5" tested="4" percent="80.00%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Trace" start="18" executable="18" executed="0" crap="42">
+    <class name="Trace" start="18" executable="11" executed="9" crap="6.22">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark"/>
-      <method name="start" signature="start($name = false, $separator = self::DEFAULT_SEPARATOR)" start="33" end="36" crap="2" executable="3" executed="0" coverage="0"/>
-      <method name="stop" signature="stop($name = false, $separator = self::DEFAULT_SEPARATOR)" start="45" end="48" crap="2" executable="3" executed="0" coverage="0"/>
-      <method name="get" signature="get($name = false, $separator = self::DEFAULT_SEPARATOR)" start="57" end="60" crap="2" executable="3" executed="0" coverage="0"/>
-      <method name="name" signature="name ($name = false, $separator = self::DEFAULT_SEPARATOR)" start="71" end="76" crap="6" executable="5" executed="0" coverage="0"/>
-      <method name="trace" signature="trace($stack = 2, $separator = '.')" start="85" end="90" crap="2" executable="4" executed="0" coverage="0"/>
+      <method name="start" signature="start($name = false, $separator = self::DEFAULT_SEPARATOR)" start="33" end="36" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="stop" signature="stop($name = false, $separator = self::DEFAULT_SEPARATOR)" start="45" end="48" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="get" signature="get($name = false, $separator = self::DEFAULT_SEPARATOR)" start="57" end="60" crap="2" executable="2" executed="0" coverage="0"/>
+      <method name="name" signature="name ($name = false, $separator = self::DEFAULT_SEPARATOR)" start="71" end="76" crap="2" executable="3" executed="3" coverage="100"/>
+      <method name="trace" signature="trace($stack = 2, $separator = '.')" start="85" end="90" crap="1" executable="2" executed="2" coverage="100"/>
     </class>
+    <coverage>
+      <line nr="35">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testInvalidMark"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="36">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="47">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="48">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="73">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testInvalidMark"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="74">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testInvalidMark"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="75">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="87">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testInvalidMark"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="89">
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testInvalidMark"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+    </coverage>
   </file>
 </phpunit>

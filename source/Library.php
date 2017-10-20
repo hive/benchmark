@@ -189,7 +189,7 @@ class Library implements Contract\Library
     {
 
         // Initialise the variables
-        $memory = false;
+
         $results = [];
 
         try
@@ -204,31 +204,31 @@ class Library implements Contract\Library
                  */
                 for ($i = 0; $i < count($this->marks[$name]); $i++)
                 {
+                    // Default the results to false, if they haven't been stopped or the time/memory is disabled
+                    $memory = false;
+                    $time = false;
+
                     // Just an alias
                     $mark = &$this->marks[$name][$i];
 
                     // If the mark has not been stopped, don't report.
-                    $time = isset($mark['time']['stop']) ? $mark['time']['stop'] - $mark['time']['start'] : (int)0;
+                    if (isset($mark['time']['stop']))
+                    {
+                        $time = $mark['time']['stop'] - $mark['time']['start'];
+                    }
 
-                    // If the mark has not been stopped, don't report.
-                    $memory = isset($mark['memory']['stop']) ? $mark['memory']['stop'] - $mark['memory']['start'] : 0;
+                    if (isset($mark['memory']['stop']))
+                    {
+                        $memory = $mark['memory']['stop'] - $mark['memory']['start'];
+                    }
 
                     // Sanity check against the memory in case it was a minor benchmark and there was a garbage collection during the running.
                     $memory = ($memory > 1) ? $memory : 0;
 
+                    // Dont forget $time, $memory are false unless otherwise specified
                     $result['count'] = count($this->marks[$name]);
-
-                    // If time has been assigned
-                    if ($this->config['time'])
-                    {
-                        $result['time'] = $time;
-                    }
-
-                    // If memory has been assigned
-                    if ($this->config['memory'])
-                    {
-                        $result['memory'] = $memory;
-                    }
+                    $result['time'] = $time;
+                    $result['memory'] = $memory;
 
                     $results[] = $result;
                 }

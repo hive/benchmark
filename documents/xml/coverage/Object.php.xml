@@ -81,6 +81,7 @@
         <covered by="testObject::testEmptyMarkName"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
       </line>
       <line nr="42">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -143,6 +144,7 @@
         <covered by="testObject::testEmptyMarkName"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
       </line>
       <line nr="43">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -205,6 +207,7 @@
         <covered by="testObject::testEmptyMarkName"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
       </line>
       <line nr="55">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -251,6 +254,12 @@
         <covered by="testObject::testConfigEnabledFalse"/>
         <covered by="testObject::testInvalidMark"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="56">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -297,6 +306,12 @@
         <covered by="testObject::testConfigEnabledFalse"/>
         <covered by="testObject::testInvalidMark"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="57">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -335,6 +350,12 @@
         <covered by="testObject::testMultipleDifferentStartStop"/>
         <covered by="testObject::testInvalidMark"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="58">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -369,6 +390,12 @@
         <covered by="testObject::testMultipleStartStop"/>
         <covered by="testObject::testMultipleDifferentStartStop"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="59">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -411,6 +438,12 @@
         <covered by="testObject::testMultipleDifferentStartStop"/>
         <covered by="testObject::testConfigEnabledFalse"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="71">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -453,6 +486,13 @@
         <covered by="testObject::testConfigEnabledFalse"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="72">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -495,6 +535,13 @@
         <covered by="testObject::testConfigEnabledFalse"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="73">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -529,6 +576,13 @@
         <covered by="testObject::testMultipleDifferentStartStop"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="74">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -561,6 +615,12 @@
         <covered by="testObject::testMultipleStartStop"/>
         <covered by="testObject::testMultipleDifferentStartStop"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="75">
         <covered by="testInstanceDetails::testStartStop"/>
@@ -601,6 +661,12 @@
         <covered by="testObject::testMultipleDifferentStartStop"/>
         <covered by="testObject::testConfigEnabledFalse"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="87">
         <covered by="testInstanceDetails::testStartStop"/>

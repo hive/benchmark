@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Library.php" size="6811" time="2017-10-21T00:34:12+11:00" unixtime="1508506452" sha1="59ba308beb6002ef677ef0e36c2ab0f46651b9e2" relative="Library.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Library.php" size="6824" time="2017-10-21T02:26:33+11:00" unixtime="1508513193" sha1="914762281f2d47431573c10ffbd13b6174a0d4a4" relative="Library.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -965,15 +965,7 @@
     <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// Initialise the variables</token>
   </line>
-  <line no="192">
-    <token name="T_WHITESPACE">        </token>
-    <token name="T_VARIABLE">$memory</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_EQUAL">=</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">false</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
+  <line no="192"/>
   <line no="193">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$results</token>
@@ -1067,9 +1059,32 @@
   </line>
   <line no="207">
     <token name="T_WHITESPACE">                    </token>
-    <token name="T_COMMENT">// Just an alias</token>
+    <token name="T_COMMENT">// Default the results to false, if they haven't been stopped or the time/memory is disabled</token>
   </line>
   <line no="208">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_VARIABLE">$memory</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="209">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_VARIABLE">$time</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="210"/>
+  <line no="211">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_COMMENT">// Just an alias</token>
+  </line>
+  <line no="212">
     <token name="T_WHITESPACE">                    </token>
     <token name="T_VARIABLE">$mark</token>
     <token name="T_WHITESPACE"> </token>
@@ -1087,30 +1102,38 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="209"/>
-  <line no="210">
+  <line no="213"/>
+  <line no="214">
     <token name="T_WHITESPACE">                    </token>
     <token name="T_COMMENT">// If the mark has not been stopped, don't report.</token>
   </line>
-  <line no="211">
+  <line no="215">
     <token name="T_WHITESPACE">                    </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ISSET">isset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$mark</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'time'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'stop'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="216">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="217">
+    <token name="T_WHITESPACE">                        </token>
     <token name="T_VARIABLE">$time</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_ISSET">isset</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$mark</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'time'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'stop'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_QUESTION_MARK">?</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$mark</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'time'</token>
@@ -1128,37 +1151,40 @@
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'start'</token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_COLON">:</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_INT_CAST">(int)</token>
-    <token name="T_LNUMBER">0</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="212"/>
-  <line no="213">
+  <line no="218">
     <token name="T_WHITESPACE">                    </token>
-    <token name="T_COMMENT">// If the mark has not been stopped, don't report.</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="214">
+  <line no="219"/>
+  <line no="220">
     <token name="T_WHITESPACE">                    </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ISSET">isset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$mark</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'memory'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'stop'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="221">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="222">
+    <token name="T_WHITESPACE">                        </token>
     <token name="T_VARIABLE">$memory</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_ISSET">isset</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$mark</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'memory'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'stop'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_QUESTION_MARK">?</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$mark</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'memory'</token>
@@ -1176,18 +1202,18 @@
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'start'</token>
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_COLON">:</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">0</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="215"/>
-  <line no="216">
+  <line no="223">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="224"/>
+  <line no="225">
     <token name="T_WHITESPACE">                    </token>
     <token name="T_COMMENT">// Sanity check against the memory in case it was a minor benchmark and there was a garbage collection during the running.</token>
   </line>
-  <line no="217">
+  <line no="226">
     <token name="T_WHITESPACE">                    </token>
     <token name="T_VARIABLE">$memory</token>
     <token name="T_WHITESPACE"> </token>
@@ -1210,8 +1236,12 @@
     <token name="T_LNUMBER">0</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="218"/>
-  <line no="219">
+  <line no="227"/>
+  <line no="228">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_COMMENT">// Dont forget $time, $memory are false unless otherwise specified</token>
+  </line>
+  <line no="229">
     <token name="T_WHITESPACE">                    </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
@@ -1231,30 +1261,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="220"/>
-  <line no="221">
+  <line no="230">
     <token name="T_WHITESPACE">                    </token>
-    <token name="T_COMMENT">// If time has been assigned</token>
-  </line>
-  <line no="222">
-    <token name="T_WHITESPACE">                    </token>
-    <token name="T_IF">if</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">config</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'time'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-  </line>
-  <line no="223">
-    <token name="T_WHITESPACE">                    </token>
-    <token name="T_PHPDOX_OPEN_CURLY">{</token>
-  </line>
-  <line no="224">
-    <token name="T_WHITESPACE">                        </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'time'</token>
@@ -1265,34 +1273,8 @@
     <token name="T_VARIABLE">$time</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="225">
+  <line no="231">
     <token name="T_WHITESPACE">                    </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
-  </line>
-  <line no="226"/>
-  <line no="227">
-    <token name="T_WHITESPACE">                    </token>
-    <token name="T_COMMENT">// If memory has been assigned</token>
-  </line>
-  <line no="228">
-    <token name="T_WHITESPACE">                    </token>
-    <token name="T_IF">if</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">config</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'memory'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-  </line>
-  <line no="229">
-    <token name="T_WHITESPACE">                    </token>
-    <token name="T_PHPDOX_OPEN_CURLY">{</token>
-  </line>
-  <line no="230">
-    <token name="T_WHITESPACE">                        </token>
     <token name="T_VARIABLE">$result</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'memory'</token>
@@ -1302,10 +1284,6 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$memory</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="231">
-    <token name="T_WHITESPACE">                    </token>
-    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
   <line no="232"/>
   <line no="233">

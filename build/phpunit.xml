@@ -8,7 +8,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory>../Source</directory>
+            <directory>../source</directory>
             <exclude>
                 <directory>../build</directory>
                 <directory>../documents</directory>
@@ -21,7 +21,7 @@
     <logging>
         <log
                 type="coverage-html"
-                target="../Documents/html/coverage"
+                target="../documents/html/coverage"
                 charset="UTF-8"
                 yui="true"
                 highlight="true"

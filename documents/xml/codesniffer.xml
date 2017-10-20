@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpcs version="2.6.1">
-<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" errors="2" warnings="0" fixable="1">
+<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" errors="3" warnings="0" fixable="2">
  <error line="33" column="19" source="Squiz.Functions.FunctionDeclaration" severity="5" fixable="0">Expected &quot;function abc(...)&quot;; found &quot;function abc (...)&quot;</error>
  <error line="33" column="41" source="Squiz.Functions.MultiLineFunctionDeclaration.SpaceBeforeOpenParen" severity="5" fixable="1">Expected 0 spaces before opening parenthesis; 1 found</error>
+ <error line="41" column="52" source="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma" severity="5" fixable="1">Expected 1 space after comma in function call; 2 found</error>
 </file>
 <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php" errors="5" warnings="0" fixable="4">
  <error line="47" column="38" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma" severity="5" fixable="1">No space found after comma in function call</error>
@@ -13,6 +14,9 @@
 </file>
 <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Object.php" errors="1" warnings="0" fixable="1">
  <error line="201" column="1" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose" severity="5" fixable="1">Blank line found at end of control structure</error>
+</file>
+<file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php" errors="1" warnings="0" fixable="1">
+ <error line="44" column="1" source="PSR2.Files.EndFileNewline.NoneFound" severity="5" fixable="1">Expected 1 newline at end of file; 0 found</error>
 </file>
 </phpcs>
 

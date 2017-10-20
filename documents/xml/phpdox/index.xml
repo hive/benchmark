@@ -5,7 +5,7 @@
     
     
     <class name="Exception" src="Exception.php" description="General Exception Handler." xml="classes/Hive_Benchmark_Exception.xml"/>
-  <class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/><class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/><class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/><class name="Trace" src="Facade/Trace.php" description="Benchmark Trace Facade." xml="classes/Hive_Benchmark_Trace.xml"/></namespace>
+  <class name="Trace" src="Facade/Trace.php" description="Benchmark Trace Facade." xml="classes/Hive_Benchmark_Trace.xml"/><class name="Instance" src="Instance.php" description="Benchmark Instance." xml="classes/Hive_Benchmark_Instance.xml"/><class name="Library" src="Library.php" description="Benchmark Library." xml="classes/Hive_Benchmark_Library.xml"/><class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Benchmark_Object.xml"/></namespace>
   <namespace name="Hive\Benchmark\Contract">
     
     <interface name="Library" src="Contract/Library.php" description="Library Interface." xml="interfaces/Hive_Benchmark_Contract_Library.xml"/>
@@ -16,7 +16,7 @@
     
     
     
-  <class name="AlreadyRunning" src="Exception/AlreadyRunning.php" description="Already Running Exception." xml="classes/Hive_Benchmark_Exception_AlreadyRunning.xml"/><class name="DoesNotExist" src="Exception/DoesNotExist.php" description="Does Not Exist Exception." xml="classes/Hive_Benchmark_Exception_DoesNotExist.xml"/><class name="StoppedRunning" src="Exception/StoppedRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_StoppedRunning.xml"/><class name="NotRunning" src="Exception/NotRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_NotRunning.xml"/><class name="AlreadyInitiated" src="Exception/AlreadyInitiated.php" description="Already Initiated Exception." xml="classes/Hive_Benchmark_Exception_AlreadyInitiated.xml"/></namespace>
+  <class name="AlreadyRunning" src="Exception/AlreadyRunning.php" description="Already Running Exception." xml="classes/Hive_Benchmark_Exception_AlreadyRunning.xml"/><class name="DoesNotExist" src="Exception/DoesNotExist.php" description="Does Not Exist Exception." xml="classes/Hive_Benchmark_Exception_DoesNotExist.xml"/><class name="StoppedRunning" src="Exception/StoppedRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_StoppedRunning.xml"/><class name="NotRunning" src="Exception/NotRunning.php" description="Finished Running Exception." xml="classes/Hive_Benchmark_Exception_NotRunning.xml"/><class name="AlreadyInitiated" src="Exception/AlreadyInitiated.php" description="Already Initiated Exception." xml="classes/Hive_Benchmark_Exception_AlreadyInitiated.xml"/><class name="BadMethodCall" src="Exception/BadMethodCall.php" description="Bad Method Call Exception." xml="classes/Hive_Benchmark_Exception_BadMethodCall.xml"/></namespace>
   <namespace name="">
     <class name="Exception" xml="classes/Exception.xml"/>
   </namespace>

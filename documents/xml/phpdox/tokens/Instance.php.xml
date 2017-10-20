@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="3911" time="2017-10-21T00:20:40+11:00" unixtime="1508505640" sha1="730daf9a554a97e6d8284550ffc17fa59c1ab6fc" relative="Instance.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4037" time="2017-10-21T01:29:14+11:00" unixtime="1508509754" sha1="0617ad51442213f0c7022ec66ae663ad9f3c2981" relative="Instance.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -188,38 +188,60 @@
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="39">
+  <line no="39"/>
+  <line no="40">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Throw a Bad Method call as the method wasn't found.</token>
+  </line>
+  <line no="41">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Exception</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">BadMethodCall</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CLASS_C">__CLASS__</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_VARIABLE">$name</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="42">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="40"/>
-  <line no="41">
+  <line no="43"/>
+  <line no="44">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="42">
+  <line no="45">
     <token name="T_DOC_COMMENT">     * Initialise the instance.</token>
   </line>
-  <line no="43">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
-  <line no="44">
-    <token name="T_DOC_COMMENT">     * Will create the object if it does not exist or return it if previously created.</token>
-  </line>
-  <line no="45">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
   <line no="46">
-    <token name="T_DOC_COMMENT">     * @throws Exception\AlreadyInitiated</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="47">
-    <token name="T_DOC_COMMENT">     * @return \Hive\Benchmark\Object the instance</token>
+    <token name="T_DOC_COMMENT">     * Will create the object if it does not exist or return it if previously created.</token>
   </line>
   <line no="48">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT">     * @throws Exception\AlreadyInitiated</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT">     * @return \Hive\Benchmark\Object the instance</token>
+  </line>
+  <line no="51">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="49"/>
-  <line no="50">
+  <line no="52"/>
+  <line no="53">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -237,11 +259,11 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="51">
+  <line no="54">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="52">
+  <line no="55">
     <token name="T_WHITESPACE">        </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -254,11 +276,11 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="53">
+  <line no="56">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="54">
+  <line no="57">
     <token name="T_WHITESPACE">            </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -274,23 +296,23 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="55">
+  <line no="58">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="56">
+  <line no="59">
     <token name="T_WHITESPACE">        </token>
     <token name="T_ELSE">else</token>
   </line>
-  <line no="57">
+  <line no="60">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="58">
+  <line no="61">
     <token name="T_WHITESPACE">            </token>
     <token name="T_COMMENT">// If the user is attempting to change the config after the object was previously created</token>
   </line>
-  <line no="59">
+  <line no="62">
     <token name="T_WHITESPACE">            </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -301,11 +323,11 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="60">
+  <line no="63">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="61">
+  <line no="64">
     <token name="T_WHITESPACE">                </token>
     <token name="T_THROW">throw</token>
     <token name="T_WHITESPACE"> </token>
@@ -318,15 +340,15 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="62">
+  <line no="65">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="63">
+  <line no="66">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="64">
+  <line no="67">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -335,39 +357,39 @@
     <token name="T_VARIABLE">$object</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="65">
+  <line no="68">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="66"/>
-  <line no="67"/>
-  <line no="68"/>
-  <line no="69">
+  <line no="69"/>
+  <line no="70"/>
+  <line no="71"/>
+  <line no="72">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="70">
-    <token name="T_DOC_COMMENT">     * Static Alias to the Benchmark/Object/Summary.</token>
-  </line>
-  <line no="71">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
-  <line no="72">
-    <token name="T_DOC_COMMENT">     * We use this rather then relying on the __callStatic, due to</token>
-  </line>
   <line no="73">
-    <token name="T_DOC_COMMENT">     * not having php5.6 support and the unpack.</token>
+    <token name="T_DOC_COMMENT">     * Static Alias to the Benchmark/Object/Summary.</token>
   </line>
   <line no="74">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="75">
-    <token name="T_DOC_COMMENT">     * @return array</token>
+    <token name="T_DOC_COMMENT">     * We use this rather then relying on the __callStatic, due to</token>
   </line>
   <line no="76">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * not having php5.6 support and the unpack.</token>
   </line>
   <line no="77">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="78">
+    <token name="T_DOC_COMMENT">     * @return array</token>
+  </line>
+  <line no="79">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="80">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -379,11 +401,11 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="78">
+  <line no="81">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="79">
+  <line no="82">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -398,38 +420,38 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="80">
+  <line no="83">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="81"/>
-  <line no="82"/>
-  <line no="83">
+  <line no="84"/>
+  <line no="85"/>
+  <line no="86">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="84">
+  <line no="87">
     <token name="T_DOC_COMMENT">     * Auto Method for setting benchmarks on a method, with out requiring its name.</token>
   </line>
-  <line no="85">
+  <line no="88">
     <token name="T_DOC_COMMENT">     * or even setting whether to start/stop.</token>
   </line>
-  <line no="86">
+  <line no="89">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
-  <line no="87">
+  <line no="90">
     <token name="T_DOC_COMMENT">     * @param string $action (auto|start|stop) auto will determine whether to start or stop.</token>
   </line>
-  <line no="88">
+  <line no="91">
     <token name="T_DOC_COMMENT">     * @param int $stack     how far in the stacktrace to go back.</token>
   </line>
-  <line no="89">
+  <line no="92">
     <token name="T_DOC_COMMENT">     * @param string $append any additional text to append to the method.</token>
   </line>
-  <line no="90">
+  <line no="93">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="91">
+  <line no="94">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -460,15 +482,15 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="92">
+  <line no="95">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="93">
+  <line no="96">
     <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// Get the name of the caller method</token>
   </line>
-  <line no="94">
+  <line no="97">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_WHITESPACE"> </token>
@@ -486,18 +508,18 @@
     <token name="T_VARIABLE">$append</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="95"/>
-  <line no="96">
+  <line no="98"/>
+  <line no="99">
     <token name="T_WHITESPACE">        </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="97">
+  <line no="100">
     <token name="T_DOC_COMMENT">         * If its an auto, find out what method to run.</token>
   </line>
-  <line no="98">
+  <line no="101">
     <token name="T_DOC_COMMENT">         */</token>
   </line>
-  <line no="99">
+  <line no="102">
     <token name="T_WHITESPACE">        </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -509,24 +531,24 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'auto'</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="100">
+  <line no="103">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="101">
+  <line no="104">
     <token name="T_WHITESPACE">            </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="102">
+  <line no="105">
     <token name="T_DOC_COMMENT">             * We don't have an active benchmark for this method</token>
   </line>
-  <line no="103">
+  <line no="106">
     <token name="T_DOC_COMMENT">             * so it must be a start action.</token>
   </line>
-  <line no="104">
+  <line no="107">
     <token name="T_DOC_COMMENT">             */</token>
   </line>
-  <line no="105">
+  <line no="108">
     <token name="T_WHITESPACE">            </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -543,15 +565,15 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="106">
+  <line no="109">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="107">
+  <line no="110">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Set the benchmark to start()</token>
   </line>
-  <line no="108">
+  <line no="111">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$action</token>
     <token name="T_WHITESPACE"> </token>
@@ -560,12 +582,12 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'start'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="109"/>
-  <line no="110">
+  <line no="112"/>
+  <line no="113">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Add the benchmark to our list of running methods</token>
   </line>
-  <line no="111">
+  <line no="114">
     <token name="T_WHITESPACE">                </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -579,23 +601,23 @@
     <token name="T_STRING">true</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="112">
+  <line no="115">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="113">
+  <line no="116">
     <token name="T_WHITESPACE">            </token>
     <token name="T_ELSE">else</token>
   </line>
-  <line no="114">
+  <line no="117">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="115">
+  <line no="118">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Set the benchmark to stop()</token>
   </line>
-  <line no="116">
+  <line no="119">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$action</token>
     <token name="T_WHITESPACE"> </token>
@@ -604,12 +626,12 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'stop'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="117"/>
-  <line no="118">
+  <line no="120"/>
+  <line no="121">
     <token name="T_WHITESPACE">                </token>
     <token name="T_COMMENT">// Remove the benchmark from our list of running methods</token>
   </line>
-  <line no="119">
+  <line no="122">
     <token name="T_WHITESPACE">                </token>
     <token name="T_UNSET">unset</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -622,20 +644,20 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="120">
+  <line no="123">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="121">
+  <line no="124">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="122"/>
-  <line no="123">
+  <line no="125"/>
+  <line no="126">
     <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// run the action</token>
   </line>
-  <line no="124">
+  <line no="127">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -645,35 +667,35 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="125">
+  <line no="128">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="126"/>
-  <line no="127"/>
-  <line no="128">
+  <line no="129"/>
+  <line no="130"/>
+  <line no="131">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="129">
+  <line no="132">
     <token name="T_DOC_COMMENT">     * Simple debug_backtrace to get the name of the method which called.</token>
   </line>
-  <line no="130">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
-  <line no="131">
-    <token name="T_DOC_COMMENT">     * @param  int $stack How far in the stacktrace to go back.</token>
-  </line>
-  <line no="132">
-    <token name="T_DOC_COMMENT">     *</token>
-  </line>
   <line no="133">
-    <token name="T_DOC_COMMENT">     * @return string $name   The caller class/method.</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="134">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * @param  int $stack How far in the stacktrace to go back.</token>
   </line>
   <line no="135">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="136">
+    <token name="T_DOC_COMMENT">     * @return string $name   The caller class/method.</token>
+  </line>
+  <line no="137">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="138">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
@@ -690,11 +712,11 @@
     <token name="T_LNUMBER">2</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="136">
+  <line no="139">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="137">
+  <line no="140">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$caller</token>
     <token name="T_WHITESPACE"> </token>
@@ -716,7 +738,7 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="138">
+  <line no="141">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -737,22 +759,22 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="139">
+  <line no="142">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="140"/>
-  <line no="141">
+  <line no="143"/>
+  <line no="144">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="142">
+  <line no="145">
     <token name="T_DOC_COMMENT">     * Allows the destruction of the instance, this is used for Unit testing the instance.</token>
   </line>
-  <line no="143">
+  <line no="146">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="144">
+  <line no="147">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -764,11 +786,11 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="145">
+  <line no="148">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="146">
+  <line no="149">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -779,12 +801,12 @@
     <token name="T_STRING">null</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="147">
+  <line no="150">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="148">
+  <line no="151">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="149"/>
+  <line no="152"/>
 </source>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="18" end="148">
-  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="3911" time="2017-10-21T00:20:40+11:00" unixtime="1508505640" sha1="730daf9a554a97e6d8284550ffc17fa59c1ab6fc" relative="Instance.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="18" end="151">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4037" time="2017-10-21T01:29:14+11:00" unixtime="1508509754" sha1="0617ad51442213f0c7022ec66ae663ad9f3c2981" relative="Instance.php"/>
   <docblock>
     <description compact="Benchmark Instance.">Allows access to the benchmark object through a instance as a singleton.</description>
     <todo value="1.0.1.0 add the ability to get the total time."/>
@@ -23,11 +23,14 @@
       <var type="array"/>
     </docblock>
   </member>
-  <method name="__callStatic" start="33" end="39" abstract="false" final="false" static="true" visibility="public">
+  <method name="__callStatic" start="33" end="42" abstract="false" final="false" static="true" visibility="public">
     <parameter name="name" byreference="false" type="{unknown}"/>
     <parameter name="arguments" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Throw a Bad Method call as the method wasn't found." line="40"/>
+    </inline>
   </method>
-  <method name="init" start="50" end="65" abstract="false" final="false" static="true" visibility="public">
+  <method name="init" start="53" end="68" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Initialise the instance.">Will create the object if it does not exist or return it if previously created.</description>
       <throws type="object">
@@ -39,14 +42,14 @@
     </docblock>
     <parameter name="config" byreference="false" type="array" default=""/>
   </method>
-  <method name="summary" start="77" end="80" abstract="false" final="false" static="true" visibility="public">
+  <method name="summary" start="80" end="83" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Static Alias to the Benchmark/Object/Summary.">We use this rather then relying on the __callStatic, due to
 not having php5.6 support and the unpack.</description>
       <return type="array"/>
     </docblock>
   </method>
-  <method name="method" start="91" end="125" abstract="false" final="false" static="true" visibility="public">
+  <method name="method" start="94" end="128" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Auto Method for setting benchmarks on a method, with out requiring its name.">or even setting whether to start/stop.</description>
       <param description="(auto|start|stop) auto will determine whether to start or stop." type="string" variable="$action"/>
@@ -57,12 +60,12 @@ not having php5.6 support and the unpack.</description>
     <parameter name="stack" byreference="false" type="integer" default="3"/>
     <parameter name="append" byreference="false" type="string" default="''"/>
     <inline>
-      <comment value="Get the name of the caller method" line="93"/>
-      <comment value="If its an auto, find out what method to run." line="96"/>
-      <comment value="run the action" line="123"/>
+      <comment value="Get the name of the caller method" line="96"/>
+      <comment value="If its an auto, find out what method to run." line="99"/>
+      <comment value="run the action" line="126"/>
     </inline>
   </method>
-  <method name="trace" start="135" end="139" abstract="false" final="false" static="true" visibility="private">
+  <method name="trace" start="138" end="142" abstract="false" final="false" static="true" visibility="private">
     <docblock>
       <description compact="Simple debug_backtrace to get the name of the method which called."/>
       <param description="How far in the stacktrace to go back." type="int" variable="$stack"/>
@@ -70,7 +73,7 @@ not having php5.6 support and the unpack.</description>
     </docblock>
     <parameter name="stack" byreference="false" type="integer" default="2"/>
   </method>
-  <method name="destroy" start="144" end="147" abstract="false" final="false" static="true" visibility="public">
+  <method name="destroy" start="147" end="150" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Allows the destruction of the instance, this is used for Unit testing the instance."/>
     </docblock>
@@ -85,4 +88,4 @@ not having php5.6 support and the unpack.</description>
     </docblock>
   </method>
   </interface>
-<extenders><extender full="Hive\Benchmark\Trace" namespace="Hive\Benchmark" name="Trace"/></extenders></class>
+</class>

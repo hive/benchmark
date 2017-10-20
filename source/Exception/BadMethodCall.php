@@ -14,7 +14,7 @@
  *
  * @copyright (c) 2017 Jamie Peake
  */
-class BadMethodCall extends \Hive\Locator\Exception
+class BadMethodCall extends \Hive\Benchmark\Exception
 {
     /**
      * Exception code, sequential exception numbers.

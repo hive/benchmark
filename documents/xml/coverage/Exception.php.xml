@@ -29,6 +29,9 @@
         <covered by="testObjectGet::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
       <line nr="43">
         <covered by="testInstanceDetails::testDetailsMarkNameNotRunning"/>
@@ -45,6 +48,9 @@
         <covered by="testObjectGet::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testNotRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
       </line>
     </coverage>
   </file>

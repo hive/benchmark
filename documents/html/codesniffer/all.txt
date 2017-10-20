@@ -1,55 +1,56 @@
 
 [1mPHP CODE SNIFFER INFORMATION REPORT[0m
 ----------------------------------------------------------------------
-CamelCase class name: [4myes[0m [12/12, 100%]
+CamelCase class name: [4myes[0m [13/13, 100%]
 
 CamelCase method name: [4myes[0m [28/28, 100%]
 
-Class defined in namespace: [4myes[0m [12/12, 100%]
+Class defined in namespace: [4myes[0m [13/13, 100%]
 
-Class opening brace placement: [4mnew line[0m [12/12, 100%]
+Class opening brace placement: [4mnew line[0m [13/13, 100%]
 
-Constant name case: [4mupper[0m [11/11, 100%]
+Constant name case: [4mupper[0m [13/13, 100%]
 
 Control structure defined inline: [4mno[0m [28/28, 100%]
 
-Declarations and side effects mixed: [4mno[0m [12/12, 100%]
+Declarations and side effects mixed: [4mno[0m [13/13, 100%]
 
-EOL char: [4m\n[0m [12/12, 100%]
+EOL char: [4m\n[0m [13/13, 100%]
 
-Function opening brace placement: [4mnew line[0m [30/30, 100%]
+Function opening brace placement: [4mnew line[0m [31/31, 100%]
 
-Line indent: [4mspaces[0m [703/703, 100%]
+Line indent: [4mspaces[0m [726/726, 100%]
 
-Line length: [4m80 or less[0m [890/928, 95.91%]
-	81-120 => 35 (3.77%)
-	121-150 => 3 (0.32%)
+Line length: [4m80 or less[0m [928/969, 95.77%]
+	81-120 => 38 (3.92%)
+	121-150 => 3 (0.31%)
 
-Multiple statements on same line: [4mno[0m [124/124, 100%]
+Multiple statements on same line: [4mno[0m [132/132, 100%]
 
-Number of newlines at EOF: [4m1[0m [12/12, 100%]
+Number of newlines at EOF: [4m1[0m [12/13, 92.31%]
+	0 => 1 (7.69%)
 
-One class per file: [4myes[0m [12/12, 100%]
+One class per file: [4myes[0m [13/13, 100%]
 
-PHP closing tag at end of PHP-only file: [4mno[0m [12/12, 100%]
+PHP closing tag at end of PHP-only file: [4mno[0m [13/13, 100%]
 
-PHP constant case: [4mlower[0m [19/19, 100%]
+PHP constant case: [4mlower[0m [20/20, 100%]
 
-PHP keyword case: [4mlower[0m [222/222, 100%]
+PHP keyword case: [4mlower[0m [231/231, 100%]
 
-PHP short open tag used: [4mno[0m [12/12, 100%]
+PHP short open tag used: [4mno[0m [13/13, 100%]
 
 Spaces after control structure open parenthesis: [4m0[0m [26/26, 100%]
 
 Spaces before control structure close parenthesis: [4m0[0m [26/26, 100%]
 
 ----------------------------------------------------------------------
-Time: 388ms; Memory: 7.25Mb
+Time: 376ms; Memory: 7.25Mb
 
 
 [1mFILE: .../apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php[0m
 ----------------------------------------------------------------------
-[1mFOUND 11 ERRORS AFFECTING 10 LINES[0m
+[1mFOUND 12 ERRORS AFFECTING 11 LINES[0m
 ----------------------------------------------------------------------
   33 | [31mERROR[0m | [ ] Expected "function abc(...)"; found "function abc
      |       |     (...)"
@@ -57,22 +58,24 @@ Time: 388ms; Memory: 7.25Mb
      |       |     found
   35 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
-  52 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     9
-  55 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
+  41 | [31mERROR[0m | [x] Expected 1 space after comma in function call; 2
      |       |     found
-  56 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
-  59 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     13
-  99 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+  55 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
- 105 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
-     |       |     13
- 112 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
+  58 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
      |       |     found
- 113 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+  59 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+  62 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+     |       |     13
+ 102 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+     |       |     9
+ 108 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+     |       |     13
+ 115 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
+     |       |     found
+ 116 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+[1mPHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
 
@@ -112,12 +115,12 @@ Time: 388ms; Memory: 7.25Mb
      |         |     found 13
  205 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 17
- 216 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 142
+ 215 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 21
+ 220 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 21
+ 225 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 142
      |         |     characters
- 222 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
-     |         |     found 21
- 228 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
-     |         |     found 21
  235 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
  236 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
@@ -192,6 +195,16 @@ Time: 388ms; Memory: 7.25Mb
 ----------------------------------------------------------------------
 
 
+[1mFILE: ...ent.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 44 | [31mERROR[0m | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
 [1mFILE: ....dev/vendor/hive/benchmark/source/Exception/AlreadyInitiated.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
@@ -199,7 +212,7 @@ Time: 388ms; Memory: 7.25Mb
  31 | [33mWARNING[0m | Line exceeds 120 characters; contains 139 characters
 ----------------------------------------------------------------------
 
-Time: 389ms; Memory: 7.25Mb
+Time: 377ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -214,30 +227,33 @@ Time: 389ms; Memory: 7.25Mb
 [x] Generic   Functions           Function call argument spacin  2
 [ ] Squiz     Functions           Function declaration           2
 [x] Squiz     White space         Control structure spacing spa  1
+[x] PSR2      Files               End file newline none found    1
 [x] PSR2      Classes             Class declaration close brace  1
+[x] Generic   Functions           Function call argument spacin  1
 ----------------------------------------------------------------------
-[1mA TOTAL OF 60 SNIFF VIOLATIONS WERE FOUND IN 9 SOURCES[0m
+[1mA TOTAL OF 62 SNIFF VIOLATIONS WERE FOUND IN 11 SOURCES[0m
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 7 MARKED SOURCES AUTOMATICALLY (55 VIOLATIONS IN TOTAL)[0m
+[1mPHPCBF CAN FIX THE 9 MARKED SOURCES AUTOMATICALLY (57 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 389ms; Memory: 7.25Mb
+Time: 377ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
 ----------------------------------------------------------------------
 [1mFILE                                                  ERRORS  WARNINGS[0m
 ----------------------------------------------------------------------
-...ent.dev/vendor/hive/benchmark/source/Instance.php  [31m11[0m      0
+...ent.dev/vendor/hive/benchmark/source/Instance.php  [31m12[0m      0
 ...tent.dev/vendor/hive/benchmark/source/Library.php  [31m23[0m      [33m2[0m
 ...dev/vendor/hive/benchmark/source/Facade/Trace.php  [31m5[0m       0
 ...ntent.dev/vendor/hive/benchmark/source/Object.php  [31m18[0m      0
+...hive/benchmark/source/Exception/BadMethodCall.php  [31m1[0m       0
 ...e/benchmark/source/Exception/AlreadyInitiated.php  0       [33m1[0m
 ----------------------------------------------------------------------
-[1mA TOTAL OF 57 ERRORS AND 3 WARNINGS WERE FOUND IN 12 FILES[0m
+[1mA TOTAL OF 59 ERRORS AND 3 WARNINGS WERE FOUND IN 13 FILES[0m
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX 55 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
+[1mPHPCBF CAN FIX 57 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 389ms; Memory: 7.25Mb
+Time: 378ms; Memory: 7.25Mb
 

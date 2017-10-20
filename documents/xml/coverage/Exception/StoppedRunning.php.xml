@@ -17,18 +17,22 @@
       <line nr="42">
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
       </line>
       <line nr="43">
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
       </line>
       <line nr="45">
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
       </line>
       <line nr="46">
         <covered by="testInstance::testStoppedRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTrace::testStoppedRunningException"/>
       </line>
     </coverage>
   </file>

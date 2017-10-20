@@ -1,17 +1,19 @@
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
---------------------------------------------------------------------------------------------
-    STANDARD  CATEGORY            SNIFF                                                COUNT
---------------------------------------------------------------------------------------------
-[x] Squiz     Functions           Multi line function declaration space before open p  2
-[x] Generic   Functions           Function call argument spacing no space after comma  2
-[ ] Squiz     Functions           Function declaration                                 2
-[x] Squiz     White space         Control structure spacing spacing before close       1
-[x] PSR2      Classes             Class declaration close brace after body             1
---------------------------------------------------------------------------------------------
-A TOTAL OF 8 SNIFF VIOLATIONS WERE FOUND IN 5 SOURCES
---------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 4 MARKED SOURCES AUTOMATICALLY (6 VIOLATIONS IN TOTAL)
---------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+    STANDARD  CATEGORY            SNIFF                                                      COUNT
+--------------------------------------------------------------------------------------------------
+[x] Squiz     Functions           Multi line function declaration space before open paren    2
+[x] Generic   Functions           Function call argument spacing no space after comma        2
+[ ] Squiz     Functions           Function declaration                                       2
+[x] Squiz     White space         Control structure spacing spacing before close             1
+[x] PSR2      Files               End file newline none found                                1
+[x] PSR2      Classes             Class declaration close brace after body                   1
+[x] Generic   Functions           Function call argument spacing too much space after comma  1
+--------------------------------------------------------------------------------------------------
+A TOTAL OF 10 SNIFF VIOLATIONS WERE FOUND IN 7 SOURCES
+--------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 6 MARKED SOURCES AUTOMATICALLY (8 VIOLATIONS IN TOTAL)
+--------------------------------------------------------------------------------------------------
 
 
