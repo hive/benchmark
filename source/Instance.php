@@ -5,7 +5,6 @@
  *
  * Allows access to the benchmark object through a instance as a singleton.
  *
- * @todo 1.0.1.0 remove methods and add __callStatic, direct access to the object
  * @todo 1.0.1.0 add the ability to get the total time.
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
@@ -31,6 +30,14 @@ class Instance implements Contract\Instance
      */
     private static $methods = [];
 
+    public static function __callStatic ($name, $arguments)
+    {
+        if (method_exists(self::init(), $name))
+        {
+            self::init()->$name($arguments[0]);
+        }
+    }
+
     /**
      * Initialise the instance.
      *
@@ -54,60 +61,16 @@ class Instance implements Contract\Instance
                 throw new Exception\AlreadyInitiated();
             }
         }
-
         return self::$object;
     }
 
-    /**
-     * Static Alias to the Benchmark/Object/Start.
-     *
-     * @param  string $name The benchmark to start.
-     *
-     * @return void
-     */
-    public static function start($name)
-    {
-        self::init()->start($name);
-    }
 
-    /**
-     * Static Alias to the Benchmark/Object/Stop.
-     *
-     * @param  string $name The benchmark to stop.
-     *
-     * @return void
-     */
-    public static function stop($name)
-    {
-        self::init()->stop($name);
-    }
-
-    /**
-     * Static Alias to the Benchmark/Object/Details.
-     *
-     * @param  string $name The benchmark to get
-     *
-     * @return array details
-     */
-    public static function details($name)
-    {
-        return self::init()->details($name);
-    }
-
-    /**
-     * Static Alias to the Benchmark/Object/Get.
-     *
-     * @param  string $name The benchmark to get a summary of.
-     *
-     * @return array
-     */
-    public static function get($name)
-    {
-        return self::init()->get($name);
-    }
 
     /**
      * Static Alias to the Benchmark/Object/Summary.
+     *
+     * We use this rather then relying on the __callStatic, due to
+     * not having php5.6 support and the unpack.
      *
      * @return array
      */
@@ -123,11 +86,12 @@ class Instance implements Contract\Instance
      *
      * @param string $action (auto|start|stop) auto will determine whether to start or stop.
      * @param int $stack     how far in the stacktrace to go back.
+     * @param string $append any additional text to append to the method.
      */
-    public static function method($action = 'auto', $stack = 3)
+    public static function method($action = 'auto', $stack = 3, $append = '')
     {
         // Get the name of the caller method
-        $name = self::trace($stack);
+        $name = self::trace($stack) . $append;
 
         /**
          * If its an auto, find out what method to run.
@@ -136,7 +100,7 @@ class Instance implements Contract\Instance
         {
             /**
              * We don't have an active benchmark for this method
-             * so it much be a start action.
+             * so it must be a start action.
              */
             if (!isset(self::$methods[$name]))
             {

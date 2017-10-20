@@ -26,9 +26,9 @@ class Library implements Contract\Library
      * @var array ['decimals'] : integer : The number of decimals to benchmark against
      */
     private $config = [
-        'timer'    => true,
-        'memory'   => true,
-        'decimals' => 9
+        'time'      => true,
+        'memory'    => true,
+        'decimals'  => 9
     ];
 
     /**
@@ -73,7 +73,7 @@ class Library implements Contract\Library
         $mark = [];
 
         // get the benchmarks
-        $this->timer($mark['timer']['start']);
+        $this->timer($mark['time']['start']);
         $this->memory($mark['memory']['start']);
 
         // Add the item to the top of its array
@@ -99,10 +99,10 @@ class Library implements Contract\Library
             $mark = &$this->marks[$name][0];
 
             // GIGO : It hasn't already been stopped
-            if (!isset($mark['timer']['stop']))
+            if (!isset($mark['time']['stop']))
             {
                 // Assign the stop values
-                $this->timer($mark['timer']['stop']);
+                $this->timer($mark['time']['stop']);
                 $this->memory($mark['memory']['stop']);
             }
             else
@@ -123,8 +123,8 @@ class Library implements Contract\Library
      */
     private function timer(&$variable)
     {
-        // If the timer benchmark is enabled
-        if ($this->config['timer'])
+        // If the time benchmark is enabled
+        if ($this->config['time'])
         {
             $variable = microtime(true);
         }
@@ -160,26 +160,15 @@ class Library implements Contract\Library
      */
     public function details($name)
     {
-        if (isset($this->marks[$name]))
+        if (!isset($this->marks[$name]))
         {
-            /**
-             * Trying to get the details on a benchmark still running!
-             * Auto stop any running benchmarks in-case of error.
-             */
-            if (!isset($this->marks[$name][0]['timer']['stop']))
-            {
-                $this->stop($name);
-            }
+            $result = $this->retrieve($name);
         }
         else
         {
-            /**
-             * There is no benchmark with that name running.
-             */
+            // There is no benchmark with that name running.
             throw new Exception\NotRunning($name);
         }
-
-        $result = $this->retrieve($name);
 
         return $result;
     }
@@ -217,23 +206,23 @@ class Library implements Contract\Library
                 {
                     // Just an alias
                     $mark = &$this->marks[$name][$i];
-                    $time = $mark['timer']['stop'] - $mark['timer']['start'];
 
-                    if (isset($mark['memory']))
+                    // If the mark has not been stopped, don't report.
+                    $time = isset($mark['time']['stop']) ? $mark['time']['stop'] - $mark['time']['start'] : (int)0;
+
+                    // If the mark has not been stopped, don't report.
+                    $memory = isset($mark['memory']['stop']) ? $mark['memory']['stop'] - $mark['memory']['start'] : 0;
+
+                    // Sanity check against the memory in case it was a minor benchmark and there was a garbage collection during the running.
+                    $memory = ($memory > 1) ? $memory : 0;
+
+                    $result['count'] = count($this->marks[$name]);
+
+                    // If time has been assigned
+                    if ($this->config['time'])
                     {
-                        $memory = $mark['memory']['stop'] - $mark['memory']['start'];
-
-                        /**
-                         * Sanity check against the memory in case it was a minor benchmark
-                         * and there was a garbage collection during the running.
-                         */
-                        $memory = ($memory > 1) ? $memory : 0;
+                        $result['time'] = $time;
                     }
-
-                    $result = [
-                        'time'  => number_format($time, $this->config['decimals']),
-                        'count' => count($this->marks[$name])
-                    ];
 
                     // If memory has been assigned
                     if ($this->config['memory'])

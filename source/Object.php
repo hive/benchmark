@@ -37,7 +37,6 @@ class Object extends Library implements Contract\Object
      */
     public function __construct($config = [])
     {
-
         // Merge the received config with the defaults
         $this->config = array_merge($this->config, $config);
         parent::__construct($config);
@@ -144,6 +143,7 @@ class Object extends Library implements Contract\Object
 
     /**
      * Gathers all of the benchmarks results and returns a summary
+     *
      * @return array
      */
     public function summary()
@@ -167,18 +167,42 @@ class Object extends Library implements Contract\Object
      * @param $values
      * @param int $decimals
      *
+     * @throws \Hive\Benchmark\Exception
+     *
      * @return array
      */
     private function calculate($values, $decimals = 0)
     {
         // remove any values which are 0
-        $values = array_filter($values);
-        return [
-            'total'  => number_format(array_sum($values), $decimals),
-            'min'    => number_format(min($values), $decimals),
-            'max'    => number_format(max($values), $decimals),
-            'mean'   => number_format(array_sum($values) / count($values), $decimals),
-            'median' => number_format($values[round(count($values) / 2) - 1], $decimals),
-        ];
+        $values = array_values(array_filter($values));
+
+        try
+        {
+            if (count($values))
+            {
+                return [
+                    'total'  => number_format(array_sum($values), $decimals, '.', ''),
+                    'min'    => number_format(min($values), $decimals, '.', ''),
+                    'max'    => number_format(max($values), $decimals, '.', ''),
+                    'mean'   => number_format(array_sum($values) / count($values), $decimals, '.', ''),
+                    'median' => number_format($values[round(count($values) / 2) - 1], $decimals, '.', ''),
+                ];
+            }
+            else
+            {
+                return [
+                    'total'  => false,
+                    'min'    => false,
+                    'max'    => false,
+                    'mean'   => false,
+                    'median' => false,
+                ];
+            }
+
+        }
+        catch (\Exception $e)
+        {
+            throw new Exception($e->getMessage(), $e->getCode());
+        }
     }
 }
