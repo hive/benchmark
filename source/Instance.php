@@ -30,6 +30,15 @@ class Instance implements Contract\Instance
      */
     private static $methods = [];
 
+
+
+    public static function set($mark = false, $separator = '.')
+    {
+        self::init();
+        self::method('auto', 4, $mark = ($mark) ?  $separator. $mark : '');
+    }
+
+
     /**
      * Initialise the instance.
      *
