@@ -37,7 +37,6 @@ class Object extends Library implements Contract\Object
      */
     public function __construct($config = [])
     {
-
         // Merge the received config with the defaults
         $this->config = array_merge($this->config, $config);
         parent::__construct($config);
@@ -116,15 +115,12 @@ class Object extends Library implements Contract\Object
 
             $marks = $this->retrieve($name);
 
-
             // Gather the totals
             foreach ($marks as $mark)
             {
                 $time[] = $mark['time'];
                 $memory[] = $mark['memory'];
             }
-
-
 
             $result = [
                 'count'  => count($time),
@@ -147,6 +143,7 @@ class Object extends Library implements Contract\Object
 
     /**
      * Gathers all of the benchmarks results and returns a summary
+     *
      * @return array
      */
     public function summary()
@@ -170,12 +167,15 @@ class Object extends Library implements Contract\Object
      * @param $values
      * @param int $decimals
      *
+     * @throws \Hive\Benchmark\Exception
+     *
      * @return array
      */
     private function calculate($values, $decimals = 0)
     {
         // remove any values which are 0
-        $values = array_filter($values);
+        $values = array_values(array_filter($values));
+
         try
         {
             if (count($values))
@@ -202,9 +202,7 @@ class Object extends Library implements Contract\Object
         }
         catch (\Exception $e)
         {
-
-            throw $e;
+            throw new Exception($e->getMessage(), $e->getCode());
         }
-
     }
 }
