@@ -5,7 +5,8 @@
  *
  * Allows access to the benchmark object through a instance as a singleton.
  *
- * @todo remove methods and add __callStatic, direct access to the object
+ * @todo 1.0.1.0 remove methods and add __callStatic, direct access to the object
+ * @todo 1.0.1.0 add the ability to get the total time.
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)

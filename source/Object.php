@@ -163,7 +163,7 @@ class Object extends Library implements Contract\Object
      *
      * Does a bunch of calculations upon an array of values, returns
      * the result.
-     *
+     * @todo v1.1.0.0 whether or not the number format is ran should be a paramerter
      * @param $values
      * @param int $decimals
      *
