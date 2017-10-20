@@ -44,7 +44,7 @@ Spaces after control structure open parenthesis: [4m0[0m [24/24, 100%]
 Spaces before control structure close parenthesis: [4m0[0m [24/24, 100%]
 
 ----------------------------------------------------------------------
-Time: 329ms; Memory: 7Mb
+Time: 340ms; Memory: 7Mb
 
 
 [1mFILE: .../apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php[0m
@@ -165,7 +165,7 @@ Time: 329ms; Memory: 7Mb
  31 | [33mWARNING[0m | Line exceeds 120 characters; contains 139 characters
 ----------------------------------------------------------------------
 
-Time: 330ms; Memory: 7Mb
+Time: 340ms; Memory: 7Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -182,7 +182,7 @@ Time: 330ms; Memory: 7Mb
 [1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (43 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 337ms; Memory: 7Mb
+Time: 340ms; Memory: 7Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
@@ -199,5 +199,5 @@ Time: 337ms; Memory: 7Mb
 [1mPHPCBF CAN FIX 43 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 337ms; Memory: 7Mb
+Time: 341ms; Memory: 7Mb
 

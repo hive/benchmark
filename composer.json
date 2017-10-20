@@ -15,23 +15,19 @@
   "support": {
     "issues": "https://github.com/hive/benchmark/issues",
     "wiki": "https://github.com/hive/benchmark/wiki",
-    "source": "https://github.com/hive/benchmark"
+    "source": "https://github.com/hive/benchmark",
+    "examples": "https://github.com/hive/benchmark/examples"
   },
   "type": "Library",
   "require": {
-    "php": ">5.3.0"
+    "php": ">5.5.0"
   },
   "autoload": {
     "psr-4": {
       "Hive\\Benchmark\\": "source"
     }
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0.x-dev"
-    }
-  },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "suggest": {
     "hive/profiler": "Allow profiling of the site with benchmark output"
   }

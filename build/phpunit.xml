@@ -10,10 +10,10 @@
         <whitelist>
             <directory>../Source</directory>
             <exclude>
-                <directory>../Build</directory>
-                <directory>../Documents</directory>
-                <directory>../Examples</directory>
-                <directory>../Tests</directory>
+                <directory>../build</directory>
+                <directory>../documents</directory>
+                <directory>../examples</directory>
+                <directory>../tests</directory>
                 <directory>../vendor</directory>
             </exclude>
         </whitelist>
@@ -28,10 +28,10 @@
                 lowUpperBound="50"
                 highLowerBound="80"
         />
-        <log type="testdox-html" target="../Documents/html/phpunit/testdox.html" />
-        <log type="coverage-clover" target="../Documents/xml/coverage.xml"/>
-        <log type="coverage-xml" target="../Documents/xml/coverage/"/>
-        <log type="junit" target="../Documents/xml/phpunit.xml" logIncompleteSkipped="false"/>
+        <log type="testdox-html" target="../documents/html/phpunit/testdox.html" />
+        <log type="coverage-clover" target="../documents/xml/clover.xml"/>
+        <log type="coverage-xml" target="../documents/xml/coverage/"/>
+        <log type="junit" target="../documents/xml/phpunit.xml" logIncompleteSkipped="false"/>
     </logging>
 
 </phpunit>

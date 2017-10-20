@@ -7,12 +7,18 @@
 // Include the package, using the simple php include
 include __DIR__ . '/../include.php';
 
-$bm = new \Hive\Benchmark\Object(['enabled' => false]);
-$bm->start('test');
-$bm->stop('test');
-$result = $bm->summary();
+// Create the object
+$bm = new Hive\Benchmark\Object();
 
+// Start the mark
+$bm->start('NameOfMark');
 
+// Stop the mark
+$bm->stop('NameOfMark');
+
+// Output a summary
+var_dump($bm->summary());
+die();
 
 var_dump($result);
 

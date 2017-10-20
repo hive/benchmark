@@ -9,10 +9,6 @@ Simple decoupled benchmark, Version 1.0 currently being developed
 
 ## Notes
 
-
-Version 1.0 Outstanding Items 
- * Unit Tests
-
 ## Installation
 
 Recommended installation [through composer](http://getcomposer.org).
