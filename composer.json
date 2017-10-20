@@ -24,7 +24,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Hive\\Benchmark\\": ["source/", "source/Facade/"]
+      "Hive\\Benchmark\\": ["source/", "source/Facade/"],
+      "Benchmark\\": ["source/Facade/"]
     }
   },
   "extra": {

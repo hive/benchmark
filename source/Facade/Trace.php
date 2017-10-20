@@ -1,9 +1,9 @@
 <?php namespace Hive\Benchmark;
 
 /**
- * Benchmark Trace Facade.
+ * Benchmark Instance.
  *
- * Allows access to the benchmark instance with auto tracing
+ * Allows access to the benchmark object through a instance as a singleton.
  *
  * @todo remove methods and add __callStatic, direct access to the object
  *
@@ -18,43 +18,15 @@
 class Trace extends Instance
 {
 
-
-    public static function start($name = false, $separator = '.')
-    {
-        parent::start(self::name($name, $separator));
-    }
-
-    public static function stop($name = false, $separator = '.')
-    {
-        parent::stop(self::name($name,$separator));
-    }
-
-    public static function name ($name = false, $separator = '.')
+    public static function start ($name = false, $separator = '.')
     {
         $name = ($name) ? $separator . $name : $name;
-        $name = self::trace(4, $separator) . $name;
-        return $name;
+        self::method('start', 4, $name);
     }
 
-
-
-    public static function get($name = false, $separator = '.')
+    public static function stop ($name = false, $separator = '.')
     {
-        parent::get(self::name($name,$separator));
+        $name = ($name) ? $separator . $name : $name;
+        self::method('stop', 4, '.' . $name);
     }
-
-    /**
-     * Simple debug_backtrace to get the name of the method which called.
-     *
-     * @param  int $stack How far in the stacktrace to go back.
-     *
-     * @return string $name   The caller class/method.
-     */
-    private static function trace($stack = 2, $separator = '.')
-    {
-        $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $stack)[$stack - 1];
-
-        return str_replace('\\', $separator, strtolower($caller['class'])) . $separator . $caller['function'];
-    }
-
 }
