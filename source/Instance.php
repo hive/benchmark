@@ -14,6 +14,11 @@
  * @subpackage    Benchmark
  *
  * @copyright (c) 2016 Jamie Peake
+ *
+ * @method static void start(string $name)
+ * @method static void stop(string $name)
+ * @method static array details(string $name)
+ * @method static array get(string $name)
  */
 class Instance implements Contract\Instance
 {
