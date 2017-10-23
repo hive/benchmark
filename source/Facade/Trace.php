@@ -44,7 +44,7 @@ class Trace extends Instance
      */
     public static function stop($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
-        parent::stop(self::name($name,$separator));
+        parent::stop(self::name($name, $separator));
     }
 
 
@@ -56,7 +56,7 @@ class Trace extends Instance
      */
     public static function get($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
-        parent::get(self::name($name,$separator));
+        parent::get(self::name($name, $separator));
     }
 
 
@@ -68,7 +68,7 @@ class Trace extends Instance
      *
      * @return bool|string
      */
-    public static function name ($name = false, $separator = self::DEFAULT_SEPARATOR)
+    public static function name($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
         $name = ($name) ? $separator . $name : $name;
         $name = self::trace(4, $separator) . $name;
@@ -88,5 +88,4 @@ class Trace extends Instance
 
         return str_replace('\\', $separator, strtolower($caller['class'])) . $separator . $caller['function'];
     }
-
 }

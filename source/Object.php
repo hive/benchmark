@@ -198,7 +198,6 @@ class Object extends Library implements Contract\Object
                     'median' => false,
                 ];
             }
-
         }
         catch (\Exception $e)
         {

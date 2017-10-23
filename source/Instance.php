@@ -30,7 +30,7 @@ class Instance implements Contract\Instance
      */
     private static $methods = [];
 
-    public static function __callStatic ($name, $arguments)
+    public static function __callStatic($name, $arguments)
     {
         if (method_exists(self::init(), $name))
         {
