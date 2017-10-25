@@ -44,17 +44,15 @@ Spaces after control structure open parenthesis: [4m0[0m [26/26, 100%]
 Spaces before control structure close parenthesis: [4m0[0m [26/26, 100%]
 
 ----------------------------------------------------------------------
-Time: 341ms; Memory: 7.25Mb
+Time: 365ms; Memory: 7.25Mb
 
 
 [1mFILE: .../apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php[0m
 ----------------------------------------------------------------------
-[1mFOUND 10 ERRORS AFFECTING 10 LINES[0m
+[1mFOUND 9 ERRORS AFFECTING 9 LINES[0m
 ----------------------------------------------------------------------
   40 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
-  46 | [31mERROR[0m | [x] Expected 1 space after comma in function call; 2
-     |       |     found
   60 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
   63 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
@@ -70,7 +68,7 @@ Time: 341ms; Memory: 7.25Mb
      |       |     found
  123 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+[1mPHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
 
@@ -179,7 +177,7 @@ Time: 341ms; Memory: 7.25Mb
  31 | [33mWARNING[0m | Line exceeds 120 characters; contains 139 characters
 ----------------------------------------------------------------------
 
-Time: 341ms; Memory: 7.25Mb
+Time: 365ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -190,29 +188,28 @@ Time: 341ms; Memory: 7.25Mb
 [x] Squiz     Control structures  Control signature space after  12
 [x] Squiz     Control structures  Control signature space after  11
 [ ] Generic   Files               Line length too long           3
-[x] Generic   Functions           Function call argument spacin  1
 ----------------------------------------------------------------------
-[1mA TOTAL OF 53 SNIFF VIOLATIONS WERE FOUND IN 5 SOURCES[0m
+[1mA TOTAL OF 52 SNIFF VIOLATIONS WERE FOUND IN 4 SOURCES[0m
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 4 MARKED SOURCES AUTOMATICALLY (50 VIOLATIONS IN TOTAL)[0m
+[1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (49 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 342ms; Memory: 7.25Mb
+Time: 365ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
 ----------------------------------------------------------------------
 [1mFILE                                                  ERRORS  WARNINGS[0m
 ----------------------------------------------------------------------
-...ent.dev/vendor/hive/benchmark/source/Instance.php  [31m10[0m      0
+...ent.dev/vendor/hive/benchmark/source/Instance.php  [31m9[0m       0
 ...tent.dev/vendor/hive/benchmark/source/Library.php  [31m23[0m      [33m2[0m
 ...ntent.dev/vendor/hive/benchmark/source/Object.php  [31m17[0m      0
 ...e/benchmark/source/Exception/AlreadyInitiated.php  0       [33m1[0m
 ----------------------------------------------------------------------
-[1mA TOTAL OF 50 ERRORS AND 3 WARNINGS WERE FOUND IN 13 FILES[0m
+[1mA TOTAL OF 49 ERRORS AND 3 WARNINGS WERE FOUND IN 13 FILES[0m
 ----------------------------------------------------------------------
-[1mPHPCBF CAN FIX 50 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
+[1mPHPCBF CAN FIX 49 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 342ms; Memory: 7.25Mb
+Time: 366ms; Memory: 7.25Mb
 

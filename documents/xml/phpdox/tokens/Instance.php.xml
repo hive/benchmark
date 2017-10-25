@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4239" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="363a570d33b5e24297249453a65999c8bc915ae8" relative="Instance.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4238" time="2017-10-25T14:09:58+11:00" unixtime="1508900998" sha1="8e9f7d59e7d0546a39a1d8b5819b6d7ee030d864" relative="Instance.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -219,7 +219,7 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_CLASS_C">__CLASS__</token>
     <token name="T_PHPDOX_COMMA">,</token>
-    <token name="T_WHITESPACE">  </token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>

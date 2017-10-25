@@ -43,7 +43,7 @@ class Instance implements Contract\Instance
         }
 
         // Throw a Bad Method call as the method wasn't found.
-        throw new Exception\BadMethodCall(__CLASS__,  $name);
+        throw new Exception\BadMethodCall(__CLASS__, $name);
     }
 
     /**

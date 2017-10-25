@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="23" end="158">
-  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4239" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="363a570d33b5e24297249453a65999c8bc915ae8" relative="Instance.php"/>
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4238" time="2017-10-25T14:09:58+11:00" unixtime="1508900998" sha1="8e9f7d59e7d0546a39a1d8b5819b6d7ee030d864" relative="Instance.php"/>
   <docblock>
     <description compact="Benchmark Instance.">Allows access to the benchmark object through a instance as a singleton.</description>
     <todo value="1.0.1.0 add the ability to get the total time."/>
@@ -93,7 +93,4 @@ not having php5.6 support and the unpack.</description>
     </docblock>
   </method>
   </interface>
-  <extenders>
-    <extender full="Hive\Benchmark\Trace" namespace="Hive\Benchmark" name="Trace"/>
-  </extenders>
 </class>

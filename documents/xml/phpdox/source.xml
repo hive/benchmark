@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source">
-    <file name="Instance.php" size="4239" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="363a570d33b5e24297249453a65999c8bc915ae8" xml="tokens/Instance.php.xml"/>
+    <file name="Instance.php" size="4238" time="2017-10-25T14:09:58+11:00" unixtime="1508900998" sha1="8e9f7d59e7d0546a39a1d8b5819b6d7ee030d864" xml="tokens/Instance.php.xml"/>
     <dir name="Contract">
       <file name="Instance.php" size="513" time="2017-10-21T00:09:03+11:00" unixtime="1508504943" sha1="c000fb82c9d379d1dec2af8ba9aba2ac0a9c36d1" xml="tokens/Contract/Instance.php.xml"/>
       <file name="Library.php" size="908" time="2017-10-20T00:08:13+11:00" unixtime="1508418493" sha1="a2bc6da1b3b5fc5807793916ef8206083383294b" xml="tokens/Contract/Library.php.xml"/>
