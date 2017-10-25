@@ -3,7 +3,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/hive/benchmark/v/unstable?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![License](https://poser.pugx.org/hive/benchmark/license?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 [![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock?format=flat-square)](https://packagist.org/packages/hive/benchmark)
-[![Build Status](https://img.shields.io/travis/hive/benchmark/master.svg?style=flat-square)](https://travis-ci.org/hive/benchmark)
+[![Build Status](https://img.shields.io/travis/hive/benchmark/1.0.1.3.svg?style=flat-square)](https://travis-ci.org/hive/benchmark)
 
 
 Simple decoupled benchmark, Version 1.0.*
