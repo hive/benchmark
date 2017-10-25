@@ -1,36 +1,78 @@
 # Required to run your project under the correct environment.
 language: php
 
-# Versions of PHP you want your project run with.
-php:
-  - 5.4
-  - 5.5
-  - 5.6
-  - 7.0
-  - 7.1
-  - 7.2
-  - hhvm
+# Test all php versions, but assign which version we are running in a matrix, so we can change our composer requirements.
+matrix:
+    fast_finish: true
+    include:
+      - php: 5.4
+        env: PHP_BUILD="OLD"
+      - php: 5.6
+        env: PHP_BUILD="CURRENT"
+      - php: 7.0
+        env: PHP_BUILD="NEW"
+      - php: 7.1
+        env: PHP_BUILD="NEW"
+      - php: 7.2
+        env: PHP_BUILD="NEW"
 
 # Commands to be run before your environment runs.
 before_script:
-  - phpenv config-rm xdebug.ini
   - composer self-update
   - composer install --prefer-source --no-interaction
-
-
+  - if [[ "$PHP_BUILD" == "OLD" ]]; then
+      composer require --dev 'phploc/phploc:2.*';
+      composer require --dev phpmd/phpmd:2.5.*;
+      composer require --dev sebastian/phpcpd:2.0.*;
+      composer require --dev phpmetrics/phpmetrics=2.0.*;
+      composer require --dev "squizlabs/php_codesniffer=*";
+    fi
+  - if [[ "$PHP_BUILD" == "CURRENT" ]]; then
+      composer require --dev 'phploc/phploc=*';
+      composer require --dev phpmd/phpmd;
+      composer require --dev sebastian/phpcpd;
+      composer require --dev phpmetrics/phpmetrics;
+      composer require --dev "squizlabs/php_codesniffer=*";
+    fi
+  - if [[ "$PHP_BUILD" == "NEW" ]]; then
+      composer require --dev 'phploc/phploc=*';
+      composer require --dev phpmd/phpmd;
+      composer require --dev sebastian/phpcpd;
+      composer require --dev phpmetrics/phpmetrics;
+      composer require --dev "squizlabs/php_codesniffer=*";
+    fi
 # Commands you want to run that will verify your build.
-#script: phpunit --configuration phpunit.xml --coverage-text Tests/testObjectGet.php
-script: phpunit --configuration build/phpunit.xml --testsuite All
-# allow_failures: Allow this build to fail under the specified environments.
-# fast_finish: If your build fails do not continue trying to build, just stop.
-matrix:
-  fast_finish: true
-  allow_failures:
-    - php: hhvm
-    - php: 7.0
-    - php: 7.1
-    - php: 7.2
-
+script:
+# Specify older composer installs for 5.4 to work correctly.
+ -  if [[ "$PHP_BUILD" == "OLD" ]]; then
+      phpunit --configuration build/phpunit.xml --coverage-text --testsuite All;
+      vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
+      vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
+      php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
+      # simple prs1 test to see which sniffs are being used
+      vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
+    fi
+ -  if [[ "$PHP_BUILD" == "CURRENT" ]]; then
+      vendor/bin/phploc --log-xml documents/xml/phploc.xml source/;
+      phpunit --configuration build/phpunit.xml --coverage-text --testsuite All;
+      vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
+      vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
+      php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
+      # simple prs1 test to see which sniffs are being used
+      vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
+    fi
+# Disable phpUnit on php7 as it is now namespaced, which are tests are not.
+ -  if [[ "$PHP_BUILD" == "NEW" ]]; then
+      vendor/bin/phploc --log-xml documents/xml/phploc.xml source/;
+#      phpunit --configuration build/phpunit.xml --coverage-text --testsuite All;
+      vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
+      vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
+      php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
+      # simple prs1 test to see which sniffs are being used
+      vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
+    fi
+# Exclude will not allow us to specific these exact sniffs to exclude.
+# - vendor/bin/phpcs  --standard=PSR1,PSR2 --exclude=Squiz.ControlStructures.ControlSignature,Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace,Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword --tab-width=auto --report-info --report-full --report-source --report-summary source
 
 # Customize when the notification emails are sent.
 notifications:

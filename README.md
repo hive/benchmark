@@ -5,9 +5,10 @@
 [![composer.lock](https://poser.pugx.org/hive/benchmark/composerlock?format=flat-square)](https://packagist.org/packages/hive/benchmark)
 
 
-Simple decoupled benchmark, Version 1.0 currently being developed
+Simple decoupled benchmark, Version 1.0.*
 
 ## Notes
+
 
 ## Installation
 
@@ -16,7 +17,7 @@ Recommended installation [through composer](http://getcomposer.org).
 ```JSON
 {
     "require": {
-        "Hive/Benchmark": "dev-master"
+        "Hive/Benchmark": "1.0.*"
     }
 }
 ```
