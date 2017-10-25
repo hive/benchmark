@@ -7,6 +7,8 @@ matrix:
     include:
       - php: 5.4
         env: PHP_BUILD="OLD"
+      - php: 5.5
+        env: PHP_BUILD="OLD"
       - php: 5.6
         env: PHP_BUILD="CURRENT"
       - php: 7.0
@@ -41,15 +43,12 @@ before_script:
       composer require --dev phpmetrics/phpmetrics;
       composer require --dev "squizlabs/php_codesniffer=*";
     fi
-# Commands you want to run that will verify your build.
 script:
-# Specify older composer installs for 5.4 to work correctly.
  -  if [[ "$PHP_BUILD" == "OLD" ]]; then
       phpunit --configuration build/phpunit.xml --coverage-text --testsuite All;
       vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
       vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
       php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
-      # simple prs1 test to see which sniffs are being used
       vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
     fi
  -  if [[ "$PHP_BUILD" == "CURRENT" ]]; then
@@ -58,17 +57,13 @@ script:
       vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
       vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
       php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
-      # simple prs1 test to see which sniffs are being used
       vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
     fi
-# Disable phpUnit on php7 as it is now namespaced, which are tests are not.
  -  if [[ "$PHP_BUILD" == "NEW" ]]; then
       vendor/bin/phploc --log-xml documents/xml/phploc.xml source/;
-#      phpunit --configuration build/phpunit.xml --coverage-text --testsuite All;
       vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
       vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
       php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
-      # simple prs1 test to see which sniffs are being used
       vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
     fi
 # Exclude will not allow us to specific these exact sniffs to exclude.
