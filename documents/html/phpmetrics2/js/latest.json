@@ -7,18 +7,18 @@
         "relativeDataComplexity": 0.76,
         "relativeStructuralComplexity": 8,
         "volume": 202.01,
-        "commentWeight": 47.39,
+        "commentWeight": 47.43,
         "intelligentContent": 38.29,
         "lcom": 1.9,
         "instability": 0.7,
         "afferentCoupling": 1.5,
         "efferentCoupling": 2.9,
         "difficulty": 5.7,
-        "mi": 104.6
+        "mi": 104.64
     },
     "sum": {
-        "loc": 787,
-        "cloc": 485,
+        "loc": 794,
+        "cloc": 492,
         "lloc": 302,
         "nbMethods": 31,
         "nbClasses": 10,

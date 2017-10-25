@@ -1,16 +1,13 @@
 
 PHP CODE SNIFFER REPORT SUMMARY
------------------------------------------------------------------------------------------------------------------------
-FILE                                                                                                   ERRORS  WARNINGS
------------------------------------------------------------------------------------------------------------------------
-/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php                    3       0
-/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php                5       0
-/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Object.php                      1       0
-/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php     1       0
------------------------------------------------------------------------------------------------------------------------
-A TOTAL OF 10 ERRORS AND 0 WARNINGS WERE FOUND IN 13 FILES
------------------------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX 8 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+FILE                                                                                    ERRORS  WARNINGS
+--------------------------------------------------------------------------------------------------------
+/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php     1       0
+--------------------------------------------------------------------------------------------------------
+A TOTAL OF 1 ERROR AND 0 WARNINGS WERE FOUND IN 13 FILES
+--------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX 1 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------------------------
 
 

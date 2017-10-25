@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Exception" file="BadMethodCall.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php" size="1221" time="2017-10-21T02:06:08+11:00" unixtime="1508511968" sha1="d0029ffef9a5d883348b3be862a69bca89dce754" relative="Exception/BadMethodCall.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Exception" file="BadMethodCall.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php" size="1222" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="ffc8cf422adad8c917997b335bde3c4c9561a32e" relative="Exception/BadMethodCall.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -219,4 +219,5 @@
   <line no="44">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
+  <line no="45"/>
 </source>

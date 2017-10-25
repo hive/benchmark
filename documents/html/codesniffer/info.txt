@@ -19,16 +19,15 @@ EOL char: \n [13/13, 100%]
 
 Function opening brace placement: new line [31/31, 100%]
 
-Line indent: spaces [726/726, 100%]
+Line indent: spaces [728/728, 100%]
 
-Line length: 80 or less [928/969, 95.77%]
-	81-120 => 38 (3.92%)
+Line length: 80 or less [935/976, 95.8%]
+	81-120 => 38 (3.89%)
 	121-150 => 3 (0.31%)
 
 Multiple statements on same line: no [132/132, 100%]
 
-Number of newlines at EOF: 1 [12/13, 92.31%]
-	0 => 1 (7.69%)
+Number of newlines at EOF: 1 [13/13, 100%]
 
 One class per file: yes [13/13, 100%]
 

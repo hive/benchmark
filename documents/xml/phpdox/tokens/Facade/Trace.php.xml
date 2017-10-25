@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Facade" file="Trace.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php" size="2349" time="2017-10-21T01:15:31+11:00" unixtime="1508508931" sha1="ac0bd24d4f0b88db695fccc6f00cd0ea4165dabd" relative="Facade/Trace.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Facade" file="Trace.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php" size="2349" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="344ccc8ace4605e057ddee32739a55d53222b611" relative="Facade/Trace.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -226,6 +226,7 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$separator</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
@@ -298,6 +299,7 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$separator</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
@@ -343,7 +345,6 @@
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">name</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_WHITESPACE"> </token>
@@ -531,9 +532,8 @@
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="91"/>
-  <line no="92">
+  <line no="91">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="93"/>
+  <line no="92"/>
 </source>

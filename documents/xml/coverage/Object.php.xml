@@ -2,7 +2,7 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Object.php">
     <totals>
-      <lines total="208" comments="97" code="111" executable="54" executed="44" percent="81.48%"/>
+      <lines total="207" comments="97" code="110" executable="54" executed="44" percent="81.48%"/>
       <methods count="7" tested="5" percent="71.43%"/>
       <functions count="0" tested="0" percent=""/>
       <classes count="1" tested="0" percent="0.00%"/>
@@ -17,7 +17,7 @@
       <method name="details" signature="details($name)" start="84" end="93" crap="2" executable="4" executed="4" coverage="100"/>
       <method name="get" signature="get($name = false)" start="109" end="141" crap="4.04" executable="15" executed="13" coverage="86.666666666667"/>
       <method name="summary" signature="summary()" start="149" end="159" crap="2" executable="5" executed="5" coverage="100"/>
-      <method name="calculate" signature="calculate($values, $decimals = 0)" start="174" end="207" crap="3.94" executable="17" executed="9" coverage="52.941176470588"/>
+      <method name="calculate" signature="calculate($values, $decimals = 0)" start="174" end="206" crap="3.94" executable="17" executed="9" coverage="52.941176470588"/>
     </class>
     <coverage>
       <line nr="41">
