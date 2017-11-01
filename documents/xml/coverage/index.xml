@@ -37,6 +37,7 @@
       <test name="testInstance::testEmptyMarkName" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testNotRunningException" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testInstance::testBadMethodCall" size="unknown" result="0" status="PASSED"/>
       <test name="testInstance::testChangeConfig" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectDetails::testStartStop" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectDetails::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
@@ -50,11 +51,13 @@
       <test name="testObjectGet::testStartStop" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectGet::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectGet::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testEmptyStartStop" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectGet::testConfigEnabledFalse" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectGet::testInvalidMark" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectGet::testEmptyGetMarkName" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectGet::testDoesNotExistException" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectGet::testForcedGeneralException" size="unknown" result="0" status="PASSED"/>
+      <test name="testObjectGet::testForcedGenericException" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectSummary::testStartStopSummary" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectSummary::testMultipleStartStopSummary" size="unknown" result="0" status="PASSED"/>
       <test name="testObjectSummary::testDifferentStartStopSummary" size="unknown" result="0" status="PASSED"/>
@@ -68,6 +71,13 @@
       <test name="testObject::testEmptyMarkName" size="unknown" result="0" status="PASSED"/>
       <test name="testObject::testNotRunningException" size="unknown" result="0" status="PASSED"/>
       <test name="testObject::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
+      <test name="testTraceGet::testSanity" size="unknown" result="0" status="PASSED"/>
+      <test name="testTraceGet::testStartStopGet" size="unknown" result="0" status="PASSED"/>
+      <test name="testTraceGet::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testTraceGet::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
+      <test name="testTraceGet::testInvalidMark" size="unknown" result="0" status="PASSED"/>
+      <test name="testTraceGet::testEmptyGetMarkName" size="unknown" result="0" status="PASSED"/>
+      <test name="testTraceGet::testDoesNotExistException" size="unknown" result="0" status="PASSED"/>
       <test name="testTrace::testStartStop" size="unknown" result="0" status="PASSED"/>
       <test name="testTrace::testMultipleStartStop" size="unknown" result="0" status="PASSED"/>
       <test name="testTrace::testMultipleDifferentStartStop" size="unknown" result="0" status="PASSED"/>
@@ -79,10 +89,10 @@
     </tests>
     <directory name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source">
       <totals>
-        <lines total="1086" comments="618" code="468" executable="184" executed="165" percent="89.67%"/>
-        <methods count="31" tested="25" percent="80.65%"/>
+        <lines total="1107" comments="652" code="455" executable="183" executed="177" percent="96.72%"/>
+        <methods count="31" tested="28" percent="90.32%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="10" tested="5" percent="50.00%"/>
+        <classes count="10" tested="8" percent="80.00%"/>
         <traits count="0" tested="0" percent=""/>
       </totals>
       <directory name="Contract">
@@ -159,10 +169,10 @@
       </file>
       <directory name="Exception">
         <totals>
-          <lines total="230" comments="141" code="89" executable="20" executed="16" percent="80.00%"/>
-          <methods count="5" tested="4" percent="80.00%"/>
+          <lines total="230" comments="141" code="89" executable="20" executed="20" percent="100.00%"/>
+          <methods count="5" tested="5" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="5" tested="4" percent="80.00%"/>
+          <classes count="5" tested="5" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
         <file name="AlreadyInitiated.php" href="Exception/AlreadyInitiated.php.xml">
@@ -176,10 +186,10 @@
         </file>
         <file name="BadMethodCall.php" href="Exception/BadMethodCall.php.xml">
           <totals>
-            <lines total="44" comments="27" code="17" executable="4" executed="0" percent="0.00%"/>
-            <methods count="1" tested="0" percent="0.00%"/>
+            <lines total="44" comments="27" code="17" executable="4" executed="4" percent="100.00%"/>
+            <methods count="1" tested="1" percent="100.00%"/>
             <functions count="0" tested="0" percent=""/>
-            <classes count="1" tested="0" percent="0.00%"/>
+            <classes count="1" tested="1" percent="100.00%"/>
             <traits count="0" tested="0" percent=""/>
           </totals>
         </file>
@@ -222,10 +232,10 @@
       </file>
       <file name="BadMethodCall.php" href="Exception/BadMethodCall.php.xml">
         <totals>
-          <lines total="44" comments="27" code="17" executable="4" executed="0" percent="0.00%"/>
-          <methods count="1" tested="0" percent="0.00%"/>
+          <lines total="44" comments="27" code="17" executable="4" executed="4" percent="100.00%"/>
+          <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
@@ -258,43 +268,43 @@
       </file>
       <directory name="Facade">
         <totals>
-          <lines total="91" comments="51" code="40" executable="11" executed="9" percent="81.82%"/>
-          <methods count="5" tested="4" percent="80.00%"/>
+          <lines total="96" comments="59" code="37" executable="10" executed="10" percent="100.00%"/>
+          <methods count="5" tested="5" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
         <file name="Trace.php" href="Facade/Trace.php.xml">
           <totals>
-            <lines total="91" comments="51" code="40" executable="11" executed="9" percent="81.82%"/>
-            <methods count="5" tested="4" percent="80.00%"/>
+            <lines total="96" comments="59" code="37" executable="10" executed="10" percent="100.00%"/>
+            <methods count="5" tested="5" percent="100.00%"/>
             <functions count="0" tested="0" percent=""/>
-            <classes count="1" tested="0" percent="0.00%"/>
+            <classes count="1" tested="1" percent="100.00%"/>
             <traits count="0" tested="0" percent=""/>
           </totals>
         </file>
       </directory>
       <file name="Trace.php" href="Facade/Trace.php.xml">
         <totals>
-          <lines total="91" comments="51" code="40" executable="11" executed="9" percent="81.82%"/>
-          <methods count="5" tested="4" percent="80.00%"/>
+          <lines total="96" comments="59" code="37" executable="10" executed="10" percent="100.00%"/>
+          <methods count="5" tested="5" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="158" comments="87" code="71" executable="30" executed="29" percent="96.67%"/>
-          <methods count="6" tested="5" percent="83.33%"/>
+          <lines total="163" comments="92" code="71" executable="30" executed="30" percent="100.00%"/>
+          <methods count="6" tested="6" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
-          <classes count="1" tested="0" percent="0.00%"/>
+          <classes count="1" tested="1" percent="100.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
       <file name="Library.php" href="Library.php.xml">
         <totals>
-          <lines total="254" comments="133" code="121" executable="67" executed="65" percent="97.01%"/>
+          <lines total="259" comments="145" code="114" executable="67" executed="65" percent="97.01%"/>
           <methods count="7" tested="6" percent="85.71%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="0" percent="0.00%"/>
@@ -303,7 +313,7 @@
       </file>
       <file name="Object.php" href="Object.php.xml">
         <totals>
-          <lines total="207" comments="97" code="110" executable="54" executed="44" percent="81.48%"/>
+          <lines total="213" comments="106" code="107" executable="54" executed="50" percent="92.59%"/>
           <methods count="7" tested="5" percent="71.43%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="0" percent="0.00%"/>

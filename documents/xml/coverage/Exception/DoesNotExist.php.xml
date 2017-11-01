@@ -21,6 +21,8 @@
         <covered by="testObjectGet::testEmptyGetMarkName"/>
         <covered by="testObjectGet::testDoesNotExistException"/>
         <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
       </line>
       <line nr="43">
         <covered by="testInstanceGet::testDoesNotExistException"/>
@@ -29,6 +31,8 @@
         <covered by="testObjectGet::testEmptyGetMarkName"/>
         <covered by="testObjectGet::testDoesNotExistException"/>
         <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
       </line>
       <line nr="45">
         <covered by="testInstanceGet::testDoesNotExistException"/>
@@ -37,6 +41,8 @@
         <covered by="testObjectGet::testEmptyGetMarkName"/>
         <covered by="testObjectGet::testDoesNotExistException"/>
         <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
       </line>
       <line nr="46">
         <covered by="testInstanceGet::testDoesNotExistException"/>
@@ -45,6 +51,8 @@
         <covered by="testObjectGet::testEmptyGetMarkName"/>
         <covered by="testObjectGet::testDoesNotExistException"/>
         <covered by="testObjectGet::testForcedGeneralException"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
       </line>
     </coverage>
   </file>

@@ -89,14 +89,17 @@ class Instance implements Contract\Instance
 
 
     /**
-     * Auto Method for setting benchmarks on a method, with out requiring its name.
+     * Auto Method for setting benchmarks on a method.
+     *
+     * Adds the ability to start and stop a mark with out requiring its name.
      * or even setting whether to start/stop.
      *
      * @param string $action (auto|start|stop) auto will determine whether to start or stop.
      * @param int $stack     how far in the stacktrace to go back.
      * @param string $append any additional text to append to the method.
      *
-     * @depreciated
+     * @depreciated Please use the trace facade instead.
+     * @see \Hive\Benchmark\Trace
      */
     public static function method($action = 'auto', $stack = 3, $append = '')
     {
@@ -149,7 +152,9 @@ class Instance implements Contract\Instance
     }
 
     /**
-     * Allows the destruction of the instance, this is used for Unit testing the instance.
+     * Allows the destruction of the instance.
+     *
+     * This is used for Unit testing the instance.
      */
     public static function destroy()
     {

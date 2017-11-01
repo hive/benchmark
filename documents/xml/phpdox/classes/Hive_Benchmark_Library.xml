@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library" abstract="false" final="false" start="16" end="254">
-  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Library.php" size="6824" time="2017-10-21T02:26:33+11:00" unixtime="1508513193" sha1="914762281f2d47431573c10ffbd13b6174a0d4a4" relative="Library.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Library" namespace="Hive\Benchmark" name="Library" abstract="false" final="false" start="16" end="259">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Library.php" size="7232" time="2017-11-01T18:21:21+11:00" unixtime="1509520881" sha1="8346960a986b04e6d4345d30289385761b8e6c30" relative="Library.php"/>
   <docblock>
     <description compact="Benchmark Library.">The actual benchmark library, which does the core operations.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -53,7 +53,7 @@
       <comment value="Add the item to the top of its array" line="79"/>
     </inline>
   </method>
-  <method name="stop" start="93" end="117" abstract="false" final="false" static="false" visibility="public">
+  <method name="stop" start="93" end="119" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Stop a benchmark."/>
       <param description="benchmark name" variable="$name" type="string"/>
@@ -72,17 +72,17 @@
       <comment value="GIGO : The benchmark we are attempting to stop has been started" line="95"/>
     </inline>
   </method>
-  <method name="timer" start="124" end="131" abstract="false" final="false" static="false" visibility="private">
+  <method name="timer" start="126" end="133" abstract="false" final="false" static="false" visibility="private">
     <docblock>
       <description compact="Sets the current time into supplied variable."/>
       <param variable="$variable"/>
     </docblock>
     <parameter name="variable" byreference="true" type="{unknown}"/>
     <inline>
-      <comment value="If the time benchmark is enabled" line="126"/>
+      <comment value="If the time benchmark is enabled" line="128"/>
     </inline>
   </method>
-  <method name="memory" start="141" end="148" abstract="false" final="false" static="false" visibility="private">
+  <method name="memory" start="143" end="150" abstract="false" final="false" static="false" visibility="private">
     <docblock>
       <description compact="Sets the current memory usage into supplied variable.">It is worth noting that, with garbage collection, it is possible for the
 memory_get_usage to be LOWER then the first call.</description>
@@ -90,10 +90,10 @@ memory_get_usage to be LOWER then the first call.</description>
     </docblock>
     <parameter name="variable" byreference="true" type="{unknown}"/>
     <inline>
-      <comment value="If the memory benchmark is enabled" line="143"/>
+      <comment value="If the memory benchmark is enabled" line="145"/>
     </inline>
   </method>
-  <method name="details" start="161" end="174" abstract="false" final="false" static="false" visibility="public">
+  <method name="details" start="163" end="176" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get a benchmark."/>
       <param description="the name of the benchmark to get" variable="$name" type="string"/>
@@ -112,7 +112,7 @@ memory_get_usage to be LOWER then the first call.</description>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="retrieve" start="188" end="253" abstract="false" final="false" static="false" visibility="protected">
+  <method name="retrieve" start="190" end="258" abstract="false" final="false" static="false" visibility="protected">
     <docblock>
       <description compact="Retrieve an all benchmarks of a particular name from the internal marks storage array.">Internal process, no gigo/sanity</description>
       <param variable="$name"/>
@@ -123,7 +123,8 @@ memory_get_usage to be LOWER then the first call.</description>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Initialise the variables" line="191"/>
+      <comment value="Initialise the variables" line="193"/>
+      <comment value="Return the results, don't forget this was set to an empty array at the top." line="256"/>
     </inline>
   </method>
   <interface full="Hive\Benchmark\Contract\Library" namespace="Hive\Benchmark\Contract" name="Library">

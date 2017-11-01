@@ -2,12 +2,12 @@
 <phploc>
   <directories>3</directories>
   <files>13</files>
-  <loc>1086</loc>
+  <loc>1107</loc>
   <lloc>134</lloc>
   <llocClasses>117</llocClasses>
   <llocFunctions>0</llocFunctions>
   <llocGlobal>17</llocGlobal>
-  <cloc>582</cloc>
+  <cloc>603</cloc>
   <ccn>28</ccn>
   <ccnMethods>28</ccnMethods>
   <interfaces>3</interfaces>

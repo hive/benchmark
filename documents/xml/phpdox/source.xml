@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source">
-    <file name="Instance.php" size="4238" time="2017-10-25T14:09:58+11:00" unixtime="1508900998" sha1="8e9f7d59e7d0546a39a1d8b5819b6d7ee030d864" xml="tokens/Instance.php.xml"/>
+    <file name="Instance.php" size="4379" time="2017-11-01T18:24:07+11:00" unixtime="1509521047" sha1="6e5040ca61a96beac8d1aff6166b3279b2b7e78f" xml="tokens/Instance.php.xml"/>
     <dir name="Contract">
       <file name="Instance.php" size="513" time="2017-10-21T00:09:03+11:00" unixtime="1508504943" sha1="c000fb82c9d379d1dec2af8ba9aba2ac0a9c36d1" xml="tokens/Contract/Instance.php.xml"/>
       <file name="Library.php" size="908" time="2017-10-20T00:08:13+11:00" unixtime="1508418493" sha1="a2bc6da1b3b5fc5807793916ef8206083383294b" xml="tokens/Contract/Library.php.xml"/>
       <file name="Object.php" size="678" time="2017-10-20T00:08:13+11:00" unixtime="1508418493" sha1="3fee93a5d4b51a83f9e0c6729d3ce1522fc94e17" xml="tokens/Contract/Object.php.xml"/>
     </dir>
-    <file name="Library.php" size="6824" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="914762281f2d47431573c10ffbd13b6174a0d4a4" xml="tokens/Library.php.xml"/>
+    <file name="Library.php" size="7232" time="2017-11-01T18:21:21+11:00" unixtime="1509520881" sha1="8346960a986b04e6d4345d30289385761b8e6c30" xml="tokens/Library.php.xml"/>
     <dir name="Facade">
-      <file name="Trace.php" size="2349" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="344ccc8ace4605e057ddee32739a55d53222b611" xml="tokens/Facade/Trace.php.xml"/>
+      <file name="Trace.php" size="2641" time="2017-11-01T18:21:40+11:00" unixtime="1509520900" sha1="0111a02bb1a6e1b2174a05c737a7305228884fc7" xml="tokens/Facade/Trace.php.xml"/>
     </dir>
-    <file name="Object.php" size="5217" time="2017-10-23T13:39:02+11:00" unixtime="1508726342" sha1="1eae7dee5a54314ef934b8db4d350224a79cc953" xml="tokens/Object.php.xml"/>
+    <file name="Object.php" size="5484" time="2017-11-01T18:21:00+11:00" unixtime="1509520860" sha1="0c63707834058ccfcfc410406ae5ac94aca894ac" xml="tokens/Object.php.xml"/>
     <file name="Exception.php" size="1242" time="2017-10-20T00:08:13+11:00" unixtime="1508418493" sha1="939499a2963ee68d21b34f08a3e030df49b19716" xml="tokens/Exception.php.xml"/>
     <dir name="Exception">
       <file name="DoesNotExist.php" size="1176" time="2017-10-20T00:08:13+11:00" unixtime="1508418493" sha1="a9ef93a12969cae18e8470917d9e4b0fec2e8eea" xml="tokens/Exception/DoesNotExist.php.xml"/>

@@ -118,6 +118,14 @@ class testInstance extends base
     }
 
 
+    public function testBadMethodCall()
+    {
+        $this->setExpectedException('Hive\Benchmark\Exception\BadMethodCall');
+
+        \Hive\Benchmark\Instance::bad();
+    }
+
+
     public function testChangeConfig()
     {
         // Because of the way that phpUnit works, everything has already been initiated.

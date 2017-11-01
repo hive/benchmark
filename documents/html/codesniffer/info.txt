@@ -19,11 +19,11 @@ EOL char: \n [13/13, 100%]
 
 Function opening brace placement: new line [31/31, 100%]
 
-Line indent: spaces [728/728, 100%]
+Line indent: spaces [750/750, 100%]
 
-Line length: 80 or less [935/976, 95.8%]
-	81-120 => 38 (3.89%)
-	121-150 => 3 (0.31%)
+Line length: 80 or less [955/998, 95.69%]
+	81-120 => 40 (4.01%)
+	121-150 => 3 (0.3%)
 
 Multiple statements on same line: no [132/132, 100%]
 
@@ -35,7 +35,7 @@ PHP closing tag at end of PHP-only file: no [13/13, 100%]
 
 PHP constant case: lower [20/20, 100%]
 
-PHP keyword case: lower [231/231, 100%]
+PHP keyword case: lower [232/232, 100%]
 
 PHP short open tag used: no [13/13, 100%]
 

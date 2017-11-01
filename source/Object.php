@@ -102,7 +102,6 @@ class Object extends Library implements Contract\Object
      * @param $name
      *
      * @throws \Hive\Benchmark\Exception
-     * @throws \Exception
      *
      * @return array
      */
@@ -130,10 +129,12 @@ class Object extends Library implements Contract\Object
         }
         catch(Exception $e)
         {
-            throw $e;   // Simply Rethrow any benchmark exceptions.
+            // Simply Rethrow any benchmark exceptions.
+            throw $e;
         }
         catch (\Exception $e)
         {
+            // Catch all, convert any unexpected exception into a benchmark exception.
             throw new Exception($e->getMessage(), $e->getCode());
         }
 
@@ -150,8 +151,10 @@ class Object extends Library implements Contract\Object
     {
         $results = [];
 
+        // Loop through all marks
         foreach (array_keys($this->marks) as $mark)
         {
+            // 'get' the actual marks results, and assign it.
             $results[$mark] = $this->get($mark);
         }
 
@@ -163,7 +166,9 @@ class Object extends Library implements Contract\Object
      *
      * Does a bunch of calculations upon an array of values, returns
      * the result.
-     * @todo v1.1.0.0 whether or not the number format is ran should be a paramerter
+     *
+     * @todo v1.1.0.0 whether or not the number format is ran should be a parameter
+     *
      * @param $values
      * @param int $decimals
      *
@@ -201,6 +206,7 @@ class Object extends Library implements Contract\Object
         }
         catch (\Exception $e)
         {
+            // Catch all, convert any unexpected exception into a benchmark exception.
             throw new Exception($e->getMessage(), $e->getCode());
         }
     }

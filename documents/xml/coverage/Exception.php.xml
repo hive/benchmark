@@ -20,6 +20,7 @@
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
+        <covered by="testInstance::testBadMethodCall"/>
         <covered by="testInstance::testChangeConfig"/>
         <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
@@ -29,6 +30,8 @@
         <covered by="testObjectGet::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
         <covered by="testTrace::testNotRunningException"/>
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
@@ -39,6 +42,7 @@
         <covered by="testInstanceInitEnabled::testDisabled"/>
         <covered by="testInstance::testNotRunningException"/>
         <covered by="testInstance::testStoppedRunningException"/>
+        <covered by="testInstance::testBadMethodCall"/>
         <covered by="testInstance::testChangeConfig"/>
         <covered by="testObjectDetails::testDetailsMarkNameNotRunning"/>
         <covered by="testObjectDetails::testForcedGeneralException"/>
@@ -48,6 +52,8 @@
         <covered by="testObjectGet::testForcedGeneralException"/>
         <covered by="testObject::testNotRunningException"/>
         <covered by="testObject::testStoppedRunningException"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
         <covered by="testTrace::testNotRunningException"/>
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>

@@ -290,7 +290,7 @@ class testObjectDetails extends base
         $bm = new MockException();
         $bm->start('test');
         $bm->stop('test');
-        $bm->setUpException();
+        $bm->SetMarksToNull();
         $bm->details('test');
     }
 

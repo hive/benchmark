@@ -259,6 +259,38 @@
 
 
         /**
+         * Test returning false if the value is empty.
+         */
+        public function testEmptyStartStop()
+        {
+
+            $bm = new MockException();
+            $bm->start('test');
+            $bm->stop('test');
+            $bm->SetMarksTimeToZero('test');
+            $result = $bm->get('test');
+
+
+            $this->assertArrayHasKey('count', $result);
+            $this->assertEquals(1, $result['count']);
+
+            $this->assertArrayHasKey('time', $result);
+            $this->assertArrayHasKey('total', $result['time']);
+            $this->assertArrayHasKey('min', $result['time']);
+            $this->assertArrayHasKey('max', $result['time']);
+            $this->assertArrayHasKey('mean', $result['time']);
+            $this->assertArrayHasKey('median', $result['time']);
+
+            // Calculations should all be the different from the total
+            $this->assertFalse($result['time']['total']);
+            $this->assertFalse($result['time']['min']);
+            $this->assertFalse($result['time']['max']);
+            $this->assertFalse($result['time']['mean']);
+            $this->assertFalse($result['time']['median']);
+        }
+
+
+        /**
          * Get a mark when the benchmark has been disabled
          * @output Exception
          */
@@ -316,6 +348,8 @@
         }
 
 
+
+
         /**
          * Forces an unexpected exception
          * @output Exception
@@ -328,8 +362,25 @@
             $bm = new MockException();
             $bm->start('test');
             $bm->stop('test');
-            $bm->setUpException();
+            $bm->SetMarksToNull();
             $bm->get('test');
         }
+
+        /**
+         * Forces an unexpected exception
+         * @output Exception
+         */
+        public function testForcedGenericException ()
+        {
+            //$this->setExpectedException('Hive\Benchmark\Exception');
+
+
+            $bm = new MockException();
+            $bm->start('test');
+            $bm->stop('test');
+            $bm->SetConfigToNull();
+            $bm->get('test');
+        }
+
 
     }

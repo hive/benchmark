@@ -32,6 +32,7 @@ class Trace extends Instance
      */
     public static function start($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
+        // Call the instance start with our traces' name.
         parent::start(self::name($name, $separator));
     }
 
@@ -44,6 +45,7 @@ class Trace extends Instance
      */
     public static function stop($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
+        // Call the instance stop with our traces' name.
         parent::stop(self::name($name, $separator));
     }
 
@@ -53,9 +55,11 @@ class Trace extends Instance
      *
      * @param bool   $name
      * @param string $separator
+     * @return array
      */
     public static function get($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
+        // Call the instance get with our traces' name.
         return parent::get(self::name($name, $separator));
     }
 
@@ -79,6 +83,7 @@ class Trace extends Instance
      * Simple debug_backtrace to get the name of the method which called.
      *
      * @param  int $stack How far in the stacktrace to go back.
+     * @param string $separator how our namespaces in our trace should be visually separated
      *
      * @return string $name   The caller class/method.
      */

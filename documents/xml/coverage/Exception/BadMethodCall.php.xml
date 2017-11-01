@@ -2,16 +2,30 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="BadMethodCall.php">
     <totals>
-      <lines total="44" comments="27" code="17" executable="4" executed="0" percent="0.00%"/>
-      <methods count="1" tested="0" percent="0.00%"/>
+      <lines total="44" comments="27" code="17" executable="4" executed="4" percent="100.00%"/>
+      <methods count="1" tested="1" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="0" percent="0.00%"/>
+      <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="BadMethodCall" start="17" executable="4" executed="0" crap="2">
+    <class name="BadMethodCall" start="17" executable="4" executed="4" crap="1">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark\Exception"/>
-      <method name="__construct" signature="__construct($class, $method)" start="36" end="43" crap="2" executable="4" executed="0" coverage="0"/>
+      <method name="__construct" signature="__construct($class, $method)" start="36" end="43" crap="1" executable="4" executed="4" coverage="100"/>
     </class>
+    <coverage>
+      <line nr="38">
+        <covered by="testInstance::testBadMethodCall"/>
+      </line>
+      <line nr="40">
+        <covered by="testInstance::testBadMethodCall"/>
+      </line>
+      <line nr="42">
+        <covered by="testInstance::testBadMethodCall"/>
+      </line>
+      <line nr="43">
+        <covered by="testInstance::testBadMethodCall"/>
+      </line>
+    </coverage>
   </file>
 </phpunit>

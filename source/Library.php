@@ -107,11 +107,13 @@ class Library implements Contract\Library
             }
             else
             {
+                // The Mark has already been stopped.
                 throw new Exception\StoppedRunning($name);
             }
         }
         else
         {
+            // There is no mark by that name running.
             throw new Exception\NotRunning($name);
         }
     }
@@ -189,11 +191,11 @@ class Library implements Contract\Library
     {
 
         // Initialise the variables
-
         $results = [];
 
         try
         {
+            // Ensure that the mark exists.
             if (isset($this->marks[$name]))
             {
 
@@ -211,12 +213,13 @@ class Library implements Contract\Library
                     // Just an alias
                     $mark = &$this->marks[$name][$i];
 
-                    // If the mark has not been stopped, don't report.
+                    // If the mark time has not been stopped, don't report.
                     if (isset($mark['time']['stop']))
                     {
                         $time = $mark['time']['stop'] - $mark['time']['start'];
                     }
 
+                    // If the mark memory has not been stopped, don't report.
                     if (isset($mark['memory']['stop']))
                     {
                         $memory = $mark['memory']['stop'] - $mark['memory']['start'];
@@ -225,7 +228,7 @@ class Library implements Contract\Library
                     // Sanity check against the memory in case it was a minor benchmark and there was a garbage collection during the running.
                     $memory = ($memory > 1) ? $memory : 0;
 
-                    // Dont forget $time, $memory are false unless otherwise specified
+                    // Don't forget $time, $memory are false unless otherwise specified
                     $result['count'] = count($this->marks[$name]);
                     $result['time'] = $time;
                     $result['memory'] = $memory;
@@ -235,6 +238,7 @@ class Library implements Contract\Library
             }
             else
             {
+                // No mark by that name exists.
                 throw new Exception\DoesNotExist($name);
             }
         }
@@ -245,10 +249,11 @@ class Library implements Contract\Library
         }
         catch (\Exception $e)
         {
-            // Sanity
+            // Sanity, catch all for unexpected exceptions.
             throw new Exception($e->getMessage(), $e->getCode());
         }
 
+        // Return the results, don't forget this was set to an empty array at the top.
         return $results;
     }
 }

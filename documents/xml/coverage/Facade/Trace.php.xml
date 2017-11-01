@@ -2,32 +2,39 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Trace.php">
     <totals>
-      <lines total="91" comments="51" code="40" executable="11" executed="9" percent="81.82%"/>
-      <methods count="5" tested="4" percent="80.00%"/>
+      <lines total="96" comments="59" code="37" executable="10" executed="10" percent="100.00%"/>
+      <methods count="5" tested="5" percent="100.00%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="0" percent="0.00%"/>
+      <classes count="1" tested="1" percent="100.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Trace" start="18" executable="11" executed="9" crap="6.22">
+    <class name="Trace" start="18" executable="10" executed="10" crap="6">
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark"/>
-      <method name="start" signature="start($name = false, $separator = self::DEFAULT_SEPARATOR)" start="33" end="36" crap="1" executable="2" executed="2" coverage="100"/>
-      <method name="stop" signature="stop($name = false, $separator = self::DEFAULT_SEPARATOR)" start="45" end="48" crap="1" executable="2" executed="2" coverage="100"/>
-      <method name="get" signature="get($name = false, $separator = self::DEFAULT_SEPARATOR)" start="57" end="60" crap="2" executable="2" executed="0" coverage="0"/>
-      <method name="name" signature="name($name = false, $separator = self::DEFAULT_SEPARATOR)" start="71" end="76" crap="2" executable="3" executed="3" coverage="100"/>
-      <method name="trace" signature="trace($stack = 2, $separator = '.')" start="85" end="90" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="start" signature="start($name = false, $separator = self::DEFAULT_SEPARATOR)" start="33" end="37" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="stop" signature="stop($name = false, $separator = self::DEFAULT_SEPARATOR)" start="46" end="50" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="get" signature="get($name = false, $separator = self::DEFAULT_SEPARATOR)" start="60" end="64" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="name" signature="name($name = false, $separator = self::DEFAULT_SEPARATOR)" start="75" end="80" crap="2" executable="3" executed="3" coverage="100"/>
+      <method name="trace" signature="trace($stack = 2, $separator = '.')" start="90" end="95" crap="1" executable="2" executed="2" coverage="100"/>
     </class>
     <coverage>
-      <line nr="35">
-        <covered by="testTrace::testStartStop"/>
-        <covered by="testTrace::testMultipleStartStop"/>
-        <covered by="testTrace::testMultipleDifferentStartStop"/>
-        <covered by="testTrace::testInvalidMark"/>
-        <covered by="testTrace::testEmptyMarkName"/>
-        <covered by="testTrace::testStoppedRunningException"/>
-        <covered by="testTrace::testChangeConfig"/>
-      </line>
       <line nr="36">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
+        <covered by="testTraceGet::testInvalidMark"/>
+        <covered by="testTrace::testStartStop"/>
+        <covered by="testTrace::testMultipleStartStop"/>
+        <covered by="testTrace::testMultipleDifferentStartStop"/>
+        <covered by="testTrace::testInvalidMark"/>
+        <covered by="testTrace::testEmptyMarkName"/>
+        <covered by="testTrace::testStoppedRunningException"/>
+        <covered by="testTrace::testChangeConfig"/>
+      </line>
+      <line nr="37">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>
@@ -35,7 +42,10 @@
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
       </line>
-      <line nr="47">
+      <line nr="49">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>
@@ -44,7 +54,10 @@
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
       </line>
-      <line nr="48">
+      <line nr="50">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>
@@ -52,7 +65,20 @@
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
       </line>
-      <line nr="73">
+      <line nr="63">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
+      </line>
+      <line nr="77">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
+        <covered by="testTraceGet::testInvalidMark"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>
@@ -62,7 +88,13 @@
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
       </line>
-      <line nr="74">
+      <line nr="78">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
+        <covered by="testTraceGet::testInvalidMark"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>
@@ -72,7 +104,12 @@
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
       </line>
-      <line nr="75">
+      <line nr="79">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>
@@ -81,7 +118,13 @@
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
       </line>
-      <line nr="87">
+      <line nr="92">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
+        <covered by="testTraceGet::testInvalidMark"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>
@@ -91,7 +134,13 @@
         <covered by="testTrace::testStoppedRunningException"/>
         <covered by="testTrace::testChangeConfig"/>
       </line>
-      <line nr="89">
+      <line nr="94">
+        <covered by="testTraceGet::testStartStopGet"/>
+        <covered by="testTraceGet::testMultipleStartStop"/>
+        <covered by="testTraceGet::testMultipleDifferentStartStop"/>
+        <covered by="testTraceGet::testInvalidMark"/>
+        <covered by="testTraceGet::testEmptyGetMarkName"/>
+        <covered by="testTraceGet::testDoesNotExistException"/>
         <covered by="testTrace::testStartStop"/>
         <covered by="testTrace::testMultipleStartStop"/>
         <covered by="testTrace::testMultipleDifferentStartStop"/>

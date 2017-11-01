@@ -19,11 +19,11 @@ EOL char: [4m\n[0m [13/13, 100%]
 
 Function opening brace placement: [4mnew line[0m [31/31, 100%]
 
-Line indent: [4mspaces[0m [728/728, 100%]
+Line indent: [4mspaces[0m [750/750, 100%]
 
-Line length: [4m80 or less[0m [935/976, 95.8%]
-	81-120 => 38 (3.89%)
-	121-150 => 3 (0.31%)
+Line length: [4m80 or less[0m [955/998, 95.69%]
+	81-120 => 40 (4.01%)
+	121-150 => 3 (0.3%)
 
 Multiple statements on same line: [4mno[0m [132/132, 100%]
 
@@ -35,7 +35,7 @@ PHP closing tag at end of PHP-only file: [4mno[0m [13/13, 100%]
 
 PHP constant case: [4mlower[0m [20/20, 100%]
 
-PHP keyword case: [4mlower[0m [231/231, 100%]
+PHP keyword case: [4mlower[0m [232/232, 100%]
 
 PHP short open tag used: [4mno[0m [13/13, 100%]
 
@@ -44,7 +44,7 @@ Spaces after control structure open parenthesis: [4m0[0m [26/26, 100%]
 Spaces before control structure close parenthesis: [4m0[0m [26/26, 100%]
 
 ----------------------------------------------------------------------
-Time: 365ms; Memory: 7.25Mb
+Time: 357ms; Memory: 7.25Mb
 
 
 [1mFILE: .../apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php[0m
@@ -60,13 +60,13 @@ Time: 365ms; Memory: 7.25Mb
   64 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
   67 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     13
- 109 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+ 112 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
- 115 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+ 118 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     13
- 122 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
+ 125 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
      |       |     found
- 123 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 126 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
 ----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
@@ -88,43 +88,43 @@ Time: 365ms; Memory: 7.25Mb
      |         |     found
  108 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
- 112 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 113 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 113 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+ 114 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
- 127 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 129 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 144 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 146 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 163 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 165 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 166 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 168 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 167 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+ 169 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
- 195 | [31mERROR[0m   | [x] Expected 1 space after TRY keyword; newline
+ 196 | [31mERROR[0m   | [x] Expected 1 space after TRY keyword; newline
      |         |     found
- 197 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 199 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 13
- 205 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 207 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 17
- 215 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 217 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 21
- 220 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 223 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 21
- 225 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 142
+ 228 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 142
      |         |     characters
- 235 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 238 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 236 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+ 239 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
- 240 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 244 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 241 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 245 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 245 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 249 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 246 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 250 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
 ----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 23 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
@@ -141,29 +141,29 @@ Time: 365ms; Memory: 7.25Mb
      |       |     9
   87 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
- 111 | [31mERROR[0m | [x] Expected 1 space after TRY keyword; newline found
- 119 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+ 110 | [31mERROR[0m | [x] Expected 1 space after TRY keyword; newline found
+ 118 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     13
- 130 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
+ 129 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
      |       |     found
- 131 | [31mERROR[0m | [x] Expected 1 space after CATCH keyword; 0 found
- 131 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+ 130 | [31mERROR[0m | [x] Expected 1 space after CATCH keyword; 0 found
+ 130 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
  134 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
      |       |     found
  135 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
- 153 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+ 155 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
- 179 | [31mERROR[0m | [x] Expected 1 space after TRY keyword; newline found
- 181 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+ 184 | [31mERROR[0m | [x] Expected 1 space after TRY keyword; newline found
+ 186 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     13
- 190 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
+ 195 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
      |       |     found
- 191 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
- 201 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
+ 196 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 206 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline
      |       |     found
- 202 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
+ 207 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found
      |       |     9
 ----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 17 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
@@ -177,7 +177,7 @@ Time: 365ms; Memory: 7.25Mb
  31 | [33mWARNING[0m | Line exceeds 120 characters; contains 139 characters
 ----------------------------------------------------------------------
 
-Time: 365ms; Memory: 7.25Mb
+Time: 358ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -194,7 +194,7 @@ Time: 365ms; Memory: 7.25Mb
 [1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (49 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 365ms; Memory: 7.25Mb
+Time: 364ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
@@ -211,5 +211,5 @@ Time: 365ms; Memory: 7.25Mb
 [1mPHPCBF CAN FIX 49 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 366ms; Memory: 7.25Mb
+Time: 364ms; Memory: 7.25Mb
 
