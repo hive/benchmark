@@ -16,6 +16,7 @@ https://hive.github.io/benchmark/
 ## Notes
 
  * phpUnit is not currently running on the php7 branches, due to the changes in its namespaces. 
+ * PhpMetrics scores are not currently taking into account phpUnit test or code coverage.  
 
 ## Installation
 
