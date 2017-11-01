@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="PHP_CodeSniffer">
-    <description>Hive CS.</description>
+    <description>Code Sniffer.</description>
 
     <file>../source/</file>
 

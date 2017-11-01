@@ -50,6 +50,7 @@ xsltproc templates/phploc.xsl ../documents/xml/phploc.xml > ../documents/html/ph
 
 cp templates/frame.html ../documents/html/frame.html
 cp templates/nav.html ../documents/html/nav.html
+cp templates/index.html ../documents/index.html
 
 
 # Commit the document changes

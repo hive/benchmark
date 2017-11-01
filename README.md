@@ -8,6 +8,11 @@
 
 Simple decoupled benchmark, Version 1.0.*
 
+
+## Documentation
+
+https://hive.github.io/benchmark/
+
 ## Notes
 
  * phpUnit is not currently running on the php7 branches, due to the changes in its namespaces. 
@@ -155,178 +160,9 @@ The above example will output
     )
         
  ```
- 
-**Multiple Instances with the same name**
-
-```php
-     
-     use Hive\Benchmark;
-         
-     // Start the benchmark
-     Benchmark\Instance::start('FirstBenchmark');
- 
-     for ($i=rand(1,100); $i>0; $i--) {
- 
-         // start another benchmark
-         Benchmark\Instance::start('SubBenchmark');
- 
-         // Do Some Actions
- 
-         // Stop the other benchmark
-         Benchmark\Instance::stop('SubBenchmark');
-     }
- 
-     sleep(1);
- 
-     // Stop the benchmark
-     Benchmark\Instance::stop('FirstBenchmark');
- 
-     // Get a summary of all benchmarks
-     print_r(Benchmark\Instance::summary());
-         
-```
-
-The above example will output 
-         
-```php
-         /**
-          * Output
-          */
-         Array
-         (
-             [FirstBenchmark] => Array
-             (
-                 [count] => 1
-                 [time] => Array
-                 (
-                     [total] => 1.00409699
-                     [min] => 1.00409699
-                     [max] => 1.00409699
-                     [mean] => 1.00409699
-                     [median] => 1.00409699
-                 )
-                 [memory] => Array
-                 (
-                     [total] => 117,120
-                     [min] => 117,120
-                     [max] => 117,120
-                     [mean] => 117,120
-                     [median] => 117,120
-                 )
-             )
-         
-             [SubBenchmark] => Array
-             (
-                 [count] => 79
-                 [time] => Array
-                 (
-                     [total] => 0.08011698
-                     [min] => 0.00003004
-                     [max] => 0.00176811
-                     [mean] => 0.00101414
-                     [median] => 0.00101900
-                 )
-                 [memory] => Array
-                 (
-                     [total] => 1,183,976
-                     [min] => 360
-                     [max] => 29,712
-                     [mean] => 14,987
-                     [median] => 14,936
-                 )
-             )         
-         )
-         
-```
    
-Using the Method
-
-```php
-    
-  public class foo {
    
-      use Hive\Benchmark;
-      
-      class apple {
-  
-  
-  
-          public function foo () {
-              Benchmark\Instance::method();
-              $this->bar();
-              Benchmark\Instance::method();
-          }
-  
-          public function bar () {
-  
-              Benchmark\Instance::method();
-              sleep(1);
-              Benchmark\Instance::method();
-          }
-      }
-      
-      
-          $helloWorld = new apple();
-          $helloWorld->foo();
-      
-          print_r(Benchmark\Instance::summary());
-          
-```
-  The above example will output 
-  
-```php
-          
-          /**
-           * Output
-           */
-          Array
-          (
-              [apple\foo] => Array
-              (
-                  [count] => 1
-                  [time] => Array
-                  (
-                      [total] => 1.00055385
-                      [min] => 1.00055385
-                      [max] => 1.00055385
-                      [mean] => 1.00055385
-                      [median] => 1.00055385
-                  )
-                  [memory] => Array
-                  (
-                      [total] => 2,328
-                      [min] => 2,328
-                      [max] => 2,328
-                      [mean] => 2,328
-                      [median] => 2,328
-                  )
-              )
-              [apple\bar] => Array
-              (
-                  [count] => 1
-                  [time] => Array
-                  (
-                      [total] => 1.00045204
-                      [min] => 1.00045204
-                      [max] => 1.00045204
-                      [mean] => 1.00045204
-                      [median] => 1.00045204
-                  )
-                  [memory] => Array
-                  (
-                      [total] => 496
-                      [min] => 496
-                      [max] => 496
-                      [mean] => 496
-                      [median] => 496
-                  ) 
-              )
-          )
-          
-   
-```   
-   
-All of which (other the instance::method()) can be called directly from the object 
+All of which can be called directly from the object 
 
 ```php
 
@@ -358,6 +194,11 @@ Using the config
     $bench = new \Hive\Benchmark\Object($config); 
 
 ```
+
+## Advance 
+
+The benchmark library has many more options and features, to view them please see our [examples](https://github.com/hive/benchmark/tree/master/examples)
+
 
 ## File Map
 
@@ -395,3 +236,5 @@ The code is split up into the following classes :
         * Instance.php
         * Library.php
         * Object.php
+        
+The full API documentation can be found [here](https://hive.github.io/benchmark/html/phpdox/index.xhtml) or all the documentation can be found [here](https://hive.github.io/benchmark/)
