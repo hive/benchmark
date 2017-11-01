@@ -56,7 +56,7 @@ class Trace extends Instance
      */
     public static function get($name = false, $separator = self::DEFAULT_SEPARATOR)
     {
-        parent::get(self::name($name, $separator));
+        return parent::get(self::name($name, $separator));
     }
 
 
