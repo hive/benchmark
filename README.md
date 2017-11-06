@@ -206,10 +206,10 @@ The benchmark library has many more options and features, to view them please se
 The code is split up into the following classes : 
 
 
-1. /Tests : folder for any unit testing
-2. /Examples : folder for any examples
-3. /Documents : folder for any documentation  
-4. /Source : folder for source code
+1. /tests : folder for any unit testing
+2. /examples : folder for any examples
+3. /docs : folder for any documentation  
+4. /source : folder for source code
     1. Library.php : The actual benchmarking library, useful for extending functionality.
         *  __construct( array $config )
         *  start         (string $nameOfBenchmark) 

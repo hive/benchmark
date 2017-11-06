@@ -11,7 +11,7 @@
             <directory>../source</directory>
             <exclude>
                 <directory>../build</directory>
-                <directory>../documents</directory>
+                <directory>../docs</directory>
                 <directory>../examples</directory>
                 <directory>../tests</directory>
                 <directory>../vendor</directory>
