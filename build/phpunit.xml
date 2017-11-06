@@ -21,17 +21,17 @@
     <logging>
         <log
                 type="coverage-html"
-                target="../documents/html/coverage"
+                target="../docs/html/coverage"
                 charset="UTF-8"
                 yui="true"
                 highlight="true"
                 lowUpperBound="50"
                 highLowerBound="80"
         />
-        <log type="testdox-html" target="../documents/html/phpunit/testdox.html" />
-        <log type="coverage-clover" target="../documents/xml/clover.xml"/>
-        <log type="coverage-xml" target="../documents/xml/coverage/"/>
-        <log type="junit" target="../documents/xml/phpunit.xml" logIncompleteSkipped="false"/>
+        <log type="testdox-html" target="../docs/html/phpunit/testdox.html" />
+        <log type="coverage-clover" target="../docs/xml/clover.xml"/>
+        <log type="coverage-xml" target="../docs/xml/coverage/"/>
+        <log type="junit" target="../docs/xml/phpunit.xml" logIncompleteSkipped="false"/>
     </logging>
 
 </phpunit>

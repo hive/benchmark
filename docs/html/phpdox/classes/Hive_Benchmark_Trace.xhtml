@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Hive\Benchmark\Trace</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Hive_Benchmark">Hive\Benchmark</a>
+          </li>
+          <li class="separator">Trace</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#coverage">Coverage</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li>
+            <a href="../source/Facade/Trace.php.xhtml#line18">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Hive\Benchmark\</small>Trace</h1>
+        <h4>Benchmark Trace Facade.</h4>
+        <p>Allows access to the benchmark instance with auto tracing,<br/>this will basically trace where the benchmark was called from and prepend<br/>that to the name of the mark. If no name is used it defaults to the trace itself.</p>
+        <ul>
+          <li>Author: Jamie Peake &lt;jamie.peake@gmail.com&gt;</li>
+          <li>Copyright: (c) 2016 Jamie Peake</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Trace
+                extends <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance.xhtml">Instance</a>
+            {<br/><ul class="none"><li>// constants</li><li>const DEFAULT_SEPARATOR = '.';</li></ul><ul class="none"><li>// methods</li><li>public static void <a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/start.xhtml">start</a>()
+                    </li><li>public static void <a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/stop.xhtml">stop</a>()
+                    </li><li>public static array <a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/get.xhtml">get</a>()
+                    </li><li>public static bool|string <a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/name.xhtml">name</a>()
+                    </li><li>private static string <a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/trace.xhtml">trace</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="Hive\Benchmark\Instance">Instance</span></li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/__callStatic.xhtml">__callStatic</a>()
+                        </li><li>public static Object <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/init.xhtml">init</a>()
+                        </li><li>public static array <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/summary.xhtml">summary</a>()
+                        </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/method.xhtml">method</a>()
+                        </li><li>public static void <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/destroy.xhtml">destroy</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance.xhtml">Hive\Benchmark\Instance</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="coverage">Coverage</h2>
+        <table class="styled">
+          <tr>
+            <td>Methods</td>
+            <td class="percent">100%</td>
+            <td class="nummeric">5 / 5</td>
+          </tr>
+          <tr>
+            <td>Lines</td>
+            <td class="percent">100%</td>
+            <td class="nummeric">10 / 10</td>
+          </tr>
+        </table>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="DEFAULT_SEPARATOR">DEFAULT_SEPARATOR</td>
+              <td>'.'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="trace"><a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/trace.xhtml">trace()</a>
+                — Simple debug_backtrace to get the name of the method which called.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="get"><a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/get.xhtml">get()</a>
+                — Retrieve a benchmark trace</li>
+            <li id="name"><a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/name.xhtml">name()</a>
+                — Returns the name of the current benchmark trace</li>
+            <li id="start"><a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/start.xhtml">start()</a>
+                — Start a benchmark trace</li>
+            <li id="stop"><a title="Hive\Benchmark\Trace" href="../classes/Hive_Benchmark_Trace/stop.xhtml">stop()</a>
+                — Stop a benchmark trace</li>
+          </ul>
+          <h3>Inherited from <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance.xhtml">Hive\Benchmark\Instance</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="__callStatic">
+              <a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/__callStatic.xhtml">__callStatic()</a>
+            </li>
+            <li id="destroy"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/destroy.xhtml">destroy()</a>
+                — Allows the destruction of the instance.</li>
+            <li id="init"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/init.xhtml">init()</a>
+                — Initialise the instance.</li>
+            <li id="method"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/method.xhtml">method()</a>
+                — Auto Method for setting benchmarks on a method.</li>
+            <li id="summary"><a title="Hive\Benchmark\Instance" href="../classes/Hive_Benchmark_Instance/summary.xhtml">summary()</a>
+                — Static Alias to the Benchmark/Object/Summary.</li>
+          </ul>
+        </div>
+        <h2 id="history">History</h2>
+        <ul class="styled history">
+          <li>
+            <h3>2017-11-01T18:31:49+11:00 (commit #<span title="3c61e95b1d14fcb1711a6373e1f0e5687bd8f38a">3c61e95</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">update comments</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-11-01T16:19:25+11:00 (commit #<span title="daa5035b160635c997cef14aaefa2a8bfb5c23b8">daa5035</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">test a trae get</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-23T12:22:21+11:00 (commit #<span title="01e655170731c8c5ad23528a078f7f73620f4d23">01e6551</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">Mess Detector Code Clean Up</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-21T01:17:01+11:00 (commit #<span title="dcb06845bc366651ac4d5449bb533c85dba8ef8e">dcb0684</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">Add Benchmark/Trace and document</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-21T00:01:40+11:00 (commit #<span title="190f36b55bf8fb716df547fde41d39e7cb711884">190f36b</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">Add Trace Facade</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-10-20T19:27:00+11:00 (commit #<span title="b56b03ca49bc3a2837b330690d5c76bda6dd7df6">b56b03c</span>)</h3>
+            <div>
+              <p>
+                        Author: Jamie Peake (jamie@hive.com.au) /
+                        Commiter: Jamie Peake (jamie@hive.com.au)
+                    </p>
+              <pre class="wrapped">testing facade</pre>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.8.1.1-26-g131d5d2-dirty - Copyright (C) 2010 - 2017 by Arne Blankerts</span>
+    </footer>
+  </body>
+</html>

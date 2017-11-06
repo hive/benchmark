@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpdox xmlns="http://xml.phpdox.net/config">
-  <project name="Hive/Benchmark" source="${basedir}/../source" workdir="${basedir}/../documents/xml/phpdox">
+  <project name="Hive/Benchmark" source="${basedir}/../source" workdir="${basedir}/../docs/xml/phpdox">
     <collector backend="parser">
       <!--<exclude mask="**vendors**”/>-->
       <!--<exclude mask="**features**"/>-->
     </collector>
-    <generator output="${basedir}/../Documents">
+    <generator output="${basedir}/../docs">
         <enrich base="${basedir}">
             <source type="build" />
             <source type="git">
@@ -15,13 +15,13 @@
             <!-- alternative checkstyler to support phpcs xml output -->
             <source type="phpcs" />
             <source type="pmd">
-                <file name="../documents/xml/phpmd.xml" />
+                <file name="../docs/xml/phpmd.xml" />
             </source>
             <source type="phploc">
-                <file name="../documents/xml/phploc.xml" />
+                <file name="../docs/xml/phploc.xml" />
             </source>
             <source type="phpunit">
-                <coverage path="../documents/xml/coverage" />
+                <coverage path="../docs/xml/coverage" />
             </source>
         </enrich>
       <build engine="html" output="html/phpdox"/>

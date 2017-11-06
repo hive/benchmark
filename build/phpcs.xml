@@ -8,11 +8,11 @@
 
 
 
-    <arg name="report-full" value="../documents/html/codesniffer/full.txt"/>
-    <arg name="report-summary" value="../documents/html/codesniffer/summary.txt"/>
-    <arg name="report-source" value="../documents/html/codesniffer/source.txt"/>
-    <arg name="report-info" value="../documents/html/codesniffer/info.txt"/>
-    <arg name="report-xml" value="../documents/xml/codesniffer.xml"/>
+    <arg name="report-full" value="../docs/html/codesniffer/full.txt"/>
+    <arg name="report-summary" value="../docs/html/codesniffer/summary.txt"/>
+    <arg name="report-source" value="../docs/html/codesniffer/source.txt"/>
+    <arg name="report-info" value="../docs/html/codesniffer/info.txt"/>
+    <arg name="report-xml" value="../docs/xml/codesniffer.xml"/>
     <arg name="report-width" value="auto"/>
 
     <arg value="np"/>

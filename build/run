@@ -1,46 +1,46 @@
 #!/usr/bin/env bash
 
 # Gather php lines of code
-phploc --log-xml ../documents/xml/phploc.xml --progress ../source/;
+phploc --log-xml ../docs/xml/phploc.xml --progress ../source/;
 
 # Run phpunit
 phpunit --configuration phpunit.xml --testsuite All;
 
 # Run php mess detector
-phpmd ../source xml codesize,controversial,design,naming,unusedcode --reportfile ../documents/xml/phpmd.xml --suffixes php;
+phpmd ../source xml codesize,controversial,design,naming,unusedcode --reportfile ../docs/xml/phpmd.xml --suffixes php;
 
 # Run Copy/Paste Detection
-phpcpd ../source --log-pmd ../documents/xml/phpcpd.xml;
+phpcpd ../source --log-pmd ../docs/xml/phpcpd.xml;
 
 
 # Run php metrics
-phpmetrics --report-cli --report-html=../documents/html/phpmetrics1/index.html --report-xml=../documents/xml/phpmetrics1.xml ../source
+phpmetrics --report-cli --report-html=../docs/html/phpmetrics1/index.html --report-xml=../docs/xml/phpmetrics1.xml ../source
 
-phpmetrics2 --report-cli --report-html=../documents/html/phpmetrics2/ --report-xml=../documents/xml/phpmetrics2.xml --git ../source
+phpmetrics2 --report-cli --report-html=../docs/html/phpmetrics2/ --report-xml=../docs/xml/phpmetrics2.xml --git ../source
 
 # Run php Code Sniffer
 php /usr/local/zend/bin/phpcs;
 
 # Output the rules of the CodeSniffer
-php /usr/local/zend/bin/phpcs --generator=html > ../documents/html/codesniffer/rules.html;
+php /usr/local/zend/bin/phpcs --generator=html > ../docs/html/codesniffer/rules.html;
 
 # Run it a second time gathering all the output into one file
-php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../source >  ../documents/html/codesniffer/all.txt;
+php /usr/local/zend/bin/phpcs --standard=PSR1,PSR2 --tab-width=auto --report-info --report-full --report-source --report-summary ../source >  ../docs/html/codesniffer/all.txt;
 
 # Create phpUnit html
-xsltproc templates/phpunit.xsl ../documents/xml/phpunit.xml > ../documents/html/phpunit/index.html;
+xsltproc templates/phpunit.xsl ../docs/xml/phpunit.xml > ../docs/html/phpunit/index.html;
 
 # Create codeSniffer html
-xsltproc templates/codesniffer.xsl ../documents/xml/codesniffer.xml > ../documents/html/codesniffer/index.html;
+xsltproc templates/codesniffer.xsl ../docs/xml/codesniffer.xml > ../docs/html/codesniffer/index.html;
 
 # Create phpMD html
-xsltproc templates/phpmd.xsl ../documents/xml/phpmd.xml > ../documents/html/phpmd/index.html;
+xsltproc templates/phpmd.xsl ../docs/xml/phpmd.xml > ../docs/html/phpmd/index.html;
 
 # Create phpMD html
-xsltproc templates/phpcpd.xsl ../documents/xml/phpcpd.xml > ../documents/html/phpcpd/index.html;
+xsltproc templates/phpcpd.xsl ../docs/xml/phpcpd.xml > ../docs/html/phpcpd/index.html;
 
 # Create phpLoc html
-xsltproc templates/phploc.xsl ../documents/xml/phploc.xml > ../documents/html/phploc/index.html;
+xsltproc templates/phploc.xsl ../docs/xml/phploc.xml > ../docs/html/phploc/index.html;
 
 
 # Run phpDox
@@ -48,9 +48,9 @@ xsltproc templates/phploc.xsl ../documents/xml/phploc.xml > ../documents/html/ph
 
 # move our html viewer
 
-cp templates/frame.html ../documents/html/frame.html
-cp templates/nav.html ../documents/html/nav.html
-cp templates/index.html ../documents/index.html
+cp templates/frame.html ../docs/html/frame.html
+cp templates/nav.html ../docs/html/nav.html
+cp templates/index.html ../docs/index.html
 
 
 # Commit the document changes

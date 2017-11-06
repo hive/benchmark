@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="All" tests="91" assertions="548" failures="0" errors="0" time="0.868398">
+    <testsuite name="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" tests="9" assertions="58" failures="0" errors="0" time="0.076874">
+      <testcase name="testSanity" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="6" assertions="1" time="0.005238"/>
+      <testcase name="testStartStop" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="15" assertions="5" time="0.006434"/>
+      <testcase name="testMultipleStartStop" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="29" assertions="21" time="0.015267"/>
+      <testcase name="testMultipleDifferentStartStop" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="72" assertions="22" time="0.016393"/>
+      <testcase name="testConfigEnabledFalse" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="117" assertions="1" time="0.008291"/>
+      <testcase name="testInvalidDetailsMarkName" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="128" assertions="1" time="0.005905"/>
+      <testcase name="testDetailsMarkNameNotRunning" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="136" assertions="1" time="0.005186"/>
+      <testcase name="testDetailsMarkNameStillRunning" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="144" assertions="5" time="0.009365"/>
+      <testcase name="testEmptyDetailsMarkName" class="testInstanceDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceDetailsTest.php" line="160" assertions="1" time="0.004795"/>
+    </testsuite>
+    <testsuite name="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" tests="7" assertions="92" failures="0" errors="0" time="0.103176">
+      <testcase name="testSanity" class="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" line="6" assertions="1" time="0.004620"/>
+      <testcase name="testStartStopGet" class="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" line="12" assertions="22" time="0.011753"/>
+      <testcase name="testMultipleStartStop" class="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" line="49" assertions="22" time="0.029960"/>
+      <testcase name="testMultipleDifferentStartStop" class="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" line="94" assertions="44" time="0.039782"/>
+      <testcase name="testInvalidMark" class="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" line="177" assertions="1" time="0.004988"/>
+      <testcase name="testEmptyGetMarkName" class="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" line="187" assertions="1" time="0.006597"/>
+      <testcase name="testDoesNotExistException" class="testInstanceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceGetTest.php" line="196" assertions="1" time="0.005476"/>
+    </testsuite>
+    <testsuite name="testInstanceInitEnabled" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceInitEnabledTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.013905">
+      <testcase name="testSanity" class="testInstanceInitEnabled" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceInitEnabledTest.php" line="6" assertions="1" time="0.006425"/>
+      <testcase name="testDisabled" class="testInstanceInitEnabled" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceInitEnabledTest.php" line="12" assertions="1" time="0.007480"/>
+    </testsuite>
+    <testsuite name="testInstanceMethod" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceMethodTest.php" tests="2" assertions="1" failures="0" errors="0" time="0.011239">
+      <testcase name="testSanity" class="testInstanceMethod" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceMethodTest.php" line="5" assertions="1" time="0.004649"/>
+      <testcase name="testMethodGet" class="testInstanceMethod" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceMethodTest.php" line="10" assertions="0" time="0.006590"/>
+    </testsuite>
+    <testsuite name="testInstanceSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceSummaryTest.php" tests="6" assertions="53" failures="0" errors="0" time="0.063031">
+      <testcase name="testSanity" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceSummaryTest.php" line="6" assertions="1" time="0.006806"/>
+      <testcase name="testStartStopSummary" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceSummaryTest.php" line="12" assertions="23" time="0.012850"/>
+      <testcase name="testMultipleStartStopSummary" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceSummaryTest.php" line="52" assertions="15" time="0.015524"/>
+      <testcase name="testDifferentStartStopSummary" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceSummaryTest.php" line="87" assertions="12" time="0.012632"/>
+      <testcase name="testConfigEnabledFalse" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceSummaryTest.php" line="118" assertions="1" time="0.006741"/>
+      <testcase name="testEmptyMarkName" class="testInstanceSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceSummaryTest.php" line="130" assertions="1" time="0.008478"/>
+    </testsuite>
+    <testsuite name="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" tests="11" assertions="11" failures="0" errors="0" time="0.078388">
+      <testcase name="testSanity" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="14" assertions="1" time="0.005937"/>
+      <testcase name="testStartStop" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="23" assertions="1" time="0.006818"/>
+      <testcase name="testMultipleStartStop" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="36" assertions="1" time="0.008475"/>
+      <testcase name="testMultipleDifferentStartStop" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="57" assertions="1" time="0.008521"/>
+      <testcase name="testConfigEnabledFalse" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="77" assertions="1" time="0.005721"/>
+      <testcase name="testInvalidMark" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="86" assertions="1" time="0.007636"/>
+      <testcase name="testEmptyMarkName" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="96" assertions="1" time="0.005401"/>
+      <testcase name="testNotRunningException" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="104" assertions="1" time="0.006598"/>
+      <testcase name="testStoppedRunningException" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="111" assertions="1" time="0.009232"/>
+      <testcase name="testBadMethodCall" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="121" assertions="1" time="0.008151"/>
+      <testcase name="testChangeConfig" class="testInstance" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/InstanceTest.php" line="129" assertions="1" time="0.005898"/>
+    </testsuite>
+    <testsuite name="LargeInstanceTest" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/LargeInstanceTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.005440">
+      <testcase name="testSanity" class="LargeInstanceTest" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/LargeInstanceTest.php" line="5" assertions="1" time="0.005440"/>
+    </testsuite>
+    <testsuite name="LargeObjectTest" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/LargeObjectTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.005368">
+      <testcase name="testSanity" class="LargeObjectTest" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/LargeObjectTest.php" line="5" assertions="1" time="0.005368"/>
+    </testsuite>
+    <testsuite name="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" tests="10" assertions="59" failures="0" errors="0" time="0.074513">
+      <testcase name="testSanity" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="11" assertions="1" time="0.004446"/>
+      <testcase name="testStartStop" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="28" assertions="5" time="0.007180"/>
+      <testcase name="testMultipleStartStop" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="75" assertions="21" time="0.011521"/>
+      <testcase name="testMultipleDifferentStartStop" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="153" assertions="22" time="0.016207"/>
+      <testcase name="testConfigEnabledFalse" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="206" assertions="1" time="0.004623"/>
+      <testcase name="testInvalidDetailsMarkName" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="222" assertions="1" time="0.004781"/>
+      <testcase name="testDetailsMarkNameNotRunning" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="235" assertions="1" time="0.004951"/>
+      <testcase name="testDetailsMarkNameStillRunning" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="254" assertions="5" time="0.010244"/>
+      <testcase name="testEmptyDetailsMarkName" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="272" assertions="1" time="0.005113"/>
+      <testcase name="testForcedGeneralException" class="testObjectDetails" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectDetailsTest.php" line="285" assertions="1" time="0.005447"/>
+    </testsuite>
+    <testsuite name="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" tests="11" assertions="107" failures="0" errors="0" time="0.136096">
+      <testcase name="testSanity" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="13" assertions="1" time="0.006308"/>
+      <testcase name="testStartStop" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="40" assertions="22" time="0.010481"/>
+      <testcase name="testMultipleStartStop" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="99" assertions="22" time="0.028497"/>
+      <testcase name="testMultipleDifferentStartStop" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="183" assertions="44" time="0.037445"/>
+      <testcase name="testEmptyStartStop" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="264" assertions="13" time="0.009333"/>
+      <testcase name="testConfigEnabledFalse" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="297" assertions="1" time="0.006639"/>
+      <testcase name="testInvalidMark" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="312" assertions="1" time="0.008107"/>
+      <testcase name="testEmptyGetMarkName" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="327" assertions="1" time="0.005885"/>
+      <testcase name="testDoesNotExistException" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="341" assertions="1" time="0.007505"/>
+      <testcase name="testForcedGeneralException" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="357" assertions="1" time="0.008093"/>
+      <testcase name="testForcedGenericException" class="testObjectGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectGetTest.php" line="373" assertions="0" time="0.007803"/>
+    </testsuite>
+    <testsuite name="testObjectSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectSummaryTest.php" tests="6" assertions="53" failures="0" errors="0" time="0.057739">
+      <testcase name="testSanity" class="testObjectSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectSummaryTest.php" line="14" assertions="1" time="0.006792"/>
+      <testcase name="testStartStopSummary" class="testObjectSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectSummaryTest.php" line="43" assertions="23" time="0.013472"/>
+      <testcase name="testMultipleStartStopSummary" class="testObjectSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectSummaryTest.php" line="106" assertions="15" time="0.013287"/>
+      <testcase name="testDifferentStartStopSummary" class="testObjectSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectSummaryTest.php" line="199" assertions="12" time="0.011581"/>
+      <testcase name="testConfigEnabledFalse" class="testObjectSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectSummaryTest.php" line="238" assertions="1" time="0.005027"/>
+      <testcase name="testEmptyMarkName" class="testObjectSummary" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectSummaryTest.php" line="254" assertions="1" time="0.007579"/>
+    </testsuite>
+    <testsuite name="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" tests="9" assertions="9" failures="0" errors="0" time="0.063772">
+      <testcase name="testSanity" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="15" assertions="1" time="0.006117"/>
+      <testcase name="testStartStop" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="24" assertions="1" time="0.004947"/>
+      <testcase name="testMultipleStartStop" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="38" assertions="1" time="0.007777"/>
+      <testcase name="testMultipleDifferentStartStop" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="60" assertions="1" time="0.008528"/>
+      <testcase name="testConfigEnabledFalse" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="84" assertions="1" time="0.005024"/>
+      <testcase name="testInvalidMark" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="101" assertions="1" time="0.006419"/>
+      <testcase name="testEmptyMarkName" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="115" assertions="1" time="0.007378"/>
+      <testcase name="testNotRunningException" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="129" assertions="1" time="0.005455"/>
+      <testcase name="testStoppedRunningException" class="testObject" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/ObjectTest.php" line="141" assertions="1" time="0.012127"/>
+    </testsuite>
+    <testsuite name="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" tests="7" assertions="92" failures="0" errors="0" time="0.114440">
+      <testcase name="testSanity" class="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" line="6" assertions="1" time="0.005411"/>
+      <testcase name="testStartStopGet" class="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" line="12" assertions="22" time="0.013515"/>
+      <testcase name="testMultipleStartStop" class="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" line="52" assertions="22" time="0.027094"/>
+      <testcase name="testMultipleDifferentStartStop" class="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" line="97" assertions="44" time="0.052417"/>
+      <testcase name="testInvalidMark" class="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" line="180" assertions="1" time="0.005660"/>
+      <testcase name="testEmptyGetMarkName" class="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" line="190" assertions="1" time="0.005173"/>
+      <testcase name="testDoesNotExistException" class="testTraceGet" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceGetTest.php" line="198" assertions="1" time="0.005170"/>
+    </testsuite>
+    <testsuite name="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" tests="9" assertions="9" failures="0" errors="0" time="0.064418">
+      <testcase name="testSanity" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="14" assertions="1" time="0.005334"/>
+      <testcase name="testStartStop" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="23" assertions="1" time="0.005387"/>
+      <testcase name="testMultipleStartStop" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="36" assertions="1" time="0.008447"/>
+      <testcase name="testMultipleDifferentStartStop" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="57" assertions="1" time="0.009076"/>
+      <testcase name="testInvalidMark" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="87" assertions="1" time="0.008428"/>
+      <testcase name="testEmptyMarkName" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="97" assertions="1" time="0.007749"/>
+      <testcase name="testNotRunningException" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="105" assertions="1" time="0.007282"/>
+      <testcase name="testStoppedRunningException" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="112" assertions="1" time="0.006572"/>
+      <testcase name="testChangeConfig" class="testTrace" file="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/tests/PHPUnit/TraceTest.php" line="122" assertions="1" time="0.006143"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

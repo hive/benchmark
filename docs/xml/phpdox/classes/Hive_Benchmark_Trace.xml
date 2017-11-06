@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Trace" namespace="Hive\Benchmark" name="Trace" abstract="false" final="false" start="18" end="96">
+  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Facade" file="Trace.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php" size="2641" time="2017-11-01T18:21:40+11:00" unixtime="1509520900" sha1="0111a02bb1a6e1b2174a05c737a7305228884fc7" relative="Facade/Trace.php"/>
+  <docblock>
+    <description compact="Benchmark Trace Facade.">Allows access to the benchmark instance with auto tracing,
+this will basically trace where the benchmark was called from and prepend
+that to the name of the mark. If no name is used it defaults to the trace itself.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/benchmark/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Benchmark"/>
+    <copyright value="(c) 2016 Jamie Peake"/>
+  </docblock>
+  <extends full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance"/>
+  <constant type="string" name="DEFAULT_SEPARATOR" value="'.'">
+    <docblock>
+      <description compact="Default namespace/class/method separator"/>
+    </docblock>
+  </constant>
+  <method name="start" start="33" end="37" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Start a benchmark trace"/>
+      <param type="object" variable="$name">
+        <type full="Hive\Benchmark\bool" namespace="Hive\Benchmark" name="bool"/>
+      </param>
+      <param type="string" variable="$separator"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="boolean" default="false"/>
+    <parameter name="separator" byreference="false" type="{unknown}" default="" constant="self::DEFAULT_SEPARATOR"/>
+    <inline>
+      <comment value="Call the instance start with our traces' name." line="35"/>
+    </inline>
+  </method>
+  <method name="stop" start="46" end="50" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Stop a benchmark trace"/>
+      <param type="object" variable="$name">
+        <type full="Hive\Benchmark\bool" namespace="Hive\Benchmark" name="bool"/>
+      </param>
+      <param type="string" variable="$separator"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="boolean" default="false"/>
+    <parameter name="separator" byreference="false" type="{unknown}" default="" constant="self::DEFAULT_SEPARATOR"/>
+    <inline>
+      <comment value="Call the instance stop with our traces' name." line="48"/>
+    </inline>
+  </method>
+  <method name="get" start="60" end="64" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Retrieve a benchmark trace"/>
+      <param type="object" variable="$name">
+        <type full="Hive\Benchmark\bool" namespace="Hive\Benchmark" name="bool"/>
+      </param>
+      <param type="string" variable="$separator"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="boolean" default="false"/>
+    <parameter name="separator" byreference="false" type="{unknown}" default="" constant="self::DEFAULT_SEPARATOR"/>
+    <inline>
+      <comment value="Call the instance get with our traces' name." line="62"/>
+    </inline>
+  </method>
+  <method name="name" start="75" end="80" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Returns the name of the current benchmark trace"/>
+      <param type="object" variable="$name">
+        <type full="Hive\Benchmark\bool" namespace="Hive\Benchmark" name="bool"/>
+      </param>
+      <param type="string" variable="$separator"/>
+      <return type="object">
+        <type full="Hive\Benchmark\bool|string" namespace="Hive\Benchmark" name="bool|string"/>
+      </return>
+    </docblock>
+    <parameter name="name" byreference="false" type="boolean" default="false"/>
+    <parameter name="separator" byreference="false" type="{unknown}" default="" constant="self::DEFAULT_SEPARATOR"/>
+  </method>
+  <method name="trace" start="90" end="95" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description compact="Simple debug_backtrace to get the name of the method which called."/>
+      <param description="How far in the stacktrace to go back." type="int" variable="$stack"/>
+      <param description="how our namespaces in our trace should be visually separated" type="string" variable="$separator"/>
+      <return description="$name   The caller class/method." type="string"/>
+    </docblock>
+    <parameter name="stack" byreference="false" type="integer" default="2"/>
+    <parameter name="separator" byreference="false" type="string" default="'.'"/>
+  </method>
+  <parent full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance">
+    <implements full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance"/>
+    <method name="__callStatic" start="38" end="47" abstract="false" final="false" static="true" visibility="public">
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="arguments" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="Throw a Bad Method call as the method wasn't found." line="45"/>
+      </inline>
+    </method>
+    <method name="init" start="58" end="73" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Initialise the instance.">Will create the object if it does not exist or return it if previously created.</description>
+        <throws type="object">
+          <type full="Hive\Benchmark\Exception\AlreadyInitiated" namespace="Hive\Benchmark\Exception" name="AlreadyInitiated"/>
+        </throws>
+        <return description="the instance" type="object">
+          <type full="\Hive\Benchmark\Object" namespace="\Hive\Benchmark" name="Object"/>
+        </return>
+      </docblock>
+      <parameter name="config" byreference="false" type="array" default=""/>
+    </method>
+    <method name="summary" start="85" end="88" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Static Alias to the Benchmark/Object/Summary.">We use this rather then relying on the __callStatic, due to
+not having php5.6 support and the unpack.</description>
+        <return type="array"/>
+      </docblock>
+    </method>
+    <method name="method" start="104" end="138" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Auto Method for setting benchmarks on a method.">Adds the ability to start and stop a mark with out requiring its name.
+or even setting whether to start/stop.</description>
+        <param description="(auto|start|stop) auto will determine whether to start or stop." type="string" variable="$action"/>
+        <param description="how far in the stacktrace to go back." type="int" variable="$stack"/>
+        <param description="any additional text to append to the method." type="string" variable="$append"/>
+        <depreciated value="Please use the trace facade instead."/>
+        <see value="\Hive\Benchmark\Trace"/>
+      </docblock>
+      <parameter name="action" byreference="false" type="string" default="'auto'"/>
+      <parameter name="stack" byreference="false" type="integer" default="3"/>
+      <parameter name="append" byreference="false" type="string" default="''"/>
+      <inline>
+        <comment value="Get the name of the caller method" line="106"/>
+        <comment value="If its an auto, find out what method to run." line="109"/>
+        <comment value="run the action" line="136"/>
+      </inline>
+    </method>
+    <method name="destroy" start="159" end="162" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Allows the destruction of the instance.">This is used for Unit testing the instance.</description>
+      </docblock>
+    </method>
+  </parent>
+  <interface full="Hive\Benchmark\Contract\Instance" namespace="Hive\Benchmark\Contract" name="Instance">
+    <method name="method" start="23" end="23" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Start/Stop a benchmark with the current 'methods' name."/>
+        <return type="object">
+          <type full="Hive\Benchmark\Contract\void" namespace="Hive\Benchmark\Contract" name="void"/>
+        </return>
+      </docblock>
+    </method>
+  </interface>
+</class>
