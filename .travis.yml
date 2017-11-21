@@ -47,23 +47,23 @@ script:
  -  if [[ "$PHP_BUILD" == "OLD" ]]; then
       phpunit --configuration build/phpunit.xml --coverage-text --testsuite All;
       vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
-      vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
-      php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
+      vendor/bin/phpcpd source --log-pmd docs/xml/phpcpd.xml;
+      php ./vendor/bin/phpmetrics --report-cli --report-html=docs/html/phpmetrics2/ --report-xml=docs/xml/phpmetrics2.xml --git source;
       vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
     fi
  -  if [[ "$PHP_BUILD" == "CURRENT" ]]; then
-      vendor/bin/phploc --log-xml documents/xml/phploc.xml source/;
+      vendor/bin/phploc --log-xml docs/xml/phploc.xml source/;
       phpunit --configuration build/phpunit.xml --coverage-text --testsuite All;
       vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
-      vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
-      php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
+      vendor/bin/phpcpd source --log-pmd docs/xml/phpcpd.xml;
+      php ./vendor/bin/phpmetrics --report-cli --report-html=docs/html/phpmetrics2/ --report-xml=docs/xml/phpmetrics2.xml --git source;
       vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
     fi
  -  if [[ "$PHP_BUILD" == "NEW" ]]; then
-      vendor/bin/phploc --log-xml documents/xml/phploc.xml source/;
+      vendor/bin/phploc --log-xml docs/xml/phploc.xml source/;
       vendor/bin/phpmd source text codesize,controversial,design,naming,unusedcode --suffixes php;
-      vendor/bin/phpcpd source --log-pmd documents/xml/phpcpd.xml;
-      php ./vendor/bin/phpmetrics --report-cli --report-html=documents/html/phpmetrics2/ --report-xml=documents/xml/phpmetrics2.xml --git source;
+      vendor/bin/phpcpd source --log-pmd docs/xml/phpcpd.xml;
+      php ./vendor/bin/phpmetrics --report-cli --report-html=docs/html/phpmetrics2/ --report-xml=docs/xml/phpmetrics2.xml --git source;
       vendor/bin/phpcs  --standard=PSR1 --tab-width=auto --report-info --report-full --report-source --report-summary source;
     fi
 # Exclude will not allow us to specific these exact sniffs to exclude.
