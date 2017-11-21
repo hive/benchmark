@@ -37,9 +37,9 @@ class Instance implements Contract\Instance
 
     public static function __callStatic($name, $arguments)
     {
-        if (method_exists(self::init(), $name))
+        if (method_exists(self::load(), $name))
         {
-            return self::init()->$name($arguments[0]);
+            return self::load()->$name($arguments[0]);
         }
 
         // Throw a Bad Method call as the method wasn't found.
@@ -47,7 +47,7 @@ class Instance implements Contract\Instance
     }
 
     /**
-     * Initialise the instance.
+     * Load the instance.
      *
      * Will create the object if it does not exist or return it if previously created.
      *
@@ -55,7 +55,7 @@ class Instance implements Contract\Instance
      * @return \Hive\Benchmark\Object the instance
      */
 
-    public static function init($config = [])
+    public static function load($config = [])
     {
         if (is_null(self::$object))
         {
@@ -84,7 +84,7 @@ class Instance implements Contract\Instance
      */
     public static function summary()
     {
-        return self::init()->summary();
+        return self::load()->summary();
     }
 
 
