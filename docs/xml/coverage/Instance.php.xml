@@ -12,7 +12,7 @@
       <package full="Hive.Benchmark" name="Hive" sub="Benchmark" category=""/>
       <namespace name="Hive\Benchmark"/>
       <method name="__callStatic" signature="__callStatic($name, $arguments)" start="38" end="47" crap="2" executable="4" executed="4" coverage="100"/>
-      <method name="init" signature="init($config = [])" start="58" end="73" crap="3" executable="8" executed="8" coverage="100"/>
+      <method name="load" signature="load($config = [])" start="58" end="73" crap="3" executable="8" executed="8" coverage="100"/>
       <method name="summary" signature="summary()" start="85" end="88" crap="1" executable="1" executed="1" coverage="100"/>
       <method name="method" signature="method($action = 'auto', $stack = 3, $append = '')" start="104" end="138" crap="3" executable="13" executed="13" coverage="100"/>
       <method name="trace" signature="trace($stack = 2)" start="148" end="152" crap="1" executable="2" executed="2" coverage="100"/>

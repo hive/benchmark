@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4379" time="2017-11-01T18:24:07+11:00" unixtime="1509521047" sha1="6e5040ca61a96beac8d1aff6166b3279b2b7e78f" relative="Instance.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Instance.php" size="4373" time="2017-11-21T18:27:22+11:00" unixtime="1511249242" sha1="4aa8e2dda7ea398f6793d6a132a2fc1fe170e4fa" relative="Instance.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -166,7 +166,7 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
-    <token name="T_STRING">init</token>
+    <token name="T_STRING">load</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
@@ -185,7 +185,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
-    <token name="T_STRING">init</token>
+    <token name="T_STRING">load</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -234,7 +234,7 @@
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="50">
-    <token name="T_DOC_COMMENT">     * Initialise the instance.</token>
+    <token name="T_DOC_COMMENT">     * Load the instance.</token>
   </line>
   <line no="51">
     <token name="T_DOC_COMMENT">     *</token>
@@ -263,7 +263,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">init</token>
+    <token name="T_STRING">load</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$config</token>
     <token name="T_WHITESPACE"> </token>
@@ -425,7 +425,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
-    <token name="T_STRING">init</token>
+    <token name="T_STRING">load</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>

@@ -44,10 +44,10 @@ Spaces after control structure open parenthesis: [4m0[0m [26/26, 100%]
 Spaces before control structure close parenthesis: [4m0[0m [26/26, 100%]
 
 ----------------------------------------------------------------------
-Time: 371ms; Memory: 7.25Mb
+Time: 340ms; Memory: 7.25Mb
 
 
-[1mFILE: .../apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php[0m
+[1mFILE: ...s/http/kamio.krowd.dev/vendor/hive/benchmark/source/Instance.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 9 ERRORS AFFECTING 9 LINES[0m
 ----------------------------------------------------------------------
@@ -72,7 +72,7 @@ Time: 371ms; Memory: 7.25Mb
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...r/apps/http/kontent.dev/vendor/hive/benchmark/source/Library.php[0m
+[1mFILE: ...ps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Library.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 23 ERRORS AND 2 WARNINGS AFFECTING 25 LINES[0m
 ----------------------------------------------------------------------
@@ -131,7 +131,7 @@ Time: 371ms; Memory: 7.25Mb
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...ar/apps/http/kontent.dev/vendor/hive/benchmark/source/Object.php[0m
+[1mFILE: ...pps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Object.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 17 ERRORS AFFECTING 16 LINES[0m
 ----------------------------------------------------------------------
@@ -177,7 +177,7 @@ Time: 371ms; Memory: 7.25Mb
  31 | [33mWARNING[0m | Line exceeds 120 characters; contains 139 characters
 ----------------------------------------------------------------------
 
-Time: 371ms; Memory: 7.25Mb
+Time: 340ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -194,16 +194,16 @@ Time: 371ms; Memory: 7.25Mb
 [1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (49 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 371ms; Memory: 7.25Mb
+Time: 341ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
 ----------------------------------------------------------------------
 [1mFILE                                                  ERRORS  WARNINGS[0m
 ----------------------------------------------------------------------
-...ent.dev/vendor/hive/benchmark/source/Instance.php  [31m9[0m       0
-...tent.dev/vendor/hive/benchmark/source/Library.php  [31m23[0m      [33m2[0m
-...ntent.dev/vendor/hive/benchmark/source/Object.php  [31m17[0m      0
+...owd.dev/vendor/hive/benchmark/source/Instance.php  [31m9[0m       0
+...rowd.dev/vendor/hive/benchmark/source/Library.php  [31m23[0m      [33m2[0m
+...krowd.dev/vendor/hive/benchmark/source/Object.php  [31m17[0m      0
 ...e/benchmark/source/Exception/AlreadyInitiated.php  0       [33m1[0m
 ----------------------------------------------------------------------
 [1mA TOTAL OF 49 ERRORS AND 3 WARNINGS WERE FOUND IN 13 FILES[0m
@@ -211,5 +211,5 @@ Time: 371ms; Memory: 7.25Mb
 [1mPHPCBF CAN FIX 49 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 372ms; Memory: 7.25Mb
+Time: 341ms; Memory: 7.25Mb
 

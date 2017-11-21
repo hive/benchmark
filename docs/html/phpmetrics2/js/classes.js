@@ -11,7 +11,7 @@ var classes = [
                 "_type": "Hal\\Metric\\FunctionMetric"
             },
             {
-                "name": "init",
+                "name": "load",
                 "role": null,
                 "public": true,
                 "private": false,

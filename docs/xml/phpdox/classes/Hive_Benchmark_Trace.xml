@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Trace" namespace="Hive\Benchmark" name="Trace" abstract="false" final="false" start="18" end="96">
-  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Facade" file="Trace.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php" size="2641" time="2017-11-01T18:21:40+11:00" unixtime="1509520900" sha1="0111a02bb1a6e1b2174a05c737a7305228884fc7" relative="Facade/Trace.php"/>
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/build/../source/Facade" file="Trace.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Facade/Trace.php" size="2641" time="2017-11-21T18:27:22+11:00" unixtime="1511249242" sha1="0111a02bb1a6e1b2174a05c737a7305228884fc7" relative="Facade/Trace.php"/>
   <docblock>
     <description compact="Benchmark Trace Facade.">Allows access to the benchmark instance with auto tracing,
 this will basically trace where the benchmark was called from and prepend
@@ -93,9 +93,9 @@ that to the name of the mark. If no name is used it defaults to the trace itself
         <comment value="Throw a Bad Method call as the method wasn't found." line="45"/>
       </inline>
     </method>
-    <method name="init" start="58" end="73" abstract="false" final="false" static="true" visibility="public">
+    <method name="load" start="58" end="73" abstract="false" final="false" static="true" visibility="public">
       <docblock>
-        <description compact="Initialise the instance.">Will create the object if it does not exist or return it if previously created.</description>
+        <description compact="Load the instance.">Will create the object if it does not exist or return it if previously created.</description>
         <throws type="object">
           <type full="Hive\Benchmark\Exception\AlreadyInitiated" namespace="Hive\Benchmark\Exception" name="AlreadyInitiated"/>
         </throws>

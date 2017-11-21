@@ -127,7 +127,7 @@ class testTrace extends base
         \Hive\Benchmark\Trace::start('test');
         \Hive\Benchmark\Trace::stop('test');
 
-        $result = \Hive\Benchmark\Instance::init(['enabled' => false]);
+        $result = \Hive\Benchmark\Instance::load(['enabled' => false]);
 
         \Hive\Benchmark\Trace::start('test');
         \Hive\Benchmark\Trace::stop('test');

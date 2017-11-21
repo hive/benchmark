@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Instance" namespace="Hive\Benchmark" name="Instance" abstract="false" final="false" start="23" end="163">
-  <file path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php" size="4379" time="2017-11-01T18:24:07+11:00" unixtime="1509521047" sha1="6e5040ca61a96beac8d1aff6166b3279b2b7e78f" relative="Instance.php"/>
+  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/build/../source" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Instance.php" size="4373" time="2017-11-21T18:27:22+11:00" unixtime="1511249242" sha1="4aa8e2dda7ea398f6793d6a132a2fc1fe170e4fa" relative="Instance.php"/>
   <docblock>
     <description compact="Benchmark Instance.">Allows access to the benchmark object through a instance as a singleton.</description>
     <todo value="1.0.1.0 add the ability to get the total time."/>
@@ -34,9 +34,9 @@
       <comment value="Throw a Bad Method call as the method wasn't found." line="45"/>
     </inline>
   </method>
-  <method name="init" start="58" end="73" abstract="false" final="false" static="true" visibility="public">
+  <method name="load" start="58" end="73" abstract="false" final="false" static="true" visibility="public">
     <docblock>
-      <description compact="Initialise the instance.">Will create the object if it does not exist or return it if previously created.</description>
+      <description compact="Load the instance.">Will create the object if it does not exist or return it if previously created.</description>
       <throws type="object">
         <type full="Hive\Benchmark\Exception\AlreadyInitiated" namespace="Hive\Benchmark\Exception" name="AlreadyInitiated"/>
       </throws>

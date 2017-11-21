@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/build/../source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Contract/Instance.php" size="513" time="2017-10-21T00:09:03+11:00" unixtime="1508504943" sha1="c000fb82c9d379d1dec2af8ba9aba2ac0a9c36d1" relative="Contract/Instance.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/build/../source/Contract" file="Instance.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Contract/Instance.php" size="513" time="2017-10-27T18:12:40+11:00" unixtime="1509088360" sha1="c000fb82c9d379d1dec2af8ba9aba2ac0a9c36d1" relative="Contract/Instance.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>

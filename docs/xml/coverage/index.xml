@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
-  <project name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source">
+  <project name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source">
     <tests>
       <test name="testInstanceDetails::testSanity" size="unknown" result="0" status="PASSED"/>
       <test name="testInstanceDetails::testStartStop" size="unknown" result="0" status="PASSED"/>
@@ -87,7 +87,7 @@
       <test name="testTrace::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
       <test name="testTrace::testChangeConfig" size="unknown" result="0" status="PASSED"/>
     </tests>
-    <directory name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source">
+    <directory name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source">
       <totals>
         <lines total="1107" comments="652" code="455" executable="183" executed="177" percent="96.72%"/>
         <methods count="31" tested="28" percent="90.32%"/>

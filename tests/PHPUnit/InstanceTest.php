@@ -76,7 +76,7 @@ class testInstance extends base
 
     public function testConfigEnabledFalse()
     {
-        \Hive\Benchmark\Instance::init(['enabled' => false]);
+        \Hive\Benchmark\Instance::load(['enabled' => false]);
         \Hive\Benchmark\Instance::start(__METHOD__);
         \Hive\Benchmark\Instance::stop(__METHOD__);
 
@@ -134,7 +134,7 @@ class testInstance extends base
         \Hive\Benchmark\Instance::start('test');
         \Hive\Benchmark\Instance::stop('test');
 
-        $result = \Hive\Benchmark\Instance::init(['enabled' => false]);
+        $result = \Hive\Benchmark\Instance::load(['enabled' => false]);
 
         \Hive\Benchmark\Instance::start('test');
         \Hive\Benchmark\Instance::stop('test');

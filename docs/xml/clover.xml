@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1510108902">
-  <project timestamp="1510108902">
-    <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Contract/Instance.php">
+<coverage generated="1511249335">
+  <project timestamp="1511249335">
+    <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Contract/Instance.php">
       <metrics loc="24" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Contract/Library.php">
+    <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Contract/Library.php">
       <metrics loc="44" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Contract/Object.php">
+    <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Contract/Object.php">
       <metrics loc="34" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <package name="Hive\Benchmark">
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Exception.php">
         <class name="Exception" namespace="Hive\Benchmark" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
@@ -20,7 +20,7 @@
         <line num="43" type="stmt" count="20"/>
         <metrics loc="44" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Facade/Trace.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Facade/Trace.php">
         <class name="Trace" namespace="Hive\Benchmark" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
         </class>
@@ -41,7 +41,7 @@
         <line num="94" type="stmt" count="14"/>
         <metrics loc="96" ncloc="37" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Instance.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Instance.php">
         <class name="Instance" namespace="Hive\Benchmark" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="30" elements="36" coveredelements="36"/>
         </class>
@@ -50,7 +50,7 @@
         <line num="41" type="stmt" count="43"/>
         <line num="42" type="stmt" count="42"/>
         <line num="46" type="stmt" count="1"/>
-        <line num="58" type="method" name="init" crap="3" count="43"/>
+        <line num="58" type="method" name="load" crap="3" count="43"/>
         <line num="60" type="stmt" count="43"/>
         <line num="61" type="stmt" count="43"/>
         <line num="62" type="stmt" count="37"/>
@@ -83,7 +83,7 @@
         <line num="162" type="stmt" count="44"/>
         <metrics loc="163" ncloc="71" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="30" elements="36" coveredelements="36"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Library.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Library.php">
         <class name="Library" namespace="Hive\Benchmark" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="67" coveredstatements="65" elements="74" coveredelements="71"/>
         </class>
@@ -163,7 +163,7 @@
         <line num="257" type="stmt" count="26"/>
         <metrics loc="259" ncloc="114" classes="1" methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="67" coveredstatements="65" elements="74" coveredelements="71"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Object.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Object.php">
         <class name="Object" namespace="Hive\Benchmark" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="7" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="50" elements="61" coveredelements="55"/>
         </class>
@@ -232,7 +232,7 @@
       </file>
     </package>
     <package name="Hive\Benchmark\Exception">
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/AlreadyInitiated.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Exception/AlreadyInitiated.php">
         <class name="AlreadyInitiated" namespace="Hive\Benchmark\Exception" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
@@ -243,7 +243,7 @@
         <line num="44" type="stmt" count="2"/>
         <metrics loc="45" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php">
         <class name="BadMethodCall" namespace="Hive\Benchmark\Exception" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
@@ -254,7 +254,7 @@
         <line num="43" type="stmt" count="1"/>
         <metrics loc="44" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/DoesNotExist.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Exception/DoesNotExist.php">
         <class name="DoesNotExist" namespace="Hive\Benchmark\Exception" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
@@ -265,7 +265,7 @@
         <line num="46" type="stmt" count="8"/>
         <metrics loc="47" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/NotRunning.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Exception/NotRunning.php">
         <class name="NotRunning" namespace="Hive\Benchmark\Exception" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
@@ -276,7 +276,7 @@
         <line num="46" type="stmt" count="6"/>
         <metrics loc="47" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
-      <file name="/usr/local/zend/var/apps/http/kontent.dev/vendor/hive/benchmark/source/Exception/StoppedRunning.php">
+      <file name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Exception/StoppedRunning.php">
         <class name="StoppedRunning" namespace="Hive\Benchmark\Exception" fullPackage="Hive.Benchmark" package="Hive" subpackage="Benchmark">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>

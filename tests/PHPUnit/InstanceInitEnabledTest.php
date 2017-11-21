@@ -13,7 +13,7 @@ class testInstanceInitEnabled extends base
     {
         $this->setExpectedException('Hive\Benchmark\Exception\DoesNotExist');
 
-        \Hive\Benchmark\Instance::init(['enabled' => false]);
+        \Hive\Benchmark\Instance::load(['enabled' => false]);
         \Hive\Benchmark\Instance::start(__METHOD__);
         \Hive\Benchmark\Instance::stop(__METHOD__);
         \Hive\Benchmark\Instance::get(__METHOD__);

@@ -117,7 +117,7 @@ class testInstanceSummary extends base
 
     public function testConfigEnabledFalse()
     {
-        \Hive\Benchmark\Instance::init(['enabled' => false]);
+        \Hive\Benchmark\Instance::load(['enabled' => false]);
 
         \Hive\Benchmark\Instance::start('test');
         \Hive\Benchmark\Instance::stop('test');
