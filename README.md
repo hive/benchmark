@@ -15,8 +15,8 @@ https://hive.github.io/benchmark/
 
 ## Notes
 
- * phpUnit is not currently running on the php7 branches, due to the changes in its namespaces. 
- * PhpMetrics scores are not currently taking into account phpUnit test or code coverage.  
+ * phpUnit is not currently running on the php7 branches, due to the changes in its namespaces.
+ * PhpMetrics scores are not currently taking into account phpUnit test or code coverage.
 
 ## Installation
 
@@ -51,7 +51,7 @@ Via Git
 ```bash
 # Clone the repo
 cd helloworld.dev
-git clone https://github.com/hive/benchmark.git . 
+git clone https://github.com/hive/benchmark.git .
 ```
 
 ```php
@@ -61,7 +61,7 @@ require 'hive/benchmark/include.php';
 
 ## Overview
 
-The code is split up into the following classes : 
+The code is split up into the following classes :
 
 1. Library.php : The actual benchmarking library, useful for extending functionality.
 2. Object.php : Class for accessing the benchmark object.
@@ -72,26 +72,26 @@ The code is split up into the following classes :
  ```php
     use Hive\Benchmark;
  ```
- 
- 
+
+
  Simple Instance
  ```php
- 
+
     // Start the benchmark
     Benchmark\Instance::start('NameOfBenchmark');
-    
+
     sleep(1);
-    
-    // Stop the benchmark 
+
+    // Stop the benchmark
     Benchmark\Instance::stop('NameOfBenchmark');
- 
+
  ```
- 
+
 **Multiple Instance**
- 
- ```php    
+
+ ```php
     use Hive\Benchmark;
-    
+
     // Start the benchmark
     Benchmark\Instance::start('FirstBenchmark');
 
@@ -113,9 +113,9 @@ The code is split up into the following classes :
     print_r(Benchmark\Instance::get('SecondBenchmark'));
 ```
 
-The above example will output 
+The above example will output
 
-```php    
+```php
     /**
      * Output
      */
@@ -159,21 +159,21 @@ The above example will output
             [median] => 648
         )
     )
-        
+
  ```
-   
-   
-All of which can be called directly from the object 
+
+
+All of which can be called directly from the object
 
 ```php
 
-    $bm = new \Hive\Benchmark\Object(); 
-    
-    $bm->start('MyNewBenchmark'); 
-    
+    $bm = new \Hive\Benchmark\Object();
+
+    $bm->start('MyNewBenchmark');
+
     $bm->stop('MyNewBenchmark');
-    
-    print_r($bm->summary()); 
+
+    print_r($bm->summary());
 
 ```
 
@@ -183,59 +183,58 @@ Using the config
 ```php
 
     $config = [
-        'enabled'   => true,    // whether or not the benchmark is enabled. 
+        'enabled'   => true,    // whether or not the benchmark is enabled.
         'timer'     => true,    // whether or not to benchmark time.
         'memory'    => true,    // whether or not to benchmark memory.
         'decimaals' => 8        // number of decimal points to report on
     ];
-    
-    // disabling benchmarking on production servers is easy
-    $config['enabled'] = (IN_DEVELOPMENT || IN_STAGING); 
 
-    $bench = new \Hive\Benchmark\Object($config); 
+    // disabling benchmarking on production servers is easy
+    $config['enabled'] = (IN_DEVELOPMENT || IN_STAGING);
+
+    $bench = new \Hive\Benchmark\Object($config);
 
 ```
 
-## Advance 
+## Advance
 
 The benchmark library has many more options and features, to view them please see our [examples](https://github.com/hive/benchmark/tree/master/examples)
 
 
 ## File Map
 
-The code is split up into the following classes : 
+The code is split up into the following classes :
 
-
-1. /tests : folder for any unit testing
-2. /examples : folder for any examples
-3. /docs : folder for any documentation  
-4. /source : folder for source code
-    1. Library.php : The actual benchmarking library, useful for extending functionality.
+1. [tests](tests) : folder for any unit testing
+2. [examples](examples) : folder for any examples
+3. [docs](docs) : folder for any documentation
+4. [source](source) : folder for source code
+    1. [Library](source/Library.php) : The actual benchmarking library, useful for extending functionality.
         *  __construct( array $config )
-        *  start         (string $nameOfBenchmark) 
-        * stop          (string $nameOfBenchmark) 
-        * details       (string $nameOfBenchmark) 
-    2. Object.php : Class for accessing the benchmark object.
+        *  start         (string $nameOfBenchmark)
+        * stop          (string $nameOfBenchmark)
+        * details       (string $nameOfBenchmark)
+    2. [Object](source/Object.php) : Class for accessing the benchmark object.
         * __construct( array $config )
         * start         (string $nameOfBenchmark)
         * stop          (string $nameOfBenchmark)
         * details       (string $nameOfBenchMark)
         * get           (string $nameOfBenchMark)
         * summary       ()
-    3. Instance.php : Instance of the object class.
+    3. [Instance](source/Instance.php) : Instance of the object class.
         * static start  (string $nameOfBenchmark)
         * static stop   (string $nameOfBenchmark)
         * static details(string $nameOfBenchMark)
         * static get    (string $nameOfBenchMark)
         * static summary()
         * static method (string $action, integer $stack)
-    4. Exception : Folder for any exceptions the object will throw.
-        * AlreadyRunning.php
-        * NotRunning.php
-        * StoppedRunning.php
-    5. Contact : folder for any interfaces or abstract classes they implement
-        * Instance.php
-        * Library.php
-        * Object.php
-        
+    4. [Exception](source/Exception) : Folder for any exceptions the object will throw.
+        * [AlreadyRunning](source/Exception/AlreadyRunning.php)
+        * [NotRunning](source/Exception/NotRunning.php)
+        * [StoppedRunning](source/Exception/StoppedRunning.php)
+    5. [Contract](source/Contract) : folder for any interfaces or abstract classes they implement
+        * [Instance](source/Contract/Instance.php)
+        * [Library](source/Contract/Library.php)
+        * [Object](source/Contract/Object.php)
+
 The full API documentation can be found [here](https://hive.github.io/benchmark/html/phpdox/index.xhtml) or all the documentation can be found [here](https://hive.github.io/benchmark/)
