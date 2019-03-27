@@ -48,11 +48,10 @@ class Library implements Contract\Library
      */
     public function __construct(array $config = [])
     {
-        /**
-         * Merge the received config with the defaults.
-         */
+        // Merge the received config with the defaults.
         $this->config = array_merge($config, $this->config);
     }
+
 
     /**
      * Start a benchmark.
@@ -92,13 +91,13 @@ class Library implements Contract\Library
      */
     public function stop($name)
     {
-        // GIGO : The benchmark we are attempting to stop has been started
+        # Gigo : The benchmark we are attempting to stop has been started
         if (isset($this->marks[$name]))
         {
-            // Just an alias
+            # Alias : the first mark of name
             $mark = &$this->marks[$name][0];
 
-            // GIGO : It hasn't already been stopped
+            # Sanity : test It hasn't already been stopped
             if (!isset($mark['time']['stop']))
             {
                 // Assign the stop values
@@ -149,6 +148,7 @@ class Library implements Contract\Library
         }
     }
 
+
     /**
      * Get a benchmark.
      *
@@ -162,6 +162,8 @@ class Library implements Contract\Library
      */
     public function details($name)
     {
+
+        # Smoke : test that the benchmark exists
         if (isset($this->marks[$name]))
         {
             $result = $this->retrieve($name);
@@ -179,7 +181,8 @@ class Library implements Contract\Library
      * Retrieve an all benchmarks of a particular name
      * from the internal marks storage array.
      *
-     * Internal process, no gigo/sanity
+     * Will access the internal marks storage array, tally the result
+     * and return the requested benchmark by name. Internal process, no gigo/sanity
      *
      * @param $name
      *
@@ -190,7 +193,7 @@ class Library implements Contract\Library
     protected function retrieve($name)
     {
 
-        // Initialise the variables
+        # Init : Our results
         $results = [];
 
         try
@@ -206,11 +209,11 @@ class Library implements Contract\Library
                  */
                 for ($i = 0; $i < count($this->marks[$name]); $i++)
                 {
-                    // Default the results to false, if they haven't been stopped or the time/memory is disabled
+                    # Init : Where we will store memory details. defaults the results to false, if they haven't been stopped or the time/memory is disabled
                     $memory = false;
                     $time = false;
 
-                    // Just an alias
+                    # Alias : Current Mark and its elapsed time
                     $mark = &$this->marks[$name][$i];
 
                     // If the mark time has not been stopped, don't report.
@@ -225,7 +228,7 @@ class Library implements Contract\Library
                         $memory = $mark['memory']['stop'] - $mark['memory']['start'];
                     }
 
-                    // Sanity check against the memory in case it was a minor benchmark and there was a garbage collection during the running.
+                    # Sanity : test the memory in case it was a minor benchmark and there was a garbage collection during the running.
                     $memory = ($memory > 1) ? $memory : 0;
 
                     // Don't forget $time, $memory are false unless otherwise specified
@@ -233,6 +236,7 @@ class Library implements Contract\Library
                     $result['time'] = $time;
                     $result['memory'] = $memory;
 
+                    // Add the outcome to result
                     $results[] = $result;
                 }
             }
