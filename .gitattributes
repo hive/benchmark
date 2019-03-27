@@ -1,3 +1,6 @@
-build/*  linguist-documentation
-docs/* linguist-documentation
-
+build/* linguist-documentation
+build/templates/* linguist-documentation
+documents/* linguist-documentation
+examples/* linguist-documentation
+tests/* linguist-documentation
+git

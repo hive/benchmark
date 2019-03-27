@@ -22,10 +22,9 @@
  */
 class Instance implements Contract\Instance
 {
-
     /**
      * Singleton.
-     * @var
+     * @var \Hive\Benchmark\Object
      */
     private static $object;
 
@@ -35,6 +34,20 @@ class Instance implements Contract\Instance
      */
     private static $methods = [];
 
+
+    /**
+     * Benchmark can access the object methods directly.
+     *
+     * @example Hive\Benchmark::start();
+     *
+     * @param $name name of the static function called
+     * @param $arguments any arguments supplied.
+     *
+     * @return \Hive\Benchmark\Object
+     *
+     * @throws Exception\AlreadyInitiated
+     * @throws Exception\BadMethodCall
+     */
     public static function __callStatic($name, $arguments)
     {
         if (method_exists(self::load(), $name))
@@ -46,6 +59,7 @@ class Instance implements Contract\Instance
         throw new Exception\BadMethodCall(__CLASS__, $name);
     }
 
+
     /**
      * Load the instance.
      *
@@ -54,7 +68,6 @@ class Instance implements Contract\Instance
      * @throws Exception\AlreadyInitiated
      * @return \Hive\Benchmark\Object the instance
      */
-
     public static function load($config = [])
     {
         if (is_null(self::$object))
@@ -71,7 +84,6 @@ class Instance implements Contract\Instance
         }
         return self::$object;
     }
-
 
 
     /**
@@ -150,6 +162,7 @@ class Instance implements Contract\Instance
         $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $stack)[$stack - 1];
         return $caller['class'] . '\\' . $caller['function'];
     }
+
 
     /**
      * Allows the destruction of the instance.
