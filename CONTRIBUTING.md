@@ -1,6 +1,9 @@
 ## General
 
  * Every effort should be made to ensure that a package has no dependancies.
+ * Code style should pass the Code Sniffer rules located at `build/phpcs.xml`
+ * Code should pass the phpMD rules  : `codesize,controversial,design,naming,unusedcode`
+ * Code style should pass the phpcpd standard rules
 
 ## Documentation
  * Code should be clean enough to not need comments
@@ -8,10 +11,6 @@
  * Code should always have examples and they should be so good that API documents are not required
  * Code should always have API documents.
  
-`Code style should pass the Code Sniffer rules located at build/phpcs.xml`
-`Code should pass the phpMD rules  : codesize,controversial,design,naming,unusedcode`
-`Code style should pass the phpcpd standard rules`
-
 ## Structure 
  * Libraries are for extending not implementing
  * Objects are for implementing
