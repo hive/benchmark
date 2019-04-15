@@ -9,14 +9,36 @@
 Simple decoupled benchmark, Version 1.0.*
 
 
-## Documentation
+## [Documentation](https://hive.github.io/benchmark/)
 
 https://hive.github.io/benchmark/
+
+ * [Getting Started](https://hive.github.io/benchmark/).
+ * [API](https://hive.github.io/benchmark/html/phpdox/index.xhtml).
+ * [Unit Tests](https://hive.github.io/benchmark/html/phpunit/index.html).
+ * [Coverage Dashboard](https://hive.github.io/benchmark/html/coverage/dashboard.html).
+ * [Coverage Details](https://hive.github.io/benchmark/html/coverage/index.html).
+ * Metrics [Version 1.10](https://hive.github.io/benchmark/html/phpmetrics1/index.html) [Version 2.3](https://hive.github.io/benchmark/html/phpmetrics2/index.html).
+ * [Coding Standard](https://hive.github.io/benchmark/html/codesniffer/index.html).
+ * [Copy/Paste Detector](https://hive.github.io/benchmark/html/phpcpd/index.html).
+ * [Mess Detector](https://hive.github.io/benchmark/html/phpmd/index.html).
+ * [Statistics](https://hive.github.io/benchmark/html/phploc/index.html).
+ * [Examples](https://github.com/hive/benchmark/tree/master/examples)
 
 ## Notes
 
  * phpUnit is not currently running on the php7 branches, due to the changes in its namespaces.
  * PhpMetrics scores are not currently taking into account phpUnit test or code coverage.
+ 
+## Overview
+
+ The benchmark library is a easy access library for measuring the internal speed and memory process for PHP files. 
+ 
+ 1. Instance support and easy syntac
+ 2. Full access for inheritance.
+ 3. Single and Multiple instances.
+ 4. Completely configurable, if required. 
+ 
 
 ## Installation
 
@@ -25,7 +47,7 @@ Recommended installation [through composer](http://getcomposer.org).
 ```JSON
 {
     "require": {
-        "Hive/Benchmark": "1.0.*"
+        "Hive/Benchmark": "1.*"
     }
 }
 ```
@@ -59,20 +81,11 @@ git clone https://github.com/hive/benchmark.git .
 require 'hive/benchmark/include.php';
 ```
 
-## Overview
-
-The code is split up into the following classes :
-
-1. Library.php : The actual benchmarking library, useful for extending functionality.
-2. Object.php : Class for accessing the benchmark object.
-3. Instance.php : Instance of the object class.
-
 ## Useage
 -------
  ```php
     use Hive\Benchmark;
  ```
-
 
  Simple Instance
  ```php
