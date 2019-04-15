@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Benchmark\Exception\BadMethodCall" namespace="Hive\Benchmark\Exception" name="BadMethodCall" abstract="false" final="false" start="17" end="44">
-  <file path="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/build/../source/Exception" file="BadMethodCall.php" realpath="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php" size="1222" time="2017-10-27T18:12:40+11:00" unixtime="1509088360" sha1="ffc8cf422adad8c917997b335bde3c4c9561a32e" relative="Exception/BadMethodCall.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/benchmark/build/../source/Exception" file="BadMethodCall.php" realpath="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/benchmark/source/Exception/BadMethodCall.php" size="1222" time="2017-11-21T18:22:12+11:00" unixtime="1511248932" sha1="ffc8cf422adad8c917997b335bde3c4c9561a32e" relative="Exception/BadMethodCall.php"/>
   <docblock>
     <description compact="Bad Method Call Exception.">Attempted to call a method which does not exist.
 This Exception exists to handle invalid calls with in __call()</description>
@@ -53,8 +53,8 @@ so that we have a unique exception code.</description>
           <type full="Hive\Benchmark\null|int" namespace="Hive\Benchmark" name="null|int"/>
         </param>
       </docblock>
-      <parameter name="message" byreference="false" type="{unknown}" default="" constant="null"/>
-      <parameter name="code" byreference="false" type="{unknown}" default="" constant="null"/>
+      <parameter name="message" byreference="false" type="{unknown}" default="NULL"/>
+      <parameter name="code" byreference="false" type="{unknown}" default="NULL"/>
       <inline>
         <comment value="Call the parent with the message and our now unique error code" line="41"/>
       </inline>

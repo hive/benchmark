@@ -19,11 +19,12 @@ EOL char: \n [13/13, 100%]
 
 Function opening brace placement: new line [31/31, 100%]
 
-Line indent: spaces [750/750, 100%]
+Line indent: spaces [764/764, 100%]
 
-Line length: 80 or less [955/998, 95.69%]
-	81-120 => 40 (4.01%)
+Line length: 80 or less [968/1012, 95.65%]
+	81-120 => 40 (3.95%)
 	121-150 => 3 (0.3%)
+	151 or more => 1 (0.1%)
 
 Multiple statements on same line: no [132/132, 100%]
 

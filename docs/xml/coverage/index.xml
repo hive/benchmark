@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
-  <project name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source">
+  <project name="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/benchmark/source">
     <tests>
       <test name="testInstanceDetails::testSanity" size="unknown" result="0" status="PASSED"/>
       <test name="testInstanceDetails::testStartStop" size="unknown" result="0" status="PASSED"/>
@@ -87,9 +87,9 @@
       <test name="testTrace::testStoppedRunningException" size="unknown" result="0" status="PASSED"/>
       <test name="testTrace::testChangeConfig" size="unknown" result="0" status="PASSED"/>
     </tests>
-    <directory name="/usr/local/zend/var/apps/http/kamio.krowd.dev/vendor/hive/benchmark/source">
+    <directory name="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/benchmark/source">
       <totals>
-        <lines total="1107" comments="652" code="455" executable="183" executed="177" percent="96.72%"/>
+        <lines total="1124" comments="669" code="455" executable="183" executed="177" percent="96.72%"/>
         <methods count="31" tested="28" percent="90.32%"/>
         <functions count="0" tested="0" percent=""/>
         <classes count="10" tested="8" percent="80.00%"/>
@@ -295,7 +295,7 @@
       </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="163" comments="92" code="71" executable="30" executed="30" percent="100.00%"/>
+          <lines total="176" comments="105" code="71" executable="30" executed="30" percent="100.00%"/>
           <methods count="6" tested="6" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>
@@ -304,7 +304,7 @@
       </file>
       <file name="Library.php" href="Library.php.xml">
         <totals>
-          <lines total="259" comments="145" code="114" executable="67" executed="65" percent="97.01%"/>
+          <lines total="263" comments="149" code="114" executable="67" executed="65" percent="97.01%"/>
           <methods count="7" tested="6" percent="85.71%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="0" percent="0.00%"/>

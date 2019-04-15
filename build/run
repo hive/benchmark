@@ -42,7 +42,6 @@ xsltproc templates/phpcpd.xsl ../docs/xml/phpcpd.xml > ../docs/html/phpcpd/index
 # Create phpLoc html
 xsltproc templates/phploc.xsl ../docs/xml/phploc.xml > ../docs/html/phploc/index.html;
 
-
 # Run phpDox
 ~/Sites/phpdox/phpdox -f phpdox.xml;
 

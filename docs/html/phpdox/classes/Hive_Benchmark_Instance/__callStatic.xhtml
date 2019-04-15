@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:pu="http://schema.phpunit.de/coverage/1.0" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <title>phpDox - Hive\Benchmark\Instance::__callStatic</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
@@ -59,19 +59,26 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="../../source/Instance.php.xhtml#line38">Source</a>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="#throws">Throws</a>
+          </li>
+          <li>
+            <a href="../../source/Instance.php.xhtml#line51">Source</a>
           </li>
         </ul>
       </nav>
       <section>
         <h1><small>Hive\Benchmark\Instance::</small>__callStatic</h1>
-        <h4/>
+        <h4>Benchmark can access the object methods directly.</h4>
         <p/>
+        <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function __callStatic(
+          <code>public function __callStatic(<a title="Hive\Benchmark\name" href="../../classes/Hive_Benchmark_name.xhtml">name</a>
         $name,
-            
+            <a title="Hive\Benchmark\any" href="../../classes/Hive_Benchmark_any.xhtml">any</a>
         $arguments )
             </code>
         </div>
@@ -79,17 +86,38 @@
         <dl class="styled">
           <dt><code>$name</code>
                 —
-                </dt>
-          <dd/>
+                object</dt>
+          <dd>of the static function called<br/><br/><br/>      </dd>
           <dt><code>$arguments</code>
                 —
-                </dt>
+                object</dt>
+          <dd>arguments supplied.<br/><br/><br/>      </dd>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>Object</dt>
+          <dd><br/>
+        </dd>
+        </dl>
+        <h2 id="throws">Errors/Exceptions</h2>
+        <dl class="styled">
+          <dt>
+            <code>
+              <a title="Hive\Benchmark\Exception\AlreadyInitiated" href="../../classes/Hive_Benchmark_Exception_AlreadyInitiated.xhtml">AlreadyInitiated</a>
+            </code>
+          </dt>
+          <dd/>
+          <dt>
+            <code>
+              <a title="Hive\Benchmark\Exception\BadMethodCall" href="../../classes/Hive_Benchmark_Exception_BadMethodCall.xhtml">BadMethodCall</a>
+            </code>
+          </dt>
           <dd/>
         </dl>
       </section>
     </div>
     <footer>
-      <span>Generated using phpDox 0.8.1.1-26-g131d5d2-dirty - Copyright (C) 2010 - 2017 by Arne Blankerts</span>
+      <span>Generated using phpDox 0.11.2 - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
     </footer>
   </body>
 </html>

@@ -5,9 +5,6 @@
     <file>../source/</file>
 
 
-
-
-
     <arg name="report-full" value="../docs/html/codesniffer/full.txt"/>
     <arg name="report-summary" value="../docs/html/codesniffer/summary.txt"/>
     <arg name="report-source" value="../docs/html/codesniffer/source.txt"/>
